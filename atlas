@@ -1,69 +1,67 @@
 #!/usr/bin/env python3
+import sys
+import subprocess
 
-import sys, os, yaml
-from datetime import datetime
-import swisseph as swe
+def run(cmd):
+    subprocess.run(cmd, shell=True)
 
-BASE="/opt/atlas"
+if len(sys.argv) < 2:
+    print("""
+Atlas AI CLI
 
-def today():
-    now=datetime.utcnow()
-    jd=swe.julday(now.year,now.month,now.day)
+Commands:
 
-    sun=swe.calc_ut(jd,swe.SUN)[0][0]
-    moon=swe.calc_ut(jd,swe.MOON)[0][0]
-
-    tithi=int(((moon-sun)%360)/12)+1
-    nak=int(moon/(360/27))
-
-    nakshatra=[
-"Ashwini","Bharani","Krittika","Rohini","Mrigashira",
-"Ardra","Punarvasu","Pushya","Ashlesha","Magha",
-"Purva Phalguni","Uttara Phalguni","Hasta","Chitra",
-"Swati","Vishakha","Anuradha","Jyeshtha","Mula",
-"Purva Ashadha","Uttara Ashadha","Shravana","Dhanishta",
-"Shatabhisha","Purva Bhadrapada","Uttara Bhadrapada","Revati"
-]
-
-    print("Date:",now.strftime("%Y-%m-%d"))
-    print("Tithi:",tithi)
-    print("Nakshatra:",nakshatra[nak])
-    print("Sun:",round(sun,2))
-    print("Moon:",round(moon,2))
-
-def journal():
-    date=datetime.utcnow().strftime("%Y-%m-%d")
-    path=f"{BASE}/journals/{date}.md"
-    os.makedirs(f"{BASE}/journals",exist_ok=True)
-
-    if not os.path.exists(path):
-        with open(path,"w") as f:
-            f.write(f"# Journal {date}\n\n")
-
-    print(path)
-
-def search(word):
-    for root,dirs,files in os.walk(BASE):
-        for file in files:
-            path=os.path.join(root,file)
-            try:
-                with open(path) as f:
-                    if word.lower() in f.read().lower():
-                        print(path)
-            except:
-                pass
-
-if len(sys.argv)<2:
-    print("commands: today | journal | search")
+chat        → AI router
+agent       → dev agent
+memory      → rebuild vector memory
+index       → rebuild project index
+models      → list ollama models
+dashboard   → start dashboard
+shell       → dev AI shell
+analyze     → analyze project code
+patch       → AI patch a file
+watch       → start project watcher
+research    → ingest research corpus
+""")
     sys.exit()
 
-cmd=sys.argv[1]
+cmd = sys.argv[1]
 
-if cmd=="today":
-    today()
+if cmd == "chat":
+    run("python /opt/atlas/scripts/ai_router.py")
 
-elif cmd=="journal":
-    journal()
+elif cmd == "agent":
+    run("python /opt/atlas/scripts/dev_agent.py")
 
-elif cmd=="search":
-    search(sys.argv[2])
+elif cmd == "memory":
+    run("python /opt/atlas/scripts/vector_memory.py")
+
+elif cmd == "index":
+    run("python /opt/atlas/scripts/index_project.py")
+
+elif cmd == "models":
+    run("ollama list")
+
+elif cmd == "dashboard":
+    run("python /opt/atlas/scripts/control_panel.py")
+
+elif cmd == "shell":
+    run("python /opt/atlas/scripts/dev_ai_shell.py")
+
+elif cmd == "analyze":
+    run("python /opt/atlas/scripts/code_analyzer.py")
+
+elif cmd == "patch":
+    if len(sys.argv) < 3:
+        print("Usage: atlas patch <file>")
+    else:
+        run(f"python /opt/atlas/scripts/ai_patch.py {sys.argv[2]}")
+
+elif cmd == "watch":
+    run("python /opt/atlas/scripts/atlas_watcher.py")
+
+elif cmd == "research":
+    run("python /opt/atlas/scripts/research_ingest.py")
+
+else:
+    print("Unknown command")

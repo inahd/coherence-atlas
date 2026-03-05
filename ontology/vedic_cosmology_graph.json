@@ -1,0 +1,18 @@
+{
+  "entities": [
+    "tithi",
+    "nitya_devi",
+    "nakshatra",
+    "yantra",
+    "raga",
+    "marma"
+  ],
+  "relationships": [
+    "tithi -> nitya_devi",
+    "tithi -> element",
+    "tithi -> raga",
+    "tithi -> body_region",
+    "nakshatra -> deity",
+    "nakshatra -> element"
+  ]
+}

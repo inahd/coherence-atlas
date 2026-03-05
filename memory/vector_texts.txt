@@ -1,0 +1,3361 @@
+FILE:/opt/atlas/README.md
+# Coherence Atlas
+
+Relational atlas of Vedic sciences.
+
+Layers:
+- Cosmic (Panchanga)
+- Knowledge (Texts, Ontologies)
+- Material (Plants, Geography, Practice)
+
+Command interface:
+
+atlas today
+atlas journal
+atlas search
+
+
+FILE:/opt/atlas/bootstrap.py
+import os
+import yaml
+from datetime import datetime
+import swisseph as swe
+
+BASE="/opt/atlas"
+
+dirs=[
+"datasets",
+"panchanga",
+"texts",
+"journals"
+]
+
+for d in dirs:
+    os.makedirs(f"{BASE}/{d}",exist_ok=True)
+
+nakshatra=[
+"Ashwini","Bharani","Krittika","Rohini","Mrigashira",
+"Ardra","Punarvasu","Pushya","Ashlesha","Magha",
+"Purva Phalguni","Uttara Phalguni","Hasta","Chitra",
+"Swati","Vishakha","Anuradha","Jyeshtha","Mula",
+"Purva Ashadha","Uttara Ashadha","Shravana","Dhanishta",
+"Shatabhisha","Purva Bhadrapada","Uttara Bhadrapada","Revati"
+]
+
+with open(f"{BASE}/datasets/nakshatra.yaml","w") as f:
+    yaml.dump(nakshatra,f)
+
+now=datetime.utcnow()
+jd=swe.julday(now.year,now.month,now.day)
+
+sun=swe.calc_ut(jd,swe.SUN)[0][0]
+moon=swe.calc_ut(jd,swe.MOON)[0][0]
+
+tithi=int(((moon-sun)%360)/12)+1
+nak=int(moon/(360/27))
+
+data={
+"date":now.strftime("%Y-%m-%d"),
+"tithi":tithi,
+"nakshatra":nakshatra[nak],
+"sun":sun,
+"moon":moon
+}
+
+file=f"{BASE}/panchanga/{data['date']}.yaml"
+
+with open(file,"w") as f:
+    yaml.dump(data,f)
+
+print("Atlas bootstrap complete")
+print("Today's Nakshatra:",data["nakshatra"])
+print("Today's Tithi:",data["tithi"])
+
+
+FILE:/opt/atlas/text_index.txt
+404: Not Found
+404: Not Found
+404: Not Found
+404: Not Found
+
+
+FILE:/opt/atlas/PY
+
+
+FILE:/opt/atlas/echo
+
+
+FILE:/opt/atlas/EOF
+
+
+FILE:/opt/atlas/ruled_by
+
+
+FILE:/opt/atlas/deity
+
+
+FILE:/opt/atlas/atlas-rebuild
+#!/usr/bin/env bash
+
+BASE="/opt/atlas"
+
+echo "Rebuilding Coherence Atlas..."
+
+mkdir -p $BASE/{datasets,graph,panchanga,texts,journals,scripts}
+
+# Nakshatra dataset
+cat <<DATA > $BASE/datasets/nakshatra.yaml
+Swati:
+  deity: Vayu
+  ruler: Rahu
+  qualities:
+    - independence
+    - movement
+
+Rohini:
+  deity: Brahma
+  ruler: Moon
+  qualities:
+    - fertility
+    - growth
+DATA
+
+# Graph
+cat <<DATA > $BASE/graph/graph.yaml
+nodes:
+
+  Swati:
+    type: nakshatra
+    deity: Vayu
+    ruler: Rahu
+    qualities:
+      - independence
+      - movement
+
+  Rohini:
+    type: nakshatra
+    deity: Brahma
+    ruler: Moon
+    qualities:
+      - fertility
+      - growth
+
+edges:
+
+  - from: Swati
+    to: Rahu
+    relation: ruled_by
+
+  - from: Rohini
+    to: Moon
+    relation: ruled_by
+DATA
+
+echo "Atlas rebuilt."
+echo "Files recreated in $BASE"
+
+
+
+FILE:/opt/atlas/install_nakshatra_layer.sh
+#!/usr/bin/env bash
+
+BASE="/opt/atlas"
+
+echo "Installing full Nakshatra knowledge layer..."
+
+mkdir -p $BASE/datasets
+mkdir -p $BASE/graph
+
+cat <<DATA > $BASE/datasets/nakshatra.yaml
+Ashwini:
+  deity: Ashwini Kumaras
+  ruler: Ketu
+
+Bharani:
+  deity: Yama
+  ruler: Venus
+
+Krittika:
+  deity: Agni
+  ruler: Sun
+
+Rohini:
+  deity: Brahma
+  ruler: Moon
+
+Mrigashira:
+  deity: Soma
+  ruler: Mars
+
+Ardra:
+  deity: Rudra
+  ruler: Rahu
+
+Punarvasu:
+  deity: Aditi
+  ruler: Jupiter
+
+Pushya:
+  deity: Brihaspati
+  ruler: Saturn
+
+Ashlesha:
+  deity: Nagas
+  ruler: Mercury
+
+Magha:
+  deity: Pitrs
+  ruler: Ketu
+
+PurvaPhalguni:
+  deity: Bhaga
+  ruler: Venus
+
+UttaraPhalguni:
+  deity: Aryaman
+  ruler: Sun
+
+Hasta:
+  deity: Savitar
+  ruler: Moon
+
+Chitra:
+  deity: Vishvakarma
+  ruler: Mars
+
+Swati:
+  deity: Vayu
+  ruler: Rahu
+
+Vishakha:
+  deity: IndraAgni
+  ruler: Jupiter
+
+Anuradha:
+  deity: Mitra
+  ruler: Saturn
+
+Jyeshtha:
+  deity: Indra
+  ruler: Mercury
+
+Mula:
+  deity: Nirriti
+  ruler: Ketu
+
+PurvaAshadha:
+  deity: Apas
+  ruler: Venus
+
+UttaraAshadha:
+  deity: Vishvadevas
+  ruler: Sun
+
+Shravana:
+  deity: Vishnu
+  ruler: Moon
+
+Dhanishta:
+  deity: Vasus
+  ruler: Mars
+
+Shatabhisha:
+  deity: Varuna
+  ruler: Rahu
+
+PurvaBhadrapada:
+  deity: AjaEkapada
+  ruler: Jupiter
+
+UttaraBhadrapada:
+  deity: AhirBudhnya
+  ruler: Saturn
+
+Revati:
+  deity: Pushan
+  ruler: Mercury
+DATA
+
+echo "Nakshatra dataset installed."
+
+echo
+echo "Atlas now contains the full 27 Nakshatra system."
+
+
+
+FILE:/opt/atlas/install_cosmic_layer.sh
+#!/usr/bin/env bash
+
+BASE="/opt/atlas/datasets"
+
+echo "Installing cosmic ontology layer..."
+
+mkdir -p $BASE
+
+# Graha
+cat <<DATA > $BASE/graha.yaml
+Sun:
+  type: graha
+  qualities: authority, vitality
+
+Moon:
+  type: graha
+  qualities: mind, emotion
+
+Mars:
+  type: graha
+  qualities: energy, conflict
+
+Mercury:
+  type: graha
+  qualities: intellect, speech
+
+Jupiter:
+  type: graha
+  qualities: wisdom, expansion
+
+Venus:
+  type: graha
+  qualities: beauty, pleasure
+
+Saturn:
+  type: graha
+  qualities: discipline, restriction
+
+Rahu:
+  type: graha
+  qualities: disruption, obsession
+
+Ketu:
+  type: graha
+  qualities: detachment, liberation
+DATA
+
+
+# Rashi
+cat <<DATA > $BASE/rashi.yaml
+Aries:
+  element: fire
+  ruler: Mars
+
+Taurus:
+  element: earth
+  ruler: Venus
+
+Gemini:
+  element: air
+  ruler: Mercury
+
+Cancer:
+  element: water
+  ruler: Moon
+
+Leo:
+  element: fire
+  ruler: Sun
+
+Virgo:
+  element: earth
+  ruler: Mercury
+
+Libra:
+  element: air
+  ruler: Venus
+
+Scorpio:
+  element: water
+  ruler: Mars
+
+Sagittarius:
+  element: fire
+  ruler: Jupiter
+
+Capricorn:
+  element: earth
+  ruler: Saturn
+
+Aquarius:
+  element: air
+  ruler: Saturn
+
+Pisces:
+  element: water
+  ruler: Jupiter
+DATA
+
+
+echo "Cosmic ontology installed."
+
+echo
+echo "Datasets now available:"
+echo "  graha.yaml"
+echo "  rashi.yaml"
+echo "  nakshatra.yaml"
+
+
+
+FILE:/opt/atlas/atlas_engine.sh
+#!/usr/bin/env bash
+
+BASE="/opt/atlas"
+
+echo
+echo "=== COHERENCE ATLAS ENGINE ==="
+echo
+
+# ensure directories exist
+mkdir -p $BASE/panchanga
+mkdir -p $BASE/datasets
+mkdir -p $BASE/journals
+mkdir -p $BASE/graph
+
+echo "Directories verified."
+
+# compute today's panchanga
+if [ -f "$BASE/scripts/panchanga.py" ]; then
+    echo "Computing Panchanga..."
+    python $BASE/scripts/panchanga.py
+fi
+
+# list datasets
+echo
+echo "Datasets installed:"
+ls $BASE/datasets 2>/dev/null
+
+echo
+echo "Atlas system ready."
+echo
+echo "Useful commands:"
+echo "atlas today"
+echo "atlas journal"
+echo "atlas search <term>"
+
+echo
+
+
+FILE:/opt/atlas/associated_deity
+
+
+FILE:/opt/atlas/if
+
+
+FILE:/opt/atlas/nodes[name]=data
+
+
+FILE:/opt/atlas/26.0.1
+
+
+FILE:/opt/atlas/run_panel.sh
+#!/bin/bash
+source venv/bin/activate
+python scripts/control_panel.py
+
+
+FILE:/opt/atlas/explain
+
+
+FILE:/opt/atlas/setup.py
+from setuptools import setup
+
+setup(
+    name="atlas-ai",
+    version="0.1",
+    py_modules=["atlas"],
+    entry_points={
+        "console_scripts": [
+            "atlas=atlas:main",
+        ],
+    },
+)
+
+
+FILE:/opt/atlas/requests
+%!PS-Adobe-3.0
+%%Creator: (ImageMagick)
+%%Title: (requests)
+%%CreationDate: (2026-03-05T04:41:58+00:00)
+%%BoundingBox: -0 -0 1920 1156
+%%HiResBoundingBox: 0 0 1920 1156
+%%DocumentData: Clean7Bit
+%%LanguageLevel: 1
+%%Orientation: Portrait
+%%PageOrder: Ascend
+%%Pages: 1
+%%EndComments
+
+%%BeginDefaults
+%%EndDefaults
+
+%%BeginProlog
+%
+% Display a color image.  The image is displayed in color on
+% Postscript viewers or printers that support color, otherwise
+% it is displayed as grayscale.
+%
+/DirectClassPacket
+{
+  %
+  % Get a DirectClass packet.
+  %
+  % Parameters:
+  %   red.
+  %   green.
+  %   blue.
+  %   length: number of pixels minus one of this color (optional).
+  %
+  currentfile color_packet readhexstring pop pop
+  compression 0 eq
+  {
+    /number_pixels 3 def
+  }
+  {
+    currentfile byte readhexstring pop 0 get
+    /number_pixels exch 1 add 3 mul def
+  } ifelse
+  0 3 number_pixels 1 sub
+  {
+    pixels exch color_packet putinterval
+  } for
+  pixels 0 number_pixels getinterval
+} bind def
+
+/DirectClassImage
+{
+  %
+  % Display a DirectClass image.
+  %
+  systemdict /colorimage known
+  {
+    columns rows 8
+    [
+      columns 0 0
+      rows neg 0 rows
+    ]
+    { DirectClassPacket } false 3 colorimage
+  }
+  {
+    %
+    % No colorimage operator;  convert to grayscale.
+    %
+    columns rows 8
+    [
+      columns 0 0
+      rows neg 0 rows
+    ]
+    { GrayDirectClassPacket } image
+  } ifelse
+} bind def
+
+/GrayDirectClassPacket
+{
+  %
+  % Get a DirectClass packet;  convert to grayscale.
+  %
+  % Parameters:
+  %   red
+  %   green
+  %   blue
+  %   length: number of pixels minus one of this color (optional).
+  %
+  currentfile color_packet readhexstring pop pop
+  color_packet 0 get 0.299 mul
+  color_packet 1 get 0.587 mul add
+  color_packet 2 get 0.114 mul add
+  cvi
+  /gray_packet exch def
+  compression 0 eq
+  {
+    /number_pixels 1 def
+  }
+  {
+    currentfile byte readhexstring pop 0 get
+    /number_pixels exch 1 add def
+  } ifelse
+  0 1 number_pixels 1 sub
+  {
+    pixels exch gray_pa
+
+FILE:/opt/atlas/atlas
+#!/usr/bin/env python3
+import sys
+import subprocess
+
+def run(cmd):
+    subprocess.run(cmd, shell=True)
+
+if len(sys.argv) < 2:
+    print("""
+Atlas AI CLI
+
+Commands:
+
+chat        → AI router
+agent       → dev agent
+memory      → rebuild vector memory
+index       → rebuild project index
+models      → list ollama models
+dashboard   → start dashboard
+shell       → dev AI shell
+analyze     → analyze project code
+patch       → AI patch a file
+watch       → start project watcher
+research    → ingest research corpus
+""")
+    sys.exit()
+
+cmd = sys.argv[1]
+
+if cmd == "chat":
+    run("python /opt/atlas/scripts/ai_router.py")
+
+elif cmd == "agent":
+    run("python /opt/atlas/scripts/dev_agent.py")
+
+elif cmd == "memory":
+    run("python /opt/atlas/scripts/vector_memory.py")
+
+elif cmd == "index":
+    run("python /opt/atlas/scripts/index_project.py")
+
+elif cmd == "models":
+    run("ollama list")
+
+elif cmd == "dashboard":
+    run("python /opt/atlas/scripts/control_panel.py")
+
+elif cmd == "shell":
+    run("python /opt/atlas/scripts/dev_ai_shell.py")
+
+elif cmd == "analyze":
+    run("python /opt/atlas/scripts/code_analyzer.py")
+
+elif cmd == "patch":
+    if len(sys.argv) < 3:
+        print("Usage: atlas patch <file>")
+    else:
+        run(f"python /opt/atlas/scripts/ai_patch.py {sys.argv[2]}")
+
+elif cmd == "watch":
+    run("python /opt/atlas/scripts/atlas_watcher.py")
+
+elif cmd == "research":
+    run("python /opt/atlas/scripts/research_ingest.py")
+
+else:
+    print("Unknown command")
+
+
+FILE:/opt/atlas/atlas.py
+import sys
+import subprocess
+
+COMMANDS = {
+    "build": "python /opt/atlas/scripts/pipeline.py",
+    "chat": "python /opt/atlas/scripts/ai_router.py",
+    "agent": "python /opt/atlas/scripts/dev_agent.py",
+    "memory": "python /opt/atlas/scripts/vector_memory.py",
+    "index": "python /opt/atlas/scripts/index_project.py",
+    "models": "ollama list",
+    "dashboard": "python /opt/atlas/scripts/control_panel.py",
+    "shell": "python /opt/atlas/scripts/dev_ai_shell.py",
+    "analyze": "python /opt/atlas/scripts/code_analyzer.py",
+    "watch": "python /opt/atlas/scripts/atlas_watcher.py",
+    "research": "python /opt/atlas/scripts/research_ingest.py",
+    "concepts": "python /opt/atlas/scripts/concept_extract.py",
+    "graph": "python /opt/atlas/scripts/graph_viewer.py",
+    "cosmology": "python /opt/atlas/scripts/build_cosmology_graph.py",
+    "calendar": "python /opt/atlas/scripts/ritual_calendar.py"
+}
+
+def main():
+
+    if len(sys.argv) < 2:
+        print("\nAtlas CLI\n")
+        print("Commands:\n")
+        for c in COMMANDS:
+            print("  ", c)
+        return
+
+    cmd = sys.argv[1]
+
+    if cmd not in COMMANDS:
+        print("Unknown command")
+        return
+
+    subprocess.run(COMMANDS[cmd], shell=True)
+
+if __name__ == "__main__":
+    main()
+
+
+FILE:/opt/atlas/datasets/vedic_concepts.yaml
+schools:
+
+  - name: Advaita Vedanta
+    founder: Shankara
+    oneness: 1.0
+    difference: 0.0
+    core_idea: Brahman alone is real; the world is ultimately non-dual.
+
+  - name: Visistadvaita
+    founder: Ramanuja
+    oneness: 0.7
+    difference: 0.3
+    core_idea: Brahman is one with qualified diversity.
+
+  - name: Dvaita
+    founder: Madhva
+    oneness: 0.2
+    difference: 0.8
+    core_idea: God and the individual soul are eternally distinct.
+
+  - name: Acintya-bheda-abheda
+    founder: Chaitanya tradition
+    oneness: 0.5
+    difference: 0.5
+    core_idea: Simultaneous oneness and difference between the divine and creation.
+
+concepts:
+
+  - name: Brahman
+    category: ultimate_reality
+
+  - name: Jiva
+    category: individual_soul
+
+  - name: Ishvara
+    category: supreme_controller
+
+  - name: Bhakti
+    category: devotional_practice
+
+
+FILE:/opt/atlas/datasets/texts.yaml
+texts:
+
+  - title: Bhagavad Gita
+    tradition: Vedanta
+    chapters: 18
+
+  - title: Srimad Bhagavatam
+    tradition: Bhakti
+    cantos: 12
+
+  - title: Brihat Parashara Hora Shastra
+    tradition: Jyotish
+    subject: astrology
+
+
+
+FILE:/opt/atlas/datasets/nakshatra.yaml
+Ashwini:
+  type: nakshatra
+  deity: Ashwini Kumaras
+  ruler: Ketu
+
+Bharani:
+  type: nakshatra
+  deity: Yama
+  ruler: Venus
+
+Krittika:
+  type: nakshatra
+  deity: Agni
+  ruler: Sun
+
+Rohini:
+  type: nakshatra
+  deity: Brahma
+  ruler: Moon
+
+Mrigashira:
+  type: nakshatra
+  deity: Soma
+  ruler: Mars
+
+Ardra:
+  type: nakshatra
+  deity: Rudra
+  ruler: Rahu
+
+Punarvasu:
+  type: nakshatra
+  deity: Aditi
+  ruler: Jupiter
+
+Pushya:
+  type: nakshatra
+  deity: Brihaspati
+  ruler: Saturn
+
+Ashlesha:
+  type: nakshatra
+  deity: Nagas
+  ruler: Mercury
+
+Magha:
+  type: nakshatra
+  deity: Pitrs
+  ruler: Ketu
+
+PurvaPhalguni:
+  type: nakshatra
+  deity: Bhaga
+  ruler: Venus
+
+UttaraPhalguni:
+  type: nakshatra
+  deity: Aryaman
+  ruler: Sun
+
+Hasta:
+  type: nakshatra
+  deity: Savitar
+  ruler: Moon
+
+Chitra:
+  type: nakshatra
+  deity: Vishvakarma
+  ruler: Mars
+
+Swati:
+  type: nakshatra
+  deity: Vayu
+  ruler: Rahu
+
+Vishakha:
+  type: nakshatra
+  deity: IndraAgni
+  ruler: Jupiter
+
+Anuradha:
+  type: nakshatra
+  deity: Mitra
+  ruler: Saturn
+
+Jyeshtha:
+  type: nakshatra
+  deity: Indra
+  ruler: Mercury
+
+Mula:
+  type: nakshatra
+  deity: Nirriti
+  ruler: Ketu
+
+PurvaAshadha:
+  type: nakshatra
+  deity: Apas
+  ruler: Venus
+
+UttaraAshadha:
+  type: nakshatra
+  deity: Vishvadevas
+  ruler: Sun
+
+Shravana:
+  type: nakshatra
+  deity: Vishnu
+  ruler: Moon
+
+Dhanishta:
+  type: nakshatra
+  deity: Vasus
+  ruler: Mars
+
+Shatabhisha:
+  type: nakshatra
+  deity: Varuna
+  ruler: Rahu
+
+PurvaBhadrapada:
+  type: nakshatra
+  deity: AjaEkapada
+  ruler: Jupiter
+
+UttaraBhadrapada:
+  type: nakshatra
+  deity: AhirBudhnya
+  ruler: Saturn
+
+Revati:
+  type: nakshatra
+  deity: Pushan
+  ruler: Mercury
+
+
+FILE:/opt/atlas/datasets/jyotish_core.yaml
+graha:
+  - Sun
+  - Moon
+  - Mars
+  - Mercury
+  - Jupiter
+  - Venus
+  - Saturn
+  - Rahu
+  - Ketu
+
+rashi:
+  - Aries
+  - Taurus
+  - Gemini
+  - Cancer
+  - Leo
+  - Virgo
+  - Libra
+  - Scorpio
+  - Sagittarius
+  - Capricorn
+  - Aquarius
+  - Pisces
+
+nakshatra:
+  - Ashwini
+  - Bharani
+  - Krittika
+  - Rohini
+  - Mrigashira
+  - Ardra
+  - Punarvasu
+  - Pushya
+  - Ashlesha
+  - Magha
+  - Purva Phalguni
+  - Uttara Phalguni
+  - Hasta
+  - Chitra
+  - Swati
+  - Vishakha
+  - Anuradha
+  - Jyeshtha
+  - Mula
+  - Purva Ashadha
+  - Uttara Ashadha
+  - Shravana
+  - Dhanishta
+  - Shatabhisha
+  - Purva Bhadrapada
+  - Uttara Bhadrapada
+  - Revati
+
+vedanta_schools:
+  - Advaita
+  - Visistadvaita
+  - Dvaita
+  - Acintya-bheda-abheda
+
+
+FILE:/opt/atlas/datasets/graha.yaml
+Sun:
+  type: graha
+  qualities:
+    - authority
+    - vitality
+
+Moon:
+  type: graha
+  qualities:
+    - mind
+    - emotion
+
+Mars:
+  type: graha
+  qualities:
+    - energy
+    - conflict
+
+Mercury:
+  type: graha
+  qualities:
+    - intellect
+    - speech
+
+Jupiter:
+  type: graha
+  qualities:
+    - wisdom
+    - expansion
+
+Venus:
+  type: graha
+  qualities:
+    - beauty
+    - pleasure
+
+Saturn:
+  type: graha
+  qualities:
+    - discipline
+    - restriction
+
+Rahu:
+  type: graha
+  qualities:
+    - disruption
+    - obsession
+
+Ketu:
+  type: graha
+  qualities:
+    - detachment
+    - liberation
+
+
+FILE:/opt/atlas/datasets/rashi.yaml
+Aries:
+  element: fire
+  ruler: Mars
+
+Taurus:
+  element: earth
+  ruler: Venus
+
+Gemini:
+  element: air
+  ruler: Mercury
+
+Cancer:
+  element: water
+  ruler: Moon
+
+Leo:
+  element: fire
+  ruler: Sun
+
+Virgo:
+  element: earth
+  ruler: Mercury
+
+Libra:
+  element: air
+  ruler: Venus
+
+Scorpio:
+  element: water
+  ruler: Mars
+
+Sagittarius:
+  element: fire
+  ruler: Jupiter
+
+Capricorn:
+  element: earth
+  ruler: Saturn
+
+Aquarius:
+  element: air
+  ruler: Saturn
+
+Pisces:
+  element: water
+  ruler: Jupiter
+
+
+FILE:/opt/atlas/datasets/deities.yaml
+nodes:
+
+  Hanuman:
+    type: avatar
+    quality: devotion_strength
+
+  Vayu:
+    type: deva
+    domain: wind
+
+  Shiva:
+    type: deva
+    domain: transformation
+
+edges:
+
+  - from: Vayu
+    relation: associated_with
+    to: Hanuman
+
+  - from: Shiva
+    relation: wields
+    to: Trident
+
+
+FILE:/opt/atlas/datasets/jyotish/nakshatra.yaml
+nakshatra:
+
+  - name: Rohini
+    ruler: Moon
+    deity: Prajapati
+    qualities:
+      - fertility
+      - growth
+
+  - name: Pushya
+    ruler: Saturn
+    deity: Brihaspati
+    qualities:
+      - nourishment
+      - protection
+
+
+FILE:/opt/atlas/datasets/jyotish/graha.yaml
+graha:
+
+  - name: Sun
+    sanskrit: Surya
+    qualities:
+      - vitality
+      - authority
+
+  - name: Moon
+    sanskrit: Chandra
+    qualities:
+      - mind
+      - emotion
+
+  - name: Mars
+    sanskrit: Mangala
+    qualities:
+      - action
+      - energy
+
+
+FILE:/opt/atlas/datasets/jyotish/rashi.yaml
+rashi:
+
+  - name: Aries
+    sanskrit: Mesha
+    element: fire
+
+  - name: Taurus
+    sanskrit: Vrishabha
+    element: earth
+
+  - name: Gemini
+    sanskrit: Mithuna
+    element: air
+
+
+FILE:/opt/atlas/datasets/plants/sacred_plants.yaml
+plants:
+
+  - name: Banyan
+    sanskrit: Vata
+    symbolism:
+      - immortality
+      - shelter
+
+  - name: Tulsi
+    sanskrit: Tulasi
+    symbolism:
+      - purity
+      - devotion
+
+
+FILE:/opt/atlas/datasets/ritual/rituals.yaml
+rituals:
+
+  - name: Agnihotra
+    type: fire ritual
+    purpose:
+      - purification
+      - harmony
+
+  - name: Sandhya Vandana
+    type: daily ritual
+    purpose:
+      - meditation
+      - alignment
+
+
+FILE:/opt/atlas/journals/2026-03-05.md
+# Journal 2026-03-05
+
+
+
+FILE:/opt/atlas/texts/bhagavad_gita.txt
+404: Not Found
+
+FILE:/opt/atlas/texts/upanishads.txt
+404: Not Found
+
+FILE:/opt/atlas/texts/yoga_sutras.txt
+404: Not Found
+
+FILE:/opt/atlas/texts/isha_upanishad.txt
+404: Not Found
+
+FILE:/opt/atlas/scripts/panchanga.py
+import swisseph as swe
+import yaml
+from datetime import datetime
+
+# Julian day
+now = datetime.utcnow()
+jd = swe.julday(now.year, now.month, now.day)
+
+# planetary longitudes
+sun = swe.calc_ut(jd, swe.SUN)[0][0]
+moon = swe.calc_ut(jd, swe.MOON)[0][0]
+
+# tithi
+tithi = int(((moon - sun) % 360) / 12) + 1
+
+# nakshatra
+nakshatra_index = int(moon / (360/27))
+
+nakshatra_names = [
+"Ashwini","Bharani","Krittika","Rohini","Mrigashira",
+"Ardra","Punarvasu","Pushya","Ashlesha","Magha",
+"Purva Phalguni","Uttara Phalguni","Hasta","Chitra",
+"Swati","Vishakha","Anuradha","Jyeshtha","Mula",
+"Purva Ashadha","Uttara Ashadha","Shravana","Dhanishta",
+"Shatabhisha","Purva Bhadrapada","Uttara Bhadrapada","Revati"
+]
+
+data = {
+"date": now.strftime("%Y-%m-%d"),
+"sun_longitude": sun,
+"moon_longitude": moon,
+"tithi": tithi,
+"nakshatra": nakshatra_names[nakshatra_index]
+}
+
+file = f"/opt/atlas/panchanga/{data['date']}.yaml"
+
+with open(file,"w") as f:
+    yaml.dump(data,f)
+
+print("Panchanga saved:", file)
+
+
+FILE:/opt/atlas/scripts/generate_baseline.sh
+#!/usr/bin/env bash
+
+BASE="/opt/atlas/datasets"
+
+mkdir -p $BASE
+
+cat <<EOF > $BASE/jyotish_core.yaml
+graha:
+  - Sun
+  - Moon
+  - Mars
+  - Mercury
+  - Jupiter
+  - Venus
+  - Saturn
+  - Rahu
+  - Ketu
+
+rashi:
+  - Aries
+  - Taurus
+  - Gemini
+  - Cancer
+  - Leo
+  - Virgo
+  - Libra
+  - Scorpio
+  - Sagittarius
+  - Capricorn
+  - Aquarius
+  - Pisces
+
+nakshatra:
+  - Ashwini
+  - Bharani
+  - Krittika
+  - Rohini
+  - Mrigashira
+  - Ardra
+  - Punarvasu
+  - Pushya
+  - Ashlesha
+  - Magha
+  - Purva Phalguni
+  - Uttara Phalguni
+  - Hasta
+  - Chitra
+  - Swati
+  - Vishakha
+  - Anuradha
+  - Jyeshtha
+  - Mula
+  - Purva Ashadha
+  - Uttara Ashadha
+  - Shravana
+  - Dhanishta
+  - Shatabhisha
+  - Purva Bhadrapada
+  - Uttara Bhadrapada
+  - Revati
+
+vedanta_schools:
+  - Advaita
+  - Visistadvaita
+  - Dvaita
+  - Acintya-bheda-abheda
+EOF
+
+echo "Baseline Vedic dataset created in /opt/atlas/datasets/"
+
+
+
+FILE:/opt/atlas/scripts/atlas_update.py
+import subprocess
+import os
+
+BASE="/opt/atlas"
+
+def run(cmd):
+    print("\nRunning:", cmd)
+    subprocess.run(cmd, shell=True)
+
+print("\n=== Atlas Update Pipeline ===\n")
+
+# 1. Compute today's panchanga
+panchanga = os.path.join(BASE,"scripts/panchanga.py")
+if os.path.exists(panchanga):
+    run(f"python {panchanga}")
+
+# 2. Ensure graph exists
+graph = os.path.join(BASE,"graph")
+if not os.path.exists(graph):
+    print("Creating graph directory")
+    os.makedirs(graph)
+
+# 3. Verify datasets
+datasets = os.path.join(BASE,"datasets")
+if os.path.exists(datasets):
+    print("Datasets found:")
+    for f in os.listdir(datasets):
+        print("  ",f)
+
+# 4. Journals
+journal_dir = os.path.join(BASE,"journals")
+os.makedirs(journal_dir,exist_ok=True)
+
+print("\nAtlas update complete.\n")
+
+
+FILE:/opt/atlas/scripts/ingest_dataset.py
+import yaml
+import sys
+import os
+
+BASE="/opt/atlas"
+DATASETS=os.path.join(BASE,"datasets")
+GRAPH=os.path.join(BASE,"graph","graph.yaml")
+
+dataset=sys.argv[1]
+
+file=os.path.join(DATASETS,f"{dataset}.yaml")
+
+if not os.path.exists(file):
+    print("Dataset not found:",file)
+    exit()
+
+data=yaml.safe_load(open(file))
+
+graph=yaml.safe_load(open(GRAPH))
+
+nodes=graph.get("nodes",{})
+edges=graph.get("edges",[])
+
+def add_node(name,data):
+    if name not in nodes:
+        nodes[name]=data
+
+def add_edge(a,rel,b):
+    edge={"from":a,"relation":rel,"to":b}
+    if edge not in edges:
+        edges.append(edge)
+
+# ingest nodes
+for n in data.get("nodes",{}):
+    add_node(n,data["nodes"][n])
+
+# ingest edges
+for e in data.get("edges",[]):
+    add_edge(e["from"],e["relation"],e["to"])
+
+graph["nodes"]=nodes
+graph["edges"]=edges
+
+with open(GRAPH,"w") as f:
+    yaml.dump(graph,f)
+
+print("Dataset ingested:",dataset)
+
+
+FILE:/opt/atlas/scripts/generate_jyotish.py
+import yaml
+import os
+
+GRAPH="/opt/atlas/graph/graph.yaml"
+
+nakshatra = [
+("Ashwini","Ashwini Kumaras","Ketu"),
+("Bharani","Yama","Venus"),
+("Krittika","Agni","Sun"),
+("Rohini","Brahma","Moon"),
+("Mrigashira","Soma","Mars"),
+("Ardra","Rudra","Rahu"),
+("Punarvasu","Aditi","Jupiter"),
+("Pushya","Brihaspati","Saturn"),
+("Ashlesha","Nagas","Mercury"),
+("Magha","Pitris","Ketu"),
+("Purva Phalguni","Bhaga","Venus"),
+("Uttara Phalguni","Aryaman","Sun"),
+("Hasta","Savitar","Moon"),
+("Chitra","Tvashtar","Mars"),
+("Swati","Vayu","Rahu"),
+("Vishakha","Indra-Agni","Jupiter"),
+("Anuradha","Mitra","Saturn"),
+("Jyeshtha","Indra","Mercury"),
+("Mula","Nirriti","Ketu"),
+("Purva Ashadha","Apas","Venus"),
+("Uttara Ashadha","Vishvadevas","Sun"),
+("Shravana","Vishnu","Moon"),
+("Dhanishta","Vasus","Mars"),
+("Shatabhisha","Varuna","Rahu"),
+("Purva Bhadrapada","Aja Ekapada","Jupiter"),
+("Uttara Bhadrapada","Ahirbudhnya","Saturn"),
+("Revati","Pushan","Mercury")
+]
+
+if os.path.exists(GRAPH):
+    graph=yaml.safe_load(open(GRAPH))
+else:
+    graph={"nodes":{},"edges":[]}
+
+nodes=graph["nodes"]
+edges=graph["edges"]
+
+for name,deity,ruler in nakshatra:
+
+    nodes[name]={
+        "type":"nakshatra",
+        "deity":deity,
+        "ruler":ruler
+    }
+
+    edges.append({"from":name,"to":ruler,"type":"ruled_by"})
+    edges.append({"from":name,"to":deity,"type":"associated_deity"})
+
+with open(GRAPH,"w") as f:
+    yaml.dump(graph,f)
+
+print("Jyotish structure generated.")
+
+
+FILE:/opt/atlas/scripts/build_universe.py
+import yaml, os
+
+GRAPH="/opt/atlas/graph/graph.yaml"
+
+nakshatra = [
+("Ashwini","Ashwini Kumaras","Ketu"),
+("Bharani","Yama","Venus"),
+("Krittika","Agni","Sun"),
+("Rohini","Brahma","Moon"),
+("Mrigashira","Soma","Mars"),
+("Ardra","Rudra","Rahu"),
+("Punarvasu","Aditi","Jupiter"),
+("Pushya","Brihaspati","Saturn"),
+("Ashlesha","Nagas","Mercury"),
+("Magha","Pitris","Ketu"),
+("Purva Phalguni","Bhaga","Venus"),
+("Uttara Phalguni","Aryaman","Sun"),
+("Hasta","Savitar","Moon"),
+("Chitra","Tvashtar","Mars"),
+("Swati","Vayu","Rahu"),
+("Vishakha","Indra-Agni","Jupiter"),
+("Anuradha","Mitra","Saturn"),
+("Jyeshtha","Indra","Mercury"),
+("Mula","Nirriti","Ketu"),
+("Purva Ashadha","Apas","Venus"),
+("Uttara Ashadha","Vishvadevas","Sun"),
+("Shravana","Vishnu","Moon"),
+("Dhanishta","Vasus","Mars"),
+("Shatabhisha","Varuna","Rahu"),
+("Purva Bhadrapada","Aja Ekapada","Jupiter"),
+("Uttara Bhadrapada","Ahirbudhnya","Saturn"),
+("Revati","Pushan","Mercury")
+]
+
+graha=[
+"Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn","Rahu","Ketu"
+]
+
+rashi=[
+"Aries","Taurus","Gemini","Cancer","Leo","Virgo",
+"Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"
+]
+
+if os.path.exists(GRAPH):
+    graph=yaml.safe_load(open(GRAPH))
+else:
+    graph={"nodes":{},"edges":[]}
+
+nodes=graph["nodes"]
+edges=graph["edges"]
+
+for g in graha:
+    nodes[g]={"type":"graha"}
+
+for r in rashi:
+    nodes[r]={"type":"rashi"}
+
+for name,deity,ruler in nakshatra:
+
+    nodes[name]={
+        "type":"nakshatra",
+        "deity":deity,
+        "ruler":ruler
+    }
+
+    edges.append({"from":name,"to":ruler,"type":"ruled_by"})
+    edges.append({"from":name,"to":deity,"type":"associated_deity"})
+
+with open(GRAPH,"w") as f:
+    yaml.dump(graph,f)
+
+print("Atlas cosmic ontology generated.")
+
+
+FILE:/opt/atlas/scripts/query_graph.py
+import yaml
+import sys
+
+graph = yaml.safe_load(open("/opt/atlas/graph/graph.yaml"))
+
+nodes = graph["nodes"]
+edges = graph["edges"]
+
+if len(sys.argv) < 2:
+    print("usage: query_graph <node>")
+    exit()
+
+node = sys.argv[1]
+
+if node in nodes:
+    print(nodes[node])
+else:
+    print("node not found")
+
+for e in edges:
+    if e.get("from") == node:
+        rel = e.get("relation") or e.get("type")
+        print("->", rel, e.get("to"))
+
+
+FILE:/opt/atlas/scripts/add_nakshatra_qualities.py
+import yaml
+
+file="/opt/atlas/graph/graph.yaml"
+
+g=yaml.safe_load(open(file))
+
+nodes=g["nodes"]
+edges=g["edges"]
+
+qualities={
+"Ashwini":["healing","speed","beginnings"],
+"Bharani":["transformation","discipline","restraint"],
+"Krittika":["fire","purification","cutting"],
+"Rohini":["growth","fertility","beauty"],
+"Mrigashira":["seeking","curiosity","wandering"],
+"Ardra":["storm","intensity","change"],
+"Punarvasu":["renewal","return","restoration"],
+"Pushya":["nourishment","support","prosperity"],
+"Ashlesha":["serpent","coiling","mystery"],
+"Magha":["ancestors","authority","heritage"],
+"Purva Phalguni":["pleasure","creativity","union"],
+"Uttara Phalguni":["contracts","friendship","stability"],
+"Hasta":["craft","skill","hands"],
+"Chitra":["beauty","design","architecture"],
+"Swati":["wind","independence","movement"],
+"Vishakha":["focus","achievement","duality"],
+"Anuradha":["friendship","devotion","cooperation"],
+"Jyeshtha":["power","seniority","protection"],
+"Mula":["roots","destruction","investigation"],
+"Purva Ashadha":["invincibility","water","purification"],
+"Uttara Ashadha":["victory","truth","endurance"],
+"Shravana":["listening","learning","transmission"],
+"Dhanishta":["rhythm","music","prosperity"],
+"Shatabhisha":["healing","mystery","seclusion"],
+"Purva Bhadrapada":["intensity","vision","asceticism"],
+"Uttara Bhadrapada":["depth","stability","patience"],
+"Revati":["prosperity","nurturing","travel"]
+}
+
+for n,qs in qualities.items():
+
+    for q in qs:
+
+        qnode="quality_"+q
+
+        if qnode not in nodes:
+            nodes[qnode]={"type":"quality","name":q}
+
+        edges.append({
+            "from":n,
+            "to":qnode,
+            "type":"has_quality"
+        })
+
+yaml.dump(g,open(file,"w"))
+
+print("Nakshatra qualities added.")
+
+
+FILE:/opt/atlas/scripts/add_deity_layer.py
+import yaml
+import os
+
+GRAPH="/opt/atlas/graph/graph.yaml"
+
+if not os.path.exists(GRAPH):
+    print("Graph not found:", GRAPH)
+    exit()
+
+graph=yaml.safe_load(open(GRAPH))
+
+nodes=graph.get("nodes",{})
+edges=graph.get("edges",[])
+
+def add_node(name,data):
+    if name not in nodes:
+        nodes[name]=data
+
+def add_edge(a,rel,b):
+    edges.append({
+        "from":a,
+        "relation":rel,
+        "to":b
+    })
+
+# Deity nodes
+add_node("Vayu",{"type":"deva","domain":"wind"})
+add_node("Agni",{"type":"deva","domain":"fire"})
+add_node("Soma",{"type":"deva","domain":"moon"})
+add_node("Indra",{"type":"deva","domain":"storms"})
+add_node("Yama",{"type":"deva","domain":"death"})
+add_node("Varuna",{"type":"deva","domain":"cosmic_waters"})
+add_node("Kubera",{"type":"deva","domain":"wealth"})
+add_node("Hanuman",{"type":"avatar","domain":"devotion_strength"})
+
+# Relationships
+
+add_edge("Swati","deity","Vayu")
+add_edge("Vayu","associated_with","Hanuman")
+
+add_edge("Krittika","deity","Agni")
+add_edge("Rohini","deity","Soma")
+add_edge("Jyeshtha","deity","Indra")
+add_edge("Bharani","deity","Yama")
+add_edge("Shatabhisha","deity","Varuna")
+add_edge("Dhanishta","deity","Kubera")
+
+graph["nodes"]=nodes
+graph["edges"]=edges
+
+with open(GRAPH,"w") as f:
+    yaml.dump(graph,f)
+
+print("Deity layer added to Atlas graph.")
+
+
+FILE:/opt/atlas/scripts/add_tithi_layer.py
+import yaml
+import os
+
+GRAPH="/opt/atlas/graph/graph.yaml"
+
+if not os.path.exists(GRAPH):
+    print("Graph not found:", GRAPH)
+    exit()
+
+graph=yaml.safe_load(open(GRAPH))
+
+nodes=graph.get("nodes",{})
+edges=graph.get("edges",[])
+
+def add_node(name,data):
+    if name not in nodes:
+        nodes[name]=data
+
+def add_edge(a,rel,b):
+    edges.append({
+        "from":a,
+        "relation":rel,
+        "to":b
+    })
+
+# Tithi nodes
+tithis=[
+"Pratipada","Dvitiya","Tritiya","Chaturthi","Panchami",
+"Shashthi","Saptami","Ashtami","Navami","Dashami",
+"Ekadashi","Dvadashi","Trayodashi","Chaturdashi","Purnima"
+]
+
+for t in tithis:
+    add_node(t,{"type":"tithi"})
+
+# Major associations
+add_node("Ganesha",{"type":"deva"})
+add_node("Durga",{"type":"devi"})
+add_node("Vishnu",{"type":"deva"})
+add_node("Shiva",{"type":"deva"})
+add_node("Lakshmi",{"type":"devi"})
+
+add_edge("Chaturthi","associated_deity","Ganesha")
+add_edge("Ashtami","associated_deity","Durga")
+add_edge("Ekadashi","associated_deity","Vishnu")
+add_edge("Trayodashi","associated_deity","Shiva")
+add_edge("Purnima","associated_deity","Lakshmi")
+
+graph["nodes"]=nodes
+graph["edges"]=edges
+
+with open(GRAPH,"w") as f:
+    yaml.dump(graph,f)
+
+print("Tithi layer added to Atlas.")
+
+
+FILE:/opt/atlas/scripts/graph_utils.py
+def add_node(nodes,name,data):
+    if name not in nodes:
+        nodes[name]=data
+
+def add_edge(edges,a,rel,b):
+    edge={"from":a,"relation":rel,"to":b}
+    if edge not in edges:
+        edges.append(edge)
+
+
+FILE:/opt/atlas/scripts/extract_text_knowledge.py
+import yaml
+import os
+import re
+import sys
+
+GRAPH="/opt/atlas/graph/graph.yaml"
+
+textfile=sys.argv[1]
+
+if not os.path.exists(textfile):
+    print("file not found")
+    exit()
+
+graph=yaml.safe_load(open(GRAPH))
+
+nodes=graph.get("nodes",{})
+edges=graph.get("edges",[])
+
+def add_node(n):
+    if n not in nodes:
+        nodes[n]={"type":"concept"}
+
+def add_edge(a,r,b):
+    edge={"from":a,"relation":r,"to":b}
+    if edge not in edges:
+        edges.append(edge)
+
+text=open(textfile).read()
+
+# simple relationship extraction
+patterns=[
+(r"(\w+) is the deity of (\w+)","deity_of"),
+(r"(\w+) rules (\w+)","rules"),
+(r"(\w+) represents (\w+)","represents"),
+(r"(\w+) wields (\w+)","wields")
+]
+
+for p,rel in patterns:
+    for a,b in re.findall(p,text):
+        add_node(a)
+        add_node(b)
+        add_edge(a,rel,b)
+
+graph["nodes"]=nodes
+graph["edges"]=edges
+
+yaml.dump(graph,open(GRAPH,"w"))
+
+print("knowledge extracted from text")
+
+
+FILE:/opt/atlas/scripts/atlas_meaning_today.py
+import yaml
+import swisseph as swe
+from datetime import datetime
+
+GRAPH="/opt/atlas/graph/graph.yaml"
+
+# load graph
+graph=yaml.safe_load(open(GRAPH))
+nodes=graph["nodes"]
+edges=graph["edges"]
+
+# compute panchanga
+now=datetime.utcnow()
+jd=swe.julday(now.year,now.month,now.day)
+
+sun=swe.calc_ut(jd,swe.SUN)[0][0]
+moon=swe.calc_ut(jd,swe.MOON)[0][0]
+
+tithi=int(((moon-sun)%360)/12)+1
+nak_index=int(moon/(360/27))
+
+tithi_names=[
+"Pratipada","Dvitiya","Tritiya","Chaturthi","Panchami",
+"Shashthi","Saptami","Ashtami","Navami","Dashami",
+"Ekadashi","Dvadashi","Trayodashi","Chaturdashi","Purnima"
+]
+
+nakshatra_names=[
+"Ashwini","Bharani","Krittika","Rohini","Mrigashira",
+"Ardra","Punarvasu","Pushya","Ashlesha","Magha",
+"PurvaPhalguni","UttaraPhalguni","Hasta","Chitra",
+"Swati","Vishakha","Anuradha","Jyeshtha","Mula",
+"PurvaAshadha","UttaraAshadha","Shravana","Dhanishta",
+"Shatabhisha","PurvaBhadrapada","UttaraBhadrapada","Revati"
+]
+
+tithi_name=tithi_names[(tithi-1)%15]
+nakshatra=nakshatra_names[nak_index]
+
+print("Date:",now.strftime("%Y-%m-%d"))
+print("Tithi:",tithi_name)
+print("Nakshatra:",nakshatra)
+
+print("\nMeaning:")
+
+# interpret via graph
+for e in edges:
+    if e["from"]==nakshatra:
+        print("Nakshatra relation:",e.get("relation", e.get("type","")),e["to"])
+
+for e in edges:
+    if e["from"]==tithi_name:
+        print("Tithi relation:",e.get("relation", e.get("type","")),e["to"])
+
+
+FILE:/opt/atlas/scripts/atlas_doctor.py
+import yaml
+import os
+
+GRAPH="/opt/atlas/graph/graph.yaml"
+
+if not os.path.exists(GRAPH):
+    print("Graph not found")
+    exit()
+
+graph=yaml.safe_load(open(GRAPH))
+
+nodes=graph.get("nodes",{})
+edges=graph.get("edges",[])
+
+print("Atlas Doctor Running...\n")
+
+# --- Fix schema drift
+fixed=0
+for e in edges:
+    if "type" in e and "relation" not in e:
+        e["relation"]=e["type"]
+        del e["type"]
+        fixed+=1
+
+if fixed:
+    print("Fixed schema drift:",fixed,"edges")
+
+# --- Remove duplicates
+seen=set()
+clean=[]
+dup=0
+
+for e in edges:
+    key=(e["from"],e["relation"],e["to"])
+    if key not in seen:
+        clean.append(e)
+        seen.add(key)
+    else:
+        dup+=1
+
+edges=clean
+
+if dup:
+    print("Removed duplicate edges:",dup)
+
+# --- Ensure nodes exist
+missing=0
+for e in edges:
+    if e["from"] not in nodes:
+        nodes[e["from"]]={"type":"concept"}
+        missing+=1
+    if e["to"] not in nodes:
+        nodes[e["to"]]={"type":"concept"}
+        missing+=1
+
+if missing:
+    print("Created missing nodes:",missing)
+
+# --- Save graph
+graph["nodes"]=nodes
+graph["edges"]=edges
+
+yaml.dump(graph,open(GRAPH,"w"))
+
+# --- Stats
+print("\nGraph Stats:")
+print("Nodes:",len(nodes))
+print("Edges:",len(edges))
+
+print("\nAtlas graph healthy.")
+
+
+FILE:/opt/atlas/scripts/generate_docs.py
+import yaml
+from collections import defaultdict
+
+GRAPH="/opt/atlas/graph/graph.yaml"
+OUT="/opt/atlas/docs/"
+
+graph=yaml.safe_load(open(GRAPH))
+
+nodes=graph.get("nodes",{})
+edges=graph.get("edges",[])
+
+node_types=defaultdict(list)
+relations=set()
+
+for name,data in nodes.items():
+    t=data.get("type","unknown")
+    node_types[t].append(name)
+
+for e in edges:
+    r=e.get("relation",e.get("type","unknown"))
+    relations.add(r)
+
+# ensure docs folder exists
+import os
+os.makedirs(OUT,exist_ok=True)
+
+# overview
+with open(OUT+"atlas-overview.md","w") as f:
+    f.write("# Atlas Knowledge Graph\n\n")
+    f.write(f"Nodes: {len(nodes)}\n\n")
+    f.write(f"Edges: {len(edges)}\n\n")
+
+# node types
+with open(OUT+"node-types.md","w") as f:
+    f.write("# Node Types\n\n")
+    for t,items in node_types.items():
+        f.write(f"## {t}\n\n")
+        for i in sorted(items):
+            f.write(f"- {i}\n")
+        f.write("\n")
+
+# relation types
+with open(OUT+"relation-types.md","w") as f:
+    f.write("# Relation Types\n\n")
+    for r in sorted(relations):
+        f.write(f"- {r}\n")
+
+print("Atlas documentation generated.")
+
+
+FILE:/opt/atlas/scripts/control_panel.py
+from flask import Flask
+import subprocess
+import os
+
+app = Flask(__name__)
+
+ROOT="/opt/atlas"
+
+def run(cmd):
+    return subprocess.getoutput(cmd)
+
+@app.route("/")
+def home():
+
+    cpu = run("top -bn1 | grep 'Cpu(s)'")
+    mem = run("free -h | grep Mem")
+    git = run("git status -sb 2>/dev/null")
+    models = run("ollama list")
+
+    return f"""
+<html>
+<head>
+<title>Atlas AI Control Center</title>
+<style>
+body {{ background:#111;color:#eee;font-family:Arial;padding:30px }}
+h1 {{ color:#6cf }}
+.box {{ margin-bottom:30px }}
+pre {{ background:#222;padding:10px }}
+a {{ color:#9f9 }}
+</style>
+</head>
+<body>
+
+<h1>Atlas AI Control Center</h1>
+
+<div class="box">
+<h2>System</h2>
+<pre>{cpu}
+{mem}</pre>
+</div>
+
+<div class="box">
+<h2>Git</h2>
+<pre>{git}</pre>
+<a href="/git_pull">Pull</a> |
+<a href="/git_push">Push</a>
+</div>
+
+<div class="box">
+<h2>Ollama</h2>
+<pre>{models}</pre>
+<a href="/start_ollama">Start Ollama</a>
+</div>
+
+<div class="box">
+<h2>AI Tools</h2>
+<a href="/run_shell">Launch AI Dev Shell</a><br>
+<a href="/build_index">Rebuild Project Index</a><br>
+<a href="/build_vectors">Rebuild Vector Memory</a>
+</div>
+
+</body>
+</html>
+"""
+
+@app.route("/start_ollama")
+def start_ollama():
+    return "<pre>"+run("ollama serve &")+"</pre>"
+
+@app.route("/git_pull")
+def git_pull():
+    return "<pre>"+run("git pull")+"</pre>"
+
+@app.route("/git_push")
+def git_push():
+    return "<pre>"+run("git add . && git commit -m 'dashboard update' && git push")+"</pre>"
+
+@app.route("/run_shell")
+def run_shell():
+    os.system("gnome-terminal -- bash -c 'cd /opt/atlas && source venv/bin/activate && python scripts/dev_ai_shell.py'")
+    return "AI shell launched."
+
+@app.route("/build_index")
+def build_index():
+    return "<pre>"+run("python scripts/index_project.py")+"</pre>"
+
+@app.route("/build_vectors")
+def build_vectors():
+    return "<pre>"+run("python scripts/vector_memory.py")+"</pre>"
+
+app.run(port=7000)
+
+
+FILE:/opt/atlas/scripts/ai_router.py
+import requests
+from research_search import search
+
+OLLAMA_URL = "http://localhost:11434/api/generate"
+MODEL = "phi3"
+
+def ask_llm(prompt):
+
+    r = requests.post(
+        OLLAMA_URL,
+        json={
+            "model": MODEL,
+            "prompt": prompt,
+            "stream": False
+        }
+    )
+
+    return r.json()["response"]
+
+def ask(query):
+
+    context = search(query)
+
+    prompt = f"""
+You are a research assistant.
+
+Use the following research context to answer the question.
+
+Context:
+{context}
+
+Question:
+{query}
+
+Answer with synthesis and explanation.
+"""
+
+    return ask_llm(prompt)
+
+if __name__ == "__main__":
+
+    while True:
+
+        q = input("atlas-chat> ")
+
+        if q.strip() == "":
+            continue
+
+        print(ask(q))
+
+
+FILE:/opt/atlas/scripts/dev_ai_shell.py
+import requests
+import subprocess
+import json
+import os
+
+OLLAMA_URL = "http://localhost:11434/api/generate"
+SAFE_DIR = "/opt/atlas"
+
+def stream_ai(prompt):
+    r = requests.post(
+        OLLAMA_URL,
+        json={"model": "llama3", "prompt": prompt, "stream": True},
+        stream=True
+    )
+
+    for line in r.iter_lines():
+        if line:
+            data = json.loads(line.decode())
+            print(data.get("response",""), end="", flush=True)
+    print("\n")
+
+def run_cmd(cmd):
+    return subprocess.getoutput(cmd)
+
+def search_files(query):
+    results=[]
+    for root,dirs,files in os.walk(SAFE_DIR):
+        for f in files:
+            if query.lower() in f.lower():
+                results.append(os.path.join(root,f))
+    return "\n".join(results[:20]) or "No matches"
+
+def read_file(path):
+    try:
+        if not path.startswith(SAFE_DIR):
+            return "Access denied"
+        with open(path) as f:
+            return f.read()[:4000]
+    except:
+        return "Error reading file"
+
+def handle(q):
+
+    if q.startswith("run "):
+        print(run_cmd(q[4:]))
+
+    elif q.startswith("search "):
+        print(search_files(q[7:]))
+
+    elif q.startswith("read "):
+        print(read_file(q[5:]))
+
+    elif q.startswith("ai "):
+        stream_ai(q[3:])
+
+    else:
+        print("Commands:")
+        print(" ai <prompt>")
+        print(" run <shell command>")
+        print(" search <filename>")
+        print(" read <file>")
+
+if __name__ == "__main__":
+    print("Atlas AI Dev Shell")
+    print("Commands: ai | run | search | read")
+    print("Ctrl+C to exit\n")
+
+    while True:
+        try:
+            q=input("atlas> ")
+            handle(q)
+        except KeyboardInterrupt:
+            print("\nExiting.")
+            break
+
+
+FILE:/opt/atlas/scripts/index_project.py
+import os
+
+ROOT = "/opt/atlas"
+OUT = "/opt/atlas/memory/project_index.txt"
+
+def index():
+    with open(OUT,"w") as out:
+        for root,dirs,files in os.walk(ROOT):
+            for f in files:
+                path=os.path.join(root,f)
+
+                if any(x in path for x in ["venv",".git","__pycache__"]):
+                    continue
+
+                try:
+                    with open(path,"r",errors="ignore") as file:
+                        content=file.read(2000)
+
+                    out.write("\\n\\nFILE:"+path+"\\n")
+                    out.write(content)
+
+                except:
+                    pass
+
+    print("Project indexed.")
+
+if __name__=="__main__":
+    index()
+
+
+FILE:/opt/atlas/scripts/project_ai.py
+import requests
+import json
+from vector_memory import search
+
+OLLAMA_URL="http://localhost:11434/api/generate"
+
+MODEL="llama3"
+
+def ask_llm(prompt):
+
+    r=requests.post(
+        OLLAMA_URL,
+        json={
+            "model":MODEL,
+            "prompt":prompt,
+            "stream":True
+        },
+        stream=True
+    )
+
+    for line in r.iter_lines():
+        if line:
+            data=json.loads(line.decode())
+            print(data.get("response",""),end="",flush=True)
+
+    print("\n")
+
+def ask(q):
+
+    context=search(q)
+
+    prompt=f"""
+You are an AI assistant helping with a software project.
+
+Relevant project files:
+{context}
+
+User question:
+{q}
+
+Answer based on the project context.
+"""
+
+    ask_llm(prompt)
+
+if __name__=="__main__":
+
+    print("Atlas Project AI")
+    print("Uses vector memory to understand the repo")
+    print("Ctrl+C to exit\n")
+
+    while True:
+        try:
+            q=input("project-ai> ")
+            ask(q)
+        except KeyboardInterrupt:
+            print("\nExiting.")
+            break
+
+
+FILE:/opt/atlas/scripts/dev_agent.py
+import requests, json, os
+
+OLLAMA_URL = "http://localhost:11434/api/generate"
+MODEL = "llama3"
+ROOT = "/opt/atlas"
+
+SYSTEM = """
+You are a coding assistant for a local project.
+When asked to create or modify a file, respond in this format:
+
+FILE: <relative/path/from/project/root>
+CONTENT:
+<full file content>
+
+If the request is only an explanation, answer normally.
+"""
+
+def llm(prompt):
+    r = requests.post(
+        OLLAMA_URL,
+        json={"model": MODEL, "prompt": prompt, "stream": False}
+    )
+    return r.json()["response"]
+
+def apply_change(text):
+    if "FILE:" not in text:
+        print(text)
+        return
+
+    parts = text.split("FILE:")
+    for p in parts[1:]:
+        header, body = p.split("CONTENT:",1)
+        path = header.strip()
+        content = body.strip()
+
+        full = os.path.join(ROOT, path)
+
+        if not full.startswith(ROOT):
+            print("Blocked path:", path)
+            continue
+
+        print("\nProposed change →", full)
+        confirm = input("Apply? (y/n): ")
+
+        if confirm.lower() == "y":
+            os.makedirs(os.path.dirname(full), exist_ok=True)
+            with open(full,"w") as f:
+                f.write(content)
+            print("Saved:", full)
+        else:
+            print("Skipped.")
+
+def ask(q):
+    prompt = SYSTEM + "\nUser: " + q
+    resp = llm(prompt)
+    apply_change(resp)
+
+if __name__ == "__main__":
+    print("Atlas Dev Agent")
+    print("Creates or edits project files safely")
+    print("Ctrl+C to exit\n")
+
+    while True:
+        try:
+            q = input("agent> ")
+            ask(q)
+        except KeyboardInterrupt:
+            print("\nExiting.")
+            break
+
+
+FILE:/opt/atlas/scripts/ai_patch.py
+import sys
+import requests
+import difflib
+
+OLLAMA_URL="http://localhost:11434/api/generate"
+MODEL="phi3"
+
+def ask_llm(prompt):
+
+    print("Generating patch...")
+
+    r=requests.post(
+        OLLAMA_URL,
+        json={"model":MODEL,"prompt":prompt,"stream":False},
+        timeout=300
+    )
+
+    return r.json()["response"]
+
+def improve(code):
+
+    prompt=f"""
+You are a senior Python engineer.
+
+Improve this code while keeping the same functionality.
+
+Focus on:
+- clarity
+- safety
+- performance
+- readability
+
+Return ONLY the improved code.
+
+Code:
+{code}
+"""
+
+    return ask_llm(prompt)
+
+def patch(path):
+
+    with open(path,"r") as f:
+        original=f.read()
+
+    improved=improve(original)
+
+    diff=difflib.unified_diff(
+        original.splitlines(),
+        improved.splitlines(),
+        lineterm=""
+    )
+
+    print("\n".join(diff))
+
+    confirm=input("\nApply patch? (y/n): ")
+
+    if confirm.lower()=="y":
+        with open(path,"w") as f:
+            f.write(improved)
+        print("Patch applied.")
+
+if __name__=="__main__":
+
+    if len(sys.argv)<2:
+        print("Usage: atlas patch <file>")
+        sys.exit()
+
+    patch(sys.argv[1])
+
+
+FILE:/opt/atlas/scripts/research_ingest.py
+import os
+from sentence_transformers import SentenceTransformer
+import chromadb
+
+RESEARCH_DIR="/opt/atlas/research"
+
+model=SentenceTransformer("all-MiniLM-L6-v2")
+
+client=chromadb.Client()
+collection=client.get_or_create_collection("research")
+
+def chunk(text,size=500):
+
+    words=text.split()
+    chunks=[]
+
+    for i in range(0,len(words),size):
+        chunks.append(" ".join(words[i:i+size]))
+
+    return chunks
+
+def read_file(path):
+
+    try:
+        with open(path,"r",errors="ignore") as f:
+            return f.read()
+    except:
+        return ""
+
+def ingest_file(path):
+
+    text=read_file(path)
+
+    chunks=chunk(text)
+
+    for i,c in enumerate(chunks):
+
+        emb=model.encode(c).tolist()
+
+        collection.add(
+            embeddings=[emb],
+            documents=[c],
+            ids=[path+"_"+str(i)]
+        )
+
+    print("Indexed:",path)
+
+def run():
+
+    for root,dirs,files in os.walk(RESEARCH_DIR):
+
+        for f in files:
+
+            path=os.path.join(root,f)
+
+            ingest_file(path)
+
+if __name__=="__main__":
+    run()
+
+
+FILE:/opt/atlas/scripts/research_search.py
+import chromadb
+from sentence_transformers import SentenceTransformer
+
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+client = chromadb.Client()
+collection = client.get_or_create_collection("research")
+
+def search(query, k=5):
+
+    emb = model.encode(query).tolist()
+
+    results = collection.query(
+        query_embeddings=[emb],
+        n_results=k
+    )
+
+    docs = results.get("documents", [[]])[0]
+
+    return "\n\n".join(docs)
+
+
+FILE:/opt/atlas/scripts/concept_extract.py
+import os
+import json
+import requests
+import networkx as nx
+
+RESEARCH_DIR="/opt/atlas/research"
+GRAPH_FILE="/opt/atlas/memory/concepts.json"
+
+OLLAMA_URL="http://localhost:11434/api/generate"
+MODEL="phi3"
+
+def ask_llm(prompt):
+
+    r=requests.post(
+        OLLAMA_URL,
+        json={
+            "model":MODEL,
+            "prompt":prompt,
+            "stream":False
+        }
+    )
+
+    return r.json()["response"]
+
+def extract(text):
+
+    prompt = """
+Extract key concepts and relationships from the text.
+
+Return JSON like:
+
+{
+ "concepts": ["concept1","concept2"],
+ "relations":[["concept1","concept2"]]
+}
+
+Text:
+""" + text[:2000]
+
+    try:
+        return json.loads(ask_llm(prompt))
+    except:
+        return None
+
+def run():
+
+    G=nx.Graph()
+
+    for root,dirs,files in os.walk(RESEARCH_DIR):
+
+        for f in files:
+
+            path=os.path.join(root,f)
+
+            with open(path,"r",errors="ignore") as file:
+                text=file.read()
+
+            result=extract(text)
+
+            if not result:
+                continue
+
+            for c in result["concepts"]:
+                G.add_node(c)
+
+            for a,b in result["relations"]:
+                G.add_edge(a,b)
+
+    os.makedirs("/opt/atlas/memory",exist_ok=True)
+
+    data=nx.node_link_data(G)
+
+    with open(GRAPH_FILE,"w") as f:
+        json.dump(data,f,indent=2)
+
+    print("Concept graph updated.")
+
+if __name__=="__main__":
+    run()
+
+
+FILE:/opt/atlas/scripts/graph_viewer.py
+import json
+import networkx as nx
+from pyvis.network import Network
+import webbrowser
+import os
+
+GRAPH_FILE="/opt/atlas/memory/concepts.json"
+OUTPUT="/opt/atlas/memory/graph.html"
+
+def run():
+
+    if not os.path.exists(GRAPH_FILE):
+        print("No concept graph found. Run: atlas concepts")
+        return
+
+    with open(GRAPH_FILE) as f:
+        data=json.load(f)
+
+    G=nx.node_link_graph(data)
+
+    net=Network(height="800px",width="100%",bgcolor="#111",font_color="white")
+
+    for node in G.nodes():
+        net.add_node(node,label=node)
+
+    for a,b in G.edges():
+        net.add_edge(a,b)
+
+    net.write_html(OUTPUT)
+
+    print("Graph written to:",OUTPUT)
+
+    webbrowser.open("file://"+OUTPUT)
+
+if __name__=="__main__":
+    run()
+
+
+FILE:/opt/atlas/scripts/build_cosmology_graph.py
+import json
+import networkx as nx
+import os
+
+DATA_FILE="/opt/atlas/data/cosmology.json"
+GRAPH_FILE="/opt/atlas/memory/cosmology_graph.json"
+
+def run():
+
+    with open(DATA_FILE) as f:
+        data=json.load(f)
+
+    G=nx.Graph()
+
+    for t in data["tithis"]:
+
+        tithi=t["name"]
+        devi=t["associated_devi"]
+
+        G.add_node(tithi,type="tithi")
+        G.add_node(devi,type="devi")
+
+        G.add_edge(tithi,devi,relation="associated_devi")
+
+        for w in t["weapons"]:
+            G.add_node(w,type="weapon")
+            G.add_edge(devi,w,relation="wields")
+
+        for n in t["nakshatra_associations"]:
+            G.add_node(n,type="nakshatra")
+            G.add_edge(tithi,n,relation="associated_nakshatra")
+
+        for m in t["music_associations"]:
+            G.add_node(m,type="music")
+            G.add_edge(tithi,m,relation="music_association")
+
+    os.makedirs("/opt/atlas/memory",exist_ok=True)
+
+    data=nx.node_link_data(G)
+
+    with open(GRAPH_FILE,"w") as f:
+        json.dump(data,f,indent=2)
+
+    print("Cosmology graph built.")
+
+if __name__=="__main__":
+    run()
+
+
+FILE:/opt/atlas/scripts/ritual_calendar.py
+import json
+import ephem
+from datetime import datetime
+
+DATA_FILE="/opt/atlas/data/cosmology.json"
+
+def lunar_tithi():
+
+    moon=ephem.Moon()
+    moon.compute(datetime.utcnow())
+
+    phase=moon.phase
+
+    tithi=int((phase/100)*30)+1
+
+    return tithi
+
+def run():
+
+    with open(DATA_FILE) as f:
+        data=json.load(f)
+
+    tithi_index=lunar_tithi()
+
+    tithi=data["tithis"][(tithi_index-1) % len(data["tithis"])]
+
+    print("\nAtlas Ritual Calendar\n")
+
+    print("Current Lunar Phase (approx tithi):",tithi_index)
+    print("Tithi:",tithi["name"])
+    print("Associated Devi:",tithi["associated_devi"])
+
+    if tithi["weapons"]:
+        print("Weapons:",", ".join(tithi["weapons"]))
+
+    if tithi["nakshatra_associations"]:
+        print("Nakshatra:",", ".join(tithi["nakshatra_associations"]))
+
+    if tithi["music_associations"]:
+        print("Music:",", ".join(tithi["music_associations"]))
+
+if __name__=="__main__":
+    run()
+
+
+FILE:/opt/atlas/scripts/pipeline.py
+import subprocess
+
+STEPS = [
+    "python /opt/atlas/scripts/research_ingest.py",
+    "python /opt/atlas/scripts/vector_memory.py",
+    "python /opt/atlas/scripts/concept_extract.py",
+    "python /opt/atlas/scripts/build_cosmology_graph.py"
+]
+
+def run():
+
+    print("\nAtlas build pipeline\n")
+
+    for step in STEPS:
+        print("Running:",step)
+        subprocess.run(step,shell=True)
+
+    print("\nPipeline complete\n")
+
+if __name__=="__main__":
+    run()
+
+
+FILE:/opt/atlas/scripts/doctor.py
+import os
+import subprocess
+
+checks = {
+    "ollama running": "curl -s http://localhost:11434 > /dev/null",
+    "research dir": "test -d /opt/atlas/research",
+    "data dir": "test -d /opt/atlas/data",
+    "memory dir": "test -d /opt/atlas/memory"
+}
+
+print("\nAtlas system check\n")
+
+for name,cmd in checks.items():
+
+    result=subprocess.run(cmd,shell=True)
+
+    if result.returncode==0:
+        print("[OK]",name)
+    else:
+        print("[FAIL]",name)
+
+print("")
+
+
+FILE:/opt/atlas/scripts/run.py
+import subprocess
+import sys
+
+if len(sys.argv)<2:
+    print("Usage: run.py <script>")
+    exit()
+
+script=sys.argv[1]
+
+subprocess.run(f"python /opt/atlas/scripts/{script}",shell=True)
+
+
+FILE:/opt/atlas/panchanga/2026-03-05.yaml
+date: '2026-03-05'
+moon: 189.12768733835767
+nakshatra: Swati
+sun: 344.91724993695743
+tithi: 18
+
+
+FILE:/opt/atlas/graph/graph.yaml
+edges:
+- from: Ashwini
+  relation: ruled_by
+  to: Ketu
+- from: Ashwini
+  relation: associated_deity
+  to: Ashwini Kumaras
+- from: Bharani
+  relation: ruled_by
+  to: Venus
+- from: Bharani
+  relation: associated_deity
+  to: Yama
+- from: Krittika
+  relation: ruled_by
+  to: Sun
+- from: Krittika
+  relation: associated_deity
+  to: Agni
+- from: Rohini
+  relation: ruled_by
+  to: Moon
+- from: Rohini
+  relation: associated_deity
+  to: Brahma
+- from: Mrigashira
+  relation: ruled_by
+  to: Mars
+- from: Mrigashira
+  relation: associated_deity
+  to: Soma
+- from: Ardra
+  relation: ruled_by
+  to: Rahu
+- from: Ardra
+  relation: associated_deity
+  to: Rudra
+- from: Punarvasu
+  relation: ruled_by
+  to: Jupiter
+- from: Punarvasu
+  relation: associated_deity
+  to: Aditi
+- from: Pushya
+  relation: ruled_by
+  to: Saturn
+- from: Pushya
+  relation: associated_deity
+  to: Brihaspati
+- from: Ashlesha
+  relation: ruled_by
+  to: Mercury
+- from: Ashlesha
+  relation: associated_deity
+  to: Nagas
+- from: Magha
+  relation: ruled_by
+  to: Ketu
+- from: Magha
+  relation: associated_deity
+  to: Pitris
+- from: Purva Phalguni
+  relation: ruled_by
+  to: Venus
+- from: Purva Phalguni
+  relation: associated_deity
+  to: Bhaga
+- from: Uttara Phalguni
+  relation: ruled_by
+  to: Sun
+- from: Uttara Phalguni
+  relation: associated_deity
+  to: Aryaman
+- from: Hasta
+  relation: ruled_by
+  to: Moon
+- from: Hasta
+  relation: associated_deity
+  to: Savitar
+- from: Chitra
+  relation: ruled_by
+  to: Mars
+- from: Chitra
+  relation: associated_deity
+  to: Tvashtar
+- from: Swati
+  relation: ruled_by
+  to: Rahu
+- from: Swati
+  relation: associated_deity
+  to: Vayu
+- from: Vishakha
+  relation: ruled_by
+  to: Jupiter
+- from: Vishakha
+  relation: associated_deity
+  to: Indra-Agni
+- from: Anuradha
+  relation: ruled_by
+  to: Saturn
+- from: Anuradha
+  relation: associated_deity
+  to: Mitra
+- from: Jyeshtha
+  relation: ruled_by
+  to: Mercury
+- from: Jyeshtha
+  relation: associated_deity
+  to: Indra
+- from: Mula
+  relation: ruled_by
+
+
+FILE:/opt/atlas/text/test.txt
+Vayu is the deity of wind.
+Hanuman represents devotion.
+Shiva wields trident.
+Rahu rules Swati.
+
+
+FILE:/opt/atlas/docs/atlas-overview.md
+# Atlas Knowledge Graph
+
+Nodes: 174
+
+Edges: 153
+
+
+
+FILE:/opt/atlas/docs/node-types.md
+# Node Types
+
+## concept
+
+- Aditi
+- Ahirbudhnya
+- Aja Ekapada
+- Apas
+- Aryaman
+- Ashwini Kumaras
+- Bhaga
+- Brahma
+- Brihaspati
+- Indra-Agni
+- Mitra
+- Nagas
+- Nirriti
+- Pitris
+- Pushan
+- Rudra
+- Savitar
+- Trident
+- Tvashtar
+- Vasus
+- Vishvadevas
+- devotion
+- trident
+- wind
+
+## deva
+
+- Agni
+- Ganesha
+- Hanuman
+- Indra
+- Kubera
+- Shiva
+- Soma
+- Varuna
+- Vayu
+- Vishnu
+- Yama
+
+## nakshatra
+
+- Anuradha
+- Ardra
+- Ashlesha
+- Ashwini
+- Bharani
+- Chitra
+- Dhanishta
+- Hasta
+- Jyeshtha
+- Krittika
+- Magha
+- Mrigashira
+- Mula
+- Punarvasu
+- Purva Ashadha
+- Purva Bhadrapada
+- Purva Phalguni
+- Pushya
+- Revati
+- Rohini
+- Shatabhisha
+- Shravana
+- Swati
+- Uttara Ashadha
+- Uttara Bhadrapada
+- Uttara Phalguni
+- Vishakha
+
+## rashi
+
+- Aquarius
+- Aries
+- Cancer
+- Capricorn
+- Gemini
+- Leo
+- Libra
+- Pisces
+- Sagittarius
+- Scorpio
+- Taurus
+- Virgo
+
+## tithi
+
+- Ashtami
+- Chaturdashi
+- Chaturthi
+- Dashami
+- Dvadashi
+- Dvitiya
+- Ekadashi
+- Navami
+- Panchami
+- Pratipada
+- Purnima
+- Saptami
+- Shashthi
+- Trayodashi
+- Tritiya
+
+## devi
+
+- Durga
+- Kali
+- Lakshmi
+- Saraswati
+
+## graha
+
+- Jupiter
+- Ketu
+- Mars
+- Mercury
+- Moon
+- Rahu
+- Saturn
+- Sun
+- Venus
+
+## quality
+
+- quality_achievement
+- quality_ancestors
+- quality_architecture
+- quality_asceticism
+- quality_authority
+- quality_beauty
+- quality_beginnings
+- quality_change
+- quality_coiling
+- quality_contracts
+- quality_cooperation
+- quality_craft
+- quality_creativity
+- quality_curiosity
+- quality_cutting
+- quality_depth
+- quality_design
+- quality_destruction
+- quality_devotion
+- quality_discipline
+- quality_duality
+- quality_endurance
+- quality_fertility
+- quality_fire
+- quality_focus
+- quality_friendship
+- quality_growth
+- quality_hands
+- quality_healing
+- quality_heritage
+- quality_independence
+- quality_intensity
+- quality_investigation
+- quality_invincibility
+- quality_learning
+- quality_listening
+- quality_movement
+- quality_music
+- quality_mystery
+- quality_nourishment
+- quality_nurturing
+- quality_patience
+- quality_pleasure
+- quality_power
+-
+
+FILE:/opt/atlas/docs/relation-types.md
+# Relation Types
+
+- associated_deity
+- associated_with
+- deity
+- deity_of
+- has_quality
+- represents
+- ruled_by
+- rules
+- wields
+
+
+FILE:/opt/atlas/data/cosmology.json
+{
+  "tithis": [
+    {
+      "name": "Pratipada",
+      "associated_devi": "Shailaputri",
+      "weapons": ["Trident"],
+      "nakshatra_associations": [],
+      "music_associations": [],
+      "sources": []
+    },
+    {
+      "name": "Dwitiya",
+      "associated_devi": "Brahmacharini",
+      "weapons": ["Rosary", "Water Pot"],
+      "nakshatra_associations": [],
+      "music_associations": [],
+      "sources": []
+    },
+    {
+      "name": "Tritiya",
+      "associated_devi": "Chandraghanta",
+      "weapons": ["Sword", "Trident"],
+      "nakshatra_associations": [],
+      "music_associations": [],
+      "sources": []
+    }
+  ]
+}
+
+
+FILE:/opt/atlas/atlas_ai.egg-info/dependency_links.txt
+
+
+
+FILE:/opt/atlas/atlas_ai.egg-info/entry_points.txt
+[console_scripts]
+atlas = atlas:main
+
+
+FILE:/opt/atlas/atlas_ai.egg-info/top_level.txt
+atlas
+
+
+FILE:/opt/atlas/atlas_ai.egg-info/SOURCES.txt
+README.md
+atlas.py
+setup.py
+atlas_ai.egg-info/PKG-INFO
+atlas_ai.egg-info/SOURCES.txt
+atlas_ai.egg-info/dependency_links.txt
+atlas_ai.egg-info/entry_points.txt
+atlas_ai.egg-info/top_level.txt
+
+FILE:/opt/atlas/atlas_ai.egg-info/PKG-INFO
+Metadata-Version: 2.4
+Name: atlas-ai
+Version: 0.1
+
+
+FILE:/opt/atlas/research/lunar_test.txt
+The lunar cycle consists of phases that correspond to symbolic feminine archetypes and ritual timing traditions.
+
+
+FILE:/opt/atlas/lib/bindings/utils.js
+function neighbourhoodHighlight(params) {
+  // console.log("in nieghbourhoodhighlight");
+  allNodes = nodes.get({ returnType: "Object" });
+  // originalNodes = JSON.parse(JSON.stringify(allNodes));
+  // if something is selected:
+  if (params.nodes.length > 0) {
+    highlightActive = true;
+    var i, j;
+    var selectedNode = params.nodes[0];
+    var degrees = 2;
+
+    // mark all nodes as hard to read.
+    for (let nodeId in allNodes) {
+      // nodeColors[nodeId] = allNodes[nodeId].color;
+      allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+      if (allNodes[nodeId].hiddenLabel === undefined) {
+        allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+        allNodes[nodeId].label = undefined;
+      }
+    }
+    var connectedNodes = network.getConnectedNodes(selectedNode);
+    var allConnectedNodes = [];
+
+    // get the second degree nodes
+    for (i = 1; i < degrees; i++) {
+      for (j = 0; j < connectedNodes.length; j++) {
+        allConnectedNodes = allConnectedNodes.concat(
+          network.getConnectedNodes(connectedNodes[j])
+        );
+      }
+    }
+
+    // all second degree nodes get a different color and their label back
+    for (i = 0; i < allConnectedNodes.length; i++) {
+      // allNodes[allConnectedNodes[i]].color = "pink";
+      allNodes[allConnectedNodes[i]].color = "rgba(150,150,150,0.75)";
+      if (allNodes[allConnectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[allConnectedNodes[i]].label =
+          allNodes[allConnectedNodes[i]].hiddenLabel;
+        allNodes[allConnectedNodes[i]].hiddenLabel = undefined;
+      }
+    }
+
+    // all first degree nodes get their own color and their label back
+    for (i = 0; i < connectedNodes.length; i++) {
+      // allNodes[connectedNodes[i]].color = undefined;
+      allNodes[connectedNodes[i]].color = nodeColors[connectedNodes[i]];
+      if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+        allNodes[connectedNodes[i]].label =
+          allNodes[connectedNodes[i]].hiddenLabel;
+
+
+FILE:/opt/atlas/lib/tom-select/tom-select.complete.min.js
+/**
+* Tom Select v2.0.0-rc.4
+* Licensed under the Apache License, Version 2.0 (the "License");
+*/
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e="undefined"!=typeof globalThis?globalThis:e||self).TomSelect=t()}(this,(function(){"use strict"
+function e(e,t){e.split(/\s+/).forEach((e=>{t(e)}))}class t{constructor(){this._events={}}on(t,i){e(t,(e=>{this._events[e]=this._events[e]||[],this._events[e].push(i)}))}off(t,i){var s=arguments.length
+0!==s?e(t,(e=>{if(1===s)return delete this._events[e]
+e in this._events!=!1&&this._events[e].splice(this._events[e].indexOf(i),1)})):this._events={}}trigger(t,...i){var s=this
+e(t,(e=>{if(e in s._events!=!1)for(let t of s._events[e])t.apply(s,i)}))}}var i
+const s="[̀-ͯ·ʾ]",n=new RegExp(s,"g")
+var o
+const r={"æ":"ae","ⱥ":"a","ø":"o"},l=new RegExp(Object.keys(r).join("|"),"g"),a=[[67,67],[160,160],[192,438],[452,652],[961,961],[1019,1019],[1083,1083],[1281,1289],[1984,1984],[5095,5095],[7429,7441],[7545,7549],[7680,7935],[8580,8580],[9398,9449],[11360,11391],[42792,42793],[42802,42851],[42873,42897],[42912,42922],[64256,64260],[65313,65338],[65345,65370]],c=e=>e.normalize("NFKD").replace(n,"").toLowerCase().replace(l,(function(e){return r[e]})),d=(e,t="|")=>{if(1==e.length)return e[0]
+var i=1
+return e.forEach((e=>{i=Math.max(i,e.length)})),1==i?"["+e.join("")+"]":"(?:"+e.join(t)+")"},p=e=>{if(1===e.length)return[[e]]
+var t=[]
+return p(e.substring(1)).forEach((function(i){var s=i.slice(0)
+s[0]=e.charAt(0)+s[0],t.push(s),(s=i.slice(0)).unshift(e.charAt(0)),t.push(s)})),t},u=e=>{void 0===o&&(o=(()=>{var e={}
+a.forEach((t=>{for(let s=t[0];s<=t[1];s++){let t=String.fromCharCode(s),n=c(t)
+if(n!=t.toLowerCase()){n in e||(e[n]=[n])
+var i=new RegExp(d(e[n]),"iu")
+t.match(i)||e[n].push(t)}}}))
+var t=Object.keys(e)
+t=t.sort(((e,t)=>t.length-e.length)),i=new RegExp("("+d(t)+"[̀-ͯ·ʾ]*)","g")
+var s={}
+return t.sort(((e,t)=>e.length-t.length)).forEach((t=>{va
+
+FILE:/opt/atlas/lib/tom-select/tom-select.css
+/**
+ * tom-select.css (v2.0.0-rc.4)
+ * Copyright (c) contributors
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
+ * file except in compliance with the License. You may obtain a copy of the License at:
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software distributed under
+ * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+ * ANY KIND, either express or implied. See the License for the specific language
+ * governing permissions and limitations under the License.
+ *
+ */
+.ts-wrapper.plugin-drag_drop.multi > .ts-control > div.ui-sortable-placeholder {
+  visibility: visible !important;
+  background: #f2f2f2 !important;
+  background: rgba(0, 0, 0, 0.06) !important;
+  border: 0 none !important;
+  box-shadow: inset 0 0 12px 4px #fff; }
+
+.ts-wrapper.plugin-drag_drop .ui-sortable-placeholder::after {
+  content: '!';
+  visibility: hidden; }
+
+.ts-wrapper.plugin-drag_drop .ui-sortable-helper {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+
+.plugin-checkbox_options .option input {
+  margin-right: 0.5rem; }
+
+.plugin-clear_button .ts-control {
+  padding-right: calc( 1em + (3 * 6px)) !important; }
+
+.plugin-clear_button .clear-button {
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  right: calc(8px - 6px);
+  margin-right: 0 !important;
+  background: transparent !important;
+  transition: opacity 0.5s;
+  cursor: pointer; }
+
+.plugin-clear_button.single .clear-button {
+  right: calc(8px - 6px +  2rem); }
+
+.plugin-clear_button.focus.has-items .clear-button,
+.plugin-clear_button:hover.has-items .clear-button {
+  opacity: 1; }
+
+.ts-wrapper .dropdown-header {
+  position: relative;
+  padding: 10px 8px;
+  border-bottom: 1px solid #d0d0d0;
+  background: #f8f8f8;
+  border-radius: 3px 3px 0 0; }
+
+.ts-wrapper .dropdown-header-close {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  color: #303030;
+  opacity: 0.4;
+  margin-top: -12px;
+  line-height: 20
+
+FILE:/opt/atlas/lib/vis-9.1.2/vis-network.css
+.vis-overlay{bottom:0;left:0;position:absolute;right:0;top:0;z-index:10}.vis-active{box-shadow:0 0 10px #86d5f8}.vis [class*=span]{min-height:0;width:auto}div.vis-color-picker{background-color:#fff;border-radius:15px;box-shadow:0 0 10px 0 rgba(0,0,0,.5);display:none;height:444px;left:30px;margin-left:30px;margin-top:-140px;padding:10px;position:absolute;top:0;width:310px;z-index:1}div.vis-color-picker div.vis-arrow{left:5px;position:absolute;top:147px}div.vis-color-picker div.vis-arrow:after,div.vis-color-picker div.vis-arrow:before{border:solid transparent;content:" ";height:0;pointer-events:none;position:absolute;right:100%;top:50%;width:0}div.vis-color-picker div.vis-arrow:after{border-color:hsla(0,0%,100%,0) #fff hsla(0,0%,100%,0) hsla(0,0%,100%,0);border-width:30px;margin-top:-30px}div.vis-color-picker div.vis-color{cursor:pointer;height:289px;position:absolute;width:289px}div.vis-color-picker div.vis-brightness{position:absolute;top:313px}div.vis-color-picker div.vis-opacity{position:absolute;top:350px}div.vis-color-picker div.vis-selector{background:#4c4c4c;background:-moz-linear-gradient(top,#4c4c4c 0,#595959 12%,#666 25%,#474747 39%,#2c2c2c 50%,#000 51%,#111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#4c4c4c),color-stop(12%,#595959),color-stop(25%,#666),color-stop(39%,#474747),color-stop(50%,#2c2c2c),color-stop(51%,#000),color-stop(60%,#111),color-stop(76%,#2b2b2b),color-stop(91%,#1c1c1c),color-stop(100%,#131313));background:-webkit-linear-gradient(top,#4c4c4c,#595959 12%,#666 25%,#474747 39%,#2c2c2c 50%,#000 51%,#111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313);background:-o-linear-gradient(top,#4c4c4c 0,#595959 12%,#666 25%,#474747 39%,#2c2c2c 50%,#000 51%,#111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);background:-ms-linear-gradient(top,#4c4c4c 0,#595959 12%,#666 25%,#474747 39%,#2c2c2c 50%,#000 51%,#111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%);background:linear-gradient(180deg,#4c4c4c 0,#595959
+
+FILE:/opt/atlas/lib/vis-9.1.2/vis-network.min.js
+/**
+ * vis-network
+ * https://visjs.github.io/vis-network/
+ *
+ * A dynamic, browser-based visualization library.
+ *
+ * @version 9.1.2
+ * @date    2022-03-28T20:17:35.342Z
+ *
+ * @copyright (c) 2011-2017 Almende B.V, http://almende.com
+ * @copyright (c) 2017-2019 visjs contributors, https://github.com/visjs
+ *
+ * @license
+ * vis.js is dual licensed under both
+ *
+ *   1. The Apache 2.0 License
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *   and
+ *
+ *   2. The MIT License
+ *      http://opensource.org/licenses/MIT
+ *
+ * vis.js may be distributed under either license.
+ */
+!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"function"==typeof define&&define.amd?define(["exports"],e):e((t="undefined"!=typeof globalThis?globalThis:t||self).vis=t.vis||{})}(this,(function(t){"use strict";var e="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},i=function(t){return t&&t.Math==Math&&t},n=i("object"==typeof globalThis&&globalThis)||i("object"==typeof window&&window)||i("object"==typeof self&&self)||i("object"==typeof e&&e)||function(){return this}()||Function("return this")(),o=function(t){try{return!!t()}catch(t){return!0}},r=!o((function(){var t=function(){}.bind();return"function"!=typeof t||t.hasOwnProperty("prototype")})),s=r,a=Function.prototype,h=a.apply,l=a.call,d="object"==typeof Reflect&&Reflect.apply||(s?l.bind(h):function(){return l.apply(h,arguments)}),c=r,u=Function.prototype,f=u.bind,p=u.call,v=c&&f.bind(p,p),g=c?function(t){return t&&v(t)}:function(t){return t&&function(){return p.apply(t,arguments)}},y=function(t){return"function"==typeof t},m={},b=!o((function(){return 7!=Object.defineProperty({},1,{get:function(){return 7}})[1]})),w=r,k=Function.prototype.call,_=w?k.bind(k):function(){return k.apply(k,arguments)},x={},E={}.propertyIsEnumerable,O=Object.getOwnPropertyDescriptor,C=O&&!E.call({1:2},1);x.f=C?function(t){var e=O(this,t);
+

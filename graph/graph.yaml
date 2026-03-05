@@ -1,43 +1,961 @@
+edges:
+- from: Ashwini
+  relation: ruled_by
+  to: Ketu
+- from: Ashwini
+  relation: associated_deity
+  to: Ashwini Kumaras
+- from: Bharani
+  relation: ruled_by
+  to: Venus
+- from: Bharani
+  relation: associated_deity
+  to: Yama
+- from: Krittika
+  relation: ruled_by
+  to: Sun
+- from: Krittika
+  relation: associated_deity
+  to: Agni
+- from: Rohini
+  relation: ruled_by
+  to: Moon
+- from: Rohini
+  relation: associated_deity
+  to: Brahma
+- from: Mrigashira
+  relation: ruled_by
+  to: Mars
+- from: Mrigashira
+  relation: associated_deity
+  to: Soma
+- from: Ardra
+  relation: ruled_by
+  to: Rahu
+- from: Ardra
+  relation: associated_deity
+  to: Rudra
+- from: Punarvasu
+  relation: ruled_by
+  to: Jupiter
+- from: Punarvasu
+  relation: associated_deity
+  to: Aditi
+- from: Pushya
+  relation: ruled_by
+  to: Saturn
+- from: Pushya
+  relation: associated_deity
+  to: Brihaspati
+- from: Ashlesha
+  relation: ruled_by
+  to: Mercury
+- from: Ashlesha
+  relation: associated_deity
+  to: Nagas
+- from: Magha
+  relation: ruled_by
+  to: Ketu
+- from: Magha
+  relation: associated_deity
+  to: Pitris
+- from: Purva Phalguni
+  relation: ruled_by
+  to: Venus
+- from: Purva Phalguni
+  relation: associated_deity
+  to: Bhaga
+- from: Uttara Phalguni
+  relation: ruled_by
+  to: Sun
+- from: Uttara Phalguni
+  relation: associated_deity
+  to: Aryaman
+- from: Hasta
+  relation: ruled_by
+  to: Moon
+- from: Hasta
+  relation: associated_deity
+  to: Savitar
+- from: Chitra
+  relation: ruled_by
+  to: Mars
+- from: Chitra
+  relation: associated_deity
+  to: Tvashtar
+- from: Swati
+  relation: ruled_by
+  to: Rahu
+- from: Swati
+  relation: associated_deity
+  to: Vayu
+- from: Vishakha
+  relation: ruled_by
+  to: Jupiter
+- from: Vishakha
+  relation: associated_deity
+  to: Indra-Agni
+- from: Anuradha
+  relation: ruled_by
+  to: Saturn
+- from: Anuradha
+  relation: associated_deity
+  to: Mitra
+- from: Jyeshtha
+  relation: ruled_by
+  to: Mercury
+- from: Jyeshtha
+  relation: associated_deity
+  to: Indra
+- from: Mula
+  relation: ruled_by
+  to: Ketu
+- from: Mula
+  relation: associated_deity
+  to: Nirriti
+- from: Purva Ashadha
+  relation: ruled_by
+  to: Venus
+- from: Purva Ashadha
+  relation: associated_deity
+  to: Apas
+- from: Uttara Ashadha
+  relation: ruled_by
+  to: Sun
+- from: Uttara Ashadha
+  relation: associated_deity
+  to: Vishvadevas
+- from: Shravana
+  relation: ruled_by
+  to: Moon
+- from: Shravana
+  relation: associated_deity
+  to: Vishnu
+- from: Dhanishta
+  relation: ruled_by
+  to: Mars
+- from: Dhanishta
+  relation: associated_deity
+  to: Vasus
+- from: Shatabhisha
+  relation: ruled_by
+  to: Rahu
+- from: Shatabhisha
+  relation: associated_deity
+  to: Varuna
+- from: Purva Bhadrapada
+  relation: ruled_by
+  to: Jupiter
+- from: Purva Bhadrapada
+  relation: associated_deity
+  to: Aja Ekapada
+- from: Uttara Bhadrapada
+  relation: ruled_by
+  to: Saturn
+- from: Uttara Bhadrapada
+  relation: associated_deity
+  to: Ahirbudhnya
+- from: Revati
+  relation: ruled_by
+  to: Mercury
+- from: Revati
+  relation: associated_deity
+  to: Pushan
+- from: Ashwini
+  relation: has_quality
+  to: quality_healing
+- from: Ashwini
+  relation: has_quality
+  to: quality_speed
+- from: Ashwini
+  relation: has_quality
+  to: quality_beginnings
+- from: Bharani
+  relation: has_quality
+  to: quality_transformation
+- from: Bharani
+  relation: has_quality
+  to: quality_discipline
+- from: Bharani
+  relation: has_quality
+  to: quality_restraint
+- from: Krittika
+  relation: has_quality
+  to: quality_fire
+- from: Krittika
+  relation: has_quality
+  to: quality_purification
+- from: Krittika
+  relation: has_quality
+  to: quality_cutting
+- from: Rohini
+  relation: has_quality
+  to: quality_growth
+- from: Rohini
+  relation: has_quality
+  to: quality_fertility
+- from: Rohini
+  relation: has_quality
+  to: quality_beauty
+- from: Mrigashira
+  relation: has_quality
+  to: quality_seeking
+- from: Mrigashira
+  relation: has_quality
+  to: quality_curiosity
+- from: Mrigashira
+  relation: has_quality
+  to: quality_wandering
+- from: Ardra
+  relation: has_quality
+  to: quality_storm
+- from: Ardra
+  relation: has_quality
+  to: quality_intensity
+- from: Ardra
+  relation: has_quality
+  to: quality_change
+- from: Punarvasu
+  relation: has_quality
+  to: quality_renewal
+- from: Punarvasu
+  relation: has_quality
+  to: quality_return
+- from: Punarvasu
+  relation: has_quality
+  to: quality_restoration
+- from: Pushya
+  relation: has_quality
+  to: quality_nourishment
+- from: Pushya
+  relation: has_quality
+  to: quality_support
+- from: Pushya
+  relation: has_quality
+  to: quality_prosperity
+- from: Ashlesha
+  relation: has_quality
+  to: quality_serpent
+- from: Ashlesha
+  relation: has_quality
+  to: quality_coiling
+- from: Ashlesha
+  relation: has_quality
+  to: quality_mystery
+- from: Magha
+  relation: has_quality
+  to: quality_ancestors
+- from: Magha
+  relation: has_quality
+  to: quality_authority
+- from: Magha
+  relation: has_quality
+  to: quality_heritage
+- from: Purva Phalguni
+  relation: has_quality
+  to: quality_pleasure
+- from: Purva Phalguni
+  relation: has_quality
+  to: quality_creativity
+- from: Purva Phalguni
+  relation: has_quality
+  to: quality_union
+- from: Uttara Phalguni
+  relation: has_quality
+  to: quality_contracts
+- from: Uttara Phalguni
+  relation: has_quality
+  to: quality_friendship
+- from: Uttara Phalguni
+  relation: has_quality
+  to: quality_stability
+- from: Hasta
+  relation: has_quality
+  to: quality_craft
+- from: Hasta
+  relation: has_quality
+  to: quality_skill
+- from: Hasta
+  relation: has_quality
+  to: quality_hands
+- from: Chitra
+  relation: has_quality
+  to: quality_beauty
+- from: Chitra
+  relation: has_quality
+  to: quality_design
+- from: Chitra
+  relation: has_quality
+  to: quality_architecture
+- from: Swati
+  relation: has_quality
+  to: quality_wind
+- from: Swati
+  relation: has_quality
+  to: quality_independence
+- from: Swati
+  relation: has_quality
+  to: quality_movement
+- from: Vishakha
+  relation: has_quality
+  to: quality_focus
+- from: Vishakha
+  relation: has_quality
+  to: quality_achievement
+- from: Vishakha
+  relation: has_quality
+  to: quality_duality
+- from: Anuradha
+  relation: has_quality
+  to: quality_friendship
+- from: Anuradha
+  relation: has_quality
+  to: quality_devotion
+- from: Anuradha
+  relation: has_quality
+  to: quality_cooperation
+- from: Jyeshtha
+  relation: has_quality
+  to: quality_power
+- from: Jyeshtha
+  relation: has_quality
+  to: quality_seniority
+- from: Jyeshtha
+  relation: has_quality
+  to: quality_protection
+- from: Mula
+  relation: has_quality
+  to: quality_roots
+- from: Mula
+  relation: has_quality
+  to: quality_destruction
+- from: Mula
+  relation: has_quality
+  to: quality_investigation
+- from: Purva Ashadha
+  relation: has_quality
+  to: quality_invincibility
+- from: Purva Ashadha
+  relation: has_quality
+  to: quality_water
+- from: Purva Ashadha
+  relation: has_quality
+  to: quality_purification
+- from: Uttara Ashadha
+  relation: has_quality
+  to: quality_victory
+- from: Uttara Ashadha
+  relation: has_quality
+  to: quality_truth
+- from: Uttara Ashadha
+  relation: has_quality
+  to: quality_endurance
+- from: Shravana
+  relation: has_quality
+  to: quality_listening
+- from: Shravana
+  relation: has_quality
+  to: quality_learning
+- from: Shravana
+  relation: has_quality
+  to: quality_transmission
+- from: Dhanishta
+  relation: has_quality
+  to: quality_rhythm
+- from: Dhanishta
+  relation: has_quality
+  to: quality_music
+- from: Dhanishta
+  relation: has_quality
+  to: quality_prosperity
+- from: Shatabhisha
+  relation: has_quality
+  to: quality_healing
+- from: Shatabhisha
+  relation: has_quality
+  to: quality_mystery
+- from: Shatabhisha
+  relation: has_quality
+  to: quality_seclusion
+- from: Purva Bhadrapada
+  relation: has_quality
+  to: quality_intensity
+- from: Purva Bhadrapada
+  relation: has_quality
+  to: quality_vision
+- from: Purva Bhadrapada
+  relation: has_quality
+  to: quality_asceticism
+- from: Uttara Bhadrapada
+  relation: has_quality
+  to: quality_depth
+- from: Uttara Bhadrapada
+  relation: has_quality
+  to: quality_stability
+- from: Uttara Bhadrapada
+  relation: has_quality
+  to: quality_patience
+- from: Revati
+  relation: has_quality
+  to: quality_prosperity
+- from: Revati
+  relation: has_quality
+  to: quality_nurturing
+- from: Revati
+  relation: has_quality
+  to: quality_travel
+- from: Swati
+  relation: deity
+  to: Vayu
+- from: Vayu
+  relation: associated_with
+  to: Hanuman
+- from: Krittika
+  relation: deity
+  to: Agni
+- from: Rohini
+  relation: deity
+  to: Soma
+- from: Jyeshtha
+  relation: deity
+  to: Indra
+- from: Bharani
+  relation: deity
+  to: Yama
+- from: Shatabhisha
+  relation: deity
+  to: Varuna
+- from: Dhanishta
+  relation: deity
+  to: Kubera
+- from: Chaturthi
+  relation: associated_deity
+  to: Ganesha
+- from: Ashtami
+  relation: associated_deity
+  to: Durga
+- from: Ekadashi
+  relation: associated_deity
+  to: Vishnu
+- from: Trayodashi
+  relation: associated_deity
+  to: Shiva
+- from: Purnima
+  relation: associated_deity
+  to: Lakshmi
+- from: Shiva
+  relation: wields
+  to: Trident
+- from: Vayu
+  relation: deity_of
+  to: wind
+- from: Rahu
+  relation: rules
+  to: Swati
+- from: Hanuman
+  relation: represents
+  to: devotion
+- from: Shiva
+  relation: wields
+  to: trident
 nodes:
-
-  Rohini:
+  Aditi:
+    type: concept
+  Agni:
+    domain: fire
+    type: deva
+  Ahirbudhnya:
+    type: concept
+  Aja Ekapada:
+    type: concept
+  Anuradha:
+    deity: Mitra
+    ruler: Saturn
     type: nakshatra
-    deity: Brahma
-    ruler: Moon
-    qualities:
-      - fertility
-      - growth
-
-  Swati:
-    type: nakshatra
-    deity: Vayu
+  Apas:
+    type: concept
+  Aquarius:
+    type: rashi
+  Ardra:
+    deity: Rudra
     ruler: Rahu
-    qualities:
-      - independence
-      - movement
-
+    type: nakshatra
+  Aries:
+    type: rashi
+  Aryaman:
+    type: concept
+  Ashlesha:
+    deity: Nagas
+    ruler: Mercury
+    type: nakshatra
+  Ashtami:
+    type: tithi
+  Ashwini:
+    deity: Ashwini Kumaras
+    ruler: Ketu
+    type: nakshatra
+  Ashwini Kumaras:
+    type: concept
+  Bhaga:
+    type: concept
+  Bharani:
+    deity: Yama
+    ruler: Venus
+    type: nakshatra
+  Brahma:
+    type: concept
+  Brihaspati:
+    type: concept
+  Cancer:
+    type: rashi
+  Capricorn:
+    type: rashi
+  Chaturdashi:
+    type: tithi
+  Chaturthi:
+    type: tithi
+  Chitra:
+    deity: Tvashtar
+    ruler: Mars
+    type: nakshatra
+  Dashami:
+    type: tithi
+  Dhanishta:
+    deity: Vasus
+    ruler: Mars
+    type: nakshatra
+  Durga:
+    domain: protection
+    type: devi
+    vehicle: lion
+    weapon: sword
+  Dvadashi:
+    type: tithi
+  Dvitiya:
+    type: tithi
+  Ekadashi:
+    type: tithi
+  Ganesha:
+    domain: beginnings
+    type: deva
+    vehicle: mouse
+  Gemini:
+    type: rashi
+  Hanuman:
+    domain: strength
+    type: deva
+    weapon: mace
+  Hasta:
+    deity: Savitar
+    ruler: Moon
+    type: nakshatra
+  Indra:
+    domain: storms
+    type: deva
+  Indra-Agni:
+    type: concept
+  Jupiter:
+    type: graha
+  Jyeshtha:
+    deity: Indra
+    ruler: Mercury
+    type: nakshatra
+  Kali:
+    domain: transformation
+    type: devi
+    vehicle: none
+    weapon: sword
+  Ketu:
+    type: graha
+  Krittika:
+    deity: Agni
+    ruler: Sun
+    type: nakshatra
+  Kubera:
+    domain: wealth
+    type: deva
+  Lakshmi:
+    domain: prosperity
+    type: devi
+  Leo:
+    type: rashi
+  Libra:
+    type: rashi
+  Magha:
+    deity: Pitris
+    ruler: Ketu
+    type: nakshatra
+  Mars:
+    type: graha
+  Mercury:
+    type: graha
+  Mitra:
+    type: concept
   Moon:
     type: graha
-    qualities:
-      - mind
-      - emotion
-
+  Mrigashira:
+    deity: Soma
+    ruler: Mars
+    type: nakshatra
+  Mula:
+    deity: Nirriti
+    ruler: Ketu
+    type: nakshatra
+  Nagas:
+    type: concept
+  Navami:
+    type: tithi
+  Nirriti:
+    type: concept
+  Panchami:
+    type: tithi
+  Pisces:
+    type: rashi
+  Pitris:
+    type: concept
+  Pratipada:
+    type: tithi
+  Punarvasu:
+    deity: Aditi
+    ruler: Jupiter
+    type: nakshatra
+  Purnima:
+    type: tithi
+  Purva Ashadha:
+    deity: Apas
+    ruler: Venus
+    type: nakshatra
+  Purva Bhadrapada:
+    deity: Aja Ekapada
+    ruler: Jupiter
+    type: nakshatra
+  Purva Phalguni:
+    deity: Bhaga
+    ruler: Venus
+    type: nakshatra
+  Pushan:
+    type: concept
+  Pushya:
+    deity: Brihaspati
+    ruler: Saturn
+    type: nakshatra
   Rahu:
     type: graha
-    qualities:
-      - disruption
-      - expansion
-
-edges:
-
-  - from: Rohini
-    to: Moon
-    relation: ruled_by
-
-  - from: Swati
-    to: Rahu
-    relation: ruled_by
-
-  - from: Swati
-    to: Vayu
-    relation: deity
+  Revati:
+    deity: Pushan
+    ruler: Mercury
+    type: nakshatra
+  Rohini:
+    deity: Brahma
+    ruler: Moon
+    type: nakshatra
+  Rudra:
+    type: concept
+  Sagittarius:
+    type: rashi
+  Saptami:
+    type: tithi
+  Saraswati:
+    domain: knowledge
+    type: devi
+    vehicle: swan
+  Saturn:
+    type: graha
+  Savitar:
+    type: concept
+  Scorpio:
+    type: rashi
+  Shashthi:
+    type: tithi
+  Shatabhisha:
+    deity: Varuna
+    ruler: Rahu
+    type: nakshatra
+  Shiva:
+    domain: destruction
+    type: deva
+    vehicle: nandi
+    weapon: trident
+  Shravana:
+    deity: Vishnu
+    ruler: Moon
+    type: nakshatra
+  Soma:
+    domain: moon
+    type: deva
+  Sun:
+    type: graha
+  Swati:
+    deity: Vayu
+    ruler: Rahu
+    type: nakshatra
+  Taurus:
+    type: rashi
+  Trayodashi:
+    type: tithi
+  Trident:
+    type: concept
+  Tritiya:
+    type: tithi
+  Tvashtar:
+    type: concept
+  Uttara Ashadha:
+    deity: Vishvadevas
+    ruler: Sun
+    type: nakshatra
+  Uttara Bhadrapada:
+    deity: Ahirbudhnya
+    ruler: Saturn
+    type: nakshatra
+  Uttara Phalguni:
+    deity: Aryaman
+    ruler: Sun
+    type: nakshatra
+  Varuna:
+    domain: cosmic_waters
+    type: deva
+  Vasus:
+    type: concept
+  Vayu:
+    domain: wind
+    type: deva
+  Venus:
+    type: graha
+  Virgo:
+    type: rashi
+  Vishakha:
+    deity: Indra-Agni
+    ruler: Jupiter
+    type: nakshatra
+  Vishnu:
+    domain: preservation
+    type: deva
+    vehicle: garuda
+    weapon: discus
+  Vishvadevas:
+    type: concept
+  Yama:
+    domain: death
+    type: deva
+  devotion:
+    type: concept
+  quality_achievement:
+    name: achievement
+    type: quality
+  quality_ancestors:
+    name: ancestors
+    type: quality
+  quality_architecture:
+    name: architecture
+    type: quality
+  quality_asceticism:
+    name: asceticism
+    type: quality
+  quality_authority:
+    name: authority
+    type: quality
+  quality_beauty:
+    name: beauty
+    type: quality
+  quality_beginnings:
+    name: beginnings
+    type: quality
+  quality_change:
+    name: change
+    type: quality
+  quality_coiling:
+    name: coiling
+    type: quality
+  quality_contracts:
+    name: contracts
+    type: quality
+  quality_cooperation:
+    name: cooperation
+    type: quality
+  quality_craft:
+    name: craft
+    type: quality
+  quality_creativity:
+    name: creativity
+    type: quality
+  quality_curiosity:
+    name: curiosity
+    type: quality
+  quality_cutting:
+    name: cutting
+    type: quality
+  quality_depth:
+    name: depth
+    type: quality
+  quality_design:
+    name: design
+    type: quality
+  quality_destruction:
+    name: destruction
+    type: quality
+  quality_devotion:
+    name: devotion
+    type: quality
+  quality_discipline:
+    name: discipline
+    type: quality
+  quality_duality:
+    name: duality
+    type: quality
+  quality_endurance:
+    name: endurance
+    type: quality
+  quality_fertility:
+    name: fertility
+    type: quality
+  quality_fire:
+    name: fire
+    type: quality
+  quality_focus:
+    name: focus
+    type: quality
+  quality_friendship:
+    name: friendship
+    type: quality
+  quality_growth:
+    name: growth
+    type: quality
+  quality_hands:
+    name: hands
+    type: quality
+  quality_healing:
+    name: healing
+    type: quality
+  quality_heritage:
+    name: heritage
+    type: quality
+  quality_independence:
+    name: independence
+    type: quality
+  quality_intensity:
+    name: intensity
+    type: quality
+  quality_investigation:
+    name: investigation
+    type: quality
+  quality_invincibility:
+    name: invincibility
+    type: quality
+  quality_learning:
+    name: learning
+    type: quality
+  quality_listening:
+    name: listening
+    type: quality
+  quality_movement:
+    name: movement
+    type: quality
+  quality_music:
+    name: music
+    type: quality
+  quality_mystery:
+    name: mystery
+    type: quality
+  quality_nourishment:
+    name: nourishment
+    type: quality
+  quality_nurturing:
+    name: nurturing
+    type: quality
+  quality_patience:
+    name: patience
+    type: quality
+  quality_pleasure:
+    name: pleasure
+    type: quality
+  quality_power:
+    name: power
+    type: quality
+  quality_prosperity:
+    name: prosperity
+    type: quality
+  quality_protection:
+    name: protection
+    type: quality
+  quality_purification:
+    name: purification
+    type: quality
+  quality_renewal:
+    name: renewal
+    type: quality
+  quality_restoration:
+    name: restoration
+    type: quality
+  quality_restraint:
+    name: restraint
+    type: quality
+  quality_return:
+    name: return
+    type: quality
+  quality_rhythm:
+    name: rhythm
+    type: quality
+  quality_roots:
+    name: roots
+    type: quality
+  quality_seclusion:
+    name: seclusion
+    type: quality
+  quality_seeking:
+    name: seeking
+    type: quality
+  quality_seniority:
+    name: seniority
+    type: quality
+  quality_serpent:
+    name: serpent
+    type: quality
+  quality_skill:
+    name: skill
+    type: quality
+  quality_speed:
+    name: speed
+    type: quality
+  quality_stability:
+    name: stability
+    type: quality
+  quality_storm:
+    name: storm
+    type: quality
+  quality_support:
+    name: support
+    type: quality
+  quality_transformation:
+    name: transformation
+    type: quality
+  quality_transmission:
+    name: transmission
+    type: quality
+  quality_travel:
+    name: travel
+    type: quality
+  quality_truth:
+    name: truth
+    type: quality
+  quality_union:
+    name: union
+    type: quality
+  quality_victory:
+    name: victory
+    type: quality
+  quality_vision:
+    name: vision
+    type: quality
+  quality_wandering:
+    name: wandering
+    type: quality
+  quality_water:
+    name: water
+    type: quality
+  quality_wind:
+    name: wind
+    type: quality
+  trident:
+    type: concept
+  wind:
+    type: concept

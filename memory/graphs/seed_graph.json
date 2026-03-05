@@ -1,0 +1,775 @@
+{
+  "nodes": [
+    {
+      "id": "nakshatra:1",
+      "type": "nakshatra",
+      "name": "nakshatra:1"
+    },
+    {
+      "id": "deity:ashwini_kumaras",
+      "type": "deity",
+      "name": "deity:ashwini_kumaras"
+    },
+    {
+      "id": "nakshatra:2",
+      "type": "nakshatra",
+      "name": "nakshatra:2"
+    },
+    {
+      "id": "deity:yama",
+      "type": "deity",
+      "name": "deity:yama"
+    },
+    {
+      "id": "nakshatra:3",
+      "type": "nakshatra",
+      "name": "nakshatra:3"
+    },
+    {
+      "id": "deity:agni",
+      "type": "deity",
+      "name": "deity:agni"
+    },
+    {
+      "id": "nakshatra:4",
+      "type": "nakshatra",
+      "name": "nakshatra:4"
+    },
+    {
+      "id": "deity:brahma",
+      "type": "deity",
+      "name": "deity:brahma"
+    },
+    {
+      "id": "nakshatra:5",
+      "type": "nakshatra",
+      "name": "nakshatra:5"
+    },
+    {
+      "id": "deity:soma",
+      "type": "deity",
+      "name": "deity:soma"
+    },
+    {
+      "id": "nakshatra:6",
+      "type": "nakshatra",
+      "name": "nakshatra:6"
+    },
+    {
+      "id": "deity:rudra",
+      "type": "deity",
+      "name": "deity:rudra"
+    },
+    {
+      "id": "nakshatra:7",
+      "type": "nakshatra",
+      "name": "nakshatra:7"
+    },
+    {
+      "id": "deity:aditi",
+      "type": "deity",
+      "name": "deity:aditi"
+    },
+    {
+      "id": "nakshatra:8",
+      "type": "nakshatra",
+      "name": "nakshatra:8"
+    },
+    {
+      "id": "deity:brihaspati",
+      "type": "deity",
+      "name": "deity:brihaspati"
+    },
+    {
+      "id": "nakshatra:9",
+      "type": "nakshatra",
+      "name": "nakshatra:9"
+    },
+    {
+      "id": "deity:nagas",
+      "type": "deity",
+      "name": "deity:nagas"
+    },
+    {
+      "id": "nakshatra:10",
+      "type": "nakshatra",
+      "name": "nakshatra:10"
+    },
+    {
+      "id": "deity:pitrs",
+      "type": "deity",
+      "name": "deity:pitrs"
+    },
+    {
+      "id": "nakshatra:11",
+      "type": "nakshatra",
+      "name": "nakshatra:11"
+    },
+    {
+      "id": "deity:bhaga",
+      "type": "deity",
+      "name": "deity:bhaga"
+    },
+    {
+      "id": "nakshatra:12",
+      "type": "nakshatra",
+      "name": "nakshatra:12"
+    },
+    {
+      "id": "deity:aryaman",
+      "type": "deity",
+      "name": "deity:aryaman"
+    },
+    {
+      "id": "nakshatra:13",
+      "type": "nakshatra",
+      "name": "nakshatra:13"
+    },
+    {
+      "id": "deity:savitar",
+      "type": "deity",
+      "name": "deity:savitar"
+    },
+    {
+      "id": "nakshatra:14",
+      "type": "nakshatra",
+      "name": "nakshatra:14"
+    },
+    {
+      "id": "deity:vishvakarma",
+      "type": "deity",
+      "name": "deity:vishvakarma"
+    },
+    {
+      "id": "nakshatra:15",
+      "type": "nakshatra",
+      "name": "nakshatra:15"
+    },
+    {
+      "id": "deity:vayu",
+      "type": "deity",
+      "name": "deity:vayu"
+    },
+    {
+      "id": "nakshatra:16",
+      "type": "nakshatra",
+      "name": "nakshatra:16"
+    },
+    {
+      "id": "deity:indraagni",
+      "type": "deity",
+      "name": "deity:indraagni"
+    },
+    {
+      "id": "nakshatra:17",
+      "type": "nakshatra",
+      "name": "nakshatra:17"
+    },
+    {
+      "id": "deity:mitra",
+      "type": "deity",
+      "name": "deity:mitra"
+    },
+    {
+      "id": "nakshatra:18",
+      "type": "nakshatra",
+      "name": "nakshatra:18"
+    },
+    {
+      "id": "deity:indra",
+      "type": "deity",
+      "name": "deity:indra"
+    },
+    {
+      "id": "nakshatra:19",
+      "type": "nakshatra",
+      "name": "nakshatra:19"
+    },
+    {
+      "id": "deity:nirriti",
+      "type": "deity",
+      "name": "deity:nirriti"
+    },
+    {
+      "id": "nakshatra:20",
+      "type": "nakshatra",
+      "name": "nakshatra:20"
+    },
+    {
+      "id": "deity:apas",
+      "type": "deity",
+      "name": "deity:apas"
+    },
+    {
+      "id": "nakshatra:21",
+      "type": "nakshatra",
+      "name": "nakshatra:21"
+    },
+    {
+      "id": "deity:vishvadevas",
+      "type": "deity",
+      "name": "deity:vishvadevas"
+    },
+    {
+      "id": "nakshatra:22",
+      "type": "nakshatra",
+      "name": "nakshatra:22"
+    },
+    {
+      "id": "deity:vishnu",
+      "type": "deity",
+      "name": "deity:vishnu"
+    },
+    {
+      "id": "nakshatra:23",
+      "type": "nakshatra",
+      "name": "nakshatra:23"
+    },
+    {
+      "id": "deity:vasus",
+      "type": "deity",
+      "name": "deity:vasus"
+    },
+    {
+      "id": "nakshatra:24",
+      "type": "nakshatra",
+      "name": "nakshatra:24"
+    },
+    {
+      "id": "deity:varuna",
+      "type": "deity",
+      "name": "deity:varuna"
+    },
+    {
+      "id": "nakshatra:25",
+      "type": "nakshatra",
+      "name": "nakshatra:25"
+    },
+    {
+      "id": "deity:ajaekapada",
+      "type": "deity",
+      "name": "deity:ajaekapada"
+    },
+    {
+      "id": "nakshatra:26",
+      "type": "nakshatra",
+      "name": "nakshatra:26"
+    },
+    {
+      "id": "deity:ahirbudhnya",
+      "type": "deity",
+      "name": "deity:ahirbudhnya"
+    },
+    {
+      "id": "nakshatra:27",
+      "type": "nakshatra",
+      "name": "nakshatra:27"
+    },
+    {
+      "id": "deity:pushan",
+      "type": "deity",
+      "name": "deity:pushan"
+    },
+    {
+      "id": "devi:bhagamalini",
+      "type": "devi",
+      "name": "devi:bhagamalini"
+    },
+    {
+      "id": "todo:devi_wields_weapon",
+      "type": "todo",
+      "name": "todo:devi_wields_weapon"
+    },
+    {
+      "id": "devi:bherunda",
+      "type": "devi",
+      "name": "devi:bherunda"
+    },
+    {
+      "id": "devi:chitra",
+      "type": "devi",
+      "name": "devi:chitra"
+    },
+    {
+      "id": "devi:jvalamalini",
+      "type": "devi",
+      "name": "devi:jvalamalini"
+    },
+    {
+      "id": "devi:kameshvari",
+      "type": "devi",
+      "name": "devi:kameshvari"
+    },
+    {
+      "id": "devi:kulasundari",
+      "type": "devi",
+      "name": "devi:kulasundari"
+    },
+    {
+      "id": "devi:mahavajreshvari",
+      "type": "devi",
+      "name": "devi:mahavajreshvari"
+    },
+    {
+      "id": "devi:nilapataka",
+      "type": "devi",
+      "name": "devi:nilapataka"
+    },
+    {
+      "id": "devi:nitya",
+      "type": "devi",
+      "name": "devi:nitya"
+    },
+    {
+      "id": "devi:nityaklinna",
+      "type": "devi",
+      "name": "devi:nityaklinna"
+    },
+    {
+      "id": "devi:sarvamangala",
+      "type": "devi",
+      "name": "devi:sarvamangala"
+    },
+    {
+      "id": "devi:shivaduti",
+      "type": "devi",
+      "name": "devi:shivaduti"
+    },
+    {
+      "id": "devi:tvarita",
+      "type": "devi",
+      "name": "devi:tvarita"
+    },
+    {
+      "id": "devi:vahnivasini",
+      "type": "devi",
+      "name": "devi:vahnivasini"
+    },
+    {
+      "id": "devi:vijaya",
+      "type": "devi",
+      "name": "devi:vijaya"
+    },
+    {
+      "id": "todo:nakshatra_sacred_plant",
+      "type": "todo",
+      "name": "todo:nakshatra_sacred_plant"
+    }
+  ],
+  "links": [
+    {
+      "source": "nakshatra:1",
+      "target": "deity:ashwini_kumaras",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "deity:yama",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "deity:agni",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "deity:brahma",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "deity:soma",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "deity:rudra",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "deity:aditi",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "deity:brihaspati",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "deity:nagas",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "deity:pitrs",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "deity:bhaga",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "deity:aryaman",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "deity:savitar",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "deity:vishvakarma",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "deity:vayu",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "deity:indraagni",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "deity:mitra",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "deity:indra",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "deity:nirriti",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "deity:apas",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "deity:vishvadevas",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "deity:vishnu",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "deity:vasus",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "deity:varuna",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "attested_secondary"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "deity:ajaekapada",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "deity:ahirbudhnya",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "deity:pushan",
+      "relation": "nakshatra_associated_deity",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:bhagamalini",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:bherunda",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:chitra",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:jvalamalini",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:kameshvari",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:kulasundari",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:mahavajreshvari",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:nilapataka",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:nitya",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:nityaklinna",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:sarvamangala",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:shivaduti",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:tvarita",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:vahnivasini",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "devi:vijaya",
+      "target": "todo:devi_wields_weapon",
+      "relation": "devi_wields_weapon",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "todo:nakshatra_sacred_plant",
+      "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    }
+  ]
+}

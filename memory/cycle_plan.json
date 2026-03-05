@@ -1,0 +1,22 @@
+{
+  "chores": [
+    {
+      "type": "dataset_scaffold",
+      "priority": "high",
+      "action": "Create relation datasets (empty templates OK, but evidence columns required)",
+      "items": [
+        "relations_nakshatra_deity.csv",
+        "relations_devi_weapon.csv",
+        "relations_nakshatra_plants.csv",
+        "relations_ritual_calendar.csv",
+        "relations_raga_ritual.csv"
+      ]
+    },
+    {
+      "type": "corpus_growth",
+      "priority": "medium",
+      "action": "Add more varied research sources (astro/ritual/plants/music). Then run atlas research + atlas concepts.",
+      "hint": "/opt/atlas/research/"
+    }
+  ]
+}

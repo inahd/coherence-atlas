@@ -1,0 +1,89 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "tithi",
+      "id": "Pratipada"
+    },
+    {
+      "type": "devi",
+      "id": "Shailaputri"
+    },
+    {
+      "type": "weapon",
+      "id": "Trident"
+    },
+    {
+      "type": "tithi",
+      "id": "Dwitiya"
+    },
+    {
+      "type": "devi",
+      "id": "Brahmacharini"
+    },
+    {
+      "type": "weapon",
+      "id": "Rosary"
+    },
+    {
+      "type": "weapon",
+      "id": "Water Pot"
+    },
+    {
+      "type": "tithi",
+      "id": "Tritiya"
+    },
+    {
+      "type": "devi",
+      "id": "Chandraghanta"
+    },
+    {
+      "type": "weapon",
+      "id": "Sword"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "associated_devi",
+      "source": "Pratipada",
+      "target": "Shailaputri"
+    },
+    {
+      "relation": "wields",
+      "source": "Shailaputri",
+      "target": "Trident"
+    },
+    {
+      "relation": "wields",
+      "source": "Trident",
+      "target": "Chandraghanta"
+    },
+    {
+      "relation": "associated_devi",
+      "source": "Dwitiya",
+      "target": "Brahmacharini"
+    },
+    {
+      "relation": "wields",
+      "source": "Brahmacharini",
+      "target": "Rosary"
+    },
+    {
+      "relation": "wields",
+      "source": "Brahmacharini",
+      "target": "Water Pot"
+    },
+    {
+      "relation": "associated_devi",
+      "source": "Tritiya",
+      "target": "Chandraghanta"
+    },
+    {
+      "relation": "wields",
+      "source": "Chandraghanta",
+      "target": "Sword"
+    }
+  ]
+}

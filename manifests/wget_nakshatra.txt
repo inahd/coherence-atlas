@@ -1,0 +1,3 @@
+# Add stable, permissively-licensed URLs here (one per line).
+# Example placeholders:
+# https://example.org/nakshatra_text_1.pdf

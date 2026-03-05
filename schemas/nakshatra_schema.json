@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "title": "Nakshatra Record",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "deity": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    },
+    "shakti": {
+      "type": "string"
+    }
+  }
+}

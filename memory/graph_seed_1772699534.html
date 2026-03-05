@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 900px;
+                 background-color: #111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:1", "label": "nakshatra:1", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:ashwini_kumaras", "label": "deity:ashwini_kumaras", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:2", "label": "nakshatra:2", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:yama", "label": "deity:yama", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:3", "label": "nakshatra:3", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:agni", "label": "deity:agni", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:4", "label": "nakshatra:4", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:brahma", "label": "deity:brahma", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:5", "label": "nakshatra:5", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:soma", "label": "deity:soma", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:6", "label": "nakshatra:6", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:rudra", "label": "deity:rudra", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:7", "label": "nakshatra:7", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:aditi", "label": "deity:aditi", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:8", "label": "nakshatra:8", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:brihaspati", "label": "deity:brihaspati", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:9", "label": "nakshatra:9", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:nagas", "label": "deity:nagas", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:10", "label": "nakshatra:10", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:pitrs", "label": "deity:pitrs", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:11", "label": "nakshatra:11", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:bhaga", "label": "deity:bhaga", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:12", "label": "nakshatra:12", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:aryaman", "label": "deity:aryaman", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:13", "label": "nakshatra:13", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:savitar", "label": "deity:savitar", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:14", "label": "nakshatra:14", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:vishvakarma", "label": "deity:vishvakarma", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:15", "label": "nakshatra:15", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:vayu", "label": "deity:vayu", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:16", "label": "nakshatra:16", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:indraagni", "label": "deity:indraagni", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:17", "label": "nakshatra:17", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:mitra", "label": "deity:mitra", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:18", "label": "nakshatra:18", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:indra", "label": "deity:indra", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:19", "label": "nakshatra:19", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:nirriti", "label": "deity:nirriti", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:20", "label": "nakshatra:20", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:apas", "label": "deity:apas", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:21", "label": "nakshatra:21", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:vishvadevas", "label": "deity:vishvadevas", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:22", "label": "nakshatra:22", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:vishnu", "label": "deity:vishnu", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:23", "label": "nakshatra:23", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:vasus", "label": "deity:vasus", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:24", "label": "nakshatra:24", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:varuna", "label": "deity:varuna", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:25", "label": "nakshatra:25", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:ajaekapada", "label": "deity:ajaekapada", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:26", "label": "nakshatra:26", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:ahirbudhnya", "label": "deity:ahirbudhnya", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "nakshatra:27", "label": "nakshatra:27", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "deity:pushan", "label": "deity:pushan", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:bhagamalini", "label": "devi:bhagamalini", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "todo:devi_wields_weapon", "label": "todo:devi_wields_weapon", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:bherunda", "label": "devi:bherunda", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:chitra", "label": "devi:chitra", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:jvalamalini", "label": "devi:jvalamalini", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:kameshvari", "label": "devi:kameshvari", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:kulasundari", "label": "devi:kulasundari", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:mahavajreshvari", "label": "devi:mahavajreshvari", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:nilapataka", "label": "devi:nilapataka", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:nitya", "label": "devi:nitya", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:nityaklinna", "label": "devi:nityaklinna", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:sarvamangala", "label": "devi:sarvamangala", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:shivaduti", "label": "devi:shivaduti", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:tvarita", "label": "devi:tvarita", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:vahnivasini", "label": "devi:vahnivasini", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "devi:vijaya", "label": "devi:vijaya", "shape": "dot"}, {"color": "#97c2fc", "font": {"color": "white"}, "id": "todo:nakshatra_sacred_plant", "label": "todo:nakshatra_sacred_plant", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"from": "nakshatra:1", "title": "nakshatra_associated_deity", "to": "deity:ashwini_kumaras"}, {"from": "nakshatra:1", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:2", "title": "nakshatra_associated_deity", "to": "deity:yama"}, {"from": "nakshatra:2", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:3", "title": "nakshatra_associated_deity", "to": "deity:agni"}, {"from": "nakshatra:3", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:4", "title": "nakshatra_associated_deity", "to": "deity:brahma"}, {"from": "nakshatra:4", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:5", "title": "nakshatra_associated_deity", "to": "deity:soma"}, {"from": "nakshatra:5", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:6", "title": "nakshatra_associated_deity", "to": "deity:rudra"}, {"from": "nakshatra:6", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:7", "title": "nakshatra_associated_deity", "to": "deity:aditi"}, {"from": "nakshatra:7", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:8", "title": "nakshatra_associated_deity", "to": "deity:brihaspati"}, {"from": "nakshatra:8", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:9", "title": "nakshatra_associated_deity", "to": "deity:nagas"}, {"from": "nakshatra:9", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:10", "title": "nakshatra_associated_deity", "to": "deity:pitrs"}, {"from": "nakshatra:10", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:11", "title": "nakshatra_associated_deity", "to": "deity:bhaga"}, {"from": "nakshatra:11", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:12", "title": "nakshatra_associated_deity", "to": "deity:aryaman"}, {"from": "nakshatra:12", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:13", "title": "nakshatra_associated_deity", "to": "deity:savitar"}, {"from": "nakshatra:13", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:14", "title": "nakshatra_associated_deity", "to": "deity:vishvakarma"}, {"from": "nakshatra:14", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:15", "title": "nakshatra_associated_deity", "to": "deity:vayu"}, {"from": "nakshatra:15", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:16", "title": "nakshatra_associated_deity", "to": "deity:indraagni"}, {"from": "nakshatra:16", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:17", "title": "nakshatra_associated_deity", "to": "deity:mitra"}, {"from": "nakshatra:17", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:18", "title": "nakshatra_associated_deity", "to": "deity:indra"}, {"from": "nakshatra:18", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:19", "title": "nakshatra_associated_deity", "to": "deity:nirriti"}, {"from": "nakshatra:19", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:20", "title": "nakshatra_associated_deity", "to": "deity:apas"}, {"from": "nakshatra:20", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:21", "title": "nakshatra_associated_deity", "to": "deity:vishvadevas"}, {"from": "nakshatra:21", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:22", "title": "nakshatra_associated_deity", "to": "deity:vishnu"}, {"from": "nakshatra:22", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:23", "title": "nakshatra_associated_deity", "to": "deity:vasus"}, {"from": "nakshatra:23", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:24", "title": "nakshatra_associated_deity", "to": "deity:varuna"}, {"from": "nakshatra:24", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:25", "title": "nakshatra_associated_deity", "to": "deity:ajaekapada"}, {"from": "nakshatra:25", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:26", "title": "nakshatra_associated_deity", "to": "deity:ahirbudhnya"}, {"from": "nakshatra:26", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "nakshatra:27", "title": "nakshatra_associated_deity", "to": "deity:pushan"}, {"from": "nakshatra:27", "title": "nakshatra_sacred_plant", "to": "todo:nakshatra_sacred_plant"}, {"from": "devi:bhagamalini", "title": "devi_wields_weapon", "to": "todo:devi_wields_weapon"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:bherunda"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:chitra"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:jvalamalini"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:kameshvari"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:kulasundari"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:mahavajreshvari"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:nilapataka"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:nitya"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:nityaklinna"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:sarvamangala"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:shivaduti"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:tvarita"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:vahnivasini"}, {"from": "todo:devi_wields_weapon", "title": "devi_wields_weapon", "to": "devi:vijaya"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "id_rule": "type:slug_or_int",
+  "types": [
+    "nakshatra","tithi","deity","devi","nitya_devi","graha","rashi",
+    "plant","weapon","symbol","ritual","festival","raga","tala","instrument",
+    "text","concept"
+  ],
+  "relations": [
+    {"name":"nakshatra_associated_deity", "from":"nakshatra", "to":["deity","devi","nitya_devi"]},
+    {"name":"nakshatra_ruling_graha", "from":"nakshatra", "to":["graha"]},
+    {"name":"tithi_associated_nitya_devi", "from":"tithi", "to":["nitya_devi","devi"]},
+    {"name":"devi_wields_weapon", "from":"devi", "to":["weapon"]},
+    {"name":"nakshatra_sacred_plant", "from":"nakshatra", "to":["plant"]},
+    {"name":"ritual_prescribed_on", "from":"ritual", "to":["tithi","nakshatra","vara"]},
+    {"name":"ritual_uses_raga", "from":"ritual", "to":["raga"]}
+  ],
+  "evidence_required": ["source_title","source_locator","excerpt"],
+  "confidence_allowed": ["canonical","attested_secondary","regional_tradition","auto_proposed","seed_unverified"]
+}

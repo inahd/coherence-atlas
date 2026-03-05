@@ -1,0 +1,99 @@
+{
+  "timestamp": 1772714414,
+  "files_by_kind": {
+    "html": 1,
+    "pdf": 7,
+    "txt": 1,
+    "zip": 3
+  },
+  "files_by_status": {
+    "extracted": 7,
+    "new": 5
+  },
+  "passages": 643,
+  "top_tags": [
+    {
+      "tags": "tithi:Ashtami",
+      "count": 20
+    },
+    {
+      "tags": "nakshatra:Krittika",
+      "count": 19
+    },
+    {
+      "tags": "nakshatra:Magha",
+      "count": 18
+    },
+    {
+      "tags": "nakshatra:Revati",
+      "count": 18
+    },
+    {
+      "tags": "nakshatra:Ardra",
+      "count": 16
+    },
+    {
+      "tags": "nakshatra:Bharani",
+      "count": 16
+    },
+    {
+      "tags": "nakshatra:Vishakha",
+      "count": 16
+    },
+    {
+      "tags": "tithi:Chaturdashi",
+      "count": 16
+    },
+    {
+      "tags": "tithi:Panchami",
+      "count": 16
+    },
+    {
+      "tags": "nakshatra:Anuradha",
+      "count": 15
+    },
+    {
+      "tags": "nakshatra:Pushya",
+      "count": 15
+    },
+    {
+      "tags": "nakshatra:Shravana",
+      "count": 15
+    },
+    {
+      "tags": "tithi:Tritiya",
+      "count": 15
+    },
+    {
+      "tags": "nakshatra:Mula",
+      "count": 14
+    },
+    {
+      "tags": "nakshatra:Rohini",
+      "count": 14
+    },
+    {
+      "tags": "tithi:Dvitiya",
+      "count": 14
+    },
+    {
+      "tags": "tithi:Ekadashi",
+      "count": 14
+    },
+    {
+      "tags": "tithi:Saptami",
+      "count": 14
+    },
+    {
+      "tags": "nakshatra:Ashlesha",
+      "count": 13
+    },
+    {
+      "tags": "nakshatra:Mrigashira",
+      "count": 13
+    }
+  ],
+  "staged_relations": {
+    "staged": 200
+  }
+}

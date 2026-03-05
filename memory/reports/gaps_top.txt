@@ -1,0 +1,6 @@
+nakshatra_plants: score=162 total=27 miss_to=27 miss_ev=27
+devi_weapon: score=90 total=15 miss_to=15 miss_ev=15
+nakshatra_graha: score=67 total=27 miss_to=0 miss_ev=27
+nakshatra_deity: score=36 total=27 miss_to=0 miss_ev=12
+ritual_calendar: score=0 total=0 miss_to=0 miss_ev=0
+raga_ritual: score=0 total=0 miss_to=0 miss_ev=0

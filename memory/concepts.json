@@ -1,0 +1,36 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "lunar cycle"
+    },
+    {
+      "id": "phases"
+    },
+    {
+      "id": "symbolic feminine archetypes"
+    },
+    {
+      "id": "ritual timing"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "corresponds to",
+      "source": "lunar cycle",
+      "target": "phases"
+    },
+    {
+      "relation": "corresponds to",
+      "source": "lunar cycle",
+      "target": "ritual timing"
+    },
+    {
+      "relation": "corresponds to",
+      "source": "phases",
+      "target": "symbolic feminine archetypes"
+    }
+  ]
+}

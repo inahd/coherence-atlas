@@ -1,0 +1,89 @@
+[page 1]
+The Lunar Kirtan Guide
+Sukla Paksha (Waxing Moon) – Per-Tithi Musical Framework
+Tithi
+Raga Families
+Western Mode Feel
+Tala
+Density
+1 Pratipad
+Bhairav, Todi, Lalit
+Phrygian / austere minor
+Slow Ektal (12), Slow Keharwa (8)
+1
+2 Dvitiya
+Yaman, Kafi
+Lydian-ish / Dorian-ish
+Dadra (6), Keharwa (8)
+2
+3 Tritiya
+Bihag, Hamsadhwani
+Major / Major pentatonic
+Keharwa (8), Rupak (7)
+2
+4 Caturthi
+Bhupali, Durga
+Major pentatonic
+Teentaal (16), Jhaptal (10)
+3
+5 Pancami
+Desh, Kalyan variants
+Mixolydian / Lydian-ish
+Teentaal (16), Fast Keharwa
+3
+6 Sasti
+Durga, Kedar
+Major pentatonic / suspended major
+Teentaal (16)
+4
+7 Saptami
+Kalyan family, Desh
+Lydian-ish / Mixolydian
+Teentaal (16), Ektal (12)
+4
+8 Astami
+Jog, Desh
+Dorian / Mixolydian drive
+Teentaal (16)
+4
+9 Navami
+Kafi family, Bageshri
+Dorian warmth
+Jhaptal (10), Teentaal (16)
+4
+10 Dasami
+Kedar, Yaman
+Luminous major / Lydian-ish
+Teentaal (16)
+4
+11 Ekadasi
+Ahir Bhairav, Shuddha Kalyan, Bhupali
+Soft Dorian/Phrygian blend
+Slow Keharwa, Slow Ektal
+2
+12 Dvadasi
+Kafi, Desh
+Dorian / Mixolydian
+Keharwa (8), Dadra (6)
+3
+13 Trayodasi
+Yaman, Bihag
+Lydian-ish / Major brightness
+Teentaal (16), Ektal (12)
+3
+14 Caturdasi
+Jog, Fast Desh, Kalyan variants
+Minor drive / Mixolydian
+Fast Teentaal, Rupak (7)
+5
+15 Purnima
+Yaman, Bageshri, Kedar
+Lydian + Dorian blend
+Teentaal, Ektal crescendo
+4→5→4
+
+[page 2]
+How to Use This Guide
+Sukla Paksha emphasizes the Perfect Fifth (Sa to Pa). Build melodic arcs upward, gradually increase
+rhythmic density toward Purnima, and reduce intensity on Ekadasi. Use this guide as a musical contour
+map rather than rigid prescription.

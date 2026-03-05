@@ -1,0 +1,426 @@
+{
+  "nodes": [
+    {
+      "id": "tithi:1",
+      "type": "Tithi",
+      "name": "Pratipat",
+      "sanskrit": "Pratipad\u0101"
+    },
+    {
+      "id": "tithi:2",
+      "type": "Tithi",
+      "name": "Dvitiya",
+      "sanskrit": "Dvit\u012by\u0101"
+    },
+    {
+      "id": "tithi:3",
+      "type": "Tithi",
+      "name": "Tritiya",
+      "sanskrit": "T\u1e5bt\u012by\u0101"
+    },
+    {
+      "id": "tithi:4",
+      "type": "Tithi",
+      "name": "Chaturthi",
+      "sanskrit": "Caturth\u012b"
+    },
+    {
+      "id": "tithi:5",
+      "type": "Tithi",
+      "name": "Panchami",
+      "sanskrit": "Pa\u00f1cam\u012b"
+    },
+    {
+      "id": "tithi:6",
+      "type": "Tithi",
+      "name": "Shashthi",
+      "sanskrit": "\u1e62a\u1e63\u1e6dh\u012b"
+    },
+    {
+      "id": "tithi:7",
+      "type": "Tithi",
+      "name": "Saptami",
+      "sanskrit": "Saptam\u012b"
+    },
+    {
+      "id": "tithi:8",
+      "type": "Tithi",
+      "name": "Ashtami",
+      "sanskrit": "A\u1e63\u1e6dam\u012b"
+    },
+    {
+      "id": "tithi:9",
+      "type": "Tithi",
+      "name": "Navami",
+      "sanskrit": "Navam\u012b"
+    },
+    {
+      "id": "tithi:10",
+      "type": "Tithi",
+      "name": "Dashami",
+      "sanskrit": "Da\u015bam\u012b"
+    },
+    {
+      "id": "tithi:11",
+      "type": "Tithi",
+      "name": "Ekadashi",
+      "sanskrit": "Ek\u0101da\u015b\u012b"
+    },
+    {
+      "id": "tithi:12",
+      "type": "Tithi",
+      "name": "Dvadashi",
+      "sanskrit": "Dv\u0101da\u015b\u012b"
+    },
+    {
+      "id": "tithi:13",
+      "type": "Tithi",
+      "name": "Trayodashi",
+      "sanskrit": "Trayoda\u015b\u012b"
+    },
+    {
+      "id": "tithi:14",
+      "type": "Tithi",
+      "name": "Chaturdashi",
+      "sanskrit": "Caturda\u015b\u012b"
+    },
+    {
+      "id": "tithi:15",
+      "type": "Tithi",
+      "name": "Purnima/Amavasya",
+      "sanskrit": "P\u016br\u1e47im\u0101/Am\u0101vasy\u0101"
+    },
+    {
+      "id": "nitya_devi:kameshvari",
+      "type": "NityaDevi",
+      "name": "Kameshvari"
+    },
+    {
+      "id": "nitya_devi:bhagamalini",
+      "type": "NityaDevi",
+      "name": "Bhagamalini"
+    },
+    {
+      "id": "nitya_devi:nityaklinna",
+      "type": "NityaDevi",
+      "name": "Nityaklinna"
+    },
+    {
+      "id": "nitya_devi:bherunda",
+      "type": "NityaDevi",
+      "name": "Bherunda"
+    },
+    {
+      "id": "nitya_devi:vahnivasini",
+      "type": "NityaDevi",
+      "name": "Vahnivasini"
+    },
+    {
+      "id": "nitya_devi:mahavajreshvari",
+      "type": "NityaDevi",
+      "name": "Mahavajreshvari"
+    },
+    {
+      "id": "nitya_devi:shivaduti",
+      "type": "NityaDevi",
+      "name": "Shivaduti"
+    },
+    {
+      "id": "nitya_devi:tvarita",
+      "type": "NityaDevi",
+      "name": "Tvarita"
+    },
+    {
+      "id": "nitya_devi:kulasundari",
+      "type": "NityaDevi",
+      "name": "Kulasundari"
+    },
+    {
+      "id": "nitya_devi:nitya",
+      "type": "NityaDevi",
+      "name": "Nitya"
+    },
+    {
+      "id": "nitya_devi:nilapataka",
+      "type": "NityaDevi",
+      "name": "Nilapataka"
+    },
+    {
+      "id": "nitya_devi:vijaya",
+      "type": "NityaDevi",
+      "name": "Vijaya"
+    },
+    {
+      "id": "nitya_devi:sarvamangala",
+      "type": "NityaDevi",
+      "name": "Sarvamangala"
+    },
+    {
+      "id": "nitya_devi:jvalamalini",
+      "type": "NityaDevi",
+      "name": "Jvalamalini"
+    },
+    {
+      "id": "nitya_devi:chitra",
+      "type": "NityaDevi",
+      "name": "Chitra"
+    },
+    {
+      "id": "nakshatra:1",
+      "type": "Nakshatra",
+      "name": "Ashwini"
+    },
+    {
+      "id": "nakshatra:2",
+      "type": "Nakshatra",
+      "name": "Bharani"
+    },
+    {
+      "id": "nakshatra:3",
+      "type": "Nakshatra",
+      "name": "Krittika"
+    },
+    {
+      "id": "nakshatra:4",
+      "type": "Nakshatra",
+      "name": "Rohini"
+    },
+    {
+      "id": "nakshatra:5",
+      "type": "Nakshatra",
+      "name": "Mrigashira"
+    },
+    {
+      "id": "nakshatra:6",
+      "type": "Nakshatra",
+      "name": "Ardra"
+    },
+    {
+      "id": "nakshatra:7",
+      "type": "Nakshatra",
+      "name": "Punarvasu"
+    },
+    {
+      "id": "nakshatra:8",
+      "type": "Nakshatra",
+      "name": "Pushya"
+    },
+    {
+      "id": "nakshatra:9",
+      "type": "Nakshatra",
+      "name": "Ashlesha"
+    },
+    {
+      "id": "nakshatra:10",
+      "type": "Nakshatra",
+      "name": "Magha"
+    },
+    {
+      "id": "nakshatra:11",
+      "type": "Nakshatra",
+      "name": "Purva Phalguni"
+    },
+    {
+      "id": "nakshatra:12",
+      "type": "Nakshatra",
+      "name": "Uttara Phalguni"
+    },
+    {
+      "id": "nakshatra:13",
+      "type": "Nakshatra",
+      "name": "Hasta"
+    },
+    {
+      "id": "nakshatra:14",
+      "type": "Nakshatra",
+      "name": "Chitra"
+    },
+    {
+      "id": "nakshatra:15",
+      "type": "Nakshatra",
+      "name": "Swati"
+    },
+    {
+      "id": "nakshatra:16",
+      "type": "Nakshatra",
+      "name": "Vishakha"
+    },
+    {
+      "id": "nakshatra:17",
+      "type": "Nakshatra",
+      "name": "Anuradha"
+    },
+    {
+      "id": "nakshatra:18",
+      "type": "Nakshatra",
+      "name": "Jyeshtha"
+    },
+    {
+      "id": "nakshatra:19",
+      "type": "Nakshatra",
+      "name": "Mula"
+    },
+    {
+      "id": "nakshatra:20",
+      "type": "Nakshatra",
+      "name": "Purva Ashadha"
+    },
+    {
+      "id": "nakshatra:21",
+      "type": "Nakshatra",
+      "name": "Uttara Ashadha"
+    },
+    {
+      "id": "nakshatra:22",
+      "type": "Nakshatra",
+      "name": "Shravana"
+    },
+    {
+      "id": "nakshatra:23",
+      "type": "Nakshatra",
+      "name": "Dhanishta"
+    },
+    {
+      "id": "nakshatra:24",
+      "type": "Nakshatra",
+      "name": "Shatabhisha"
+    },
+    {
+      "id": "nakshatra:25",
+      "type": "Nakshatra",
+      "name": "Purva Bhadrapada"
+    },
+    {
+      "id": "nakshatra:26",
+      "type": "Nakshatra",
+      "name": "Uttara Bhadrapada"
+    },
+    {
+      "id": "nakshatra:27",
+      "type": "Nakshatra",
+      "name": "Revati"
+    }
+  ],
+  "links": [
+    {
+      "source": "tithi:1",
+      "target": "nitya_devi:kameshvari",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:2",
+      "target": "nitya_devi:bhagamalini",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:3",
+      "target": "nitya_devi:nityaklinna",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:4",
+      "target": "nitya_devi:bherunda",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:5",
+      "target": "nitya_devi:vahnivasini",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:6",
+      "target": "nitya_devi:mahavajreshvari",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:7",
+      "target": "nitya_devi:shivaduti",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:8",
+      "target": "nitya_devi:tvarita",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:9",
+      "target": "nitya_devi:kulasundari",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:10",
+      "target": "nitya_devi:nitya",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:11",
+      "target": "nitya_devi:nilapataka",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:12",
+      "target": "nitya_devi:vijaya",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:13",
+      "target": "nitya_devi:sarvamangala",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:14",
+      "target": "nitya_devi:jvalamalini",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    },
+    {
+      "source": "tithi:15",
+      "target": "nitya_devi:chitra",
+      "relation": "tithi_associated_nitya_devi",
+      "evidence": {
+        "dataset": "nitya_devi_mapping.csv"
+      }
+    }
+  ]
+}

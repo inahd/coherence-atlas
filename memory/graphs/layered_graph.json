@@ -1,0 +1,3351 @@
+{
+  "nodes": [
+    {
+      "id": "tithi:1",
+      "type": "tithi",
+      "name": "tithi:1"
+    },
+    {
+      "id": "paksha:shukla",
+      "type": "paksha",
+      "name": "paksha:shukla"
+    },
+    {
+      "id": "tithi_index:1",
+      "type": "tithi_index",
+      "name": "tithi_index:1"
+    },
+    {
+      "id": "tithi:2",
+      "type": "tithi",
+      "name": "tithi:2"
+    },
+    {
+      "id": "tithi_index:2",
+      "type": "tithi_index",
+      "name": "tithi_index:2"
+    },
+    {
+      "id": "tithi:3",
+      "type": "tithi",
+      "name": "tithi:3"
+    },
+    {
+      "id": "tithi_index:3",
+      "type": "tithi_index",
+      "name": "tithi_index:3"
+    },
+    {
+      "id": "tithi:4",
+      "type": "tithi",
+      "name": "tithi:4"
+    },
+    {
+      "id": "tithi_index:4",
+      "type": "tithi_index",
+      "name": "tithi_index:4"
+    },
+    {
+      "id": "tithi:5",
+      "type": "tithi",
+      "name": "tithi:5"
+    },
+    {
+      "id": "tithi_index:5",
+      "type": "tithi_index",
+      "name": "tithi_index:5"
+    },
+    {
+      "id": "tithi:6",
+      "type": "tithi",
+      "name": "tithi:6"
+    },
+    {
+      "id": "tithi_index:6",
+      "type": "tithi_index",
+      "name": "tithi_index:6"
+    },
+    {
+      "id": "tithi:7",
+      "type": "tithi",
+      "name": "tithi:7"
+    },
+    {
+      "id": "tithi_index:7",
+      "type": "tithi_index",
+      "name": "tithi_index:7"
+    },
+    {
+      "id": "tithi:8",
+      "type": "tithi",
+      "name": "tithi:8"
+    },
+    {
+      "id": "tithi_index:8",
+      "type": "tithi_index",
+      "name": "tithi_index:8"
+    },
+    {
+      "id": "tithi:9",
+      "type": "tithi",
+      "name": "tithi:9"
+    },
+    {
+      "id": "tithi_index:9",
+      "type": "tithi_index",
+      "name": "tithi_index:9"
+    },
+    {
+      "id": "tithi:10",
+      "type": "tithi",
+      "name": "tithi:10"
+    },
+    {
+      "id": "tithi_index:10",
+      "type": "tithi_index",
+      "name": "tithi_index:10"
+    },
+    {
+      "id": "tithi:11",
+      "type": "tithi",
+      "name": "tithi:11"
+    },
+    {
+      "id": "tithi_index:11",
+      "type": "tithi_index",
+      "name": "tithi_index:11"
+    },
+    {
+      "id": "tithi:12",
+      "type": "tithi",
+      "name": "tithi:12"
+    },
+    {
+      "id": "tithi_index:12",
+      "type": "tithi_index",
+      "name": "tithi_index:12"
+    },
+    {
+      "id": "tithi:13",
+      "type": "tithi",
+      "name": "tithi:13"
+    },
+    {
+      "id": "tithi_index:13",
+      "type": "tithi_index",
+      "name": "tithi_index:13"
+    },
+    {
+      "id": "tithi:14",
+      "type": "tithi",
+      "name": "tithi:14"
+    },
+    {
+      "id": "tithi_index:14",
+      "type": "tithi_index",
+      "name": "tithi_index:14"
+    },
+    {
+      "id": "tithi:15",
+      "type": "tithi",
+      "name": "tithi:15"
+    },
+    {
+      "id": "tithi_index:15",
+      "type": "tithi_index",
+      "name": "tithi_index:15"
+    },
+    {
+      "id": "nakshatra:1",
+      "type": "nakshatra",
+      "name": "nakshatra:1"
+    },
+    {
+      "id": "pada:1",
+      "type": "pada",
+      "name": "pada:1"
+    },
+    {
+      "id": "nakshatra_pada:1_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:1_1"
+    },
+    {
+      "id": "pada:2",
+      "type": "pada",
+      "name": "pada:2"
+    },
+    {
+      "id": "nakshatra_pada:1_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:1_2"
+    },
+    {
+      "id": "pada:3",
+      "type": "pada",
+      "name": "pada:3"
+    },
+    {
+      "id": "nakshatra_pada:1_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:1_3"
+    },
+    {
+      "id": "pada:4",
+      "type": "pada",
+      "name": "pada:4"
+    },
+    {
+      "id": "nakshatra_pada:1_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:1_4"
+    },
+    {
+      "id": "nakshatra:2",
+      "type": "nakshatra",
+      "name": "nakshatra:2"
+    },
+    {
+      "id": "nakshatra_pada:2_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:2_1"
+    },
+    {
+      "id": "nakshatra_pada:2_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:2_2"
+    },
+    {
+      "id": "nakshatra_pada:2_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:2_3"
+    },
+    {
+      "id": "nakshatra_pada:2_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:2_4"
+    },
+    {
+      "id": "nakshatra:3",
+      "type": "nakshatra",
+      "name": "nakshatra:3"
+    },
+    {
+      "id": "nakshatra_pada:3_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:3_1"
+    },
+    {
+      "id": "nakshatra_pada:3_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:3_2"
+    },
+    {
+      "id": "nakshatra_pada:3_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:3_3"
+    },
+    {
+      "id": "nakshatra_pada:3_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:3_4"
+    },
+    {
+      "id": "nakshatra:4",
+      "type": "nakshatra",
+      "name": "nakshatra:4"
+    },
+    {
+      "id": "nakshatra_pada:4_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:4_1"
+    },
+    {
+      "id": "nakshatra_pada:4_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:4_2"
+    },
+    {
+      "id": "nakshatra_pada:4_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:4_3"
+    },
+    {
+      "id": "nakshatra_pada:4_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:4_4"
+    },
+    {
+      "id": "nakshatra:5",
+      "type": "nakshatra",
+      "name": "nakshatra:5"
+    },
+    {
+      "id": "nakshatra_pada:5_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:5_1"
+    },
+    {
+      "id": "nakshatra_pada:5_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:5_2"
+    },
+    {
+      "id": "nakshatra_pada:5_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:5_3"
+    },
+    {
+      "id": "nakshatra_pada:5_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:5_4"
+    },
+    {
+      "id": "nakshatra:6",
+      "type": "nakshatra",
+      "name": "nakshatra:6"
+    },
+    {
+      "id": "nakshatra_pada:6_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:6_1"
+    },
+    {
+      "id": "nakshatra_pada:6_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:6_2"
+    },
+    {
+      "id": "nakshatra_pada:6_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:6_3"
+    },
+    {
+      "id": "nakshatra_pada:6_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:6_4"
+    },
+    {
+      "id": "nakshatra:7",
+      "type": "nakshatra",
+      "name": "nakshatra:7"
+    },
+    {
+      "id": "nakshatra_pada:7_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:7_1"
+    },
+    {
+      "id": "nakshatra_pada:7_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:7_2"
+    },
+    {
+      "id": "nakshatra_pada:7_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:7_3"
+    },
+    {
+      "id": "nakshatra_pada:7_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:7_4"
+    },
+    {
+      "id": "nakshatra:8",
+      "type": "nakshatra",
+      "name": "nakshatra:8"
+    },
+    {
+      "id": "nakshatra_pada:8_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:8_1"
+    },
+    {
+      "id": "nakshatra_pada:8_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:8_2"
+    },
+    {
+      "id": "nakshatra_pada:8_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:8_3"
+    },
+    {
+      "id": "nakshatra_pada:8_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:8_4"
+    },
+    {
+      "id": "nakshatra:9",
+      "type": "nakshatra",
+      "name": "nakshatra:9"
+    },
+    {
+      "id": "nakshatra_pada:9_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:9_1"
+    },
+    {
+      "id": "nakshatra_pada:9_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:9_2"
+    },
+    {
+      "id": "nakshatra_pada:9_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:9_3"
+    },
+    {
+      "id": "nakshatra_pada:9_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:9_4"
+    },
+    {
+      "id": "nakshatra:10",
+      "type": "nakshatra",
+      "name": "nakshatra:10"
+    },
+    {
+      "id": "nakshatra_pada:10_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:10_1"
+    },
+    {
+      "id": "nakshatra_pada:10_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:10_2"
+    },
+    {
+      "id": "nakshatra_pada:10_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:10_3"
+    },
+    {
+      "id": "nakshatra_pada:10_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:10_4"
+    },
+    {
+      "id": "nakshatra:11",
+      "type": "nakshatra",
+      "name": "nakshatra:11"
+    },
+    {
+      "id": "nakshatra_pada:11_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:11_1"
+    },
+    {
+      "id": "nakshatra_pada:11_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:11_2"
+    },
+    {
+      "id": "nakshatra_pada:11_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:11_3"
+    },
+    {
+      "id": "nakshatra_pada:11_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:11_4"
+    },
+    {
+      "id": "nakshatra:12",
+      "type": "nakshatra",
+      "name": "nakshatra:12"
+    },
+    {
+      "id": "nakshatra_pada:12_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:12_1"
+    },
+    {
+      "id": "nakshatra_pada:12_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:12_2"
+    },
+    {
+      "id": "nakshatra_pada:12_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:12_3"
+    },
+    {
+      "id": "nakshatra_pada:12_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:12_4"
+    },
+    {
+      "id": "nakshatra:13",
+      "type": "nakshatra",
+      "name": "nakshatra:13"
+    },
+    {
+      "id": "nakshatra_pada:13_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:13_1"
+    },
+    {
+      "id": "nakshatra_pada:13_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:13_2"
+    },
+    {
+      "id": "nakshatra_pada:13_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:13_3"
+    },
+    {
+      "id": "nakshatra_pada:13_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:13_4"
+    },
+    {
+      "id": "nakshatra:14",
+      "type": "nakshatra",
+      "name": "nakshatra:14"
+    },
+    {
+      "id": "nakshatra_pada:14_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:14_1"
+    },
+    {
+      "id": "nakshatra_pada:14_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:14_2"
+    },
+    {
+      "id": "nakshatra_pada:14_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:14_3"
+    },
+    {
+      "id": "nakshatra_pada:14_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:14_4"
+    },
+    {
+      "id": "nakshatra:15",
+      "type": "nakshatra",
+      "name": "nakshatra:15"
+    },
+    {
+      "id": "nakshatra_pada:15_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:15_1"
+    },
+    {
+      "id": "nakshatra_pada:15_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:15_2"
+    },
+    {
+      "id": "nakshatra_pada:15_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:15_3"
+    },
+    {
+      "id": "nakshatra_pada:15_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:15_4"
+    },
+    {
+      "id": "nakshatra:16",
+      "type": "nakshatra",
+      "name": "nakshatra:16"
+    },
+    {
+      "id": "nakshatra_pada:16_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:16_1"
+    },
+    {
+      "id": "nakshatra_pada:16_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:16_2"
+    },
+    {
+      "id": "nakshatra_pada:16_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:16_3"
+    },
+    {
+      "id": "nakshatra_pada:16_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:16_4"
+    },
+    {
+      "id": "nakshatra:17",
+      "type": "nakshatra",
+      "name": "nakshatra:17"
+    },
+    {
+      "id": "nakshatra_pada:17_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:17_1"
+    },
+    {
+      "id": "nakshatra_pada:17_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:17_2"
+    },
+    {
+      "id": "nakshatra_pada:17_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:17_3"
+    },
+    {
+      "id": "nakshatra_pada:17_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:17_4"
+    },
+    {
+      "id": "nakshatra:18",
+      "type": "nakshatra",
+      "name": "nakshatra:18"
+    },
+    {
+      "id": "nakshatra_pada:18_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:18_1"
+    },
+    {
+      "id": "nakshatra_pada:18_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:18_2"
+    },
+    {
+      "id": "nakshatra_pada:18_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:18_3"
+    },
+    {
+      "id": "nakshatra_pada:18_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:18_4"
+    },
+    {
+      "id": "nakshatra:19",
+      "type": "nakshatra",
+      "name": "nakshatra:19"
+    },
+    {
+      "id": "nakshatra_pada:19_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:19_1"
+    },
+    {
+      "id": "nakshatra_pada:19_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:19_2"
+    },
+    {
+      "id": "nakshatra_pada:19_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:19_3"
+    },
+    {
+      "id": "nakshatra_pada:19_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:19_4"
+    },
+    {
+      "id": "nakshatra:20",
+      "type": "nakshatra",
+      "name": "nakshatra:20"
+    },
+    {
+      "id": "nakshatra_pada:20_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:20_1"
+    },
+    {
+      "id": "nakshatra_pada:20_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:20_2"
+    },
+    {
+      "id": "nakshatra_pada:20_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:20_3"
+    },
+    {
+      "id": "nakshatra_pada:20_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:20_4"
+    },
+    {
+      "id": "nakshatra:21",
+      "type": "nakshatra",
+      "name": "nakshatra:21"
+    },
+    {
+      "id": "nakshatra_pada:21_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:21_1"
+    },
+    {
+      "id": "nakshatra_pada:21_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:21_2"
+    },
+    {
+      "id": "nakshatra_pada:21_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:21_3"
+    },
+    {
+      "id": "nakshatra_pada:21_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:21_4"
+    },
+    {
+      "id": "nakshatra:22",
+      "type": "nakshatra",
+      "name": "nakshatra:22"
+    },
+    {
+      "id": "nakshatra_pada:22_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:22_1"
+    },
+    {
+      "id": "nakshatra_pada:22_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:22_2"
+    },
+    {
+      "id": "nakshatra_pada:22_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:22_3"
+    },
+    {
+      "id": "nakshatra_pada:22_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:22_4"
+    },
+    {
+      "id": "nakshatra:23",
+      "type": "nakshatra",
+      "name": "nakshatra:23"
+    },
+    {
+      "id": "nakshatra_pada:23_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:23_1"
+    },
+    {
+      "id": "nakshatra_pada:23_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:23_2"
+    },
+    {
+      "id": "nakshatra_pada:23_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:23_3"
+    },
+    {
+      "id": "nakshatra_pada:23_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:23_4"
+    },
+    {
+      "id": "nakshatra:24",
+      "type": "nakshatra",
+      "name": "nakshatra:24"
+    },
+    {
+      "id": "nakshatra_pada:24_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:24_1"
+    },
+    {
+      "id": "nakshatra_pada:24_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:24_2"
+    },
+    {
+      "id": "nakshatra_pada:24_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:24_3"
+    },
+    {
+      "id": "nakshatra_pada:24_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:24_4"
+    },
+    {
+      "id": "nakshatra:25",
+      "type": "nakshatra",
+      "name": "nakshatra:25"
+    },
+    {
+      "id": "nakshatra_pada:25_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:25_1"
+    },
+    {
+      "id": "nakshatra_pada:25_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:25_2"
+    },
+    {
+      "id": "nakshatra_pada:25_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:25_3"
+    },
+    {
+      "id": "nakshatra_pada:25_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:25_4"
+    },
+    {
+      "id": "nakshatra:26",
+      "type": "nakshatra",
+      "name": "nakshatra:26"
+    },
+    {
+      "id": "nakshatra_pada:26_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:26_1"
+    },
+    {
+      "id": "nakshatra_pada:26_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:26_2"
+    },
+    {
+      "id": "nakshatra_pada:26_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:26_3"
+    },
+    {
+      "id": "nakshatra_pada:26_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:26_4"
+    },
+    {
+      "id": "nakshatra:27",
+      "type": "nakshatra",
+      "name": "nakshatra:27"
+    },
+    {
+      "id": "nakshatra_pada:27_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:27_1"
+    },
+    {
+      "id": "nakshatra_pada:27_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:27_2"
+    },
+    {
+      "id": "nakshatra_pada:27_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:27_3"
+    },
+    {
+      "id": "nakshatra_pada:27_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:27_4"
+    },
+    {
+      "id": "deity:ashwini_kumaras",
+      "type": "deity",
+      "name": "deity:ashwini_kumaras"
+    },
+    {
+      "id": "graha:ketu",
+      "type": "graha",
+      "name": "graha:ketu"
+    },
+    {
+      "id": "deity:yama",
+      "type": "deity",
+      "name": "deity:yama"
+    },
+    {
+      "id": "graha:venus",
+      "type": "graha",
+      "name": "graha:venus"
+    },
+    {
+      "id": "deity:agni",
+      "type": "deity",
+      "name": "deity:agni"
+    },
+    {
+      "id": "graha:sun",
+      "type": "graha",
+      "name": "graha:sun"
+    },
+    {
+      "id": "deity:brahma",
+      "type": "deity",
+      "name": "deity:brahma"
+    },
+    {
+      "id": "graha:moon",
+      "type": "graha",
+      "name": "graha:moon"
+    },
+    {
+      "id": "deity:soma",
+      "type": "deity",
+      "name": "deity:soma"
+    },
+    {
+      "id": "graha:mars",
+      "type": "graha",
+      "name": "graha:mars"
+    },
+    {
+      "id": "deity:rudra",
+      "type": "deity",
+      "name": "deity:rudra"
+    },
+    {
+      "id": "graha:rahu",
+      "type": "graha",
+      "name": "graha:rahu"
+    },
+    {
+      "id": "deity:aditi",
+      "type": "deity",
+      "name": "deity:aditi"
+    },
+    {
+      "id": "graha:jupiter",
+      "type": "graha",
+      "name": "graha:jupiter"
+    },
+    {
+      "id": "deity:brihaspati",
+      "type": "deity",
+      "name": "deity:brihaspati"
+    },
+    {
+      "id": "graha:saturn",
+      "type": "graha",
+      "name": "graha:saturn"
+    },
+    {
+      "id": "deity:nagas",
+      "type": "deity",
+      "name": "deity:nagas"
+    },
+    {
+      "id": "graha:mercury",
+      "type": "graha",
+      "name": "graha:mercury"
+    },
+    {
+      "id": "deity:pitrs",
+      "type": "deity",
+      "name": "deity:pitrs"
+    },
+    {
+      "id": "deity:bhaga",
+      "type": "deity",
+      "name": "deity:bhaga"
+    },
+    {
+      "id": "deity:aryaman",
+      "type": "deity",
+      "name": "deity:aryaman"
+    },
+    {
+      "id": "deity:savitar",
+      "type": "deity",
+      "name": "deity:savitar"
+    },
+    {
+      "id": "deity:vishvakarma",
+      "type": "deity",
+      "name": "deity:vishvakarma"
+    },
+    {
+      "id": "deity:vayu",
+      "type": "deity",
+      "name": "deity:vayu"
+    },
+    {
+      "id": "deity:indraagni",
+      "type": "deity",
+      "name": "deity:indraagni"
+    },
+    {
+      "id": "deity:mitra",
+      "type": "deity",
+      "name": "deity:mitra"
+    },
+    {
+      "id": "deity:indra",
+      "type": "deity",
+      "name": "deity:indra"
+    },
+    {
+      "id": "deity:nirriti",
+      "type": "deity",
+      "name": "deity:nirriti"
+    },
+    {
+      "id": "deity:apas",
+      "type": "deity",
+      "name": "deity:apas"
+    },
+    {
+      "id": "deity:vishvadevas",
+      "type": "deity",
+      "name": "deity:vishvadevas"
+    },
+    {
+      "id": "deity:vishnu",
+      "type": "deity",
+      "name": "deity:vishnu"
+    },
+    {
+      "id": "deity:vasus",
+      "type": "deity",
+      "name": "deity:vasus"
+    },
+    {
+      "id": "deity:varuna",
+      "type": "deity",
+      "name": "deity:varuna"
+    },
+    {
+      "id": "deity:ajaekapada",
+      "type": "deity",
+      "name": "deity:ajaekapada"
+    },
+    {
+      "id": "deity:ahirbudhnya",
+      "type": "deity",
+      "name": "deity:ahirbudhnya"
+    },
+    {
+      "id": "deity:pushan",
+      "type": "deity",
+      "name": "deity:pushan"
+    },
+    {
+      "id": "nitya_devi:kameshvari",
+      "type": "nitya_devi",
+      "name": "nitya_devi:kameshvari"
+    },
+    {
+      "id": "nitya_devi:bhagamalini",
+      "type": "nitya_devi",
+      "name": "nitya_devi:bhagamalini"
+    },
+    {
+      "id": "nitya_devi:nityaklinna",
+      "type": "nitya_devi",
+      "name": "nitya_devi:nityaklinna"
+    },
+    {
+      "id": "nitya_devi:bherunda",
+      "type": "nitya_devi",
+      "name": "nitya_devi:bherunda"
+    },
+    {
+      "id": "nitya_devi:vahnivasini",
+      "type": "nitya_devi",
+      "name": "nitya_devi:vahnivasini"
+    },
+    {
+      "id": "nitya_devi:mahavajreshvari",
+      "type": "nitya_devi",
+      "name": "nitya_devi:mahavajreshvari"
+    },
+    {
+      "id": "nitya_devi:shivaduti",
+      "type": "nitya_devi",
+      "name": "nitya_devi:shivaduti"
+    },
+    {
+      "id": "nitya_devi:tvarita",
+      "type": "nitya_devi",
+      "name": "nitya_devi:tvarita"
+    },
+    {
+      "id": "nitya_devi:kulasundari",
+      "type": "nitya_devi",
+      "name": "nitya_devi:kulasundari"
+    },
+    {
+      "id": "nitya_devi:nitya",
+      "type": "nitya_devi",
+      "name": "nitya_devi:nitya"
+    },
+    {
+      "id": "nitya_devi:nilapataka",
+      "type": "nitya_devi",
+      "name": "nitya_devi:nilapataka"
+    },
+    {
+      "id": "nitya_devi:vijaya",
+      "type": "nitya_devi",
+      "name": "nitya_devi:vijaya"
+    },
+    {
+      "id": "nitya_devi:sarvamangala",
+      "type": "nitya_devi",
+      "name": "nitya_devi:sarvamangala"
+    },
+    {
+      "id": "nitya_devi:jvalamalini",
+      "type": "nitya_devi",
+      "name": "nitya_devi:jvalamalini"
+    },
+    {
+      "id": "nitya_devi:chitra",
+      "type": "nitya_devi",
+      "name": "nitya_devi:chitra"
+    },
+    {
+      "id": "deity:surya",
+      "type": "deity",
+      "name": "deity:surya"
+    },
+    {
+      "id": "graha:surya",
+      "type": "graha",
+      "name": "graha:surya"
+    },
+    {
+      "id": "deity:chandra",
+      "type": "deity",
+      "name": "deity:chandra"
+    },
+    {
+      "id": "graha:chandra",
+      "type": "graha",
+      "name": "graha:chandra"
+    }
+  ],
+  "links": [
+    {
+      "source": "tithi:1",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:1",
+      "target": "tithi_index:1",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:2",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:2",
+      "target": "tithi_index:2",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:3",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:3",
+      "target": "tithi_index:3",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:4",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:4",
+      "target": "tithi_index:4",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:5",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:5",
+      "target": "tithi_index:5",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:6",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:6",
+      "target": "tithi_index:6",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:7",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:7",
+      "target": "tithi_index:7",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:8",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:8",
+      "target": "tithi_index:8",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:9",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:9",
+      "target": "tithi_index:9",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:10",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:10",
+      "target": "tithi_index:10",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:11",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:11",
+      "target": "tithi_index:11",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:12",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:12",
+      "target": "tithi_index:12",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:13",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:13",
+      "target": "tithi_index:13",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:14",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:14",
+      "target": "tithi_index:14",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:15",
+      "target": "paksha:shukla",
+      "relation": "tithi_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:15",
+      "target": "tithi_index:15",
+      "relation": "tithi_index_in_paksha",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "nakshatra_pada:1_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "nakshatra_pada:1_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "nakshatra_pada:1_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "nakshatra_pada:1_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "nakshatra_pada:2_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "nakshatra_pada:2_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "nakshatra_pada:2_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "nakshatra_pada:2_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "nakshatra_pada:3_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "nakshatra_pada:3_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "nakshatra_pada:3_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "nakshatra_pada:3_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "nakshatra_pada:4_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "nakshatra_pada:4_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "nakshatra_pada:4_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "nakshatra_pada:4_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "nakshatra_pada:5_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "nakshatra_pada:5_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "nakshatra_pada:5_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "nakshatra_pada:5_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "nakshatra_pada:6_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "nakshatra_pada:6_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "nakshatra_pada:6_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "nakshatra_pada:6_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "nakshatra_pada:7_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "nakshatra_pada:7_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "nakshatra_pada:7_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "nakshatra_pada:7_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "nakshatra_pada:8_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "nakshatra_pada:8_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "nakshatra_pada:8_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "nakshatra_pada:8_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "nakshatra_pada:9_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "nakshatra_pada:9_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "nakshatra_pada:9_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "nakshatra_pada:9_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "nakshatra_pada:10_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "nakshatra_pada:10_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "nakshatra_pada:10_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "nakshatra_pada:10_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "nakshatra_pada:11_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "nakshatra_pada:11_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "nakshatra_pada:11_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "nakshatra_pada:11_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "nakshatra_pada:12_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "nakshatra_pada:12_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "nakshatra_pada:12_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "nakshatra_pada:12_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "nakshatra_pada:13_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "nakshatra_pada:13_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "nakshatra_pada:13_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "nakshatra_pada:13_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "nakshatra_pada:14_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "nakshatra_pada:14_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "nakshatra_pada:14_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "nakshatra_pada:14_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "nakshatra_pada:15_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "nakshatra_pada:15_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "nakshatra_pada:15_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "nakshatra_pada:15_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "nakshatra_pada:16_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "nakshatra_pada:16_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "nakshatra_pada:16_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "nakshatra_pada:16_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "nakshatra_pada:17_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "nakshatra_pada:17_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "nakshatra_pada:17_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "nakshatra_pada:17_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "nakshatra_pada:18_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "nakshatra_pada:18_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "nakshatra_pada:18_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "nakshatra_pada:18_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "nakshatra_pada:19_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "nakshatra_pada:19_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "nakshatra_pada:19_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "nakshatra_pada:19_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "nakshatra_pada:20_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "nakshatra_pada:20_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "nakshatra_pada:20_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "nakshatra_pada:20_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "nakshatra_pada:21_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "nakshatra_pada:21_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "nakshatra_pada:21_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "nakshatra_pada:21_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "nakshatra_pada:22_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "nakshatra_pada:22_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "nakshatra_pada:22_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "nakshatra_pada:22_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "nakshatra_pada:23_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "nakshatra_pada:23_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "nakshatra_pada:23_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "nakshatra_pada:23_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "nakshatra_pada:24_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "nakshatra_pada:24_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "nakshatra_pada:24_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "nakshatra_pada:24_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "nakshatra_pada:25_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "nakshatra_pada:25_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "nakshatra_pada:25_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "nakshatra_pada:25_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "nakshatra_pada:26_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "nakshatra_pada:26_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "nakshatra_pada:26_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "nakshatra_pada:26_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "pada:1",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "nakshatra_pada:27_1",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "pada:2",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "nakshatra_pada:27_2",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "pada:3",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "nakshatra_pada:27_3",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "pada:4",
+      "relation": "nakshatra_has_pada",
+      "layer": "structure",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "nakshatra_pada:27_4",
+      "relation": "nakshatra_pada_entity",
+      "layer": "derived_set",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "deity:ashwini_kumaras",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:1",
+      "target": "graha:ketu",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "deity:yama",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:2",
+      "target": "graha:venus",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "deity:agni",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:3",
+      "target": "graha:sun",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "deity:brahma",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:4",
+      "target": "graha:moon",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "deity:soma",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:5",
+      "target": "graha:mars",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "deity:rudra",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:6",
+      "target": "graha:rahu",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "deity:aditi",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:7",
+      "target": "graha:jupiter",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "deity:brihaspati",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:8",
+      "target": "graha:saturn",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "deity:nagas",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:9",
+      "target": "graha:mercury",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "deity:pitrs",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:10",
+      "target": "graha:ketu",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "deity:bhaga",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:11",
+      "target": "graha:venus",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "deity:aryaman",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:12",
+      "target": "graha:sun",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "deity:savitar",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:13",
+      "target": "graha:moon",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "deity:vishvakarma",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:14",
+      "target": "graha:mars",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "deity:vayu",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:15",
+      "target": "graha:rahu",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "deity:indraagni",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:16",
+      "target": "graha:jupiter",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "deity:mitra",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:17",
+      "target": "graha:saturn",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "deity:indra",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:18",
+      "target": "graha:mercury",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "deity:nirriti",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:19",
+      "target": "graha:ketu",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "deity:apas",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:20",
+      "target": "graha:venus",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "deity:vishvadevas",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:21",
+      "target": "graha:sun",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "deity:vishnu",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:22",
+      "target": "graha:moon",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "deity:vasus",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:23",
+      "target": "graha:mars",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "deity:varuna",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:24",
+      "target": "graha:rahu",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "deity:ajaekapada",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:25",
+      "target": "graha:jupiter",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "deity:ahirbudhnya",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:26",
+      "target": "graha:saturn",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "deity:pushan",
+      "relation": "nakshatra_associated_deity",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "nakshatra:27",
+      "target": "graha:mercury",
+      "relation": "nakshatra_ruling_graha",
+      "layer": "jyotisha",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:1",
+      "target": "nitya_devi:kameshvari",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:2",
+      "target": "nitya_devi:bhagamalini",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:3",
+      "target": "nitya_devi:nityaklinna",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:4",
+      "target": "nitya_devi:bherunda",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:5",
+      "target": "nitya_devi:vahnivasini",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:6",
+      "target": "nitya_devi:mahavajreshvari",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:7",
+      "target": "nitya_devi:shivaduti",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:8",
+      "target": "nitya_devi:tvarita",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:9",
+      "target": "nitya_devi:kulasundari",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:10",
+      "target": "nitya_devi:nitya",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:11",
+      "target": "nitya_devi:nilapataka",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:12",
+      "target": "nitya_devi:vijaya",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:13",
+      "target": "nitya_devi:sarvamangala",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:14",
+      "target": "nitya_devi:jvalamalini",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "tithi:15",
+      "target": "nitya_devi:chitra",
+      "relation": "tithi_associated_nitya_devi",
+      "layer": "tantra_time",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "deity:surya",
+      "target": "graha:surya",
+      "relation": "identity_bridge",
+      "layer": "heuristic",
+      "confidence": "model_layered"
+    },
+    {
+      "source": "deity:chandra",
+      "target": "graha:chandra",
+      "relation": "identity_bridge",
+      "layer": "heuristic",
+      "confidence": "model_layered"
+    }
+  ],
+  "timestamp": 1772715999
+}

@@ -18,5 +18,6 @@ else:
     print("node not found")
 
 for e in edges:
-    if e["from"] == node:
-        print("->", e["relation"], e["to"])
+    if e.get("from") == node:
+        rel = e.get("relation") or e.get("type")
+        print("->", rel, e.get("to"))

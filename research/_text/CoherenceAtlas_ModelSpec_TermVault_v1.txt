@@ -1,0 +1,183 @@
+[page 1]
+CoherenceAtlas — Hybrid Influence Model
+Model Spec + Term Vault (v1)
+A study-oriented framework that links astronomical inputs (Sun/Moon) to layered influence vectors (Tithi,
+Nak■atra, Pak■a, Samaya, ■tu), producing transparent indices (Mobility/Heat/Cohesion), VPK & Gu■a
+vectors, and an auditable rationale trail.
+Design goal: a system that is both computable (weights + equations) and study-able (Sanskrit terms +
+meanings + how each term is used in the model).
+This is not presented as deterministic fate or prediction. It is a structured model for examining temporal
+modulation of nature and behavior (prak■ti/gu■a/do■a rhythms) with devotional framing available as an
+interpretive layer.
+
+[page 2]
+1. Layer Map (What the model outputs)
+Layer
+Type
+Inputs
+Outputs
+Astronomical
+Objective
+Sun/Moon longitude, phase angle
+φ, Tithi(30), Pak■a, Nak■atra(27)
+Temporal Structure
+Jyoti■a logic
+Tithi/Pak■a/Nak■atra + Samaya + ■tu
+phase category, diurnal/seasonal bias
+Physiology Vector
+■yurvedic
+bias functions + Nak■atra weights
+Mobility/Heat/Cohesion → VPK
+Gu■a Vector
+Psychophysical
+diurnal/seasonal + phase + weights
+Sattva/Rajas/Tamas
+Natal Interaction (optional)
+Relational
+Natal Moon state + current state
+Resonance metrics + difference vectors
+Audit
+Transparency
+all above + parameters
+explainable breakdown of each value
+
+[page 3]
+2. Core Derivations (Astronomy → Tithi/Pak■a/Nak■atra)
+Let λ■ be Sun ecliptic longitude, λ■ be Moon ecliptic longitude (tropical or sidereal).
+Phase angle: φ = (λ■ − λ■) mod 360.
+Tithi(30): t30 = floor(φ / 12°) + 1.   (Ranges 1..30)
+Pak■a: ■ukla if φ < 180°, else K■■■a.
+For a 15-fold devotional/music mapping: t15 = ((t30 − 1) mod 15) + 1.
+Nak■atra(27): n = floor( (λ■ mod 360) / 13°20′ ) + 1.
+Where 13°20′ = 13.333333... degrees.
+Sidereal mode: λ_sidereal = (λ_tropical − ayan■■■a) mod 360. In v1 we use a Lahiri-style ayan■■■a
+approximation plus an optional fine-tune offset for matching a chosen pañc■■ga reference.
+
+[page 4]
+3. Indices → VPK (Mobility / Heat / Cohesion)
+We define three continuous indices. These are designed to be tunable, transparent, and auditable.
+MobilityIndex (V■ta-like): movement, variability, subtlety, dispersion.
+HeatIndex (Pitta-like): sharpness, transformation, combustion, intensity.
+CohesionIndex (Kapha-like): stability, nourishment, cohesion, inertia (when excessive).
+VPK vector is the normalized form of these indices:
+V = MobilityIndex / (Mobility+Heat+Cohesion)
+P = HeatIndex / (Mobility+Heat+Cohesion)
+K = CohesionIndex / (Mobility+Heat+Cohesion)
+Index decomposition:
+Index = PhaseComponent(Tithi/Pak■a) + SamayaComponent(time-of-day) + RituComponent(season) + NakshatraWeight + (optional) LunarSpeedComponent
+
+[page 5]
+4. Default Bias Tables (v1 presets)
+4.1 ■tu presets (used for density + gu■a tilt)
+■tu
+Density adj.
+Interpretive tilt (summary)
+Vasanta
+-1
+Light renewal; avoid over-density during thaw
+Gr■■ma
+-1
+Cooling bias; reduce sharp dominance
+Var■■
+0
+Grounding; stability under turbulence
+■arada
+0
+Clarity; full expression allowed
+Hemanta
+-1
+Warm depth; slower change-rate
+■i■ira
+0
+Gentle ignition; clarity with warmth
+4.2 Samaya presets (time-of-day)
+Samaya
+Hours
+Density adj.
+R■ga tilt (short)
+Brahma Muh■rta
+4–6
+-1
+Bhairav / austere
+Early Morning
+6–9
+0
+Todi / pentatonics
+Mid-morning
+9–12
+0
+Sarang / bright
+Afternoon
+12–15
+0
+Structured intensity
+Sunset (Sandhy■)
+15–18
+0
+Yaman/Kalyan
+Early Night
+18–21
+-1
+Kafi/Bageshri
+Late Night
+21–24
+-1
+Deep minor
+Midnight
+0–4
+-1
+Drone/minimal
+
+[page 6]
+5. Term Vault (Sanskrit → meaning → model usage)
+Each entry includes: definition, interpretive notes, and explicit model role. v1 shows the structure and starter
+terms.
+Term
+Meaning
+Used in model as…
+Tithi (■■■■)
+Lunar day; 12° increments of Moon–Sun angle.
+Defines phase category; contributes to indices via PhaseComponent.
+Pak■a (■■■■)
+Waxing (■ukla) or waning (K■■■a) half of the lunar month.
+Polarity factor: expansion vs contraction; affects interval gravity + Mobility/Heat bias.
+Nak■atra (■■■■■■■)
+27 lunar mansions; segments of Moon’s sidereal path.
+Primary temperament weight: Nak■atraWeight(V,P,K) influences VPK and interpretive tone.
+Samaya (■■■)
+Time-of-day performance context; often expressed in prahar segments.
+Diurnal bias on gu■a + density; filters r■ga/t■la tendencies.
+■tu (■■■)
+Season; 6-season Vedic cycle.
+Seasonal bias on density, gu■a tilt, and comfort vs intensity.
+Do■a (■■■)
+V■ta/Pitta/Kapha—functional tendencies in physiology.
+Represented as normalized VPK vector derived from indices.
+Gu■a (■■■)
+Sattva/Rajas/Tamas—modes of material nature.
+Represented as a vector from diurnal/seasonal/phase weights; used for study summaries.
+Ayan■■■a (■■■■■■)
+Sidereal correction between tropical and sidereal longitudes.
+Used to convert tropical to sidereal; fine-tune allows matching a chosen pañc■■ga reference.
+
+[page 7]
+6. Worked Examples (audit-style template)
+Example template (audit):
+Inputs:
+  λ■ = ...°, λ■ = ...°, φ = ...°
+Derived:
+  Tithi(30) = t30, t15 = ...
+  Pak■a = ...
+  Nak■atra = ...
+Context:
+  Samaya = ... ; ■tu = ...
+Indices:
+  Mobility = PhaseMobility + SamayaMobility + RituMobility + NakMobility
+  Heat     = PhaseHeat     + SamayaHeat     + RituHeat     + NakHeat
+  Cohesion = PhaseCohesion + SamayaCohesion + RituCohesion + NakCohesion
+Normalize → VPK
+Note:
+  In v1, Nak■atra weights are user-editable placeholders intended to be refined with textual study and community review.
+Next steps (v2): add Yoga + Kara■a (full pañc■■ga), add citation fields per term entry, and add parameter
+packs (ISKCON-aligned vs comparative) to let audiences switch interpretive layers while keeping the same
+computational core.
