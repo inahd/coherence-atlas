@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+BASE="/opt/atlas"
+
+echo "Rebuilding Coherence Atlas..."
+
+mkdir -p $BASE/{datasets,graph,panchanga,texts,journals,scripts}
+
+# Nakshatra dataset
+cat <<DATA > $BASE/datasets/nakshatra.yaml
+Swati:
+  deity: Vayu
+  ruler: Rahu
+  qualities:
+    - independence
+    - movement
+
+Rohini:
+  deity: Brahma
+  ruler: Moon
+  qualities:
+    - fertility
+    - growth
+DATA
+
+# Graph
+cat <<DATA > $BASE/graph/graph.yaml
+nodes:
+
+  Swati:
+    type: nakshatra
+    deity: Vayu
+    ruler: Rahu
+    qualities:
+      - independence
+      - movement
+
+  Rohini:
+    type: nakshatra
+    deity: Brahma
+    ruler: Moon
+    qualities:
+      - fertility
+      - growth
+
+edges:
+
+  - from: Swati
+    to: Rahu
+    relation: ruled_by
+
+  - from: Rohini
+    to: Moon
+    relation: ruled_by
+DATA
+
+echo "Atlas rebuilt."
+echo "Files recreated in $BASE"
+

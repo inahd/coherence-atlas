@@ -1,0 +1,43 @@
+nodes:
+
+  Rohini:
+    type: nakshatra
+    deity: Brahma
+    ruler: Moon
+    qualities:
+      - fertility
+      - growth
+
+  Swati:
+    type: nakshatra
+    deity: Vayu
+    ruler: Rahu
+    qualities:
+      - independence
+      - movement
+
+  Moon:
+    type: graha
+    qualities:
+      - mind
+      - emotion
+
+  Rahu:
+    type: graha
+    qualities:
+      - disruption
+      - expansion
+
+edges:
+
+  - from: Rohini
+    to: Moon
+    relation: ruled_by
+
+  - from: Swati
+    to: Rahu
+    relation: ruled_by
+
+  - from: Swati
+    to: Vayu
+    relation: deity

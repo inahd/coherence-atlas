@@ -1,0 +1,14 @@
+texts:
+
+  - title: Bhagavad Gita
+    tradition: Vedanta
+    chapters: 18
+
+  - title: Srimad Bhagavatam
+    tradition: Bhakti
+    cantos: 12
+
+  - title: Brihat Parashara Hora Shastra
+    tradition: Jyotish
+    subject: astrology
+

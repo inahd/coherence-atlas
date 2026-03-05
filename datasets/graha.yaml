@@ -1,0 +1,35 @@
+Sun:
+  type: graha
+  qualities: authority, vitality
+
+Moon:
+  type: graha
+  qualities: mind, emotion
+
+Mars:
+  type: graha
+  qualities: energy, conflict
+
+Mercury:
+  type: graha
+  qualities: intellect, speech
+
+Jupiter:
+  type: graha
+  qualities: wisdom, expansion
+
+Venus:
+  type: graha
+  qualities: beauty, pleasure
+
+Saturn:
+  type: graha
+  qualities: discipline, restriction
+
+Rahu:
+  type: graha
+  qualities: disruption, obsession
+
+Ketu:
+  type: graha
+  qualities: detachment, liberation

@@ -1,0 +1,69 @@
+#!/usr/bin/env python3
+
+import sys, os, yaml
+from datetime import datetime
+import swisseph as swe
+
+BASE="/opt/atlas"
+
+def today():
+    now=datetime.utcnow()
+    jd=swe.julday(now.year,now.month,now.day)
+
+    sun=swe.calc_ut(jd,swe.SUN)[0][0]
+    moon=swe.calc_ut(jd,swe.MOON)[0][0]
+
+    tithi=int(((moon-sun)%360)/12)+1
+    nak=int(moon/(360/27))
+
+    nakshatra=[
+"Ashwini","Bharani","Krittika","Rohini","Mrigashira",
+"Ardra","Punarvasu","Pushya","Ashlesha","Magha",
+"Purva Phalguni","Uttara Phalguni","Hasta","Chitra",
+"Swati","Vishakha","Anuradha","Jyeshtha","Mula",
+"Purva Ashadha","Uttara Ashadha","Shravana","Dhanishta",
+"Shatabhisha","Purva Bhadrapada","Uttara Bhadrapada","Revati"
+]
+
+    print("Date:",now.strftime("%Y-%m-%d"))
+    print("Tithi:",tithi)
+    print("Nakshatra:",nakshatra[nak])
+    print("Sun:",round(sun,2))
+    print("Moon:",round(moon,2))
+
+def journal():
+    date=datetime.utcnow().strftime("%Y-%m-%d")
+    path=f"{BASE}/journals/{date}.md"
+    os.makedirs(f"{BASE}/journals",exist_ok=True)
+
+    if not os.path.exists(path):
+        with open(path,"w") as f:
+            f.write(f"# Journal {date}\n\n")
+
+    print(path)
+
+def search(word):
+    for root,dirs,files in os.walk(BASE):
+        for file in files:
+            path=os.path.join(root,file)
+            try:
+                with open(path) as f:
+                    if word.lower() in f.read().lower():
+                        print(path)
+            except:
+                pass
+
+if len(sys.argv)<2:
+    print("commands: today | journal | search")
+    sys.exit()
+
+cmd=sys.argv[1]
+
+if cmd=="today":
+    today()
+
+elif cmd=="journal":
+    journal()
+
+elif cmd=="search":
+    search(sys.argv[2])
