@@ -47,3 +47,12 @@ research/_ocr/
 **/*.zip
 __pycache__/
 *.pyc
+
+# --- Private/local research (never commit) ---
+research_private/
+
+# --- Generated within public (optional) ---
+research_public/_text/
+research_public/_ocr/
+research_public/_incoming/
+research/
