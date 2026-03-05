@@ -1,1 +1,17 @@
 .env
+
+# --- Atlas generated / local ---
+.env
+staging/
+memory/
+backups/
+logs/
+research/_incoming/
+research/_text/
+research/_ocr/
+**/*.db
+**/*.sqlite
+**/*.tgz
+**/*.zip
+__pycache__/
+*.pyc
