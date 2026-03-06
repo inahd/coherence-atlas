@@ -1,97 +1,106 @@
 # Coherence Atlas
 
 <p align="center">
-  <b>Local-first research backend → layered knowledge graph (Canon • Inference • Overlays)</b><br/>
-  <i>Ingest sources → extract passages w/ locators → propose relations → resolve coherence over time</i>
+  <b>A living atlas of Vedic arts & sciences</b><br/>
+  <i>Explore how time cycles, ritual, mantra, music, plants, and practice interrelate — without collapsing traditions into one muddy map.</i>
 </p>
 
 <p align="center">
-  <a href="https://github.com/inahd/coherence-atlas/actions"><img alt="Actions" src="https://img.shields.io/github/actions/workflow/status/inahd/coherence-atlas/ia_manifests.yml?branch=main"/></a>
-  <a href="https://github.com/inahd/coherence-atlas"><img alt="Repo" src="https://img.shields.io/github/stars/inahd/coherence-atlas?style=social"/></a>
-  <img alt="Python" src="https://img.shields.io/badge/python-3.11%2B-blue"/>
-  <img alt="Local-first" src="https://img.shields.io/badge/local--first-yes-success"/>
+  <a href="docs/vision.md"><b>Read the Vision</b></a> • <a href="docs/north_star_demo.md"><b>North Star Demo</b></a>
 </p>
 
 ---
 
-## Vision (full system map)
-➡️ **Read the full vision:** [](docs/vision.md)  
-➡️ **North Star demo:** [](docs/north_star_demo.md)
+## What this is (in human terms)
+
+Coherence Atlas is a **research + exploration system** for people studying or practicing Vedic knowledge traditions.
+It helps you build a **navigable map of relationships** across domains that are usually scattered across many texts, teachers, and lineages.
+
+Instead of a single “one true” chart, Atlas supports:
+- **A shared core** (what’s broadly attested)
+- **Tradition variants** (so schools can differ without conflict)
+- **Clearly labeled inference** (useful, but not pretending to be proven)
 
 ---
 
-## What this is
-Coherence Atlas is a **research backend** that builds a structured, queryable knowledge graph from real sources (PDF/text/epub/html).
-It is designed for domains where **coherence emerges from layered relationships** (e.g., time cycles, ritual calendars, arts, ecology).
+## What you can do with it
 
-Atlas outputs **three truth layers** so the system can grow fast *without lying*:
-- **Canon (attested):** evidence-backed, stable, promotion-gated
-- **Inference (coherence-derived):** fast growth, explicitly labeled 
-- **Overlays (variants):** tradition/school mappings that preserve disagreement without mud
+### 1) Explore a living map of relationships
+Pick a focus (e.g., **Rohini**, **Ekadashi**, **Durga**, **a specific bija**, **a raga**) and see its neighborhood:
+- time and calendrical associations
+- deities and narratives
+- plants and offerings
+- rituals and observances
+- music and practice contexts
+- crosslinks to passages in sources (where available)
 
----
+### 2) Study without losing nuance
+Atlas keeps **multiple mappings** when traditions disagree, rather than forcing a single answer.
+That means a qualified person can review, compare, and refine — instead of fighting a brittle “taxonomy.”
 
-## Quickstart (3 commands)
-
-
-**Outputs (local):**
-- Dashboard: 
-- Stability report: 
-- Resolved layers:
-  -  (should be non-empty early)
-  -  (should be non-empty early)
-  -  (may be empty early; canon is strict)
-
----
-
-## Why this matters
-Most knowledge graphs either:
-1) stay tiny because evidence requirements block growth, or
-2) grow fast and become **mud**.
-
-Atlas is built to avoid both failure modes: **growth happens in inference**, and **canon matures over time** as evidence coverage improves.
+### 3) Build curriculum + worksheets (generator-ready)
+The long-term goal is to generate:
+- guided study paths (week-by-week or topic-based)
+- worksheets and review packets
+- practice sequences (yoga / breath / seasonal rhythms)
+- printable diagrams and art exports (mandalas/yantras/patterns)
+All backed by structured references and tracked confidence.
 
 ---
 
-## What you can explore today
-- **Cluster exploration:** focus an entity like  and see its neighborhood across domains
-- **Entity pages (wiki-style):** “Rohini page” views grouped by Canon / Inference / Overlays
-- **Dashboards:** see what blocks canon (missing , missing evidence, conflicts)
+## The three truth layers (why this stays coherent)
+
+Atlas grows quickly **without turning into a rumor mill** by separating layers:
+- **Canon (attested):** evidence-backed (source + locator + excerpt), stable core
+- **Inference (coherence-derived):** useful connections labeled  until verified
+- **Overlays (tradition variants):** school/lineage-specific mappings kept side-by-side
+
+This keeps exploration rich while protecting integrity.
 
 ---
 
-## Repo layout
--  — pipeline + utilities (ingest/extract/harvest/evidence/resolve/graph/wiki)
--  — structured entities + relation tables (CSV/YAML)
--  — wget lists (auto-generated + curated)
--  — downloaded sources (local)
--  — extracted text stream (local)
--  — generated reports/graphs (local)
--  — documentation (vision, demo, architecture)
+## Where the project is today (honest)
+
+- The system can ingest sources and produce **entity-centric pages** (“Rohini-style” views).
+- The inference layer is already producing a coherent graph structure.
+- Canon grows more slowly as evidence density improves (this is expected).
 
 ---
 
-## Maturity model (honest)
-- Early stage: inference + overlays grow first
-- Canon grows later as evidence density rises
-- Conflicts remain visible (not hidden) and can be scoped by overlays
+## For subject-matter contributors (no coding required)
 
-If you’re evaluating the project: open  and  after a cycle.
+If you know the material, the highest-impact help is:
+- recommending high-quality sources (text-first if possible)
+- clarifying mappings (what belongs in canon vs what’s tradition-specific)
+- adding evidence snippets/locators for important relations
+- reviewing “inference” suggestions and promoting what’s truly attested
+
+If you’re a teacher: tell us what *curriculum outputs* you’d want (worksheets, lessons, prompts).
+
+---
+
+## For developers (quick technical note)
+
+Coherence Atlas is a **local-first research backend** that turns PDFs/text/epubs/html into:
+- extracted passages with locators
+- structured relation tables
+- resolved layers: canon / inference / overlays
+- dashboards and graphs for maturity + conflict review
+
+Start here:
+-  (docs index)
+-  (how to run a cycle)
+
+Badges / automation:
+- GitHub Actions updates download manifests automatically.
 
 ---
 
-## Contributing (high leverage)
-If you want to help, the biggest wins are:
-- Improve ingestion quality (text-first sources, OCR where needed)
-- Improve evidence matching (better locators/snippets)
-- Add resolver constraints (types/cardinality/conflict settling)
-- Improve exploration UX (filters, collapsible clusters, entity pages)
-- Add domain packs (panchanga, mantra metadata, ayurveda, yantra, music)
+## Links
+- Vision: [](docs/vision.md)
+- North Star demo: [](docs/north_star_demo.md)
+- Docs index: [](docs/README.md)
 
-See  for a docs index.
-
----
 
 ## License
-TBD (choose before broad distribution).
-
+TBD
