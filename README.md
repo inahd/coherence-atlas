@@ -138,3 +138,4 @@ TBD (pick a license before making the repository broadly public).
 
 ## Vision (full system map)
 ➡️ **Read the full vision:** [docs/vision.md](docs/vision.md)
+➡️ **North Star demo:** [docs/north_star_demo.md](docs/north_star_demo.md)
