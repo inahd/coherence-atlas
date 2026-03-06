@@ -1,0 +1,63 @@
+
+<html>
+<head>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<h2>Atlas Graph Demo: Rohini</h2>
+
+<svg width="900" height="600"></svg>
+
+<script>
+
+const nodes = [{"id": "deity:vishnu"}, {"id": "deity:shiva"}, {"id": "deity:brahma"}, {"id": "deity:yama"}, {"id": "deity:ashwini"}, {"id": "deity:agni"}, {"id": "nakshatra:rohini"}];
+const links = [{"source": "nakshatra:rohini", "target": "deity:shiva", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:brahma", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:brahma", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:vishnu", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:vishnu", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:yama", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:brahma", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:brahma", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:yama", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:shiva", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:brahma", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:yama", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:shiva", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:shiva", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:brahma", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:brahma", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:vishnu", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:vishnu", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:yama", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:brahma", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:ashwini", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}, {"source": "nakshatra:rohini", "target": "deity:agni", "label": "nakshatra_associated_deity"}];
+
+const svg=d3.select("svg");
+
+const simulation=d3.forceSimulation(nodes)
+ .force("link",d3.forceLink(links).id(d=>d.id).distance(120))
+ .force("charge",d3.forceManyBody().strength(-300))
+ .force("center",d3.forceCenter(450,300));
+
+const link=svg.append("g")
+ .selectAll("line")
+ .data(links)
+ .enter().append("line")
+ .style("stroke","#999");
+
+const node=svg.append("g")
+ .selectAll("circle")
+ .data(nodes)
+ .enter().append("circle")
+ .attr("r",10);
+
+const label=svg.append("g")
+ .selectAll("text")
+ .data(nodes)
+ .enter().append("text")
+ .text(d=>d.id)
+ .attr("font-size","10px");
+
+simulation.on("tick",()=>{
+
+link
+ .attr("x1",d=>d.source.x)
+ .attr("y1",d=>d.source.y)
+ .attr("x2",d=>d.target.x)
+ .attr("y2",d=>d.target.y);
+
+node
+ .attr("cx",d=>d.x)
+ .attr("cy",d=>d.y);
+
+label
+ .attr("x",d=>d.x+12)
+ .attr("y",d=>d.y);
+
+});
+
+</script>
+</body>
+</html>
