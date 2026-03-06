@@ -1,2 +1,29 @@
-# Example placeholders:
-# https://example.org/sacred_plants.pdf
+# Auto-generated from Internet Archive AdvancedSearch
+# Tip: prune to direct .pdf/.zip inside each item if desired.
+# One URL per line.
+
+https://archive.org/details/PankajOudhiaCKD-Stage3-375Days-228-233
+https://archive.org/details/PankajOudhiaCancerCure-900Series-116
+https://archive.org/details/PankajOudhiaCancerCure-900Series-141
+https://archive.org/details/PankajOudhiaCancerCure-900Series-165
+https://archive.org/details/PankajOudhiaCancerCure-900Series-168
+https://archive.org/details/PankajOudhiaCancerCure-900Series-181
+https://archive.org/details/PankajOudhiaCareyaOverdose
+https://archive.org/details/PankajOudhiaAbelmoschusOverdose
+https://archive.org/details/PankajOudhiaCancerCureSeries10
+https://archive.org/details/PankajOudhiaCancerCureSeries2
+https://archive.org/details/PankajOudhiaHardwickiaOverdose
+https://archive.org/details/PankajOudhiaMooniaOverdose
+https://archive.org/details/PankajOudhiaCancerCure-900Series-33
+https://archive.org/details/BBC_Radio_York_20191127_140000
+https://archive.org/details/BBC_Radio_4_FM_20181223_090000
+https://archive.org/details/BBC_Radio_Solent_20190805_220000
+https://archive.org/details/WRWA_88_7_FM_HD_1_20190310_160000
+https://archive.org/details/PankajOudhiaCarumToxicity
+https://archive.org/details/WNPR_90_5_FM_20190831_010000
+https://archive.org/details/PankajOudhiaTrachyspermumOverdose
+https://archive.org/details/PankajOudhiaCancerCure-900Series-142
+https://archive.org/details/PankajOudhiaCatunaregamOverdose
+https://archive.org/details/KPFA_94_1_FM_20200107_210000
+https://archive.org/details/PankajOudhiaCorallocarpusOverdose
+https://archive.org/details/PankajOudhiaCancerCure-900Series-52

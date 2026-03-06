@@ -1,2 +1,29 @@
-# Example placeholders:
-# https://example.org/tithi_nitya_dossier.pdf
+# Auto-generated from Internet Archive AdvancedSearch
+# Tip: prune to direct .pdf/.zip inside each item if desired.
+# One URL per line.
+
+https://archive.org/details/be2o94h0f31csmsdmqs1m3d1mwiia3e0kaxq5gud
+https://archive.org/details/fav-parth_tithi
+https://archive.org/details/deeb_panchanga-diwakar-1997-ed-by-shri-devi-dayal-jyotishi-delhi-dharmasan-prakashan
+https://archive.org/details/vshv_panchanga-diwakar-2007-08-by-shri-vivek-sharma-jalandhar-general-book-depot
+https://archive.org/details/smritikaustubhaanatabhattatithisamvatsarasouchdidhatiwasudevlaxmanshastripaniskarnirnayasagarpr_596_X
+https://archive.org/details/LakshmiNarayanPanchanga4812Alm21Shlf5DevanagariTantra_201708
+https://archive.org/details/qggr_tithi-nirnay-in-nirnay-saar-manu-01-01-99-lal-bahadur-shastri-sanskrit-university
+https://archive.org/details/in.ernet.dli.2015.291631
+https://archive.org/details/PqAj_tithi-parva-nirnaya-1981-to-1982-shri-sarasvat-sabha-kashi
+https://archive.org/details/in.ernet.dli.2015.305348
+https://archive.org/details/krishna_janma_tithi_vidhi
+https://archive.org/details/hgVJ_panchanga-divakar-2004-by-pt.-panna-lal-jyotishi-hindi-pt.-devi-dayalu-jyotishi-and-sons-jaland
+https://archive.org/details/2017SrinivasaGargeyagariPanchangaCalender-2017
+https://archive.org/details/1256ABBharatSavitriStotramAndTithiSamanyaNirnayaManuscriptsByIAMVISIONARYTUNES
+https://archive.org/details/YtFF_tithi-parva-nirnay-1980-sarasvat-sabha-kashi
+https://archive.org/details/Bg9.17-18ByNityaDevi
+https://archive.org/details/nitya-devi-hilo-hawaii-july-22-2014-bg-4-16
+https://archive.org/details/nitya-devi-hilo-hawaii-march-12-2014-bg-3-15-2
+https://archive.org/details/madhavatithi
+https://archive.org/details/fav-tithi_patel475
+https://archive.org/details/gzdv_panchanga-diwakar-1996-by-shri-vivek-sharma-jalandhar-general-book-depot
+https://archive.org/details/cinzia-arruzza-tithi-bhattacharya-nancy-fraser.-feminismo-para-os-99.-um-manifes
+https://archive.org/details/TithiNirnayDeepikaRamDevMishraAlm28Shlf663633GDevanagariJyotish
+https://archive.org/details/dmod_tithi-nirnay-manu-01-01-76-lal-bahadur-shastri-sanskrit-university
+https://archive.org/details/krodhi-ugadi-panchanga-pathanam-by-l-v-s-siddhanthy
