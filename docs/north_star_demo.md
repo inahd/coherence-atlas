@@ -48,3 +48,16 @@ You should see Canon (may be empty early), Inference (should be non-empty), Over
 - Inference cluster exists and is coherent
 - Overlays preserve alternatives cleanly
 - Evidence gradually accumulates and can promote
+---
+
+## Where to look (local files)
+
+After you run a cycle, open these on your laptop:
+
+- **Dashboard (HTML):** 
+- **Interactive graph (HTML):** 
+- **Rohini cluster report (MD):** 
+- **Rohini entity page (MD):** 
+
+Tip: if you're on a Linux desktop, you can open HTML with your browser file-open dialog, or run: .
+
