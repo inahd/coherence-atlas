@@ -1,124 +1,47 @@
 # Atlas Core Principles
 
-Atlas is not merely a dataset or graph database.  
-It is a coherence engine for complex philosophical and cosmological knowledge.
+Books are the basis  
+Preaching is the essence  
+Utility is the principle  
+Purity is the force  
 
-The system is designed to model traditions such as the Vedic corpus without collapsing
-their interpretive layers into contradictions.
+Atlas Architecture:
 
-Atlas therefore operates across multiple dimensions of meaning.
+texts → passages → relations → graph → inference → media
 
----
+Core Layers:
 
-## 1. Cosmological Backbone
+1. Canon Layer
+Scriptural relations directly supported by sources.
 
-Cosmology provides the structural map of existence.
+2. Inference Layer
+Logical relations derived from patterns.
 
-Examples:
-- Goloka
-- Vaikuntha
-- Brahmajyoti
-- Material universe
-- Lokas
+3. Overlay Layer
+Sectarian or interpretive expansions.
 
-Entities can exist in cosmological hierarchies and spatial metaphysical relations.
+Knowledge Growth Model:
 
-Example relations:
+coherence > volume
 
-Goloka → above → Vaikuntha  
-Vaikuntha → above → material cosmos  
+Atlas grows by:
 
----
+- adding passages
+- resolving relations
+- strengthening graph coherence
+- generating structured outputs (cards, infographics, maps)
 
-## 2. Consciousness / Guna Axis
+Purpose:
 
-Perception of reality depends on the state of consciousness.
+Create a navigable relational atlas of Vedic knowledge.
 
-Atlas models this using the guna spectrum:
+Outputs:
 
-- tamas
-- rajas
-- sattva
-- shuddha-sattva
+- research tools
+- symbolic cards
+- cosmology maps
+- teaching media
 
-Different entities or interpretations may exist at different states of consciousness.
+Atlas is not an oracle.
 
----
-
-## 3. Ontological Spectrum
-
-Many Vedic philosophies operate across a spectrum between unity and difference.
-
-Atlas models this as a philosophical axis.
-
-Examples:
-
-- Advaita → emphasis on oneness
-- Dvaita → emphasis on difference
-- Acintya-bheda-abheda → simultaneous unity and difference
-
-Entities may occupy positions within this spectrum.
-
----
-
-## 4. Tradition / Sect Dimension
-
-Different schools interpret the same concepts differently.
-
-Examples:
-
-- Gaudiya
-- Smarta
-- Jyotish
-- Puranic
-- Tantric
-
-Atlas stores these interpretations as **parallel relations**, not contradictions.
-
----
-
-## 5. Knowledge Authority Layer
-
-Inspired by the epistemological model:
-
-Guru  
-Sadhu  
-Shastra  
-
-Atlas stores knowledge according to source authority.
-
-Possible sources:
-
-- canonical scripture
-- commentary
-- tradition
-- inference
-- AI-generated hypothesis
-
----
-
-## 6. Sanskrit Semantic Layer
-
-Sanskrit terms carry grammatical and ontological meaning.
-
-Atlas preserves Sanskrit terms alongside English equivalents.
-
-Example:
-
-Krishna → svayam_bhagavan  
-Narayana → expansion_of → Krishna  
-
----
-
-## 7. Atlas Goal
-
-Atlas aims to become a system that can:
-
-- map cosmology
-- represent philosophical interpretation
-- store textual knowledge
-- support AI-assisted reasoning
-- revive lost or fragmented knowledge systems
-
-without collapsing their internal coherence.
-
+It is a structured research instrument.
