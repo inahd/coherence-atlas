@@ -135,3 +135,6 @@ Weekly
 9) License
 ──────────────────────────────────────────────────────────────────────────────
 TBD (pick a license before making the repository broadly public).
+
+## Vision (full system map)
+➡️ **Read the full vision:** [docs/vision.md](docs/vision.md)
