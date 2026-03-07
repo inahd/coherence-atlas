@@ -685,3 +685,30 @@ atlas_graph.json
 This viewer allows developers to inspect the evolving cosmological graph
 structure as Atlas grows.
 
+
+---
+
+# Entity Normalization System
+
+Script
+
+scripts/atlas_normalize_entities.py
+
+Purpose
+
+Ensure that entities in the Atlas graph maintain consistent identity.
+
+Features
+
+Alias resolution  
+Canonical naming  
+Duplicate detection  
+
+Example
+
+"Fire Deity"
+→ normalized to
+"Agni"
+
+This prevents ontology fragmentation as the graph expands.
+

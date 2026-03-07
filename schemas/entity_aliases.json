@@ -1,0 +1,10 @@
+{
+  "Agni": ["Agni Deva","Fire Deity"],
+  "Surya": ["Sun","Solar Deity"],
+  "Chandra": ["Moon","Lunar Deity"],
+  "Mangala": ["Mars"],
+  "Budha": ["Mercury"],
+  "Guru": ["Jupiter"],
+  "Shukra": ["Venus"],
+  "Shani": ["Saturn"]
+}
