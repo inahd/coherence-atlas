@@ -743,3 +743,30 @@ python scripts/atlas_run_pipeline.py
 
 This replaces running each subsystem manually.
 
+
+---
+
+# Coherence Engine
+
+Script
+
+scripts/atlas_compute_coherence.py
+
+Purpose
+
+Compute coherence scores for entities in the Atlas graph.
+
+Signals used
+
+relation density  
+authority strength  
+
+Higher coherence scores indicate stronger cosmological alignment
+across the Atlas knowledge graph.
+
+These scores may later influence:
+
+research priority  
+promotion decisions  
+visualization strength  
+
