@@ -216,3 +216,45 @@ Atlas may generate geometry freely.
 Atlas may authorize sacred geometry only when supported
 by authority and stability rules.
 
+
+---
+
+# Canonical Entity Registry
+
+Atlas uses a controlled set of entity categories.
+
+This prevents uncontrolled ontology growth.
+
+Each entity in the graph must belong to a defined type.
+
+Core entity categories include:
+
+Deity
+Graha
+Nakshatra
+Rashi
+Mahabhuta
+Guna
+Dosha
+Rasa
+Direction
+Tithi
+Festival
+Mantra
+Yantra
+Mandala
+Ritual
+Substance
+Organ
+Chakra
+Time_Cycle
+Loka
+Text
+Commentary
+Teacher
+Lineage
+
+These entity types form the **core ontology skeleton** of Atlas.
+
+New entity types should be added carefully to avoid fragmentation.
+

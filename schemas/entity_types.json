@@ -1,0 +1,111 @@
+{
+  "entity_types": {
+
+    "deity": {
+      "description": "Divine beings or cosmic intelligences",
+      "examples": ["Agni", "Indra", "Ashwini Kumaras"]
+    },
+
+    "graha": {
+      "description": "Planetary intelligences used in Jyotisha",
+      "examples": ["Surya", "Chandra", "Mangala", "Shani"]
+    },
+
+    "nakshatra": {
+      "description": "Lunar mansion divisions of the zodiac",
+      "examples": ["Ashwini", "Bharani", "Krittika"]
+    },
+
+    "rashi": {
+      "description": "Zodiac signs used in Jyotisha",
+      "examples": ["Aries", "Taurus", "Gemini"]
+    },
+
+    "mahabhuta": {
+      "description": "Five great elements of cosmology",
+      "examples": ["Earth", "Water", "Fire", "Air", "Ether"]
+    },
+
+    "guna": {
+      "description": "Three fundamental qualities of nature",
+      "examples": ["Sattva", "Rajas", "Tamas"]
+    },
+
+    "dosha": {
+      "description": "Ayurvedic constitutional forces",
+      "examples": ["Vata", "Pitta", "Kapha"]
+    },
+
+    "rasa": {
+      "description": "Ayurvedic taste categories",
+      "examples": ["Sweet", "Sour", "Salty", "Bitter"]
+    },
+
+    "direction": {
+      "description": "Cardinal or intermediate spatial directions",
+      "examples": ["East", "West", "North", "South"]
+    },
+
+    "tithi": {
+      "description": "Lunar day used in ritual calendars"
+    },
+
+    "festival": {
+      "description": "Ritual or sacred observance"
+    },
+
+    "mantra": {
+      "description": "Sacred sound formula"
+    },
+
+    "yantra": {
+      "description": "Sacred geometric diagram"
+    },
+
+    "mandala": {
+      "description": "Symbolic cosmological diagram"
+    },
+
+    "ritual": {
+      "description": "Structured sacred action"
+    },
+
+    "substance": {
+      "description": "Physical or ritual material"
+    },
+
+    "organ": {
+      "description": "Body organ used in Ayurvedic or yogic systems"
+    },
+
+    "chakra": {
+      "description": "Energy center in yogic anatomy"
+    },
+
+    "time_cycle": {
+      "description": "Cosmic or calendrical time structure",
+      "examples": ["Yuga", "Kalpa", "Manvantara"]
+    },
+
+    "loka": {
+      "description": "Cosmic realm or plane of existence"
+    },
+
+    "text": {
+      "description": "Scriptural or philosophical text"
+    },
+
+    "commentary": {
+      "description": "Interpretive work explaining scripture"
+    },
+
+    "teacher": {
+      "description": "Guru or lineage authority"
+    },
+
+    "lineage": {
+      "description": "Tradition or transmission lineage"
+    }
+
+  }
+}
