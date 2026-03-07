@@ -42,3 +42,33 @@ Stability ≠ Visualization
 
 Each axis must remain independent.
 
+
+---
+
+# Graph Schema Integration
+
+The Atlas graph schema standardizes entity and relation metadata.
+
+Fields include:
+
+stability_layer
+authority
+visualization_permission
+
+These fields allow Atlas subsystems to evaluate knowledge consistently.
+
+Example entity record:
+
+{
+  "name": "Agni",
+  "type": "Deva",
+  "domains": ["cosmology","ritual"],
+  "stability_layer": "stable",
+  "authority": {
+    "shastra": 0.9,
+    "sadhu": 0.6,
+    "guru": 0.7
+  },
+  "visualization_permission": "canonical"
+}
+

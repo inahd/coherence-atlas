@@ -128,3 +128,91 @@ graph pattern
 
 This prevents misleading sacred diagrams.
 
+
+---
+
+# Graph Schema
+
+Atlas ultimately operates on a simple model:
+
+ENTITY
+RELATION
+
+Everything in the system reduces to these two primitives.
+
+Entities represent cosmological objects.
+
+Relations represent meaningful connections between them.
+
+Example relations:
+
+Ashwini → ruled_by → Ketu
+Pitta → composed_of → Fire
+Agni → element_of → Fire
+Tuesday → ruled_by → Mars
+
+---
+
+# Entity Metadata
+
+Every entity or relation may include metadata fields.
+
+stability_layer
+    stable
+    working
+    experimental
+
+authority_source
+    shastra
+    sadhu
+    guru
+    secondary
+    inferred
+
+visualization_permission
+    blocked
+    relation
+    analytic
+    symbolic
+    canonical
+
+These metadata fields guide the Yantra Harmonizer and visualization system.
+
+---
+
+# Yantra Harmonizer Logic
+
+The Yantra Harmonizer evaluates structural patterns before allowing visual elevation.
+
+Pipeline:
+
+graph pattern
+→ authority evaluation
+→ stability layer evaluation
+→ visualization permission
+→ geometry rendering
+
+Example rule:
+
+If:
+    stability = stable
+    authority = strong shastra
+
+Then:
+    canonical yantra allowed
+
+If:
+    stability = experimental
+
+Then:
+    analytic geometry only
+
+---
+
+# System Principle
+
+Atlas may generate geometry freely.
+
+Atlas may authorize sacred geometry only when supported
+by authority and stability rules.
+
