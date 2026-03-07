@@ -462,3 +462,50 @@ When coverage approaches 1.0 the system automatically reduces
 canonical discovery tasks and shifts effort toward synthesis
 and experimental discovery.
 
+
+---
+
+# Canonical Structure Loader
+
+Script
+
+scripts/atlas_load_canon.py
+
+Purpose
+
+Load canonical cosmological datasets and ensure the Atlas graph
+contains the correct entities.
+
+Pipeline
+
+canonical datasets
+→ canonical loader
+→ entity verification
+→ missing entity creation
+→ canonical gap placeholder generation
+
+Canonical entities are assigned:
+
+stability_layer: stable  
+authority: strong shastra  
+visualization_permission: symbolic  
+
+This ensures the backbone of Atlas remains structurally correct.
+
+---
+
+# Canonical Integrity
+
+Each canonical dataset defines:
+
+system  
+expected_count  
+items  
+
+The loader checks:
+
+actual_count vs expected_count
+
+If items are missing a placeholder node is generated so the
+research cycle can investigate the gap.
+
