@@ -587,3 +587,41 @@ visualization_permission: analytic
 They must be promoted through authority validation before
 being rendered as symbolic or canonical yantras.
 
+
+---
+
+# Research Queue Engine
+
+Script
+
+scripts/atlas_build_research_queue.py
+
+Purpose
+
+Convert placeholder nodes and detected gaps into structured
+research tasks.
+
+Pipeline
+
+placeholder nodes
+→ task generation
+→ priority scoring
+→ research queue
+
+Each task contains:
+
+task_id  
+target entity  
+gap_state  
+layer (stable / working / experimental)  
+priority score  
+status  
+
+Priority reflects:
+
+gap severity  
+canonical importance  
+relation dependency  
+
+Tasks are sorted so Atlas works on the highest-value research first.
+
