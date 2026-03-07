@@ -1,0 +1,16 @@
+{
+  "placeholders": [
+    {
+      "id": "placeholder-example-001",
+      "name": "Example incomplete correspondence",
+      "type": "relation_candidate",
+      "status": "placeholder",
+      "gap_state": "unpopulated",
+      "required_fields": [
+        "shastra_support",
+        "sadhu_support",
+        "guru_interpretation"
+      ]
+    }
+  ]
+}

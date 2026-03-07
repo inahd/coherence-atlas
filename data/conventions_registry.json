@@ -1,0 +1,22 @@
+{
+  "conventions": [
+    {
+      "name": "atlas_three_axes",
+      "category": "domain_rule",
+      "description": "Atlas maintains independent axes for authority, stability, and visualization.",
+      "status": "active",
+      "source": "project_architecture",
+      "introduced_by": "chatgpt",
+      "date": "2026-03-07"
+    },
+    {
+      "name": "explicit_placeholder_nodes",
+      "category": "ingestion_rule",
+      "description": "Missing but expected knowledge may be represented as placeholder nodes with gap metadata.",
+      "status": "active",
+      "source": "project_architecture",
+      "introduced_by": "chatgpt",
+      "date": "2026-03-07"
+    }
+  ]
+}

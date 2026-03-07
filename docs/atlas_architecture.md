@@ -286,3 +286,78 @@ data/atlas_graph.json
 
 This file becomes the base knowledge graph used by the Atlas engine.
 
+
+---
+
+# Convention Protocol
+
+Atlas uses an explicit convention registry.
+
+New conventions must be added as structured records.
+
+Convention categories include:
+
+entity_type
+relation_type
+authority_rule
+visualization_rule
+domain_rule
+harmonizer_rule
+ingestion_rule
+
+Each convention must record:
+
+name
+category
+description
+status
+source
+introduced_by
+date
+
+This prevents silent architectural drift.
+
+---
+
+# Placeholder Node Protocol
+
+Atlas allows intentional incomplete nodes.
+
+A placeholder node is a valid graph object that represents
+expected but not yet populated knowledge.
+
+Placeholder nodes must include:
+
+id
+name
+type
+status
+gap_state
+required_fields
+
+Gap states include:
+
+unpopulated
+partial
+needs_review
+needs_source
+needs_relation
+needs_authority
+needs_promotion
+complete
+
+This allows Atlas to represent missing knowledge explicitly
+and turn gaps into research tasks.
+
+---
+
+# Population Cycle
+
+create placeholder
+→ mark required fields
+→ create research task
+→ ingest evidence
+→ populate fields
+→ validate
+→ promote or retain
+
