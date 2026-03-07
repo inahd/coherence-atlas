@@ -1,79 +1,77 @@
 import json
+import os
 from collections import defaultdict
 
 GRAPH="/opt/atlas/memory/cosmology_graph.json"
+OUT_JSON="/opt/atlas/memory/patterns/pattern_clusters.json"
+OUT_MD="/opt/atlas/docs/atlas_patterns.md"
 
-g=json.load(open(GRAPH))
+def load_graph():
+    if not os.path.exists(GRAPH):
+        return {"nodes":[],"links":[]}
+    return json.load(open(GRAPH))
+
+g=load_graph()
 
 nodes=g.get("nodes",[])
 links=g.get("links",[])
 
-degree=defaultdict(int)
-neighbors=defaultdict(list)
+adj=defaultdict(set)
 
 for l in links:
-    degree[l["source"]] += 1
-    degree[l["target"]] += 1
+    s=l.get("source")
+    t=l.get("target")
+    if s and t:
+        adj[s].add(t)
+        adj[t].add(s)
 
-    neighbors[l["source"]].append(l["target"])
-    neighbors[l["target"]].append(l["source"])
+visited=set()
+clusters=[]
 
+for n in adj:
+    if n in visited:
+        continue
+    stack=[n]
+    cluster=set()
 
-print("\nAtlas Pattern Engine\n")
+    while stack:
+        cur=stack.pop()
+        if cur in visited:
+            continue
 
-# ---- hub detection ----
+        visited.add(cur)
+        cluster.add(cur)
 
-print("Potential hub structures:\n")
+        for nb in adj[cur]:
+            if nb not in visited:
+                stack.append(nb)
 
-for n in nodes:
+    clusters.append(cluster)
 
-    d=degree.get(n["id"],0)
+patterns=[]
 
-    if d >= 6:
+for c in clusters:
+    size=len(c)
+    if size in [3,4,5,6,7,8,9,12,16,27]:
+        patterns.append({
+            "size":size,
+            "nodes":sorted(list(c))
+        })
 
-        print(" HUB:",n["id"],"connections:",d)
+os.makedirs("/opt/atlas/memory/patterns",exist_ok=True)
 
+json.dump(patterns,open(OUT_JSON,"w"),indent=2)
 
-# ---- radial structures ----
+with open(OUT_MD,"w") as f:
 
-print("\nRadial patterns:\n")
+    f.write("# Atlas Pattern Report\n\n")
+    f.write("Clusters that match sacred-number sizes\n\n")
 
-for n in nodes:
+    for p in patterns:
+        f.write(f"## Cluster size {p['size']}\n")
+        for n in p["nodes"][:30]:
+            f.write(f"- {n}\n")
+        f.write("\n")
 
-    neigh = neighbors[n["id"]]
-
-    if len(neigh) >= 4:
-
-        types=set()
-
-        for m in neigh:
-            for x in nodes:
-                if x["id"]==m:
-                    types.add(x.get("type"))
-
-        if len(types) >= 3:
-
-            print(" RADIAL:",n["id"],"neighbor_types:",list(types))
-
-
-# ---- symmetry clusters ----
-
-print("\nPossible symmetry clusters:\n")
-
-cluster_map=defaultdict(list)
-
-for n in nodes:
-
-    d=degree.get(n["id"],0)
-
-    cluster_map[d].append(n["id"])
-
-
-for deg,group in cluster_map.items():
-
-    if len(group) >= 3 and deg >=2:
-
-        print(" DEGREE",deg,"cluster:",group[:10])
-
-
-print("\nPattern scan complete\n")
+print("Pattern report written:")
+print(OUT_MD)

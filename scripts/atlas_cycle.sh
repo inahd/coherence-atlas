@@ -56,3 +56,8 @@ echo ""
 echo "[GRAPH CHECK] validating graph integrity"
 python3 scripts/ensure_graph_integrity.py
 
+
+echo ""
+echo "[PATTERN ENGINE] scanning graph structure"
+python3 scripts/atlas_pattern_engine.py
+
