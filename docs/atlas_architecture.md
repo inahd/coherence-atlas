@@ -509,3 +509,38 @@ actual_count vs expected_count
 If items are missing a placeholder node is generated so the
 research cycle can investigate the gap.
 
+
+---
+
+# Relation Engine
+
+Script
+
+scripts/atlas_build_relations.py
+
+Purpose
+
+Automatically generate relationships between entities using
+structured mapping datasets.
+
+Pipeline
+
+mapping dataset
+→ relation builder
+→ entity lookup
+→ relation creation
+→ graph update
+
+Example relation
+
+Ashwini → rules → Ketu
+
+Relations include metadata:
+
+stability_layer
+authority
+visualization_permission
+
+This allows relations to participate in the same promotion and
+evaluation cycle as entities.
+
