@@ -544,3 +544,46 @@ visualization_permission
 This allows relations to participate in the same promotion and
 evaluation cycle as entities.
 
+
+---
+
+# Yantra Harmonizer Engine
+
+Script
+
+scripts/atlas_harmonizer.py
+
+Purpose
+
+Detect structural patterns in the Atlas graph that correspond
+to sacred numerical geometries.
+
+Pipeline
+
+graph
+→ cluster detection
+→ sacred number evaluation
+→ geometry assignment
+→ yantra candidate generation
+
+Example structures
+
+3 nodes → triangle  
+4 nodes → square  
+5 nodes → pentagon  
+6 nodes → hexagon  
+8 nodes → vastu grid  
+9 nodes → navagraha mandala  
+12 nodes → zodiac wheel  
+27 nodes → nakshatra wheel  
+
+Important rule
+
+Candidates begin as:
+
+stability_layer: experimental  
+visualization_permission: analytic  
+
+They must be promoted through authority validation before
+being rendered as symbolic or canonical yantras.
+
