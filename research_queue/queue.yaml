@@ -1,49 +1,31 @@
-# Atlas Research Queue
-
 queue:
-
-  - id: vedic_arts_sanskrit
-    priority: high
-    type: semantic_canonicalization
-    input_dataset: datasets/cosmology/vedic_arts_64.csv
-    output_dataset: datasets/semantics/vedic_arts_semantic_layer.csv
-    tasks:
-      - identify canonical Sanskrit term
-      - provide Devanagari
-      - provide IAST transliteration
-      - keep stable identifier
-    status: pending
-
-  - id: deity_vahana_semantics
-    priority: medium
-    type: ontology_expansion
-    input_dataset: datasets/cosmology/deity_vahana_extended.csv
-    output_dataset: datasets/semantics/deity_vahana_semantic_layer.csv
-    tasks:
-      - normalize deity names to Sanskrit
-      - provide vahana Sanskrit names
-      - provide symbolic meaning
-    status: pending
-
-  - id: nakshatra_syllables
-    priority: high
-    type: cosmology_completion
-    input_dataset: datasets/cosmology/nakshatra_core.csv
-    output_dataset: datasets/cosmology/nakshatra_syllables.csv
-    tasks:
-      - provide traditional nakshatra syllables
-      - link phonetic seed sounds
-      - include Sanskrit script
-    status: pending
-
-  - id: yantra_geometry_mapping
-    priority: medium
-    type: symbolic_mapping
-    input_dataset: datasets/cosmology/geometry_archetypes.csv
-    output_dataset: datasets/cosmology/yantra_geometry_map.csv
-    tasks:
-      - connect geometry to yantra traditions
-      - link to graha symbolism
-      - include Sanskrit terminology
-    status: pending
-
+- id: research_rajas_influences
+  node: rajas
+  priority: medium
+  relation: influences
+  target: UNKNOWN_dosha
+- id: research_vata_balanced_by
+  node: vata
+  priority: medium
+  relation: balanced_by
+  target: UNKNOWN_rasa
+- id: research_pitta_balanced_by
+  node: pitta
+  priority: medium
+  relation: balanced_by
+  target: UNKNOWN_rasa
+- id: research_kapha_balanced_by
+  node: kapha
+  priority: medium
+  relation: balanced_by
+  target: UNKNOWN_rasa
+- id: research_tamas_influences
+  node: tamas
+  priority: medium
+  relation: influences
+  target: UNKNOWN_dosha
+- id: research_sattva_influences
+  node: sattva
+  priority: medium
+  relation: influences
+  target: UNKNOWN_dosha
