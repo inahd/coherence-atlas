@@ -1,56 +1,90 @@
 import json
-from collections import defaultdict
+import uuid
+import os
 
-GRAPH = "/opt/atlas/memory/cosmology_graph.json"
+BASE_DIR = "/opt/atlas"
 
-g = json.load(open(GRAPH))
+GRAPH_PATH = os.path.join(BASE_DIR, "data", "atlas_graph.json")
+PLACEHOLDER_PATH = os.path.join(BASE_DIR, "data", "placeholder_nodes.json")
 
-nodes = g.get("nodes", [])
-links = g.get("links", [])
+# --------------------------------
+# Load graph
+# --------------------------------
 
-print("\nAtlas Gap Detector\n")
+with open(GRAPH_PATH) as f:
+    graph = json.load(f)
 
-# ---- connection counts ----
+entities = graph.get("entities", [])
 
-degree = defaultdict(int)
+# --------------------------------
+# Load placeholder registry
+# --------------------------------
 
-for l in links:
-    degree[l["source"]] += 1
-    degree[l["target"]] += 1
+if os.path.exists(PLACEHOLDER_PATH):
+    with open(PLACEHOLDER_PATH) as f:
+        placeholders = json.load(f)
+else:
+    placeholders = {"placeholders": []}
 
-print("Weakly connected nodes:\n")
+# --------------------------------
+# Helper: create placeholder
+# --------------------------------
 
-for n in nodes:
-    d = degree.get(n["id"],0)
-    if d <= 1:
-        print(" ", n["id"], "(relations:", d,")")
+def create_placeholder(name, required_fields):
 
-# ---- relation type coverage ----
+    node = {
+        "id": str(uuid.uuid4()),
+        "name": name,
+        "type": "placeholder",
+        "status": "placeholder",
+        "gap_state": "unpopulated",
+        "required_fields": required_fields
+    }
 
-print("\nRelation type counts:\n")
+    return node
 
-rel_counts = defaultdict(int)
+# --------------------------------
+# Gap detection rules
+# --------------------------------
 
-for l in links:
-    rel_counts[l["type"]] += 1
+REQUIRED_ENTITY_FIELDS = [
+    "stability_layer",
+    "authority",
+    "visualization_permission"
+]
 
-for r,c in sorted(rel_counts.items()):
-    print(" ", r, ":", c)
+# --------------------------------
+# Scan entities
+# --------------------------------
 
-# ---- nodes missing type ----
+new_placeholders = []
 
-print("\nNodes missing type:\n")
+for entity in entities:
 
-for n in nodes:
-    if "type" not in n:
-        print(" ", n["id"])
+    missing = []
 
-# ---- orphan nodes ----
+    for field in REQUIRED_ENTITY_FIELDS:
 
-print("\nOrphan nodes:\n")
+        if field not in entity:
+            missing.append(field)
 
-for n in nodes:
-    if degree.get(n["id"],0) == 0:
-        print(" ", n["id"])
+    if missing:
 
-print("\nDone.\n")
+        placeholder = create_placeholder(
+            f"missing_fields_for_{entity.get('name','unknown')}",
+            missing
+        )
+
+        new_placeholders.append(placeholder)
+
+# --------------------------------
+# Append placeholders
+# --------------------------------
+
+placeholders["placeholders"].extend(new_placeholders)
+
+with open(PLACEHOLDER_PATH, "w") as f:
+    json.dump(placeholders, f, indent=2)
+
+print("Gap scan complete.")
+print("Placeholders created:", len(new_placeholders))

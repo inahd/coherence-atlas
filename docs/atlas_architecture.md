@@ -361,3 +361,60 @@ create placeholder
 → validate
 → promote or retain
 
+
+---
+
+# Gap Detection System
+
+Atlas now includes automatic gap detection.
+
+Script
+
+scripts/atlas_gap_detector.py
+
+Purpose
+
+Scan the Atlas graph for incomplete entities and generate
+placeholder nodes for missing information.
+
+Pipeline
+
+graph
+→ gap detector
+→ missing field detection
+→ placeholder node creation
+→ research queue candidate
+
+Example
+
+Entity missing authority metadata:
+
+Agni
+
+→ placeholder created
+
+missing_fields_for_Agni
+
+required_fields
+
+authority
+stability_layer
+visualization_permission
+
+This converts incomplete knowledge into structured research tasks.
+
+---
+
+# Atlas Research Loop
+
+dataset ingestion
+→ graph generation
+→ gap detection
+→ placeholder nodes
+→ research tasks
+→ population
+→ validation
+→ promotion
+
+Atlas therefore represents both knowledge and missing knowledge.
+
