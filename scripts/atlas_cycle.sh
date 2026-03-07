@@ -43,3 +43,16 @@ echo "=============================="
 echo "ATLAS CYCLE COMPLETE"
 echo "=============================="
 echo
+
+echo ""
+echo "[CANON] exporting atlas canonical state"
+
+python3 scripts/export_atlas_canon.py
+
+echo "[CANON] atlas_canon.md and atlas_state.json updated"
+
+
+echo ""
+echo "[GRAPH CHECK] validating graph integrity"
+python3 scripts/ensure_graph_integrity.py
+
