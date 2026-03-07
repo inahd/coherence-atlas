@@ -712,3 +712,34 @@ Example
 
 This prevents ontology fragmentation as the graph expands.
 
+
+---
+
+# Atlas Pipeline Runner
+
+Script
+
+scripts/atlas_run_pipeline.py
+
+Purpose
+
+Run the full Atlas research cycle automatically.
+
+Steps executed
+
+1 canonical loader  
+2 ingestion engine  
+3 relation builder  
+4 entity normalization  
+5 gap detection  
+6 research queue generation  
+7 research executor  
+8 yantra harmonizer  
+
+Usage
+
+atlasenv  
+python scripts/atlas_run_pipeline.py
+
+This replaces running each subsystem manually.
+
