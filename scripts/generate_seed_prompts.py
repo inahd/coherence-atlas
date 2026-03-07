@@ -7,7 +7,6 @@ REPORTS = BASE / "memory" / "reports"
 PROMPTS_DIR = BASE / "prompts"
 PROMPTS_DIR.mkdir(parents=True, exist_ok=True)
 
-GAPS_JSON = REPORTS / "gaps.json"
 PROMPTS_MD = PROMPTS_DIR / "seed_prompts.md"
 
 REL_FILES = [
@@ -19,7 +18,7 @@ REL_FILES = [
     DS / "relations_nakshatra_graha.csv",
 ]
 
-EVID_KEYS = ["source_title","source_locator","excerpt"]
+EVID_KEYS = ["source_title", "source_locator", "excerpt"]
 
 def read_csv(path: Path):
     if not path.exists():
@@ -27,8 +26,54 @@ def read_csv(path: Path):
     with path.open(newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
-def pick_missing(rows, n=10):
-    # prioritize missing to_id first, then missing evidence
+def factcheck_snapshot():
+    total = 0
+    missing_to = 0
+    missing_ev = 0
+    by_file = []
+    for f in REL_FILES:
+        rows = read_csv(f)
+        if not rows:
+            by_file.append((f.name, 0, 0, 0))
+            continue
+        mt = 0
+        me = 0
+        for r in rows:
+            total += 1
+            if not (r.get("to_id") or "").strip():
+                mt += 1
+            ev_ok = all((r.get(k) or "").strip() for k in EVID_KEYS)
+            if not ev_ok:
+                me += 1
+        missing_to += mt
+        missing_ev += me
+        by_file.append((f.name, len(rows), mt, me))
+    return total, missing_to, missing_ev, by_file
+
+def list_research_public(maxn=40):
+    root = BASE / "research_public"
+    if not root.exists():
+        return []
+    items = []
+    for p in sorted(root.rglob("*")):
+        if p.is_file():
+            items.append(str(p))
+        if len(items) >= maxn:
+            break
+    return items
+
+def list_reports(maxn=20):
+    if not REPORTS.exists():
+        return []
+    items = []
+    for p in sorted(REPORTS.glob("*")):
+        if p.is_file():
+            items.append(p.name)
+        if len(items) >= maxn:
+            break
+    return items
+
+def sample_missing(rows, n=15):
     miss_to = []
     miss_ev = []
     for r in rows:
@@ -40,113 +85,146 @@ def pick_missing(rows, n=10):
             miss_ev.append(r)
     return miss_to[:n], miss_ev[:n]
 
-def load_gaps_summary():
-    if not GAPS_JSON.exists():
-        return ""
-    try:
-        g = json.loads(GAPS_JSON.read_text(encoding="utf-8"))
-        top = g.get("prioritized", [])[:8]
-        lines = [f"- {x.get('bucket')}: score={int(x.get('score',0))} miss_to={x.get('missing_to_id')} miss_ev={x.get('missing_evidence')}" for x in top]
-        return "\n".join(lines)
-    except Exception:
-        return ""
+def mk(title, body):
+    return f"## {title}\n\n{body.rstrip()}\n\n"
 
-def mk_block(title, body, lang="text"):
-    return f"### {title}\n\n```{lang}\n{body.rstrip()}\n```\n"
+def mk_code(lang, body):
+    return f"```{lang}\n{body.rstrip()}\n```\n\n"
 
-def build_prompt_bundle():
-    # Collect a small actionable queue across relations
+def build():
+    now = time.strftime("%Y-%m-%d %H:%M:%S")
+    total, missing_to, missing_ev, by_file = factcheck_snapshot()
+
+    state = []
+    state.append(f"Generated: {now}")
+    state.append("")
+    state.append("Factcheck snapshot:")
+    state.append(f"- total rows: {total}")
+    state.append(f"- missing to_id: {missing_to}")
+    state.append(f"- missing evidence: {missing_ev}")
+    state.append("")
+    state.append("Per-file:")
+    for name, n, mt, me in by_file:
+        state.append(f"- {name}: rows={n} missing_to_id={mt} missing_evidence={me}")
+
+    research_pub = list_research_public()
+    reports = list_reports()
+
+    # Build a compact queue of missing work
     missing_to_all = []
     missing_ev_all = []
-
     for f in REL_FILES:
         rows = read_csv(f)
-        miss_to, miss_ev = pick_missing(rows, n=12)
-        for r in miss_to:
-            missing_to_all.append((f.name, r))
-        for r in miss_ev:
-            missing_ev_all.append((f.name, r))
+        mt, me = sample_missing(rows, n=10)
+        missing_to_all.extend([(f.name, r) for r in mt])
+        missing_ev_all.extend([(f.name, r) for r in me])
+    missing_to_all = missing_to_all[:30]
+    missing_ev_all = missing_ev_all[:30]
 
-    missing_to_all = missing_to_all[:25]
-    missing_ev_all = missing_ev_all[:25]
+    queue_to = "\n".join([f"- {fn}\t{r.get('from_id','')}\t{r.get('relation','')}\t(to_id missing)" for fn, r in missing_to_all]) or "(none)"
+    queue_ev = "\n".join([f"- {fn}\t{r.get('from_id','')}\t{r.get('relation','')}\t{r.get('to_id','')}" for fn, r in missing_ev_all]) or "(none)"
 
-    gaps = load_gaps_summary()
-    header = f"# Atlas Seed Prompts\n\nGenerated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n## Current gap priorities\n{gaps or '(run: atlas gaps)'}\n"
+    # Prompt pack
+    out = "# Atlas Seed Prompts (Batch Processor Pack)\n\n"
 
-    # Prompt 1: “Evidence-first fill” (best for canonical maturation)
-    ev_rows_txt = "\n".join(
-        [f"- {fname} | {r.get('from_id','')} | {r.get('relation','')} | {r.get('to_id','')}" for fname, r in missing_ev_all]
-    ) or "(none)"
-    p1 = f"""You are helping me mature an evidence-backed Vedic knowledge graph.
+    out += mk("Contract (read first)", mk_code("text", """
+You are helping maintain Coherence Atlas: a local-first Vedic knowledge graph.
 
-Task:
-- For each row below (has to_id, missing evidence), propose:
-  - source_title (likely document name),
-  - source_locator (page/section/lines),
-  - a short excerpt (1–4 sentences),
-  - and a confidence suggestion (attested_secondary vs canonical) WITHOUT inventing facts.
+Hard rules:
+- Do NOT hallucinate citations. If evidence is not present, output NO EVIDENCE FOUND.
+- Keep canon clean: anything uncertain must remain auto_proposed or seed_unverified.
+- Every canonical-eligible row MUST include: source_title, source_locator, excerpt, tradition, confidence.
+- IDs must follow: type:slug_or_int (lowercase, underscores for spaces).
+- Output MUST be files (with suggested filenames) containing clean blocks (CSV/YAML/JSON) only.
+"""))
 
+    out += mk("Ontology + allowed relations", mk_code("yaml", """
+id_format: "type:slug_or_int"
+entity_types:
+  - nakshatra
+  - tithi
+  - graha
+  - rashi
+  - deity
+  - devi
+  - nitya_devi
+  - plant
+  - weapon
+  - ritual
+  - raga
+relations:
+  - name: nakshatra_associated_deity
+    from: nakshatra
+    to: [deity, devi, nitya_devi]
+  - name: nakshatra_ruling_graha
+    from: nakshatra
+    to: [graha]
+  - name: nakshatra_sacred_plant
+    from: nakshatra
+    to: [plant]
+  - name: devi_wields_weapon
+    from: devi
+    to: [weapon]
+  - name: ritual_prescribed_on
+    from: ritual
+    to: [tithi, nakshatra]
+  - name: ritual_uses_raga
+    from: ritual
+    to: [raga]
+confidence_allowed: [seed_unverified, auto_proposed, attested_secondary, canonical]
+evidence_required: [source_title, source_locator, excerpt]
+"""))
+
+    out += mk("Current state", mk_code("text", "\n".join(state)))
+
+    out += mk("Available public research files (repo-safe)", mk_code("text", "\n".join(research_pub) if research_pub else "(none found in /opt/atlas/research_public)"))
+
+    out += mk("Reports present", mk_code("text", "\n".join(reports) if reports else "(no reports found)"))
+
+    out += mk("Task A — Fill missing to_id (safe structural completion)", mk_code("text", f"""
+For each row below:
+- propose to_id (type:slug) and confidence (HIGH/MED/LOW).
+- HIGH only if mapping is widely standard; MED if tradition-dependent; LOW if speculative.
+- Output a CSV file patch that updates ONLY to_id + confidence + notes.
+Queue:
+{queue_to}
+"""))
+
+    out += mk("Task B — Attach evidence to evidence-missing rows", mk_code("text", f"""
+For each row below (to_id present; evidence missing):
+- Find/construct evidence ONLY from provided sources/excerpts (if included in the pasted bundle).
+- If you cannot, output NO EVIDENCE FOUND for that row.
+- Output a CSV file patch that updates source_title, source_locator, excerpt, tradition, confidence, notes.
+Queue:
+{queue_ev}
+"""))
+
+    out += mk("Task C — Generate new relation rows from a single source (Journey-with-the-Moon etc.)", mk_code("text", """
+Given a pasted excerpt bundle from one source, propose new seed rows into:
+- relations_ritual_calendar.csv (ritual_prescribed_on)
+- relations_raga_ritual.csv (ritual_uses_raga)
 Rules:
-- If you cannot find evidence from the provided excerpts or sources, say "NO EVIDENCE FOUND" for that row.
-- Do not hallucinate citations.
+- include source_title + locator + excerpt in every new row
+- confidence must be seed_unverified or auto_proposed unless explicitly attested
+Output new CSV files with correct headers.
+"""))
 
-Rows:
-{ev_rows_txt}
-"""
+    out += mk("Output format (strict)", mk_code("text", """
+Return results as multiple files.
 
-    # Prompt 2: “to_id completion” (structural completion, low risk)
-    to_rows_txt = "\n".join(
-        [f"- {fname} | {r.get('from_id','')} | {r.get('relation','')} | to_id: (missing)" for fname, r in missing_to_all]
-    ) or "(none)"
-    p2 = f"""You are helping me fill missing `to_id` targets in a Vedic knowledge schema.
+For each file:
+1) A line: FILENAME: <path/filename>
+2) Then the exact file content as a clean block (CSV/YAML/JSON)
+3) No extra commentary.
 
-Task:
-- For each row below, suggest a plausible `to_id` in the format type:slug.
-- Mark each suggestion as:
-  - HIGH (common/standard mapping),
-  - MED (plausible but tradition-dependent),
-  - LOW (speculative; keep in overlay only).
-- Do NOT present LOW items as fact.
+CSV headers must match existing dataset headers exactly.
+"""))
 
-Rows:
-{to_rows_txt}
-"""
-
-    # Prompt 3: “Schema refinement” (keeps system clean, not bogged down)
-    p3 = """You are helping refine an ontology-driven Vedic knowledge database.
-
-Task:
-- Propose improvements to keep the system maintainable:
-  1) Which relations should remain canonical-only (require evidence) vs overlay (model_layered)?
-  2) Which entity types should be merged or separated (deity vs devi vs nitya_devi)?
-  3) Identify 5–10 constraints that prevent nonsense edges.
-
-Output:
-- A concise list of recommended constraints + a JSON/YAML sketch of ontology changes.
-"""
-
-    # Prompt 4: “Manifest curation” (wget list growth)
-    p4 = """You are helping curate public-domain / permissively-licensed source URLs for corpus growth.
-
-Task:
-- Provide 10–30 stable URLs (or source landing pages) for ONE domain:
-  - nakshatra OR tithi_nitya OR ritual OR music OR plants
-- Prefer: GRETIL / archive.org public domain scans / institutional repositories.
-- Avoid copyrighted paywalled sources.
-- Return a plain list suitable for a wget manifest (one URL per line).
-"""
-
-    content = header + "\n"
-    content += mk_block("Prompt A — Evidence fill (missing evidence)", p1, "text")
-    content += mk_block("Prompt B — Fill to_id (missing targets)", p2, "text")
-    content += mk_block("Prompt C — Ontology constraints (keep it clean)", p3, "text")
-    content += mk_block("Prompt D — Wget manifest curation (source growth)", p4, "text")
-    return content
+    return out
 
 def main():
-    md = build_prompt_bundle()
-    PROMPTS_MD.write_text(md, encoding="utf-8")
-    print(str(PROMPTS_MD))
+    PROMPTS_MD.write_text(build(), encoding="utf-8")
+    print("Wrote:", PROMPTS_MD)
 
 if __name__ == "__main__":
     main()

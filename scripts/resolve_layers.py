@@ -1,4 +1,7 @@
 import csv, json, time
+
+INBOX = '/opt/atlas/datasets/relations_inbox.csv'
+
 from dataclasses import dataclass
 from pathlib import Path
 from collections import defaultdict

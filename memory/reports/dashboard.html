@@ -14,12 +14,12 @@
 </head>
 <body>
 <h1>Atlas Dashboard</h1>
-<div class="card">Generated: 2026-03-05 07:56:20</div>
+<div class="card">Generated: 2026-03-07 02:20:01</div>
 
 <div class="row">
   <div class="card" style="flex:1;min-width:280px">
     <div class="kpi">Seed Graph</div>
-    <div>nodes: <b>71</b> &nbsp; links: <b>69</b></div>
+    <div>nodes: <b>76</b> &nbsp; links: <b>79</b></div>
     <div style="margin-top:10px">Open graph via CLI:</div>
     <pre>atlas seedgraph
 atlas graph seed</pre>
@@ -29,14 +29,14 @@ atlas graph seed</pre>
     <div class="kpi">Factcheck</div>
     <div>total rows: <b>69</b></div>
     <div>missing to_id: <b>42</b></div>
-    <div>missing evidence: <b>54</b></div>
+    <div>missing evidence: <b>42</b></div>
     <pre>atlas factcheck</pre>
   </div>
 
   <div class="card" style="flex:1;min-width:280px">
     <div class="kpi">Corpus</div>
     <div>files: <b>12</b> &nbsp; passages: <b>643</b></div>
-    <div>staged: <b>{'accepted': 163, 'applied': 80, 'staged': 357}</b></div>
+    <div>staged: <b>{'accepted': 1819, 'applied': 2640, 'staged': 8541}</b></div>
     <pre>atlas corpus_scan
 atlas corpus_pdftext
 atlas corpus_harvest
@@ -49,9 +49,9 @@ atlas adopt 50</pre>
   <div class="kpi">Top Gaps (what to improve next)</div>
   <pre>nakshatra_plants: score=162 total=27 miss_to=27 miss_ev=27
 devi_weapon: score=90 total=15 miss_to=15 miss_ev=15
-nakshatra_graha: score=67 total=27 miss_to=0 miss_ev=27
 nakshatra_deity: score=36 total=27 miss_to=0 miss_ev=12
-ritual_calendar: score=0 total=0 miss_to=0 miss_ev=0
+nakshatra_graha: score=5 total=27 miss_to=0 miss_ev=2
+ritual_calendar: score=0 total=10 miss_to=0 miss_ev=0
 raga_ritual: score=0 total=0 miss_to=0 miss_ev=0
 </pre>
   <pre>atlas gaps
@@ -61,7 +61,7 @@ atlas pick</pre>
 <div class="card">
   <div class="kpi">Aggregate Report</div>
   <pre>{
-  "timestamp": 1772714414,
+  "timestamp": 1772723509,
   "files_by_kind": {
     "html": 1,
     "pdf": 7,
@@ -156,7 +156,9 @@ atlas pick</pre>
     }
   ],
   "staged_relations": {
-    "staged": 200
+    "accepted": 163,
+    "applied": 80,
+    "staged": 357
   }
 }</pre>
 </div>

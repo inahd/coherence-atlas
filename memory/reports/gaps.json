@@ -1,5 +1,5 @@
 {
-  "timestamp": 1772714404,
+  "timestamp": 1772723502,
   "counts": {
     "nakshatra_deity": {
       "file": "/opt/atlas/datasets/relations_nakshatra_deity.csv",
@@ -24,9 +24,9 @@
     },
     "ritual_calendar": {
       "file": "/opt/atlas/datasets/relations_ritual_calendar.csv",
-      "total_rows": 0,
+      "total_rows": 10,
       "missing_to_id": 0,
-      "with_evidence": 0,
+      "with_evidence": 10,
       "missing_evidence": 0
     },
     "raga_ritual": {
@@ -40,8 +40,8 @@
       "file": "/opt/atlas/datasets/relations_nakshatra_graha.csv",
       "total_rows": 27,
       "missing_to_id": 0,
-      "with_evidence": 0,
-      "missing_evidence": 27
+      "with_evidence": 25,
+      "missing_evidence": 2
     }
   },
   "prioritized": [
@@ -64,15 +64,6 @@
       "missing_evidence": 15
     },
     {
-      "bucket": "nakshatra_graha",
-      "score": 67.5,
-      "file": "/opt/atlas/datasets/relations_nakshatra_graha.csv",
-      "total_rows": 27,
-      "missing_to_id": 0,
-      "with_evidence": 0,
-      "missing_evidence": 27
-    },
-    {
       "bucket": "nakshatra_deity",
       "score": 36.0,
       "file": "/opt/atlas/datasets/relations_nakshatra_deity.csv",
@@ -82,12 +73,21 @@
       "missing_evidence": 12
     },
     {
+      "bucket": "nakshatra_graha",
+      "score": 5.0,
+      "file": "/opt/atlas/datasets/relations_nakshatra_graha.csv",
+      "total_rows": 27,
+      "missing_to_id": 0,
+      "with_evidence": 25,
+      "missing_evidence": 2
+    },
+    {
       "bucket": "ritual_calendar",
       "score": 0.0,
       "file": "/opt/atlas/datasets/relations_ritual_calendar.csv",
-      "total_rows": 0,
+      "total_rows": 10,
       "missing_to_id": 0,
-      "with_evidence": 0,
+      "with_evidence": 10,
       "missing_evidence": 0
     },
     {

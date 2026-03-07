@@ -88,4 +88,4 @@ def build_index():
 def build_vectors():
     return "<pre>"+run("python scripts/vector_memory.py")+"</pre>"
 
-app.run(port=7000)
+app.run(port=7010)

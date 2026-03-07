@@ -1,0 +1,43 @@
+
+Concept:
+  relations:
+    - related_to: Concept
+    - described_by: Person
+
+Person:
+  relations:
+    - teaches: Concept
+    - associated_with: Concept
+
+devi:
+  relations:
+    - wields: weapon
+    - governs: tithi
+    - influences: guna
+
+tithi:
+  relations:
+    - governed_by: devi
+    - influences: dosha
+
+rasa:
+  relations:
+    - balances: dosha
+    - relates_to: guna
+
+guna:
+  relations:
+    - influences: dosha
+
+virya:
+  relations:
+    - influences: dosha
+
+dosha:
+  relations:
+    - balanced_by: rasa
+
+weapon:
+  relations:
+    - wielded_by: devi
+

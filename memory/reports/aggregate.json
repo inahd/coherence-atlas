@@ -1,5 +1,5 @@
 {
-  "timestamp": 1772714414,
+  "timestamp": 1772723509,
   "files_by_kind": {
     "html": 1,
     "pdf": 7,
@@ -94,6 +94,8 @@
     }
   ],
   "staged_relations": {
-    "staged": 200
+    "accepted": 163,
+    "applied": 80,
+    "staged": 357
   }
 }

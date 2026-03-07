@@ -18,6 +18,10 @@ download_list () {
   # --content-disposition: respect server filenames
   # --timeout/--tries: fail reasonably
   # --no-verbose: cleaner logs
+CLEAN_LIST="$(mktemp)"
+grep -vE '^[[:space:]]*(#|$)' "$LIST" > "$CLEAN_LIST"
+trap 'rm -f "$CLEAN_LIST"' EXIT
+
   wget -i "$list" -P "$outdir" -nc --content-disposition --timeout=30 --tries=3 --no-verbose 2>&1 | tee -a "$LOG" || true
 }
 
