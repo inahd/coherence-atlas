@@ -258,3 +258,31 @@ These entity types form the **core ontology skeleton** of Atlas.
 
 New entity types should be added carefully to avoid fragmentation.
 
+
+---
+
+# Atlas Ingestion Engine
+
+Script
+
+scripts/atlas_ingest.py
+
+Purpose
+
+Convert datasets into structured Atlas entities.
+
+Pipeline
+
+datasets
+→ entity normalization
+→ entity type detection
+→ authority metadata attachment
+→ stability assignment
+→ graph generation
+
+Output
+
+data/atlas_graph.json
+
+This file becomes the base knowledge graph used by the Atlas engine.
+
