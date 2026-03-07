@@ -418,3 +418,47 @@ dataset ingestion
 
 Atlas therefore represents both knowledge and missing knowledge.
 
+
+---
+
+# Canonical Cosmology Backbone
+
+Atlas encodes finite cosmological structures as canonical datasets.
+
+These structures form the immutable skeleton of the knowledge graph.
+
+Examples include:
+
+Nakshatras (27)
+Grahas (9)
+Mahabhutas (5)
+Gunas (3)
+Rashis (12)
+Directions (8)
+
+These lists should not expand.
+
+Atlas can add attributes, relations, and interpretations around these
+structures, but the core sets remain fixed.
+
+This prevents ontology drift and provides a stable anchor for
+research and visualization systems.
+
+---
+
+# Canonical Coverage
+
+Each canonical system includes an expected_count value.
+
+Atlas can use this to measure completion:
+
+coverage = known_items / expected_count
+
+Example:
+
+Nakshatra coverage = 27 / 27 = 1.0
+
+When coverage approaches 1.0 the system automatically reduces
+canonical discovery tasks and shifts effort toward synthesis
+and experimental discovery.
+
