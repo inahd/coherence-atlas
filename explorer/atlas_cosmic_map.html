@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Atlas Cosmic Map</title>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<style>
+
+body {
+    background:#0a0a0f;
+    color:white;
+    font-family:sans-serif;
+}
+
+svg {
+    width:100vw;
+    height:100vh;
+}
+
+.node {
+    fill:#ffd369;
+}
+
+.link {
+    stroke:#999;
+    stroke-opacity:0.6;
+}
+
+</style>
+</head>
+
+<body>
+
+<svg></svg>
+
+<script>
+
+const svg = d3.select("svg");
+
+const width = window.innerWidth;
+const height = window.innerHeight;
+
+d3.json("../data/atlas_graph.json").then(graph => {
+
+    const nodes = graph.entities.map(e => ({
+        id:e.id,
+        name:e.name
+    }));
+
+    const links = graph.relations.map(r => ({
+        source:r.source,
+        target:r.target
+    }));
+
+    const simulation = d3.forceSimulation(nodes)
+        .force("link", d3.forceLink(links).id(d=>d.id).distance(100))
+        .force("charge", d3.forceManyBody().strength(-200))
+        .force("center", d3.forceCenter(width/2,height/2));
+
+    const link = svg
+        .append("g")
+        .selectAll("line")
+        .data(links)
+        .enter()
+        .append("line")
+        .attr("class","link");
+
+    const node = svg
+        .append("g")
+        .selectAll("circle")
+        .data(nodes)
+        .enter()
+        .append("circle")
+        .attr("class","node")
+        .attr("r",6)
+        .call(d3.drag()
+            .on("start",dragstarted)
+            .on("drag",dragged)
+            .on("end",dragended));
+
+    node.append("title")
+        .text(d=>d.name);
+
+    simulation.on("tick",()=>{
+
+        link
+            .attr("x1",d=>d.source.x)
+            .attr("y1",d=>d.source.y)
+            .attr("x2",d=>d.target.x)
+            .attr("y2",d=>d.target.y);
+
+        node
+            .attr("cx",d=>d.x)
+            .attr("cy",d=>d.y);
+
+    });
+
+    function dragstarted(event,d){
+        if(!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx=d.x;
+        d.fy=d.y;
+    }
+
+    function dragged(event,d){
+        d.fx=event.x;
+        d.fy=event.y;
+    }
+
+    function dragended(event,d){
+        if(!event.active) simulation.alphaTarget(0);
+        d.fx=null;
+        d.fy=null;
+    }
+
+});
+
+</script>
+
+</body>
+</html>

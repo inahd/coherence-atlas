@@ -656,3 +656,32 @@ unresolved
 This allows Atlas to begin automatically triaging research work
 between canonical sourcing, synthesis tasks, and AI discovery.
 
+
+---
+
+# Cosmic Map Explorer
+
+Location
+
+explorer/atlas_cosmic_map.html
+
+Purpose
+
+Provide a simple interactive visualization of the Atlas knowledge graph.
+
+Features
+
+Interactive node layout  
+Graph relations  
+Drag navigation  
+Entity hover labels  
+
+Pipeline
+
+atlas_graph.json
+→ D3 visualization
+→ cosmic network map
+
+This viewer allows developers to inspect the evolving cosmological graph
+structure as Atlas grows.
+
