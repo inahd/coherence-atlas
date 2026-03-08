@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# ATLAS OFFERING CYCLE
+
+cd /opt/atlas || exit
+
+echo "🌱 Harvesting Atlas artifacts..."
+
+git add README.md
+git add memory/reports/dashboard.html
+
+echo "📜 Preparing offering..."
+
+git commit -m "atlas: harvest cycle — $(date '+%Y-%m-%d %H:%M')" || true
+
+echo "🚀 Offering to GitHub..."
+
+git push
+
+echo "✨ Atlas cycle complete."
