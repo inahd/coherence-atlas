@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Atlas Deck</title>
+
+<style>
+body{
+background:#0b0b0b;
+color:white;
+font-family:sans-serif;
+}
+
+h1{
+text-align:center;
+}
+
+.layout{
+display:flex;
+}
+
+.legend{
+width:220px;
+padding:20px;
+border-right:1px solid #444;
+}
+
+.deck{
+flex:1;
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+justify-content:center;
+padding:20px;
+}
+
+.card{
+width:260px;
+height:430px;
+background:black;
+border:2px solid #777;
+padding:14px;
+cursor:pointer;
+}
+
+.card:hover{
+border-color:white;
+}
+
+.title{
+text-align:center;
+font-size:20px;
+margin-bottom:10px;
+}
+
+.symbols{
+text-align:center;
+font-size:28px;
+margin-bottom:10px;
+}
+
+.tag{
+border:1px solid #666;
+padding:2px 6px;
+font-size:12px;
+margin:2px;
+display:inline-block;
+}
+
+.fire{border-top:6px solid #aa3333;}
+.earth{border-top:6px solid #887744;}
+.air{border-top:6px solid #6688aa;}
+.water{border-top:6px solid #446688;}
+.ether{border-top:6px solid #888888;}
+
+#detail{
+margin-top:30px;
+border-top:1px solid #444;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Atlas Deck</h1>
+
+<div class="layout">
+
+<div class="legend">
+
+<h3>Legend</h3>
+
+<b>Graha</b>
+<div>☉ Surya</div>
+<div>☾ Chandra</div>
+<div>♂ Mangala</div>
+<div>☿ Budha</div>
+<div>♃ Guru</div>
+<div>♀ Shukra</div>
+<div>♄ Shani</div>
+<div>☊ Rahu</div>
+<div>☋ Ketu</div>
+
+<br>
+
+<b>Mahabhuta</b>
+<div>▲ Agni (Fire)</div>
+<div>■ Prithvi (Earth)</div>
+<div>○ Vayu (Air)</div>
+<div>☽ Apas (Water)</div>
+<div>✦ Akasha (Ether)</div>
+
+<br>
+
+<b>Meaning Tags</b>
+<div class="tag">lineage</div>
+<div class="tag">healing</div>
+<div class="tag">fertility</div>
+<div class="tag">growth</div>
+<div class="tag">ancestors</div>
+
+</div>
+
+<div>
+
+<div id="deck" class="deck"></div>
+<div id="detail"></div>
+
+</div>
+
+</div>
+
+<script>
+
+const elementSymbol={
+"Fire":"▲",
+"Earth":"■",
+"Air":"○",
+"Water":"☽",
+"Ether":"✦"
+}
+
+const planetSymbol={
+"Sun":"☉",
+"Moon":"☾",
+"Mars":"♂",
+"Mercury":"☿",
+"Jupiter":"♃",
+"Venus":"♀",
+"Saturn":"♄",
+"Rahu":"☊",
+"Ketu":"☋"
+}
+
+const elementClass={
+"Fire":"fire",
+"Earth":"earth",
+"Air":"air",
+"Water":"water",
+"Ether":"ether"
+}
+
+const nodes=[
+
+{
+id:"ashwini",
+name:"Ashwini",
+planet:"Ketu",
+deity:"Ashwini Kumaras",
+element:"Fire",
+tags:["healing","speed","beginnings"],
+relations:["rohini","magha"]
+},
+
+{
+id:"rohini",
+name:"Rohini",
+planet:"Moon",
+deity:"Prajapati",
+element:"Earth",
+tags:["fertility","growth","creation"],
+relations:["ashwini"]
+},
+
+{
+id:"magha",
+name:"Magha",
+planet:"Ketu",
+deity:"Pitris",
+element:"Fire",
+tags:["ancestors","authority","lineage"],
+relations:["ashwini"]
+}
+
+]
+
+const deck=document.getElementById("deck")
+const detail=document.getElementById("detail")
+
+function showDetail(node){
+
+detail.innerHTML=`
+
+<h2>${node.name}</h2>
+
+<div style="font-size:30px;margin-bottom:10px;">
+${planetSymbol[node.planet]} ${elementSymbol[node.element]}
+</div>
+
+<div>Graha: ${node.planet}</div>
+<div>Deity: ${node.deity}</div>
+<div>Element: ${node.element}</div>
+
+<h3>Associations</h3>
+<div>${node.tags.join(", ")}</div>
+
+<h3>Relations</h3>
+
+<ul>
+
+${node.relations.map(r=>{
+const target=nodes.find(n=>n.id===r)
+return `<li><a href="#" onclick="openNode('${r}')">${target.name}</a></li>`
+}).join("")}
+
+</ul>
+
+`
+
+}
+
+window.openNode=function(id){
+const node=nodes.find(n=>n.id===id)
+showDetail(node)
+}
+
+nodes.forEach(n=>{
+
+const card=document.createElement("div")
+
+card.className=`card ${elementClass[n.element]}`
+
+card.innerHTML=`
+
+<div class="title">${n.name}</div>
+
+<div class="symbols">
+${planetSymbol[n.planet]} ${elementSymbol[n.element]}
+</div>
+
+<div>Deity: ${n.deity}</div>
+
+<div>
+
+${n.tags.map(t=>`<span class="tag">${t}</span>`).join("")}
+
+</div>
+
+`
+
+card.onclick=()=>showDetail(n)
+
+deck.appendChild(card)
+
+})
+
+</script>
+
+</body>
+</html>
