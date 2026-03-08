@@ -1,31 +1,40 @@
-# Coherence Atlas
+# 🌌 Coherence Atlas
 
-Coherence Atlas is a living cosmology of ideas.
+Atlas is a knowledge ecosystem where ideas grow into constellations.
 
-It models relationships between knowledge systems using seeds,
-relations, and constellations.
+Seeds are planted as ideas.  
+Relations connect them into a graph.  
+The graph generates cards and constellation maps.
 
-Ideas appear as stars in a growing knowledge cosmos.
+---
 
-## The Atlas Cycle
+## 🔁 Atlas Cycle
 
 impetus → seed → relations → constellation → insight → new seeds
 
-## Core Structures
+---
 
-canon
-seeds
-nodes
-relations
-constellations
-artifacts
+## 🏛 System Structure
 
-## Example Seed
+architecture/ – system canon  
+seeds/ – raw ideas  
+atlas_graph/ – nodes and relations  
+cards/ – generated knowledge cards  
+visual/ – constellation maps  
+tools/ – scripts and commands  
 
-idea: sound crystallizes into form  
-relations: mantra, yantra, geometry
+---
 
-## Vision
+## 🔔 Core Commands
 
-Atlas aims to become an interactive cosmology interface where
-ideas form constellations and tools emerge from discovered patterns.
+Run the system check:
+
+    python tools/atlas_doctor.py
+
+Activate the Atlas cycle:
+
+    python tools/atlas_ring.py
+
+---
+
+Plant seeds in `/seeds` and watch the constellation grow.
