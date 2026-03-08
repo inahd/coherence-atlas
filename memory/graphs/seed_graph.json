@@ -354,6 +354,31 @@
       "id": "todo:nakshatra_sacred_plant",
       "type": "todo",
       "name": "todo:nakshatra_sacred_plant"
+    },
+    {
+      "id": "ritual:fast",
+      "type": "ritual",
+      "name": "ritual:fast"
+    },
+    {
+      "id": "tithi:Ekadashi",
+      "type": "tithi",
+      "name": "tithi:Ekadashi"
+    },
+    {
+      "id": "tithi:Dvadashi",
+      "type": "tithi",
+      "name": "tithi:Dvadashi"
+    },
+    {
+      "id": "tithi:Trayodashi",
+      "type": "tithi",
+      "name": "tithi:Trayodashi"
+    },
+    {
+      "id": "tithi:Navami",
+      "type": "tithi",
+      "name": "tithi:Navami"
     }
   ],
   "links": [
@@ -427,13 +452,13 @@
       "source": "nakshatra:12",
       "target": "deity:aryaman",
       "relation": "nakshatra_associated_deity",
-      "confidence": "seed_unverified"
+      "confidence": "attested_secondary"
     },
     {
       "source": "nakshatra:13",
       "target": "deity:savitar",
       "relation": "nakshatra_associated_deity",
-      "confidence": "seed_unverified"
+      "confidence": "attested_secondary"
     },
     {
       "source": "nakshatra:14",
@@ -469,7 +494,7 @@
       "source": "nakshatra:19",
       "target": "deity:nirriti",
       "relation": "nakshatra_associated_deity",
-      "confidence": "seed_unverified"
+      "confidence": "attested_secondary"
     },
     {
       "source": "nakshatra:20",
@@ -511,7 +536,7 @@
       "source": "nakshatra:26",
       "target": "deity:ahirbudhnya",
       "relation": "nakshatra_associated_deity",
-      "confidence": "seed_unverified"
+      "confidence": "attested_secondary"
     },
     {
       "source": "nakshatra:27",
@@ -769,6 +794,66 @@
       "source": "nakshatra:27",
       "target": "todo:nakshatra_sacred_plant",
       "relation": "nakshatra_sacred_plant",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Ekadashi",
+      "relation": "ritual_prescribed_on",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Dvadashi",
+      "relation": "ritual_prescribed_on",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Trayodashi",
+      "relation": "ritual_prescribed_on",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Ekadashi",
+      "relation": "ritual_prescribed_on",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Dvadashi",
+      "relation": "ritual_prescribed_on",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Trayodashi",
+      "relation": "ritual_prescribed_on",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Navami",
+      "relation": "ritual_prescribed_on",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Ekadashi",
+      "relation": "ritual_prescribed_on",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Dvadashi",
+      "relation": "ritual_prescribed_on",
+      "confidence": "seed_unverified"
+    },
+    {
+      "source": "ritual:fast",
+      "target": "tithi:Trayodashi",
+      "relation": "ritual_prescribed_on",
       "confidence": "seed_unverified"
     }
   ]
