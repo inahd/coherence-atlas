@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "id": "cosmic_seed_cycle_20260308_090538",
+      "type": "seed"
+    },
+    {
+      "id": "cosmic_cycle_20260308_091738",
+      "type": "seed"
+    },
+    {
+      "id": "demo_seed",
+      "type": "seed"
+    }
+  ],
+  "edges": [
+    {
+      "source": "demo_seed",
+      "target": "mantra",
+      "type": "relates"
+    },
+    {
+      "source": "demo_seed",
+      "target": "yantra",
+      "type": "relates"
+    },
+    {
+      "source": "demo_seed",
+      "target": "geometry",
+      "type": "relates"
+    }
+  ]
+}

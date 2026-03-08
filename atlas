@@ -1,67 +1,70 @@
 #!/usr/bin/env python3
-import sys
-import subprocess
+
+import os,sys,subprocess,json
 
 def run(cmd):
-    subprocess.run(cmd, shell=True)
+    subprocess.run(cmd,shell=True)
 
-if len(sys.argv) < 2:
-    print("""
-Atlas AI CLI
+def seed():
+    name=input("Seed name: ").strip().replace(" ","_")
+    path=f"seeds/{name}.md"
+    os.makedirs("seeds",exist_ok=True)
+    open(path,"w").write(f"# {name}\n\nidea:\n\nrelations:\n")
+    print("Seed created:",path)
 
-Commands:
+def build():
+    run("python tools/build_graph.py")
 
-chat        → AI router
-agent       → dev agent
-memory      → rebuild vector memory
-index       → rebuild project index
-models      → list ollama models
-dashboard   → start dashboard
-shell       → dev AI shell
-analyze     → analyze project code
-patch       → AI patch a file
-watch       → start project watcher
-research    → ingest research corpus
-""")
-    sys.exit()
+def map():
+    run("python tools/render_constellation.py")
+    print("Open with: firefox visual/atlas_constellation.html")
 
-cmd = sys.argv[1]
+def thali():
 
-if cmd == "chat":
-    run("python /opt/atlas/scripts/ai_router.py")
+    print("\n=== ATLAS THALI ===\n")
 
-elif cmd == "agent":
-    run("python /opt/atlas/scripts/dev_agent.py")
+    print("Seeds:")
+    if os.path.exists("seeds"):
+        print(len(os.listdir("seeds")),"seed files")
 
-elif cmd == "memory":
-    run("python /opt/atlas/scripts/vector_memory.py")
+    if os.path.exists("atlas_graph/graph.json"):
+        data=json.load(open("atlas_graph/graph.json"))
+        print("Nodes:",len(data["nodes"]))
+        print("Edges:",len(data["edges"]))
 
-elif cmd == "index":
-    run("python /opt/atlas/scripts/index_project.py")
+    if os.path.exists("visual/atlas_constellation.html"):
+        print("Constellation present")
 
-elif cmd == "models":
-    run("ollama list")
+    print("\nArtifacts:")
+    print("atlas_graph/graph.json")
+    print("visual/atlas_constellation.html")
 
-elif cmd == "dashboard":
-    run("python /opt/atlas/scripts/control_panel.py")
+def offer():
+    run("python tools/build_graph.py")
+    run("python tools/render_constellation.py")
+    run("git add .")
+    run("git commit -m 'atlas: thali offering cycle'")
+    run("git push")
 
-elif cmd == "shell":
-    run("python /opt/atlas/scripts/dev_ai_shell.py")
+cmd=sys.argv[1] if len(sys.argv)>1 else ""
 
-elif cmd == "analyze":
-    run("python /opt/atlas/scripts/code_analyzer.py")
-
-elif cmd == "patch":
-    if len(sys.argv) < 3:
-        print("Usage: atlas patch <file>")
-    else:
-        run(f"python /opt/atlas/scripts/ai_patch.py {sys.argv[2]}")
-
-elif cmd == "watch":
-    run("python /opt/atlas/scripts/atlas_watcher.py")
-
-elif cmd == "research":
-    run("python /opt/atlas/scripts/research_ingest.py")
-
+if cmd=="seed":
+    seed()
+elif cmd=="build":
+    build()
+elif cmd=="map":
+    map()
+elif cmd=="thali":
+    thali()
+elif cmd=="offer":
+    offer()
 else:
-    print("Unknown command")
+    print("""
+Atlas commands:
+
+atlas seed   — plant research seed
+atlas build  — build knowledge graph
+atlas map    — render constellation
+atlas thali  — show offering plate
+atlas offer  — full cycle commit
+""")
