@@ -57,15 +57,15 @@ evidence_required: [source_title, source_locator, excerpt]
 ## Current state
 
 ```text
-Generated: 2026-03-06 07:21:00
+Generated: 2026-03-08 09:05:38
 
 Factcheck snapshot:
 - total rows: 106
 - missing to_id: 42
-- missing evidence: 55
+- missing evidence: 44
 
 Per-file:
-- relations_nakshatra_deity.csv: rows=27 missing_to_id=0 missing_evidence=11
+- relations_nakshatra_deity.csv: rows=27 missing_to_id=0 missing_evidence=0
 - relations_devi_weapon.csv: rows=15 missing_to_id=15 missing_evidence=15
 - relations_nakshatra_plants.csv: rows=27 missing_to_id=27 missing_evidence=27
 - relations_ritual_calendar.csv: rows=10 missing_to_id=0 missing_evidence=0
@@ -83,13 +83,19 @@ Per-file:
 
 ```text
 aggregate.json
+atlas_clusters.json
+atlas_relations.json
 canon_guard.json
+cluster_nakshatra_rohini.md
+cycle_report.json
 dashboard.html
+dataset_report.json
 evidence_todo.txt
 gaps.json
 gaps_top.txt
 journey_moon_passages.csv
 next_domain.txt
+pb_state.json
 quality_report.json
 research_fingerprint.txt
 stability_report.json
@@ -135,16 +141,6 @@ For each row below (to_id present; evidence missing):
 - If you cannot, output NO EVIDENCE FOUND for that row.
 - Output a CSV file patch that updates source_title, source_locator, excerpt, tradition, confidence, notes.
 Queue:
-- relations_nakshatra_deity.csv	nakshatra:1	nakshatra_associated_deity	deity:ashwini_kumaras
-- relations_nakshatra_deity.csv	nakshatra:10	nakshatra_associated_deity	deity:pitrs
-- relations_nakshatra_deity.csv	nakshatra:12	nakshatra_associated_deity	deity:aryaman
-- relations_nakshatra_deity.csv	nakshatra:13	nakshatra_associated_deity	deity:savitar
-- relations_nakshatra_deity.csv	nakshatra:14	nakshatra_associated_deity	deity:vishvakarma
-- relations_nakshatra_deity.csv	nakshatra:16	nakshatra_associated_deity	deity:indraagni
-- relations_nakshatra_deity.csv	nakshatra:17	nakshatra_associated_deity	deity:mitra
-- relations_nakshatra_deity.csv	nakshatra:19	nakshatra_associated_deity	deity:nirriti
-- relations_nakshatra_deity.csv	nakshatra:21	nakshatra_associated_deity	deity:vishvadevas
-- relations_nakshatra_deity.csv	nakshatra:25	nakshatra_associated_deity	deity:ajaekapada
 - relations_nakshatra_graha.csv	nakshatra:18	nakshatra_ruling_graha	graha:mercury
 - relations_nakshatra_graha.csv	nakshatra:19	nakshatra_ruling_graha	graha:ketu
 ```
