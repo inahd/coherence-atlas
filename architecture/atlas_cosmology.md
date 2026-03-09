@@ -1,34 +1,26 @@
 # Atlas Cosmology
 
-Atlas is a living knowledge ecosystem.
+Atlas organizes knowledge using layered cosmological grammars
+derived from Vedic knowledge systems.
 
-Knowledge grows through cycles:
+Primary Axis:
 
-impetus → seed → relations → constellation → insight → new seeds
+śabda
+↓
+language
+↓
+tattva
+↓
+cosmology
+↓
+culture
+↓
+practice
 
-## Core Structures
+Nodes may optionally include:
 
-canon
-    foundational texts and axioms
-
-seeds
-    new insights or hypotheses
-
-nodes
-    stable concepts
-
-relations
-    connections between concepts
-
-constellations
-    visual patterns formed by relations
-
-artifacts
-    tools generated from the knowledge graph
-
-## Purpose
-
-Atlas does not merely store knowledge.
-
-It cultivates a cosmos of ideas where patterns emerge,
-tools are created, and new seeds appear through exploration.
+layer_axis
+tattva_level
+mandala_position
+chakra_layer
+cosmic_cycle

@@ -1,89 +1,4016 @@
 {
-  "directed": false,
-  "multigraph": false,
-  "graph": {},
   "nodes": [
     {
-      "type": "tithi",
-      "id": "Pratipada"
+      "id": "cosmic_seed_cycle_20260308_090538",
+      "type": "Concept",
+      "source": "seeds/cosmic_seed_cycle_20260308_090538.md"
     },
     {
-      "type": "devi",
-      "id": "Shailaputri"
+      "id": "cosmic_cycle_20260308_091738",
+      "type": "Concept",
+      "source": "seeds/cosmic_cycle_20260308_091738.md"
     },
     {
-      "type": "weapon",
-      "id": "Trident"
+      "id": "demo_seed",
+      "type": "Concept",
+      "source": "seeds/demo_seed.md"
     },
     {
-      "type": "tithi",
-      "id": "Dwitiya"
+      "id": "seed_20260308_1619",
+      "type": "Concept",
+      "source": "seeds/seed_20260308_1619.md"
     },
     {
-      "type": "devi",
-      "id": "Brahmacharini"
+      "id": "knowledge",
+      "type": "Concept",
+      "source": "seeds/seed_knowledge_192513.md"
     },
     {
-      "type": "weapon",
-      "id": "Rosary"
+      "id": "quality",
+      "type": "Concept",
+      "source": "seeds/seed_quality_192513.md"
     },
     {
-      "type": "weapon",
-      "id": "Water Pot"
+      "id": "uttara",
+      "type": "Concept",
+      "source": "seeds/seed_uttara_192513.md"
     },
     {
-      "type": "tithi",
-      "id": "Tritiya"
+      "id": "ashwini",
+      "type": "Concept",
+      "source": "seeds/seed_ashwini_192513.md"
     },
     {
-      "type": "devi",
-      "id": "Chandraghanta"
+      "id": "trident",
+      "type": "Concept",
+      "source": "seeds/seed_trident_192513.md"
     },
     {
-      "type": "weapon",
-      "id": "Sword"
+      "id": "devotion",
+      "type": "Concept",
+      "source": "seeds/seed_devotion_192513.md"
+    },
+    {
+      "id": "associated",
+      "type": "Concept",
+      "source": "seeds/seed_associated_192513.md"
+    },
+    {
+      "id": "relation",
+      "type": "Concept",
+      "source": "seeds/seed_relation_192513.md"
+    },
+    {
+      "id": "represents",
+      "type": "Concept",
+      "source": "seeds/seed_represents_192513.md"
+    },
+    {
+      "id": "wields",
+      "type": "Concept",
+      "source": "seeds/seed_wields_192513.md"
+    },
+    {
+      "id": "coherence",
+      "type": "Concept",
+      "source": "seeds/seed_coherence_192513.md"
+    },
+    {
+      "id": "cultural",
+      "type": "Concept",
+      "source": "seeds/seed_cultural_192513.md"
+    },
+    {
+      "id": "systems",
+      "type": "Concept",
+      "source": "seeds/seed_systems_192513.md"
+    },
+    {
+      "id": "geometry",
+      "type": "Concept",
+      "source": "seeds/seed_geometry_192513.md"
+    },
+    {
+      "id": "cycles",
+      "type": "Concept",
+      "source": "seeds/seed_cycles_192513.md"
+    },
+    {
+      "id": "rohini",
+      "type": "Concept",
+      "source": "seeds/seed_rohini_192513.md"
+    },
+    {
+      "id": "cluster",
+      "type": "Concept",
+      "source": "seeds/seed_cluster_192513.md"
+    },
+    {
+      "id": "inference",
+      "type": "Concept",
+      "source": "seeds/seed_inference_192513.md"
+    },
+    {
+      "id": "overlays",
+      "type": "Concept",
+      "source": "seeds/seed_overlays_192513.md"
+    },
+    {
+      "id": "coherent",
+      "type": "Concept",
+      "source": "seeds/seed_coherent_192513.md"
+    },
+    {
+      "id": "nakshatra",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_192513.md"
+    },
+    {
+      "id": "example",
+      "type": "Concept",
+      "source": "seeds/seed_example_192513.md"
+    },
+    {
+      "id": "entity",
+      "type": "Concept",
+      "source": "seeds/seed_entity_192513.md"
+    },
+    {
+      "id": "generated",
+      "type": "Concept",
+      "source": "seeds/seed_generated_192513.md"
+    },
+    {
+      "id": "source",
+      "type": "Concept",
+      "source": "seeds/seed_source_192513.md"
+    },
+    {
+      "id": "target",
+      "type": "Concept",
+      "source": "seeds/seed_target_192513.md"
+    },
+    {
+      "id": "structured",
+      "type": "Concept",
+      "source": "seeds/seed_structured_192513.md"
+    },
+    {
+      "id": "outputs",
+      "type": "Concept",
+      "source": "seeds/seed_outputs_192513.md"
+    },
+    {
+      "id": "diagrams",
+      "type": "Concept",
+      "source": "seeds/seed_diagrams_192513.md"
+    },
+    {
+      "id": "relations",
+      "type": "Concept",
+      "source": "seeds/seed_relations_192513.md"
+    },
+    {
+      "id": "kernel",
+      "type": "Concept",
+      "source": "seeds/seed_kernel_192513.md"
+    },
+    {
+      "id": "before",
+      "type": "Concept",
+      "source": "seeds/seed_before_192513.md"
+    },
+    {
+      "id": "evidence",
+      "type": "Concept",
+      "source": "seeds/seed_evidence_192513.md"
+    },
+    {
+      "id": "should",
+      "type": "Concept",
+      "source": "seeds/seed_should_192513.md"
+    },
+    {
+      "id": "relational",
+      "type": "Concept",
+      "source": "seeds/seed_relational_192513.md"
+    },
+    {
+      "id": "useful",
+      "type": "Concept",
+      "source": "seeds/seed_useful_192513.md"
+    },
+    {
+      "id": "preserve",
+      "type": "Concept",
+      "source": "seeds/seed_preserve_192513.md"
+    },
+    {
+      "id": "generation",
+      "type": "Concept",
+      "source": "seeds/seed_generation_192513.md"
+    },
+    {
+      "id": "directions",
+      "type": "Concept",
+      "source": "seeds/seed_directions_192513.md"
+    },
+    {
+      "id": "medium",
+      "type": "Concept",
+      "source": "seeds/seed_medium_192513.md"
+    },
+    {
+      "id": "stabilize",
+      "type": "Concept",
+      "source": "seeds/seed_stabilize_192513.md"
+    },
+    {
+      "id": "system",
+      "type": "Concept",
+      "source": "seeds/seed_system_192513.md"
+    },
+    {
+      "id": "resonance",
+      "type": "Concept",
+      "source": "seeds/seed_resonance_192513.md"
+    },
+    {
+      "id": "projection",
+      "type": "Concept",
+      "source": "seeds/seed_projection_192513.md"
+    },
+    {
+      "id": "literature",
+      "type": "Concept",
+      "source": "seeds/seed_literature_192513.md"
+    },
+    {
+      "id": "documents",
+      "type": "Concept",
+      "source": "seeds/seed_documents_192513.md"
+    },
+    {
+      "id": "maturation",
+      "type": "Concept",
+      "source": "seeds/seed_maturation_192513.md"
+    },
+    {
+      "id": "rather",
+      "type": "Concept",
+      "source": "seeds/seed_rather_192513.md"
+    },
+    {
+      "id": "cosmological",
+      "type": "Concept",
+      "source": "seeds/seed_cosmological_192513.md"
+    },
+    {
+      "id": "cosmology",
+      "type": "Concept",
+      "source": "seeds/seed_cosmology_192513.md"
+    },
+    {
+      "id": "fields",
+      "type": "Concept",
+      "source": "seeds/seed_fields_192513.md"
+    },
+    {
+      "id": "element",
+      "type": "Concept",
+      "source": "seeds/seed_element_192513.md"
+    },
+    {
+      "id": "scripts",
+      "type": "Concept",
+      "source": "seeds/seed_scripts_192513.md"
+    },
+    {
+      "id": "datasets",
+      "type": "Concept",
+      "source": "seeds/seed_datasets_192513.md"
+    },
+    {
+      "id": "pattern",
+      "type": "Concept",
+      "source": "seeds/seed_pattern_192513.md"
+    },
+    {
+      "id": "report",
+      "type": "Concept",
+      "source": "seeds/seed_report_192513.md"
+    },
+    {
+      "id": "clusters",
+      "type": "Concept",
+      "source": "seeds/seed_clusters_192513.md"
+    },
+    {
+      "id": "sacred",
+      "type": "Concept",
+      "source": "seeds/seed_sacred_192513.md"
+    },
+    {
+      "id": "number",
+      "type": "Concept",
+      "source": "seeds/seed_number_192513.md"
+    },
+    {
+      "id": "stability",
+      "type": "Concept",
+      "source": "seeds/seed_stability_192513.md"
+    },
+    {
+      "id": "authority",
+      "type": "Concept",
+      "source": "seeds/seed_authority_192513.md"
+    },
+    {
+      "id": "visualization",
+      "type": "Concept",
+      "source": "seeds/seed_visualization_192513.md"
+    },
+    {
+      "id": "stable",
+      "type": "Concept",
+      "source": "seeds/seed_stable_192513.md"
+    },
+    {
+      "id": "shastra",
+      "type": "Concept",
+      "source": "seeds/seed_shastra_192513.md"
+    },
+    {
+      "id": "ayurveda",
+      "type": "Concept",
+      "source": "seeds/seed_ayurveda_192513.md"
+    },
+    {
+      "id": "ritual",
+      "type": "Concept",
+      "source": "seeds/seed_ritual_192513.md"
+    },
+    {
+      "id": "research",
+      "type": "Concept",
+      "source": "seeds/seed_research_192513.md"
+    },
+    {
+      "id": "canonical",
+      "type": "Concept",
+      "source": "seeds/seed_canonical_192513.md"
+    },
+    {
+      "id": "impetus",
+      "type": "Concept",
+      "source": "seeds/seed_impetus_192513.md"
+    },
+    {
+      "id": "supreme",
+      "type": "Concept",
+      "source": "seeds/seed_supreme_192513.md"
+    },
+    {
+      "id": "categories",
+      "type": "Concept",
+      "source": "seeds/seed_categories_192513.md"
+    },
+    {
+      "id": "celestial",
+      "type": "Concept",
+      "source": "seeds/seed_celestial_192513.md"
+    },
+    {
+      "id": "earthly",
+      "type": "Concept",
+      "source": "seeds/seed_earthly_192513.md"
+    },
+    {
+      "id": "readme",
+      "type": "Concept",
+      "source": "seeds/seed_readme_192513.md"
+    },
+    {
+      "id": "current",
+      "type": "Concept",
+      "source": "seeds/seed_current_192513.md"
+    },
+    {
+      "id": "conversation",
+      "type": "Concept",
+      "source": "seeds/seed_conversation_192513.md"
+    },
+    {
+      "id": "summary",
+      "type": "Concept",
+      "source": "seeds/seed_summary_192513.md"
+    },
+    {
+      "id": "identity",
+      "type": "Concept",
+      "source": "seeds/seed_identity_192513.md"
+    },
+    {
+      "id": "execution",
+      "type": "Concept",
+      "source": "seeds/seed_execution_192513.md"
+    },
+    {
+      "id": "cosmic",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_192513.md"
+    },
+    {
+      "id": "status",
+      "type": "Concept",
+      "source": "seeds/seed_status_192513.md"
+    },
+    {
+      "id": "parent",
+      "type": "Concept",
+      "source": "seeds/seed_parent_192513.md"
+    },
+    {
+      "id": "thesis",
+      "type": "Concept",
+      "source": "seeds/seed_thesis_192513.md"
+    },
+    {
+      "id": "interpreter",
+      "type": "Concept",
+      "source": "seeds/seed_interpreter_192513.md"
+    },
+    {
+      "id": "creative",
+      "type": "Concept",
+      "source": "seeds/seed_creative_192513.md"
+    },
+    {
+      "id": "offering",
+      "type": "Concept",
+      "source": "seeds/seed_offering_192513.md"
+    },
+    {
+      "id": "software",
+      "type": "Concept",
+      "source": "seeds/seed_software_192513.md"
+    },
+    {
+      "id": "context",
+      "type": "Concept",
+      "source": "seeds/seed_context_192513.md"
+    },
+    {
+      "id": "active",
+      "type": "Concept",
+      "source": "seeds/seed_active_192513.md"
+    },
+    {
+      "id": "layers",
+      "type": "Concept",
+      "source": "seeds/seed_layers_192513.md"
+    },
+    {
+      "id": "zodiac",
+      "type": "Concept",
+      "source": "seeds/seed_zodiac_192513.md"
+    },
+    {
+      "id": "practice",
+      "type": "Concept",
+      "source": "seeds/seed_practice_192513.md"
+    },
+    {
+      "id": "architecture",
+      "type": "Concept",
+      "source": "seeds/seed_architecture_192513.md"
+    },
+    {
+      "id": "organized",
+      "type": "Concept",
+      "source": "seeds/seed_organized_192513.md"
+    },
+    {
+      "id": "layered",
+      "type": "Concept",
+      "source": "seeds/seed_layered_192513.md"
+    },
+    {
+      "id": "tattva",
+      "type": "Concept",
+      "source": "seeds/seed_tattva_192513.md"
+    },
+    {
+      "id": "organizes",
+      "type": "Concept",
+      "source": "seeds/seed_organizes_192513.md"
+    },
+    {
+      "id": "universe",
+      "type": "Concept",
+      "source": "seeds/seed_universe_192513.md"
+    },
+    {
+      "id": "composed",
+      "type": "Concept",
+      "source": "seeds/seed_composed_192513.md"
+    },
+    {
+      "id": "archetypal",
+      "type": "Concept",
+      "source": "seeds/seed_archetypal_192513.md"
+    },
+    {
+      "id": "concept",
+      "type": "Concept",
+      "source": "seeds/seed_concept_192513.md"
+    },
+    {
+      "id": "connect",
+      "type": "Concept",
+      "source": "seeds/seed_connect_192513.md"
+    },
+    {
+      "id": "common",
+      "type": "Concept",
+      "source": "seeds/seed_common_192513.md"
+    },
+    {
+      "id": "manifests",
+      "type": "Concept",
+      "source": "seeds/seed_manifests_192513.md"
+    },
+    {
+      "id": "offerings",
+      "type": "Concept",
+      "source": "seeds/seed_offerings_192513.md"
+    },
+    {
+      "id": "protocol",
+      "type": "Concept",
+      "source": "seeds/seed_protocol_192513.md"
+    },
+    {
+      "id": "changes",
+      "type": "Concept",
+      "source": "seeds/seed_changes_192513.md"
+    },
+    {
+      "id": "introduced",
+      "type": "Concept",
+      "source": "seeds/seed_introduced_192513.md"
+    },
+    {
+      "id": "schema",
+      "type": "Concept",
+      "source": "seeds/seed_schema_192513.md"
+    },
+    {
+      "id": "cosmicbody",
+      "type": "Concept",
+      "source": "seeds/seed_cosmicbody_192513.md"
+    },
+    {
+      "id": "oneness",
+      "type": "Concept",
+      "source": "seeds/seed_oneness_192513.md"
+    },
+    {
+      "id": "difference",
+      "type": "Concept",
+      "source": "seeds/seed_difference_192513.md"
+    },
+    {
+      "id": "founder",
+      "type": "Concept",
+      "source": "seeds/seed_founder_192513.md"
+    },
+    {
+      "id": "category",
+      "type": "Concept",
+      "source": "seeds/seed_category_192513.md"
+    },
+    {
+      "id": "brahman",
+      "type": "Concept",
+      "source": "seeds/seed_brahman_192513.md"
+    },
+    {
+      "id": "tradition",
+      "type": "Concept",
+      "source": "seeds/seed_tradition_192513.md"
+    },
+    {
+      "id": "bhagavad",
+      "type": "Concept",
+      "source": "seeds/seed_bhagavad_192513.md"
+    },
+    {
+      "id": "vedanta",
+      "type": "Concept",
+      "source": "seeds/seed_vedanta_192513.md"
+    },
+    {
+      "id": "chapters",
+      "type": "Concept",
+      "source": "seeds/seed_chapters_192513.md"
+    },
+    {
+      "id": "srimad",
+      "type": "Concept",
+      "source": "seeds/seed_srimad_192513.md"
+    },
+    {
+      "id": "jupiter",
+      "type": "Concept",
+      "source": "seeds/seed_jupiter_192513.md"
+    },
+    {
+      "id": "saturn",
+      "type": "Concept",
+      "source": "seeds/seed_saturn_192513.md"
+    },
+    {
+      "id": "mercury",
+      "type": "Concept",
+      "source": "seeds/seed_mercury_192513.md"
+    },
+    {
+      "id": "phalguni",
+      "type": "Concept",
+      "source": "seeds/seed_phalguni_192513.md"
+    },
+    {
+      "id": "ashadha",
+      "type": "Concept",
+      "source": "seeds/seed_ashadha_192513.md"
+    },
+    {
+      "id": "bhadrapada",
+      "type": "Concept",
+      "source": "seeds/seed_bhadrapada_192513.md"
+    },
+    {
+      "id": "qualities",
+      "type": "Concept",
+      "source": "seeds/seed_qualities_192513.md"
+    },
+    {
+      "id": "vitality",
+      "type": "Concept",
+      "source": "seeds/seed_vitality_192513.md"
+    },
+    {
+      "id": "emotion",
+      "type": "Concept",
+      "source": "seeds/seed_emotion_192513.md"
+    },
+    {
+      "id": "energy",
+      "type": "Concept",
+      "source": "seeds/seed_energy_192513.md"
+    },
+    {
+      "id": "taurus",
+      "type": "Concept",
+      "source": "seeds/seed_taurus_192513.md"
+    },
+    {
+      "id": "hanuman",
+      "type": "Concept",
+      "source": "seeds/seed_hanuman_192513.md"
+    },
+    {
+      "id": "domain",
+      "type": "Concept",
+      "source": "seeds/seed_domain_192513.md"
+    },
+    {
+      "id": "avatar",
+      "type": "Concept",
+      "source": "seeds/seed_avatar_192513.md"
+    },
+    {
+      "id": "kameshvari",
+      "type": "Concept",
+      "source": "seeds/seed_kameshvari_192513.md"
+    },
+    {
+      "id": "bhagamalini",
+      "type": "Concept",
+      "source": "seeds/seed_bhagamalini_192513.md"
+    },
+    {
+      "id": "nityaklinna",
+      "type": "Concept",
+      "source": "seeds/seed_nityaklinna_192513.md"
+    },
+    {
+      "id": "bherunda",
+      "type": "Concept",
+      "source": "seeds/seed_bherunda_192513.md"
+    },
+    {
+      "id": "vahnivasini",
+      "type": "Concept",
+      "source": "seeds/seed_vahnivasini_192513.md"
+    },
+    {
+      "id": "sanskrit",
+      "type": "Concept",
+      "source": "seeds/seed_sanskrit_192513.md"
+    },
+    {
+      "id": "pratipat",
+      "type": "Concept",
+      "source": "seeds/seed_pratipat_192513.md"
+    },
+    {
+      "id": "pratipad",
+      "type": "Concept",
+      "source": "seeds/seed_pratipad_192513.md"
+    },
+    {
+      "id": "dvitiya",
+      "type": "Concept",
+      "source": "seeds/seed_dvitiya_192513.md"
+    },
+    {
+      "id": "tritiya",
+      "type": "Concept",
+      "source": "seeds/seed_tritiya_192513.md"
+    },
+    {
+      "id": "weapon",
+      "type": "Concept",
+      "source": "seeds/seed_weapon_192513.md"
+    },
+    {
+      "id": "unverified",
+      "type": "Concept",
+      "source": "seeds/seed_unverified_192513.md"
+    },
+    {
+      "id": "locator",
+      "type": "Concept",
+      "source": "seeds/seed_locator_192513.md"
+    },
+    {
+      "id": "excerpt",
+      "type": "Concept",
+      "source": "seeds/seed_excerpt_192513.md"
+    },
+    {
+      "id": "pingala",
+      "type": "Concept",
+      "source": "seeds/seed_pingala_192513.md"
+    },
+    {
+      "id": "unknown",
+      "type": "Concept",
+      "source": "seeds/seed_unknown_192513.md"
+    },
+    {
+      "id": "attested",
+      "type": "Concept",
+      "source": "seeds/seed_attested_192513.md"
+    },
+    {
+      "id": "secondary",
+      "type": "Concept",
+      "source": "seeds/seed_secondary_192513.md"
+    },
+    {
+      "id": "combination",
+      "type": "Concept",
+      "source": "seeds/seed_combination_192513.md"
+    },
+    {
+      "id": "profile",
+      "type": "Concept",
+      "source": "seeds/seed_profile_192513.md"
+    },
+    {
+      "id": "nakshatras",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatras_192513.md"
+    },
+    {
+      "id": "bharani",
+      "type": "Concept",
+      "source": "seeds/seed_bharani_192513.md"
+    },
+    {
+      "id": "krittika",
+      "type": "Concept",
+      "source": "seeds/seed_krittika_192513.md"
+    },
+    {
+      "id": "mythic",
+      "type": "Concept",
+      "source": "seeds/seed_mythic_192513.md"
+    },
+    {
+      "id": "narrative",
+      "type": "Concept",
+      "source": "seeds/seed_narrative_192513.md"
+    },
+    {
+      "id": "krishna",
+      "type": "Concept",
+      "source": "seeds/seed_krishna_192513.md"
+    },
+    {
+      "id": "arjuna",
+      "type": "Concept",
+      "source": "seeds/seed_arjuna_192513.md"
+    },
+    {
+      "id": "siddha",
+      "type": "Concept",
+      "source": "seeds/seed_siddha_192513.md"
+    },
+    {
+      "id": "paksha",
+      "type": "Concept",
+      "source": "seeds/seed_paksha_192513.md"
+    },
+    {
+      "id": "ruling",
+      "type": "Concept",
+      "source": "seeds/seed_ruling_192513.md"
+    },
+    {
+      "id": "ekadashi",
+      "type": "Concept",
+      "source": "seeds/seed_ekadashi_192513.md"
+    },
+    {
+      "id": "goddess",
+      "type": "Concept",
+      "source": "seeds/seed_goddess_192513.md"
+    },
+    {
+      "id": "connected",
+      "type": "Concept",
+      "source": "seeds/seed_connected_192513.md"
+    },
+    {
+      "id": "dvadashi",
+      "type": "Concept",
+      "source": "seeds/seed_dvadashi_192513.md"
+    },
+    {
+      "id": "associated_deity",
+      "type": "Concept",
+      "source": "seeds/seed_associated_deity_20260308_194814.md"
+    },
+    {
+      "id": "associated_with",
+      "type": "Concept",
+      "source": "seeds/seed_associated_with_20260308_194814.md"
+    },
+    {
+      "id": "deity_of",
+      "type": "Concept",
+      "source": "seeds/seed_deity_of_20260308_194814.md"
+    },
+    {
+      "id": "medium_term",
+      "type": "Concept",
+      "source": "seeds/seed_medium_term_20260308_194814.md"
+    },
+    {
+      "id": "become",
+      "type": "Concept",
+      "source": "seeds/seed_become_20260308_194814.md"
+    },
+    {
+      "id": "canonization",
+      "type": "Concept",
+      "source": "seeds/seed_canonization_20260308_194814.md"
+    },
+    {
+      "id": "action",
+      "type": "Concept",
+      "source": "seeds/seed_action_20260308_194814.md"
+    },
+    {
+      "id": "bridge",
+      "type": "Concept",
+      "source": "seeds/seed_bridge_20260308_194814.md"
+    },
+    {
+      "id": "artifact_type",
+      "type": "Concept",
+      "source": "seeds/seed_artifact_type_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_layer",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_layer_20260308_194814.md"
+    },
+    {
+      "id": "active_seeds",
+      "type": "Concept",
+      "source": "seeds/seed_active_seeds_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_context",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_context_20260308_194814.md"
+    },
+    {
+      "id": "dataset_directions",
+      "type": "Concept",
+      "source": "seeds/seed_dataset_directions_20260308_194814.md"
+    },
+    {
+      "id": "alternatives",
+      "type": "Concept",
+      "source": "seeds/seed_alternatives_20260308_194814.md"
+    },
+    {
+      "id": "available",
+      "type": "Concept",
+      "source": "seeds/seed_available_20260308_194814.md"
+    },
+    {
+      "id": "nakshatra_1",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_1_20260308_194814.md"
+    },
+    {
+      "id": "nakshatra_10",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_10_20260308_194814.md"
+    },
+    {
+      "id": "ahirbudhnya",
+      "type": "Concept",
+      "source": "seeds/seed_ahirbudhnya_20260308_194814.md"
+    },
+    {
+      "id": "ajaekapada",
+      "type": "Concept",
+      "source": "seeds/seed_ajaekapada_20260308_194814.md"
+    },
+    {
+      "id": "aryaman",
+      "type": "Concept",
+      "source": "seeds/seed_aryaman_20260308_194814.md"
+    },
+    {
+      "id": "graha_jupiter",
+      "type": "Concept",
+      "source": "seeds/seed_graha_jupiter_20260308_194814.md"
+    },
+    {
+      "id": "graha_ketu",
+      "type": "Concept",
+      "source": "seeds/seed_graha_ketu_20260308_194814.md"
+    },
+    {
+      "id": "graha_mars",
+      "type": "Concept",
+      "source": "seeds/seed_graha_mars_20260308_194814.md"
+    },
+    {
+      "id": "ritual_fast",
+      "type": "Concept",
+      "source": "seeds/seed_ritual_fast_20260308_194814.md"
+    },
+    {
+      "id": "navami",
+      "type": "Concept",
+      "source": "seeds/seed_navami_20260308_194814.md"
+    },
+    {
+      "id": "densityadj",
+      "type": "Concept",
+      "source": "seeds/seed_densityadj_20260308_194814.md"
+    },
+    {
+      "id": "hemanta",
+      "type": "Concept",
+      "source": "seeds/seed_hemanta_20260308_194814.md"
+    },
+    {
+      "id": "fortnight",
+      "type": "Concept",
+      "source": "seeds/seed_fortnight_20260308_194814.md"
+    },
+    {
+      "id": "brahma",
+      "type": "Concept",
+      "source": "seeds/seed_brahma_20260308_194814.md"
+    },
+    {
+      "id": "nostril",
+      "type": "Concept",
+      "source": "seeds/seed_nostril_20260308_194814.md"
+    },
+    {
+      "id": "chakra",
+      "type": "Concept",
+      "source": "seeds/seed_chakra_20260308_194814.md"
+    },
+    {
+      "id": "freedom",
+      "type": "Concept",
+      "source": "seeds/seed_freedom_20260308_194814.md"
+    },
+    {
+      "id": "muladhara",
+      "type": "Concept",
+      "source": "seeds/seed_muladhara_20260308_194814.md"
+    },
+    {
+      "id": "chapter",
+      "type": "Concept",
+      "source": "seeds/seed_chapter_20260308_194814.md"
+    },
+    {
+      "id": "rashis",
+      "type": "Concept",
+      "source": "seeds/seed_rashis_20260308_194814.md"
+    },
+    {
+      "id": "understanding",
+      "type": "Concept",
+      "source": "seeds/seed_understanding_20260308_194814.md"
+    },
+    {
+      "id": "desire",
+      "type": "Concept",
+      "source": "seeds/seed_desire_20260308_194814.md"
+    },
+    {
+      "id": "brihaspati",
+      "type": "Concept",
+      "source": "seeds/seed_brihaspati_20260308_194814.md"
+    },
+    {
+      "id": "achala",
+      "type": "Concept",
+      "source": "seeds/seed_achala_20260308_194814.md"
+    },
+    {
+      "id": "adventurous",
+      "type": "Concept",
+      "source": "seeds/seed_adventurous_20260308_194814.md"
+    },
+    {
+      "id": "elements",
+      "type": "Concept",
+      "source": "seeds/seed_elements_20260308_194814.md"
+    },
+    {
+      "id": "purvabhadrapada",
+      "type": "Concept",
+      "source": "seeds/seed_purvabhadrapada_20260308_194814.md"
+    },
+    {
+      "id": "sexual",
+      "type": "Concept",
+      "source": "seeds/seed_sexual_20260308_194814.md"
+    },
+    {
+      "id": "controls",
+      "type": "Concept",
+      "source": "seeds/seed_controls_20260308_194814.md"
+    },
+    {
+      "id": "excited",
+      "type": "Concept",
+      "source": "seeds/seed_excited_20260308_194814.md"
+    },
+    {
+      "id": "awakened",
+      "type": "Concept",
+      "source": "seeds/seed_awakened_20260308_194814.md"
+    },
+    {
+      "id": "beautiful",
+      "type": "Concept",
+      "source": "seeds/seed_beautiful_20260308_194814.md"
+    },
+    {
+      "id": "vishnu",
+      "type": "Concept",
+      "source": "seeds/seed_vishnu_20260308_194814.md"
+    },
+    {
+      "id": "gemini",
+      "type": "Concept",
+      "source": "seeds/seed_gemini_20260308_194814.md"
+    },
+    {
+      "id": "varuna",
+      "type": "Concept",
+      "source": "seeds/seed_varuna_20260308_194814.md"
+    },
+    {
+      "id": "energised",
+      "type": "Concept",
+      "source": "seeds/seed_energised_20260308_194814.md"
+    },
+    {
+      "id": "becomes",
+      "type": "Concept",
+      "source": "seeds/seed_becomes_20260308_194814.md"
+    },
+    {
+      "id": "direction",
+      "type": "Concept",
+      "source": "seeds/seed_direction_20260308_194814.md"
+    },
+    {
+      "id": "ability",
+      "type": "Concept",
+      "source": "seeds/seed_ability_20260308_194814.md"
+    },
+    {
+      "id": "asterism",
+      "type": "Concept",
+      "source": "seeds/seed_asterism_20260308_194814.md"
+    },
+    {
+      "id": "creativity",
+      "type": "Concept",
+      "source": "seeds/seed_creativity_20260308_194814.md"
+    },
+    {
+      "id": "fifteen",
+      "type": "Concept",
+      "source": "seeds/seed_fifteen_20260308_194814.md"
+    },
+    {
+      "id": "portion",
+      "type": "Concept",
+      "source": "seeds/seed_portion_20260308_194814.md"
+    },
+    {
+      "id": "kumaras",
+      "type": "Concept",
+      "source": "seeds/seed_kumaras_20260308_194814.md"
+    },
+    {
+      "id": "savitar",
+      "type": "Concept",
+      "source": "seeds/seed_savitar_20260308_194814.md"
+    },
+    {
+      "id": "vishvakarma",
+      "type": "Concept",
+      "source": "seeds/seed_vishvakarma_20260308_194814.md"
+    },
+    {
+      "id": "indraagni",
+      "type": "Concept",
+      "source": "seeds/seed_indraagni_20260308_194814.md"
+    },
+    {
+      "id": "overlay",
+      "type": "Concept",
+      "source": "seeds/seed_overlay_20260308_194814.md"
+    },
+    {
+      "id": "nirriti",
+      "type": "Concept",
+      "source": "seeds/seed_nirriti_20260308_194814.md"
+    },
+    {
+      "id": "vishvadevas",
+      "type": "Concept",
+      "source": "seeds/seed_vishvadevas_20260308_194814.md"
+    },
+    {
+      "id": "pushan",
+      "type": "Concept",
+      "source": "seeds/seed_pushan_20260308_194814.md"
+    },
+    {
+      "id": "teentaal",
+      "type": "Concept",
+      "source": "seeds/seed_teentaal_20260308_194814.md"
+    },
+    {
+      "id": "trayodashi",
+      "type": "Concept",
+      "source": "seeds/seed_trayodashi_20260308_194814.md"
+    },
+    {
+      "id": "symbolic",
+      "type": "Concept",
+      "source": "seeds/seed_symbolic_20260308_194814.md"
+    },
+    {
+      "id": "archive",
+      "type": "Concept",
+      "source": "seeds/seed_archive_20260308_194814.md"
+    },
+    {
+      "id": "expand",
+      "type": "Concept",
+      "source": "seeds/seed_expand_20260308_194814.md"
+    },
+    {
+      "id": "actual",
+      "type": "Concept",
+      "source": "seeds/seed_actual_20260308_194814.md"
+    },
+    {
+      "id": "artifacts",
+      "type": "Concept",
+      "source": "seeds/seed_artifacts_20260308_194814.md"
+    },
+    {
+      "id": "comparative",
+      "type": "Concept",
+      "source": "seeds/seed_comparative_20260308_194814.md"
+    },
+    {
+      "id": "community_driven",
+      "type": "Concept",
+      "source": "seeds/seed_community_driven_20260308_194814.md"
+    },
+    {
+      "id": "contribution",
+      "type": "Concept",
+      "source": "seeds/seed_contribution_20260308_194814.md"
+    },
+    {
+      "id": "energetics",
+      "type": "Concept",
+      "source": "seeds/seed_energetics_20260308_194814.md"
+    },
+    {
+      "id": "anchors",
+      "type": "Concept",
+      "source": "seeds/seed_anchors_20260308_194814.md"
+    },
+    {
+      "id": "completed",
+      "type": "Concept",
+      "source": "seeds/seed_completed_20260308_194814.md"
+    },
+    {
+      "id": "branch",
+      "type": "Concept",
+      "source": "seeds/seed_branch_20260308_194814.md"
+    },
+    {
+      "id": "artifact",
+      "type": "Concept",
+      "source": "seeds/seed_artifact_20260308_194814.md"
+    },
+    {
+      "id": "population",
+      "type": "Concept",
+      "source": "seeds/seed_population_20260308_194814.md"
+    },
+    {
+      "id": "anchored",
+      "type": "Concept",
+      "source": "seeds/seed_anchored_20260308_194814.md"
+    },
+    {
+      "id": "aggressive",
+      "type": "Concept",
+      "source": "seeds/seed_aggressive_20260308_194814.md"
+    },
+    {
+      "id": "prolific",
+      "type": "Concept",
+      "source": "seeds/seed_prolific_20260308_194814.md"
+    },
+    {
+      "id": "priority",
+      "type": "Concept",
+      "source": "seeds/seed_priority_20260308_194814.md"
+    },
+    {
+      "id": "application_layers",
+      "type": "Concept",
+      "source": "seeds/seed_application_layers_20260308_194814.md"
+    },
+    {
+      "id": "breath_pattern",
+      "type": "Concept",
+      "source": "seeds/seed_breath_pattern_20260308_194814.md"
+    },
+    {
+      "id": "calendar_planning",
+      "type": "Concept",
+      "source": "seeds/seed_calendar_planning_20260308_194814.md"
+    },
+    {
+      "id": "application",
+      "type": "Concept",
+      "source": "seeds/seed_application_20260308_194814.md"
+    },
+    {
+      "id": "archetype",
+      "type": "Concept",
+      "source": "seeds/seed_archetype_20260308_194814.md"
+    },
+    {
+      "id": "chakra_layer",
+      "type": "Concept",
+      "source": "seeds/seed_chakra_layer_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_cycle",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_cycle_20260308_194814.md"
+    },
+    {
+      "id": "combinations",
+      "type": "Concept",
+      "source": "seeds/seed_combinations_20260308_194814.md"
+    },
+    {
+      "id": "activates",
+      "type": "Concept",
+      "source": "seeds/seed_activates_20260308_194814.md"
+    },
+    {
+      "id": "appears_in",
+      "type": "Concept",
+      "source": "seeds/seed_appears_in_20260308_194814.md"
+    },
+    {
+      "id": "astrology",
+      "type": "Concept",
+      "source": "seeds/seed_astrology_20260308_194814.md"
+    },
+    {
+      "id": "beauty",
+      "type": "Concept",
+      "source": "seeds/seed_beauty_20260308_194814.md"
+    },
+    {
+      "id": "chitra",
+      "type": "Concept",
+      "source": "seeds/seed_chitra_20260308_194814.md"
+    },
+    {
+      "id": "amavasya",
+      "type": "Concept",
+      "source": "seeds/seed_amavasya_20260308_194814.md"
+    },
+    {
+      "id": "ashtami",
+      "type": "Concept",
+      "source": "seeds/seed_ashtami_20260308_194814.md"
+    },
+    {
+      "id": "caturda",
+      "type": "Concept",
+      "source": "seeds/seed_caturda_20260308_194814.md"
+    },
+    {
+      "id": "devi_wields_weapon",
+      "type": "Concept",
+      "source": "seeds/seed_devi_wields_weapon_20260308_194814.md"
+    },
+    {
+      "id": "seed_unverified",
+      "type": "Concept",
+      "source": "seeds/seed_seed_unverified_20260308_194814.md"
+    },
+    {
+      "id": "nakshatra_sacred_plant",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_sacred_plant_20260308_194814.md"
+    },
+    {
+      "id": "confidence",
+      "type": "Concept",
+      "source": "seeds/seed_confidence_20260308_194814.md"
+    },
+    {
+      "id": "from_id",
+      "type": "Concept",
+      "source": "seeds/seed_from_id_20260308_194814.md"
+    },
+    {
+      "id": "attested_secondary",
+      "type": "Concept",
+      "source": "seeds/seed_attested_secondary_20260308_194814.md"
+    },
+    {
+      "id": "anuradha",
+      "type": "Concept",
+      "source": "seeds/seed_anuradha_20260308_194814.md"
+    },
+    {
+      "id": "mythic_narrative",
+      "type": "Concept",
+      "source": "seeds/seed_mythic_narrative_20260308_194814.md"
+    },
+    {
+      "id": "fertility",
+      "type": "Concept",
+      "source": "seeds/seed_fertility_20260308_194814.md"
+    },
+    {
+      "id": "symbolism",
+      "type": "Concept",
+      "source": "seeds/seed_symbolism_20260308_194814.md"
+    },
+    {
+      "id": "banyan",
+      "type": "Concept",
+      "source": "seeds/seed_banyan_20260308_194814.md"
+    },
+    {
+      "id": "purpose",
+      "type": "Concept",
+      "source": "seeds/seed_purpose_20260308_194814.md"
+    },
+    {
+      "id": "agnihotra",
+      "type": "Concept",
+      "source": "seeds/seed_agnihotra_20260308_194814.md"
+    },
+    {
+      "id": "deities",
+      "type": "Concept",
+      "source": "seeds/seed_deities_20260308_194814.md"
+    },
+    {
+      "id": "aliases",
+      "type": "Concept",
+      "source": "seeds/seed_aliases_20260308_194814.md"
+    },
+    {
+      "id": "source_file",
+      "type": "Concept",
+      "source": "seeds/seed_source_file_20260308_194814.md"
+    },
+    {
+      "id": "ashlesha",
+      "type": "Concept",
+      "source": "seeds/seed_ashlesha_20260308_194814.md"
+    },
+    {
+      "id": "schools",
+      "type": "Concept",
+      "source": "seeds/seed_schools_20260308_194814.md"
+    },
+    {
+      "id": "vedic_concepts",
+      "type": "Concept",
+      "source": "seeds/seed_vedic_concepts_20260308_194814.md"
+    },
+    {
+      "id": "jyotish",
+      "type": "Concept",
+      "source": "seeds/seed_jyotish_20260308_194814.md"
+    },
+    {
+      "id": "jyotish_core",
+      "type": "Concept",
+      "source": "seeds/seed_jyotish_core_20260308_194814.md"
+    },
+    {
+      "id": "aquarius",
+      "type": "Concept",
+      "source": "seeds/seed_aquarius_20260308_194814.md"
+    },
+    {
+      "id": "cancer",
+      "type": "Concept",
+      "source": "seeds/seed_cancer_20260308_194814.md"
+    },
+    {
+      "id": "capricorn",
+      "type": "Concept",
+      "source": "seeds/seed_capricorn_20260308_194814.md"
+    },
+    {
+      "id": "saptami",
+      "type": "Concept",
+      "source": "seeds/seed_saptami_20260308_194814.md"
+    },
+    {
+      "id": "nakshatra_associated_deity",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_associated_deity_20260308_194814.md"
+    },
+    {
+      "id": "passage",
+      "type": "Concept",
+      "source": "seeds/seed_passage_20260308_194814.md"
+    },
+    {
+      "id": "devanagari",
+      "type": "Concept",
+      "source": "seeds/seed_devanagari_20260308_194814.md"
+    },
+    {
+      "id": "model_layered",
+      "type": "Concept",
+      "source": "seeds/seed_model_layered_20260308_194814.md"
+    },
+    {
+      "id": "derived",
+      "type": "Concept",
+      "source": "seeds/seed_derived_20260308_194814.md"
+    },
+    {
+      "id": "sattva",
+      "type": "Concept",
+      "source": "seeds/seed_sattva_20260308_194814.md"
+    },
+    {
+      "id": "healing",
+      "type": "Concept",
+      "source": "seeds/seed_healing_20260308_194814.md"
+    },
+    {
+      "id": "nourishment",
+      "type": "Concept",
+      "source": "seeds/seed_nourishment_20260308_194814.md"
+    },
+    {
+      "id": "cohesion",
+      "type": "Concept",
+      "source": "seeds/seed_cohesion_20260308_194814.md"
+    },
+    {
+      "id": "dryness",
+      "type": "Concept",
+      "source": "seeds/seed_dryness_20260308_194814.md"
+    },
+    {
+      "id": "element_id",
+      "type": "Concept",
+      "source": "seeds/seed_element_id_20260308_194814.md"
+    },
+    {
+      "id": "activity",
+      "type": "Concept",
+      "source": "seeds/seed_activity_20260308_194814.md"
+    },
+    {
+      "id": "balance",
+      "type": "Concept",
+      "source": "seeds/seed_balance_20260308_194814.md"
+    },
+    {
+      "id": "clarity",
+      "type": "Concept",
+      "source": "seeds/seed_clarity_20260308_194814.md"
+    },
+    {
+      "id": "metabolism",
+      "type": "Concept",
+      "source": "seeds/seed_metabolism_20260308_194814.md"
+    },
+    {
+      "id": "structure",
+      "type": "Concept",
+      "source": "seeds/seed_structure_20260308_194814.md"
+    },
+    {
+      "id": "silver",
+      "type": "Concept",
+      "source": "seeds/seed_silver_20260308_194814.md"
+    },
+    {
+      "id": "bronze",
+      "type": "Concept",
+      "source": "seeds/seed_bronze_20260308_194814.md"
+    },
+    {
+      "id": "female",
+      "type": "Concept",
+      "source": "seeds/seed_female_20260308_194814.md"
+    },
+    {
+      "id": "manushya",
+      "type": "Concept",
+      "source": "seeds/seed_manushya_20260308_194814.md"
+    },
+    {
+      "id": "rakshasa",
+      "type": "Concept",
+      "source": "seeds/seed_rakshasa_20260308_194814.md"
+    },
+    {
+      "id": "aja_ekapada",
+      "type": "Concept",
+      "source": "seeds/seed_aja_ekapada_20260308_194814.md"
+    },
+    {
+      "id": "elephant",
+      "type": "Concept",
+      "source": "seeds/seed_elephant_20260308_194814.md"
+    },
+    {
+      "id": "peacock",
+      "type": "Concept",
+      "source": "seeds/seed_peacock_20260308_194814.md"
+    },
+    {
+      "id": "airavata_elephant",
+      "type": "Concept",
+      "source": "seeds/seed_airavata_elephant_20260308_194814.md"
+    },
+    {
+      "id": "antelope",
+      "type": "Concept",
+      "source": "seeds/seed_antelope_20260308_194814.md"
+    },
+    {
+      "id": "auspicious_beginnings",
+      "type": "Concept",
+      "source": "seeds/seed_auspicious_beginnings_20260308_194814.md"
+    },
+    {
+      "id": "chandra",
+      "type": "Concept",
+      "source": "seeds/seed_chandra_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_illumination",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_illumination_20260308_194814.md"
+    },
+    {
+      "id": "planet",
+      "type": "Concept",
+      "source": "seeds/seed_planet_20260308_194814.md"
+    },
+    {
+      "id": "luminary",
+      "type": "Concept",
+      "source": "seeds/seed_luminary_20260308_194814.md"
+    },
+    {
+      "id": "attraction",
+      "type": "Concept",
+      "source": "seeds/seed_attraction_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_sound",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_sound_20260308_194814.md"
+    },
+    {
+      "id": "creative_power",
+      "type": "Concept",
+      "source": "seeds/seed_creative_power_20260308_194814.md"
+    },
+    {
+      "id": "agni_yantra",
+      "type": "Concept",
+      "source": "seeds/seed_agni_yantra_20260308_194814.md"
+    },
+    {
+      "id": "ascension",
+      "type": "Concept",
+      "source": "seeds/seed_ascension_20260308_194814.md"
+    },
+    {
+      "id": "chakra_symbol",
+      "type": "Concept",
+      "source": "seeds/seed_chakra_symbol_20260308_194814.md"
+    },
+    {
+      "id": "intellect",
+      "type": "Concept",
+      "source": "seeds/seed_intellect_20260308_194814.md"
+    },
+    {
+      "id": "science",
+      "type": "Concept",
+      "source": "seeds/seed_science_20260308_194814.md"
+    },
+    {
+      "id": "performance",
+      "type": "Concept",
+      "source": "seeds/seed_performance_20260308_194814.md"
+    },
+    {
+      "id": "ashoka",
+      "type": "Concept",
+      "source": "seeds/seed_ashoka_20260308_194814.md"
+    },
+    {
+      "id": "buffalo",
+      "type": "Concept",
+      "source": "seeds/seed_buffalo_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_motion",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_motion_20260308_194814.md"
+    },
+    {
+      "id": "ancestral_connection",
+      "type": "Concept",
+      "source": "seeds/seed_ancestral_connection_20260308_194814.md"
+    },
+    {
+      "id": "brahmana",
+      "type": "Concept",
+      "source": "seeds/seed_brahmana_20260308_194814.md"
+    },
+    {
+      "id": "madhya",
+      "type": "Concept",
+      "source": "seeds/seed_madhya_20260308_194814.md"
+    },
+    {
+      "id": "kshatriya",
+      "type": "Concept",
+      "source": "seeds/seed_kshatriya_20260308_194814.md"
+    },
+    {
+      "id": "kubera",
+      "type": "Concept",
+      "source": "seeds/seed_kubera_20260308_194814.md"
+    },
+    {
+      "id": "nirrti",
+      "type": "Concept",
+      "source": "seeds/seed_nirrti_20260308_194814.md"
+    },
+    {
+      "id": "center",
+      "type": "Concept",
+      "source": "seeds/seed_center_20260308_194814.md"
+    },
+    {
+      "id": "intellectual",
+      "type": "Concept",
+      "source": "seeds/seed_intellectual_20260308_194814.md"
+    },
+    {
+      "id": "domestic_art",
+      "type": "Concept",
+      "source": "seeds/seed_domestic_art_20260308_194814.md"
+    },
+    {
+      "id": "primary",
+      "type": "Concept",
+      "source": "seeds/seed_primary_20260308_194814.md"
+    },
+    {
+      "id": "affection",
+      "type": "Concept",
+      "source": "seeds/seed_affection_20260308_194814.md"
+    },
+    {
+      "id": "astonishes",
+      "type": "Concept",
+      "source": "seeds/seed_astonishes_20260308_194814.md"
+    },
+    {
+      "id": "cosmology_core",
+      "type": "Concept",
+      "source": "seeds/seed_cosmology_core_20260308_194814.md"
+    },
+    {
+      "id": "genealogy_layer",
+      "type": "Concept",
+      "source": "seeds/seed_genealogy_layer_20260308_194814.md"
+    },
+    {
+      "id": "historical_layer",
+      "type": "Concept",
+      "source": "seeds/seed_historical_layer_20260308_194814.md"
+    },
+    {
+      "id": "astringent",
+      "type": "Concept",
+      "source": "seeds/seed_astringent_20260308_194814.md"
+    },
+    {
+      "id": "bitter",
+      "type": "Concept",
+      "source": "seeds/seed_bitter_20260308_194814.md"
+    },
+    {
+      "id": "kashaya",
+      "type": "Concept",
+      "source": "seeds/seed_kashaya_20260308_194814.md"
+    },
+    {
+      "id": "flowing",
+      "type": "Concept",
+      "source": "seeds/seed_flowing_20260308_194814.md"
+    },
+    {
+      "id": "kathina",
+      "type": "Concept",
+      "source": "seeds/seed_kathina_20260308_194814.md"
+    },
+    {
+      "id": "ruksha",
+      "type": "Concept",
+      "source": "seeds/seed_ruksha_20260308_194814.md"
+    },
+    {
+      "id": "cooling",
+      "type": "Concept",
+      "source": "seeds/seed_cooling_20260308_194814.md"
+    },
+    {
+      "id": "heating",
+      "type": "Concept",
+      "source": "seeds/seed_heating_20260308_194814.md"
+    },
+    {
+      "id": "madhura",
+      "type": "Concept",
+      "source": "seeds/seed_madhura_20260308_194814.md"
+    },
+    {
+      "id": "pungent",
+      "type": "Concept",
+      "source": "seeds/seed_pungent_20260308_194814.md"
+    },
+    {
+      "id": "expected_count",
+      "type": "Concept",
+      "source": "seeds/seed_expected_count_20260308_194814.md"
+    },
+    {
+      "id": "grahas",
+      "type": "Concept",
+      "source": "seeds/seed_grahas_20260308_194814.md"
+    },
+    {
+      "id": "mahabhutas",
+      "type": "Concept",
+      "source": "seeds/seed_mahabhutas_20260308_194814.md"
+    },
+    {
+      "id": "northeast",
+      "type": "Concept",
+      "source": "seeds/seed_northeast_20260308_194814.md"
+    },
+    {
+      "id": "orientation",
+      "type": "Concept",
+      "source": "seeds/seed_orientation_20260308_194814.md"
+    },
+    {
+      "id": "ecology",
+      "type": "Concept",
+      "source": "seeds/seed_ecology_20260308_194814.md"
+    },
+    {
+      "id": "caitanya",
+      "type": "Concept",
+      "source": "seeds/seed_caitanya_20260308_194814.md"
+    },
+    {
+      "id": "pathway",
+      "type": "Concept",
+      "source": "seeds/seed_pathway_20260308_194814.md"
+    },
+    {
+      "id": "currently",
+      "type": "Concept",
+      "source": "seeds/seed_currently_20260308_194814.md"
+    },
+    {
+      "id": "future",
+      "type": "Concept",
+      "source": "seeds/seed_future_20260308_194814.md"
+    },
+    {
+      "id": "chains",
+      "type": "Concept",
+      "source": "seeds/seed_chains_20260308_194814.md"
+    },
+    {
+      "id": "chandas",
+      "type": "Concept",
+      "source": "seeds/seed_chandas_20260308_194814.md"
+    },
+    {
+      "id": "apprentice",
+      "type": "Concept",
+      "source": "seeds/seed_apprentice_20260308_194814.md"
+    },
+    {
+      "id": "analysis",
+      "type": "Concept",
+      "source": "seeds/seed_analysis_20260308_194814.md"
+    },
+    {
+      "id": "endobj",
+      "type": "Concept",
+      "source": "seeds/seed_endobj_20260308_194814.md"
+    },
+    {
+      "id": "endstream",
+      "type": "Concept",
+      "source": "seeds/seed_endstream_20260308_194814.md"
+    },
+    {
+      "id": "length",
+      "type": "Concept",
+      "source": "seeds/seed_length_20260308_194814.md"
+    },
+    {
+      "id": "naxatra",
+      "type": "Concept",
+      "source": "seeds/seed_naxatra_20260308_194814.md"
+    },
+    {
+      "id": "welche",
+      "type": "Concept",
+      "source": "seeds/seed_welche_20260308_194814.md"
+    },
+    {
+      "id": "werden",
+      "type": "Concept",
+      "source": "seeds/seed_werden_20260308_194814.md"
+    },
+    {
+      "id": "filter",
+      "type": "Concept",
+      "source": "seeds/seed_filter_20260308_194814.md"
+    },
+    {
+      "id": "yagyam",
+      "type": "Concept",
+      "source": "seeds/seed_yagyam_20260308_194814.md"
+    },
+    {
+      "id": "havishaa",
+      "type": "Concept",
+      "source": "seeds/seed_havishaa_20260308_194814.md"
+    },
+    {
+      "id": "vishvaa",
+      "type": "Concept",
+      "source": "seeds/seed_vishvaa_20260308_194814.md"
+    },
+    {
+      "id": "google",
+      "type": "Concept",
+      "source": "seeds/seed_google_20260308_194816.md"
+    },
+    {
+      "id": "services",
+      "type": "Concept",
+      "source": "seeds/seed_services_20260308_194816.md"
+    },
+    {
+      "id": "cdefghijstuvwxyzcdefghijstuvwxyz",
+      "type": "Concept",
+      "source": "seeds/seed_cdefghijstuvwxyzcdefghijstuvwxyz_20260308_194817.md"
+    },
+    {
+      "id": "amrita",
+      "type": "Concept",
+      "source": "seeds/seed_amrita_20260308_194817.md"
+    },
+    {
+      "id": "dharmartha",
+      "type": "Concept",
+      "source": "seeds/seed_dharmartha_20260308_194817.md"
+    },
+    {
+      "id": "digitized",
+      "type": "Concept",
+      "source": "seeds/seed_digitized_20260308_194817.md"
+    },
+    {
+      "id": "egangotri",
+      "type": "Concept",
+      "source": "seeds/seed_egangotri_20260308_194817.md"
+    },
+    {
+      "id": "df72af0aa244c026a89e8f679b819f63ebdaa4168cc3959db87c1848cf40213",
+      "type": "Concept",
+      "source": "seeds/seed_df72af0aa244c026a89e8f679b819f63ebdaa4168cc3959db87c1848cf40213_20260308_194819.md"
+    },
+    {
+      "id": "df72af0aa24_die_vedischen_nachrichten_von_den_naxatr",
+      "type": "Concept",
+      "source": "seeds/seed_df72af0aa24_die_vedischen_nachrichten_von_den_naxatr_20260308_194819.md"
+    },
+    {
+      "id": "a5d450ee6aa25b9313dc49aeaf1b9abb5da53c6af4a71d4263c32a7f90436154",
+      "type": "Concept",
+      "source": "seeds/seed_a5d450ee6aa25b9313dc49aeaf1b9abb5da53c6af4a71d4263c32a7f90436154_20260308_194819.md"
+    },
+    {
+      "id": "a5d450ee6aa2_die_vedischen_nachrichten_von_den_naxatr",
+      "type": "Concept",
+      "source": "seeds/seed_a5d450ee6aa2_die_vedischen_nachrichten_von_den_naxatr_20260308_194819.md"
+    },
+    {
+      "id": "b70b8e25a1911281b4d6956561d1623711fcc66255983b549cb11d464d174c8",
+      "type": "Concept",
+      "source": "seeds/seed_b70b8e25a1911281b4d6956561d1623711fcc66255983b549cb11d464d174c8_20260308_194819.md"
+    },
+    {
+      "id": "b70b8e25a19_nakshatra_sooktam_eng_v1",
+      "type": "Concept",
+      "source": "seeds/seed_b70b8e25a19_nakshatra_sooktam_eng_v1_20260308_194819.md"
+    },
+    {
+      "id": "a18f041_nakshatra_sooktam_eng_v1_djvu",
+      "type": "Concept",
+      "source": "seeds/seed_a18f041_nakshatra_sooktam_eng_v1_djvu_20260308_194819.md"
+    },
+    {
+      "id": "a18f041d86cac27bb60a2d24ff05cc5b0a8fbd2ee3729687dfd492616d7",
+      "type": "Concept",
+      "source": "seeds/seed_a18f041d86cac27bb60a2d24ff05cc5b0a8fbd2ee3729687dfd492616d7_20260308_194819.md"
+    },
+    {
+      "id": "nakshatra_vidnyana",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_vidnyana_20260308_194819.md"
+    },
+    {
+      "id": "aea77d2967a276bb89c5c58b50127a96aa812852795ba3a4ef2144d29ae6462a",
+      "type": "Concept",
+      "source": "seeds/seed_aea77d2967a276bb89c5c58b50127a96aa812852795ba3a4ef2144d29ae6462a_20260308_194819.md"
+    },
+    {
+      "id": "nakshatra_vidnyana_text",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_vidnyana_text_20260308_194819.md"
+    },
+    {
+      "id": "dst_path",
+      "type": "Concept",
+      "source": "seeds/seed_dst_path_20260308_194819.md"
+    },
+    {
+      "id": "jyotish_text",
+      "type": "Concept",
+      "source": "seeds/seed_jyotish_text_20260308_194819.md"
+    },
+    {
+      "id": "parichaya",
+      "type": "Concept",
+      "source": "seeds/seed_parichaya_20260308_194819.md"
+    },
+    {
+      "id": "parichaya_djvu",
+      "type": "Concept",
+      "source": "seeds/seed_parichaya_djvu_20260308_194819.md"
+    },
+    {
+      "id": "lalshmi",
+      "type": "Concept",
+      "source": "seeds/seed_lalshmi_20260308_194819.md"
+    },
+    {
+      "id": "kavya_djvu",
+      "type": "Concept",
+      "source": "seeds/seed_kavya_djvu_20260308_194819.md"
+    },
+    {
+      "id": "astronomy",
+      "type": "Concept",
+      "source": "seeds/seed_astronomy_20260308_194819.md"
+    },
+    {
+      "id": "parishad",
+      "type": "Concept",
+      "source": "seeds/seed_parishad_20260308_194819.md"
+    },
+    {
+      "id": "incoming",
+      "type": "Concept",
+      "source": "seeds/seed_incoming_20260308_194819.md"
+    },
+    {
+      "id": "calendar",
+      "type": "Concept",
+      "source": "seeds/seed_calendar_20260308_194820.md"
     }
   ],
-  "edges": [
+  "links": [
     {
-      "relation": "associated_devi",
-      "source": "Pratipada",
-      "target": "Shailaputri"
+      "source": "uttara",
+      "target": "uttara",
+      "type": "associated_with"
     },
     {
-      "relation": "wields",
-      "source": "Shailaputri",
-      "target": "Trident"
+      "source": "ashadha",
+      "target": "ashadha",
+      "type": "associated_with"
     },
     {
-      "relation": "wields",
-      "source": "Trident",
-      "target": "Chandraghanta"
+      "source": "ashwini",
+      "target": "ashwini",
+      "type": "associated_with"
     },
     {
-      "relation": "associated_devi",
-      "source": "Dwitiya",
-      "target": "Brahmacharini"
+      "source": "associated_deity",
+      "target": "associated_deity",
+      "type": "associated_with"
     },
     {
-      "relation": "wields",
-      "source": "Brahmacharini",
-      "target": "Rosary"
+      "source": "associated_with",
+      "target": "associated_with",
+      "type": "associated_with"
     },
     {
-      "relation": "wields",
-      "source": "Brahmacharini",
-      "target": "Water Pot"
+      "source": "deity_of",
+      "target": "deity_of",
+      "type": "associated_with"
     },
     {
-      "relation": "associated_devi",
-      "source": "Tritiya",
-      "target": "Chandraghanta"
+      "source": "coherence",
+      "target": "coherence",
+      "type": "associated_with"
     },
     {
-      "relation": "wields",
-      "source": "Chandraghanta",
-      "target": "Sword"
+      "source": "cultural",
+      "target": "cultural",
+      "type": "associated_with"
+    },
+    {
+      "source": "geometry",
+      "target": "geometry",
+      "type": "associated_with"
+    },
+    {
+      "source": "cluster",
+      "target": "cluster",
+      "type": "associated_with"
+    },
+    {
+      "source": "rohini",
+      "target": "rohini",
+      "type": "associated_with"
+    },
+    {
+      "source": "inference",
+      "target": "inference",
+      "type": "associated_with"
+    },
+    {
+      "source": "entity",
+      "target": "entity",
+      "type": "associated_with"
+    },
+    {
+      "source": "example",
+      "target": "example",
+      "type": "associated_with"
+    },
+    {
+      "source": "generated",
+      "target": "generated",
+      "type": "associated_with"
+    },
+    {
+      "source": "source",
+      "target": "source",
+      "type": "associated_with"
+    },
+    {
+      "source": "target",
+      "target": "target",
+      "type": "associated_with"
+    },
+    {
+      "source": "diagrams",
+      "target": "diagrams",
+      "type": "associated_with"
+    },
+    {
+      "source": "nakshatra",
+      "target": "nakshatra",
+      "type": "associated_with"
+    },
+    {
+      "source": "relations",
+      "target": "relations",
+      "type": "associated_with"
+    },
+    {
+      "source": "canonical",
+      "target": "canonical",
+      "type": "associated_with"
+    },
+    {
+      "source": "relational",
+      "target": "relational",
+      "type": "associated_with"
+    },
+    {
+      "source": "useful",
+      "target": "useful",
+      "type": "associated_with"
+    },
+    {
+      "source": "generation",
+      "target": "generation",
+      "type": "associated_with"
+    },
+    {
+      "source": "directions",
+      "target": "directions",
+      "type": "associated_with"
+    },
+    {
+      "source": "medium_term",
+      "target": "medium_term",
+      "type": "associated_with"
+    },
+    {
+      "source": "projection",
+      "target": "projection",
+      "type": "associated_with"
+    },
+    {
+      "source": "resonance",
+      "target": "resonance",
+      "type": "associated_with"
+    },
+    {
+      "source": "become",
+      "target": "become",
+      "type": "associated_with"
+    },
+    {
+      "source": "literature",
+      "target": "literature",
+      "type": "associated_with"
+    },
+    {
+      "source": "documents",
+      "target": "documents",
+      "type": "associated_with"
+    },
+    {
+      "source": "canonization",
+      "target": "canonization",
+      "type": "associated_with"
+    },
+    {
+      "source": "cosmological",
+      "target": "cosmological",
+      "type": "associated_with"
+    },
+    {
+      "source": "cosmology",
+      "target": "cosmology",
+      "type": "associated_with"
+    },
+    {
+      "source": "fields",
+      "target": "fields",
+      "type": "associated_with"
+    },
+    {
+      "source": "element",
+      "target": "element",
+      "type": "associated_with"
+    },
+    {
+      "source": "scripts",
+      "target": "scripts",
+      "type": "associated_with"
+    },
+    {
+      "source": "datasets",
+      "target": "datasets",
+      "type": "associated_with"
+    },
+    {
+      "source": "clusters",
+      "target": "clusters",
+      "type": "associated_with"
+    },
+    {
+      "source": "pattern",
+      "target": "pattern",
+      "type": "associated_with"
+    },
+    {
+      "source": "report",
+      "target": "report",
+      "type": "associated_with"
+    },
+    {
+      "source": "authority",
+      "target": "authority",
+      "type": "associated_with"
+    },
+    {
+      "source": "stability",
+      "target": "stability",
+      "type": "associated_with"
+    },
+    {
+      "source": "ayurveda",
+      "target": "ayurveda",
+      "type": "associated_with"
+    },
+    {
+      "source": "ritual",
+      "target": "ritual",
+      "type": "associated_with"
+    },
+    {
+      "source": "research",
+      "target": "research",
+      "type": "associated_with"
+    },
+    {
+      "source": "impetus",
+      "target": "impetus",
+      "type": "associated_with"
+    },
+    {
+      "source": "action",
+      "target": "action",
+      "type": "associated_with"
+    },
+    {
+      "source": "bridge",
+      "target": "bridge",
+      "type": "associated_with"
+    },
+    {
+      "source": "readme",
+      "target": "readme",
+      "type": "associated_with"
+    },
+    {
+      "source": "conversation",
+      "target": "conversation",
+      "type": "associated_with"
+    },
+    {
+      "source": "current",
+      "target": "current",
+      "type": "associated_with"
+    },
+    {
+      "source": "artifact_type",
+      "target": "artifact_type",
+      "type": "associated_with"
+    },
+    {
+      "source": "cosmic_layer",
+      "target": "cosmic_layer",
+      "type": "associated_with"
+    },
+    {
+      "source": "domain",
+      "target": "domain",
+      "type": "associated_with"
+    },
+    {
+      "source": "interpreter",
+      "target": "interpreter",
+      "type": "associated_with"
+    },
+    {
+      "source": "thesis",
+      "target": "thesis",
+      "type": "associated_with"
+    },
+    {
+      "source": "offering",
+      "target": "offering",
+      "type": "associated_with"
+    },
+    {
+      "source": "software",
+      "target": "software",
+      "type": "associated_with"
+    },
+    {
+      "source": "active_seeds",
+      "target": "active_seeds",
+      "type": "associated_with"
+    },
+    {
+      "source": "cosmic_context",
+      "target": "cosmic_context",
+      "type": "associated_with"
+    },
+    {
+      "source": "dataset_directions",
+      "target": "dataset_directions",
+      "type": "associated_with"
+    },
+    {
+      "source": "alternatives",
+      "target": "alternatives",
+      "type": "associated_with"
+    },
+    {
+      "source": "available",
+      "target": "available",
+      "type": "associated_with"
+    },
+    {
+      "source": "nakshatra_1",
+      "target": "nakshatra_1",
+      "type": "associated_with"
+    },
+    {
+      "source": "nakshatra_10",
+      "target": "nakshatra_10",
+      "type": "associated_with"
+    },
+    {
+      "source": "ahirbudhnya",
+      "target": "ahirbudhnya",
+      "type": "associated_with"
+    },
+    {
+      "source": "ajaekapada",
+      "target": "ajaekapada",
+      "type": "associated_with"
+    },
+    {
+      "source": "aryaman",
+      "target": "aryaman",
+      "type": "associated_with"
+    },
+    {
+      "source": "graha_jupiter",
+      "target": "graha_jupiter",
+      "type": "associated_with"
+    },
+    {
+      "source": "graha_ketu",
+      "target": "graha_ketu",
+      "type": "associated_with"
+    },
+    {
+      "source": "graha_mars",
+      "target": "graha_mars",
+      "type": "associated_with"
+    },
+    {
+      "source": "ritual_fast",
+      "target": "ritual_fast",
+      "type": "associated_with"
+    },
+    {
+      "source": "dvadashi",
+      "target": "dvadashi",
+      "type": "associated_with"
+    },
+    {
+      "source": "ekadashi",
+      "target": "ekadashi",
+      "type": "associated_with"
+    },
+    {
+      "source": "navami",
+      "target": "navami",
+      "type": "associated_with"
+    },
+    {
+      "source": "densityadj",
+      "target": "densityadj",
+      "type": "associated_with"
+    },
+    {
+      "source": "hemanta",
+      "target": "hemanta",
+      "type": "associated_with"
+    },
+    {
+      "source": "mercury",
+      "target": "mercury",
+      "type": "associated_with"
+    },
+    {
+      "source": "pingala",
+      "target": "pingala",
+      "type": "associated_with"
+    },
+    {
+      "source": "fortnight",
+      "target": "fortnight",
+      "type": "associated_with"
+    },
+    {
+      "source": "paksha",
+      "target": "paksha",
+      "type": "associated_with"
+    },
+    {
+      "source": "brahma",
+      "target": "brahma",
+      "type": "associated_with"
+    },
+    {
+      "source": "active",
+      "target": "active",
+      "type": "associated_with"
+    },
+    {
+      "source": "nostril",
+      "target": "nostril",
+      "type": "associated_with"
+    },
+    {
+      "source": "chakra",
+      "target": "chakra",
+      "type": "associated_with"
+    },
+    {
+      "source": "freedom",
+      "target": "freedom",
+      "type": "associated_with"
+    },
+    {
+      "source": "muladhara",
+      "target": "muladhara",
+      "type": "associated_with"
+    },
+    {
+      "source": "chapter",
+      "target": "chapter",
+      "type": "associated_with"
+    },
+    {
+      "source": "unknown",
+      "target": "unknown",
+      "type": "associated_with"
+    },
+    {
+      "source": "rashis",
+      "target": "rashis",
+      "type": "associated_with"
+    },
+    {
+      "source": "understanding",
+      "target": "understanding",
+      "type": "associated_with"
+    },
+    {
+      "source": "desire",
+      "target": "desire",
+      "type": "associated_with"
+    },
+    {
+      "source": "brihaspati",
+      "target": "brihaspati",
+      "type": "associated_with"
+    },
+    {
+      "source": "achala",
+      "target": "achala",
+      "type": "associated_with"
+    },
+    {
+      "source": "adventurous",
+      "target": "adventurous",
+      "type": "associated_with"
+    },
+    {
+      "source": "elements",
+      "target": "elements",
+      "type": "associated_with"
+    },
+    {
+      "source": "purvabhadrapada",
+      "target": "purvabhadrapada",
+      "type": "associated_with"
+    },
+    {
+      "source": "saturn",
+      "target": "saturn",
+      "type": "associated_with"
+    },
+    {
+      "source": "sexual",
+      "target": "sexual",
+      "type": "associated_with"
+    },
+    {
+      "source": "controls",
+      "target": "controls",
+      "type": "associated_with"
+    },
+    {
+      "source": "excited",
+      "target": "excited",
+      "type": "associated_with"
+    },
+    {
+      "source": "goddess",
+      "target": "goddess",
+      "type": "associated_with"
+    },
+    {
+      "source": "awakened",
+      "target": "awakened",
+      "type": "associated_with"
+    },
+    {
+      "source": "beautiful",
+      "target": "beautiful",
+      "type": "associated_with"
+    },
+    {
+      "source": "vishnu",
+      "target": "vishnu",
+      "type": "associated_with"
+    },
+    {
+      "source": "gemini",
+      "target": "gemini",
+      "type": "associated_with"
+    },
+    {
+      "source": "dvitiya",
+      "target": "dvitiya",
+      "type": "associated_with"
+    },
+    {
+      "source": "varuna",
+      "target": "varuna",
+      "type": "associated_with"
+    },
+    {
+      "source": "energised",
+      "target": "energised",
+      "type": "associated_with"
+    },
+    {
+      "source": "krishna",
+      "target": "krishna",
+      "type": "associated_with"
+    },
+    {
+      "source": "becomes",
+      "target": "becomes",
+      "type": "associated_with"
+    },
+    {
+      "source": "jupiter",
+      "target": "jupiter",
+      "type": "associated_with"
+    },
+    {
+      "source": "direction",
+      "target": "direction",
+      "type": "associated_with"
+    },
+    {
+      "source": "ability",
+      "target": "ability",
+      "type": "associated_with"
+    },
+    {
+      "source": "asterism",
+      "target": "asterism",
+      "type": "associated_with"
+    },
+    {
+      "source": "creativity",
+      "target": "creativity",
+      "type": "associated_with"
+    },
+    {
+      "source": "fifteen",
+      "target": "fifteen",
+      "type": "associated_with"
+    },
+    {
+      "source": "portion",
+      "target": "portion",
+      "type": "associated_with"
+    },
+    {
+      "source": "kumaras",
+      "target": "kumaras",
+      "type": "associated_with"
+    },
+    {
+      "source": "savitar",
+      "target": "savitar",
+      "type": "associated_with"
+    },
+    {
+      "source": "vishvakarma",
+      "target": "vishvakarma",
+      "type": "associated_with"
+    },
+    {
+      "source": "indraagni",
+      "target": "indraagni",
+      "type": "associated_with"
+    },
+    {
+      "source": "overlay",
+      "target": "overlay",
+      "type": "associated_with"
+    },
+    {
+      "source": "nirriti",
+      "target": "nirriti",
+      "type": "associated_with"
+    },
+    {
+      "source": "vishvadevas",
+      "target": "vishvadevas",
+      "type": "associated_with"
+    },
+    {
+      "source": "pushan",
+      "target": "pushan",
+      "type": "associated_with"
+    },
+    {
+      "source": "teentaal",
+      "target": "teentaal",
+      "type": "associated_with"
+    },
+    {
+      "source": "trayodashi",
+      "target": "trayodashi",
+      "type": "associated_with"
+    },
+    {
+      "source": "symbolic",
+      "target": "symbolic",
+      "type": "associated_with"
+    },
+    {
+      "source": "archive",
+      "target": "archive",
+      "type": "associated_with"
+    },
+    {
+      "source": "expand",
+      "target": "expand",
+      "type": "associated_with"
+    },
+    {
+      "source": "actual",
+      "target": "actual",
+      "type": "associated_with"
+    },
+    {
+      "source": "artifacts",
+      "target": "artifacts",
+      "type": "associated_with"
+    },
+    {
+      "source": "comparative",
+      "target": "comparative",
+      "type": "associated_with"
+    },
+    {
+      "source": "coherent",
+      "target": "coherent",
+      "type": "associated_with"
+    },
+    {
+      "source": "community_driven",
+      "target": "community_driven",
+      "type": "associated_with"
+    },
+    {
+      "source": "contribution",
+      "target": "contribution",
+      "type": "associated_with"
+    },
+    {
+      "source": "energetics",
+      "target": "energetics",
+      "type": "associated_with"
+    },
+    {
+      "source": "anchors",
+      "target": "anchors",
+      "type": "associated_with"
+    },
+    {
+      "source": "completed",
+      "target": "completed",
+      "type": "associated_with"
+    },
+    {
+      "source": "branch",
+      "target": "branch",
+      "type": "associated_with"
+    },
+    {
+      "source": "artifact",
+      "target": "artifact",
+      "type": "associated_with"
+    },
+    {
+      "source": "population",
+      "target": "population",
+      "type": "associated_with"
+    },
+    {
+      "source": "anchored",
+      "target": "anchored",
+      "type": "associated_with"
+    },
+    {
+      "source": "aggressive",
+      "target": "aggressive",
+      "type": "associated_with"
+    },
+    {
+      "source": "prolific",
+      "target": "prolific",
+      "type": "associated_with"
+    },
+    {
+      "source": "priority",
+      "target": "priority",
+      "type": "associated_with"
+    },
+    {
+      "source": "application_layers",
+      "target": "application_layers",
+      "type": "associated_with"
+    },
+    {
+      "source": "breath_pattern",
+      "target": "breath_pattern",
+      "type": "associated_with"
+    },
+    {
+      "source": "calendar_planning",
+      "target": "calendar_planning",
+      "type": "associated_with"
+    },
+    {
+      "source": "application",
+      "target": "application",
+      "type": "associated_with"
+    },
+    {
+      "source": "archetype",
+      "target": "archetype",
+      "type": "associated_with"
+    },
+    {
+      "source": "architecture",
+      "target": "architecture",
+      "type": "associated_with"
+    },
+    {
+      "source": "chakra_layer",
+      "target": "chakra_layer",
+      "type": "associated_with"
+    },
+    {
+      "source": "cosmic_cycle",
+      "target": "cosmic_cycle",
+      "type": "associated_with"
+    },
+    {
+      "source": "archetypal",
+      "target": "archetypal",
+      "type": "associated_with"
+    },
+    {
+      "source": "combinations",
+      "target": "combinations",
+      "type": "associated_with"
+    },
+    {
+      "source": "composed",
+      "target": "composed",
+      "type": "associated_with"
+    },
+    {
+      "source": "common",
+      "target": "common",
+      "type": "associated_with"
+    },
+    {
+      "source": "offerings",
+      "target": "offerings",
+      "type": "associated_with"
+    },
+    {
+      "source": "changes",
+      "target": "changes",
+      "type": "associated_with"
+    },
+    {
+      "source": "activates",
+      "target": "activates",
+      "type": "associated_with"
+    },
+    {
+      "source": "appears_in",
+      "target": "appears_in",
+      "type": "associated_with"
+    },
+    {
+      "source": "difference",
+      "target": "difference",
+      "type": "associated_with"
+    },
+    {
+      "source": "oneness",
+      "target": "oneness",
+      "type": "associated_with"
+    },
+    {
+      "source": "category",
+      "target": "category",
+      "type": "associated_with"
+    },
+    {
+      "source": "tradition",
+      "target": "tradition",
+      "type": "associated_with"
+    },
+    {
+      "source": "astrology",
+      "target": "astrology",
+      "type": "associated_with"
+    },
+    {
+      "source": "bhagavad",
+      "target": "bhagavad",
+      "type": "associated_with"
+    },
+    {
+      "source": "bhadrapada",
+      "target": "bhadrapada",
+      "type": "associated_with"
+    },
+    {
+      "source": "qualities",
+      "target": "qualities",
+      "type": "associated_with"
+    },
+    {
+      "source": "beauty",
+      "target": "beauty",
+      "type": "associated_with"
+    },
+    {
+      "source": "hanuman",
+      "target": "hanuman",
+      "type": "associated_with"
+    },
+    {
+      "source": "relation",
+      "target": "relation",
+      "type": "associated_with"
+    },
+    {
+      "source": "bhagamalini",
+      "target": "bhagamalini",
+      "type": "associated_with"
+    },
+    {
+      "source": "bherunda",
+      "target": "bherunda",
+      "type": "associated_with"
+    },
+    {
+      "source": "chitra",
+      "target": "chitra",
+      "type": "associated_with"
+    },
+    {
+      "source": "amavasya",
+      "target": "amavasya",
+      "type": "associated_with"
+    },
+    {
+      "source": "ashtami",
+      "target": "ashtami",
+      "type": "associated_with"
+    },
+    {
+      "source": "caturda",
+      "target": "caturda",
+      "type": "associated_with"
+    },
+    {
+      "source": "devi_wields_weapon",
+      "target": "devi_wields_weapon",
+      "type": "associated_with"
+    },
+    {
+      "source": "evidence",
+      "target": "evidence",
+      "type": "associated_with"
+    },
+    {
+      "source": "seed_unverified",
+      "target": "seed_unverified",
+      "type": "associated_with"
+    },
+    {
+      "source": "nakshatra_sacred_plant",
+      "target": "nakshatra_sacred_plant",
+      "type": "associated_with"
+    },
+    {
+      "source": "confidence",
+      "target": "confidence",
+      "type": "associated_with"
+    },
+    {
+      "source": "excerpt",
+      "target": "excerpt",
+      "type": "associated_with"
+    },
+    {
+      "source": "from_id",
+      "target": "from_id",
+      "type": "associated_with"
+    },
+    {
+      "source": "attested_secondary",
+      "target": "attested_secondary",
+      "type": "associated_with"
+    },
+    {
+      "source": "anuradha",
+      "target": "anuradha",
+      "type": "associated_with"
+    },
+    {
+      "source": "mythic_narrative",
+      "target": "mythic_narrative",
+      "type": "associated_with"
+    },
+    {
+      "source": "arjuna",
+      "target": "arjuna",
+      "type": "associated_with"
+    },
+    {
+      "source": "connected",
+      "target": "connected",
+      "type": "associated_with"
+    },
+    {
+      "source": "fertility",
+      "target": "fertility",
+      "type": "associated_with"
+    },
+    {
+      "source": "sanskrit",
+      "target": "sanskrit",
+      "type": "associated_with"
+    },
+    {
+      "source": "symbolism",
+      "target": "symbolism",
+      "type": "associated_with"
+    },
+    {
+      "source": "banyan",
+      "target": "banyan",
+      "type": "associated_with"
+    },
+    {
+      "source": "purpose",
+      "target": "purpose",
+      "type": "associated_with"
+    },
+    {
+      "source": "agnihotra",
+      "target": "agnihotra",
+      "type": "associated_with"
+    },
+    {
+      "source": "deities",
+      "target": "deities",
+      "type": "associated_with"
+    },
+    {
+      "source": "aliases",
+      "target": "aliases",
+      "type": "associated_with"
+    },
+    {
+      "source": "source_file",
+      "target": "source_file",
+      "type": "associated_with"
+    },
+    {
+      "source": "ashlesha",
+      "target": "ashlesha",
+      "type": "associated_with"
+    },
+    {
+      "source": "concept",
+      "target": "concept",
+      "type": "associated_with"
+    },
+    {
+      "source": "schools",
+      "target": "schools",
+      "type": "associated_with"
+    },
+    {
+      "source": "vedic_concepts",
+      "target": "vedic_concepts",
+      "type": "associated_with"
+    },
+    {
+      "source": "jyotish",
+      "target": "jyotish",
+      "type": "associated_with"
+    },
+    {
+      "source": "jyotish_core",
+      "target": "jyotish_core",
+      "type": "associated_with"
+    },
+    {
+      "source": "aquarius",
+      "target": "aquarius",
+      "type": "associated_with"
+    },
+    {
+      "source": "cancer",
+      "target": "cancer",
+      "type": "associated_with"
+    },
+    {
+      "source": "capricorn",
+      "target": "capricorn",
+      "type": "associated_with"
+    },
+    {
+      "source": "saptami",
+      "target": "saptami",
+      "type": "associated_with"
+    },
+    {
+      "source": "phalguni",
+      "target": "phalguni",
+      "type": "associated_with"
+    },
+    {
+      "source": "nakshatra_associated_deity",
+      "target": "nakshatra_associated_deity",
+      "type": "associated_with"
+    },
+    {
+      "source": "passage",
+      "target": "passage",
+      "type": "associated_with"
+    },
+    {
+      "source": "devanagari",
+      "target": "devanagari",
+      "type": "associated_with"
+    },
+    {
+      "source": "model_layered",
+      "target": "model_layered",
+      "type": "associated_with"
+    },
+    {
+      "source": "derived",
+      "target": "derived",
+      "type": "associated_with"
+    },
+    {
+      "source": "sattva",
+      "target": "sattva",
+      "type": "associated_with"
+    },
+    {
+      "source": "healing",
+      "target": "healing",
+      "type": "associated_with"
+    },
+    {
+      "source": "nourishment",
+      "target": "nourishment",
+      "type": "associated_with"
+    },
+    {
+      "source": "cohesion",
+      "target": "cohesion",
+      "type": "associated_with"
+    },
+    {
+      "source": "dryness",
+      "target": "dryness",
+      "type": "associated_with"
+    },
+    {
+      "source": "element_id",
+      "target": "element_id",
+      "type": "associated_with"
+    },
+    {
+      "source": "activity",
+      "target": "activity",
+      "type": "associated_with"
+    },
+    {
+      "source": "balance",
+      "target": "balance",
+      "type": "associated_with"
+    },
+    {
+      "source": "clarity",
+      "target": "clarity",
+      "type": "associated_with"
+    },
+    {
+      "source": "metabolism",
+      "target": "metabolism",
+      "type": "associated_with"
+    },
+    {
+      "source": "structure",
+      "target": "structure",
+      "type": "associated_with"
+    },
+    {
+      "source": "silver",
+      "target": "silver",
+      "type": "associated_with"
+    },
+    {
+      "source": "bronze",
+      "target": "bronze",
+      "type": "associated_with"
+    },
+    {
+      "source": "female",
+      "target": "female",
+      "type": "associated_with"
+    },
+    {
+      "source": "manushya",
+      "target": "manushya",
+      "type": "associated_with"
+    },
+    {
+      "source": "rakshasa",
+      "target": "rakshasa",
+      "type": "associated_with"
+    },
+    {
+      "source": "aja_ekapada",
+      "target": "aja_ekapada",
+      "type": "associated_with"
+    },
+    {
+      "source": "bharani",
+      "target": "bharani",
+      "type": "associated_with"
+    },
+    {
+      "source": "krittika",
+      "target": "krittika",
+      "type": "associated_with"
+    },
+    {
+      "source": "elephant",
+      "target": "elephant",
+      "type": "associated_with"
+    },
+    {
+      "source": "peacock",
+      "target": "peacock",
+      "type": "associated_with"
+    },
+    {
+      "source": "airavata_elephant",
+      "target": "airavata_elephant",
+      "type": "associated_with"
+    },
+    {
+      "source": "antelope",
+      "target": "antelope",
+      "type": "associated_with"
+    },
+    {
+      "source": "auspicious_beginnings",
+      "target": "auspicious_beginnings",
+      "type": "associated_with"
+    },
+    {
+      "source": "chandra",
+      "target": "chandra",
+      "type": "associated_with"
+    },
+    {
+      "source": "cosmic_illumination",
+      "target": "cosmic_illumination",
+      "type": "associated_with"
+    },
+    {
+      "source": "planet",
+      "target": "planet",
+      "type": "associated_with"
+    },
+    {
+      "source": "luminary",
+      "target": "luminary",
+      "type": "associated_with"
+    },
+    {
+      "source": "attraction",
+      "target": "attraction",
+      "type": "associated_with"
+    },
+    {
+      "source": "cosmic_sound",
+      "target": "cosmic_sound",
+      "type": "associated_with"
+    },
+    {
+      "source": "creative_power",
+      "target": "creative_power",
+      "type": "associated_with"
+    },
+    {
+      "source": "agni_yantra",
+      "target": "agni_yantra",
+      "type": "associated_with"
+    },
+    {
+      "source": "ascension",
+      "target": "ascension",
+      "type": "associated_with"
+    },
+    {
+      "source": "chakra_symbol",
+      "target": "chakra_symbol",
+      "type": "associated_with"
+    },
+    {
+      "source": "intellect",
+      "target": "intellect",
+      "type": "associated_with"
+    },
+    {
+      "source": "science",
+      "target": "science",
+      "type": "associated_with"
+    },
+    {
+      "source": "performance",
+      "target": "performance",
+      "type": "associated_with"
+    },
+    {
+      "source": "ashoka",
+      "target": "ashoka",
+      "type": "associated_with"
+    },
+    {
+      "source": "buffalo",
+      "target": "buffalo",
+      "type": "associated_with"
+    },
+    {
+      "source": "cosmic_motion",
+      "target": "cosmic_motion",
+      "type": "associated_with"
+    },
+    {
+      "source": "ancestral_connection",
+      "target": "ancestral_connection",
+      "type": "associated_with"
+    },
+    {
+      "source": "brahmana",
+      "target": "brahmana",
+      "type": "associated_with"
+    },
+    {
+      "source": "madhya",
+      "target": "madhya",
+      "type": "associated_with"
+    },
+    {
+      "source": "kshatriya",
+      "target": "kshatriya",
+      "type": "associated_with"
+    },
+    {
+      "source": "kubera",
+      "target": "kubera",
+      "type": "associated_with"
+    },
+    {
+      "source": "nirrti",
+      "target": "nirrti",
+      "type": "associated_with"
+    },
+    {
+      "source": "center",
+      "target": "center",
+      "type": "associated_with"
+    },
+    {
+      "source": "intellectual",
+      "target": "intellectual",
+      "type": "associated_with"
+    },
+    {
+      "source": "domestic_art",
+      "target": "domestic_art",
+      "type": "associated_with"
+    },
+    {
+      "source": "secondary",
+      "target": "secondary",
+      "type": "associated_with"
+    },
+    {
+      "source": "primary",
+      "target": "primary",
+      "type": "associated_with"
+    },
+    {
+      "source": "devotion",
+      "target": "devotion",
+      "type": "associated_with"
+    },
+    {
+      "source": "affection",
+      "target": "affection",
+      "type": "associated_with"
+    },
+    {
+      "source": "astonishes",
+      "target": "astonishes",
+      "type": "associated_with"
+    },
+    {
+      "source": "cosmology_core",
+      "target": "cosmology_core",
+      "type": "associated_with"
+    },
+    {
+      "source": "genealogy_layer",
+      "target": "genealogy_layer",
+      "type": "associated_with"
+    },
+    {
+      "source": "historical_layer",
+      "target": "historical_layer",
+      "type": "associated_with"
+    },
+    {
+      "source": "astringent",
+      "target": "astringent",
+      "type": "associated_with"
+    },
+    {
+      "source": "bitter",
+      "target": "bitter",
+      "type": "associated_with"
+    },
+    {
+      "source": "kashaya",
+      "target": "kashaya",
+      "type": "associated_with"
+    },
+    {
+      "source": "flowing",
+      "target": "flowing",
+      "type": "associated_with"
+    },
+    {
+      "source": "kathina",
+      "target": "kathina",
+      "type": "associated_with"
+    },
+    {
+      "source": "ruksha",
+      "target": "ruksha",
+      "type": "associated_with"
+    },
+    {
+      "source": "cooling",
+      "target": "cooling",
+      "type": "associated_with"
+    },
+    {
+      "source": "heating",
+      "target": "heating",
+      "type": "associated_with"
+    },
+    {
+      "source": "madhura",
+      "target": "madhura",
+      "type": "associated_with"
+    },
+    {
+      "source": "pungent",
+      "target": "pungent",
+      "type": "associated_with"
+    },
+    {
+      "source": "expected_count",
+      "target": "expected_count",
+      "type": "associated_with"
+    },
+    {
+      "source": "grahas",
+      "target": "grahas",
+      "type": "associated_with"
+    },
+    {
+      "source": "mahabhutas",
+      "target": "mahabhutas",
+      "type": "associated_with"
+    },
+    {
+      "source": "northeast",
+      "target": "northeast",
+      "type": "associated_with"
+    },
+    {
+      "source": "orientation",
+      "target": "orientation",
+      "type": "associated_with"
+    },
+    {
+      "source": "ecology",
+      "target": "ecology",
+      "type": "associated_with"
+    },
+    {
+      "source": "caitanya",
+      "target": "caitanya",
+      "type": "associated_with"
+    },
+    {
+      "source": "pathway",
+      "target": "pathway",
+      "type": "associated_with"
+    },
+    {
+      "source": "currently",
+      "target": "currently",
+      "type": "associated_with"
+    },
+    {
+      "source": "future",
+      "target": "future",
+      "type": "associated_with"
+    },
+    {
+      "source": "chains",
+      "target": "chains",
+      "type": "associated_with"
+    },
+    {
+      "source": "chandas",
+      "target": "chandas",
+      "type": "associated_with"
+    },
+    {
+      "source": "apprentice",
+      "target": "apprentice",
+      "type": "associated_with"
+    },
+    {
+      "source": "analysis",
+      "target": "analysis",
+      "type": "associated_with"
+    },
+    {
+      "source": "endobj",
+      "target": "endobj",
+      "type": "associated_with"
+    },
+    {
+      "source": "endstream",
+      "target": "endstream",
+      "type": "associated_with"
+    },
+    {
+      "source": "length",
+      "target": "length",
+      "type": "associated_with"
+    },
+    {
+      "source": "naxatra",
+      "target": "naxatra",
+      "type": "associated_with"
+    },
+    {
+      "source": "welche",
+      "target": "welche",
+      "type": "associated_with"
+    },
+    {
+      "source": "werden",
+      "target": "werden",
+      "type": "associated_with"
+    },
+    {
+      "source": "filter",
+      "target": "filter",
+      "type": "associated_with"
+    },
+    {
+      "source": "yagyam",
+      "target": "yagyam",
+      "type": "associated_with"
+    },
+    {
+      "source": "havishaa",
+      "target": "havishaa",
+      "type": "associated_with"
+    },
+    {
+      "source": "vishvaa",
+      "target": "vishvaa",
+      "type": "associated_with"
+    },
+    {
+      "source": "endobj",
+      "target": "endobj",
+      "type": "associated_with"
+    },
+    {
+      "source": "endstream",
+      "target": "endstream",
+      "type": "associated_with"
+    },
+    {
+      "source": "length",
+      "target": "length",
+      "type": "associated_with"
+    },
+    {
+      "source": "endobj",
+      "target": "endobj",
+      "type": "associated_with"
+    },
+    {
+      "source": "filter",
+      "target": "filter",
+      "type": "associated_with"
+    },
+    {
+      "source": "length",
+      "target": "length",
+      "type": "associated_with"
+    },
+    {
+      "source": "archive",
+      "target": "archive",
+      "type": "associated_with"
+    },
+    {
+      "source": "google",
+      "target": "google",
+      "type": "associated_with"
+    },
+    {
+      "source": "services",
+      "target": "services",
+      "type": "associated_with"
+    },
+    {
+      "source": "endstream",
+      "target": "endstream",
+      "type": "associated_with"
+    },
+    {
+      "source": "endobj",
+      "target": "endobj",
+      "type": "associated_with"
+    },
+    {
+      "source": "cdefghijstuvwxyzcdefghijstuvwxyz",
+      "target": "cdefghijstuvwxyzcdefghijstuvwxyz",
+      "type": "associated_with"
+    },
+    {
+      "source": "length",
+      "target": "length",
+      "type": "associated_with"
+    },
+    {
+      "source": "endstream",
+      "target": "endstream",
+      "type": "associated_with"
+    },
+    {
+      "source": "filter",
+      "target": "filter",
+      "type": "associated_with"
+    },
+    {
+      "source": "goddess",
+      "target": "goddess",
+      "type": "associated_with"
+    },
+    {
+      "source": "siddha",
+      "target": "siddha",
+      "type": "associated_with"
+    },
+    {
+      "source": "amrita",
+      "target": "amrita",
+      "type": "associated_with"
+    },
+    {
+      "source": "naxatra",
+      "target": "naxatra",
+      "type": "associated_with"
+    },
+    {
+      "source": "welche",
+      "target": "welche",
+      "type": "associated_with"
+    },
+    {
+      "source": "werden",
+      "target": "werden",
+      "type": "associated_with"
+    },
+    {
+      "source": "yagyam",
+      "target": "yagyam",
+      "type": "associated_with"
+    },
+    {
+      "source": "havishaa",
+      "target": "havishaa",
+      "type": "associated_with"
+    },
+    {
+      "source": "vishvaa",
+      "target": "vishvaa",
+      "type": "associated_with"
+    },
+    {
+      "source": "dharmartha",
+      "target": "dharmartha",
+      "type": "associated_with"
+    },
+    {
+      "source": "digitized",
+      "target": "digitized",
+      "type": "associated_with"
+    },
+    {
+      "source": "egangotri",
+      "target": "egangotri",
+      "type": "associated_with"
+    },
+    {
+      "source": "archive",
+      "target": "archive",
+      "type": "associated_with"
+    },
+    {
+      "source": "google",
+      "target": "google",
+      "type": "associated_with"
+    },
+    {
+      "source": "services",
+      "target": "services",
+      "type": "associated_with"
+    },
+    {
+      "source": "endobj",
+      "target": "endobj",
+      "type": "associated_with"
+    },
+    {
+      "source": "endstream",
+      "target": "endstream",
+      "type": "associated_with"
+    },
+    {
+      "source": "length",
+      "target": "length",
+      "type": "associated_with"
+    },
+    {
+      "source": "filter",
+      "target": "filter",
+      "type": "associated_with"
+    },
+    {
+      "source": "archive",
+      "target": "archive",
+      "type": "associated_with"
+    },
+    {
+      "source": "google",
+      "target": "google",
+      "type": "associated_with"
+    },
+    {
+      "source": "services",
+      "target": "services",
+      "type": "associated_with"
+    },
+    {
+      "source": "endobj",
+      "target": "endobj",
+      "type": "associated_with"
+    },
+    {
+      "source": "endstream",
+      "target": "endstream",
+      "type": "associated_with"
+    },
+    {
+      "source": "length",
+      "target": "length",
+      "type": "associated_with"
+    },
+    {
+      "source": "cdefghijstuvwxyzcdefghijstuvwxyz",
+      "target": "cdefghijstuvwxyzcdefghijstuvwxyz",
+      "type": "associated_with"
+    },
+    {
+      "source": "research",
+      "target": "research",
+      "type": "associated_with"
+    },
+    {
+      "source": "df72af0aa244c026a89e8f679b819f63ebdaa4168cc3959db87c1848cf40213",
+      "target": "df72af0aa244c026a89e8f679b819f63ebdaa4168cc3959db87c1848cf40213",
+      "type": "associated_with"
+    },
+    {
+      "source": "df72af0aa24_die_vedischen_nachrichten_von_den_naxatr",
+      "target": "df72af0aa24_die_vedischen_nachrichten_von_den_naxatr",
+      "type": "associated_with"
+    },
+    {
+      "source": "a5d450ee6aa25b9313dc49aeaf1b9abb5da53c6af4a71d4263c32a7f90436154",
+      "target": "a5d450ee6aa25b9313dc49aeaf1b9abb5da53c6af4a71d4263c32a7f90436154",
+      "type": "associated_with"
+    },
+    {
+      "source": "a5d450ee6aa2_die_vedischen_nachrichten_von_den_naxatr",
+      "target": "a5d450ee6aa2_die_vedischen_nachrichten_von_den_naxatr",
+      "type": "associated_with"
+    },
+    {
+      "source": "b70b8e25a1911281b4d6956561d1623711fcc66255983b549cb11d464d174c8",
+      "target": "b70b8e25a1911281b4d6956561d1623711fcc66255983b549cb11d464d174c8",
+      "type": "associated_with"
+    },
+    {
+      "source": "b70b8e25a19_nakshatra_sooktam_eng_v1",
+      "target": "b70b8e25a19_nakshatra_sooktam_eng_v1",
+      "type": "associated_with"
+    },
+    {
+      "source": "a18f041_nakshatra_sooktam_eng_v1_djvu",
+      "target": "a18f041_nakshatra_sooktam_eng_v1_djvu",
+      "type": "associated_with"
+    },
+    {
+      "source": "a18f041d86cac27bb60a2d24ff05cc5b0a8fbd2ee3729687dfd492616d7",
+      "target": "a18f041d86cac27bb60a2d24ff05cc5b0a8fbd2ee3729687dfd492616d7",
+      "type": "associated_with"
+    },
+    {
+      "source": "nakshatra_vidnyana",
+      "target": "nakshatra_vidnyana",
+      "type": "associated_with"
+    },
+    {
+      "source": "aea77d2967a276bb89c5c58b50127a96aa812852795ba3a4ef2144d29ae6462a",
+      "target": "aea77d2967a276bb89c5c58b50127a96aa812852795ba3a4ef2144d29ae6462a",
+      "type": "associated_with"
+    },
+    {
+      "source": "nakshatra_vidnyana_text",
+      "target": "nakshatra_vidnyana_text",
+      "type": "associated_with"
+    },
+    {
+      "source": "dst_path",
+      "target": "dst_path",
+      "type": "associated_with"
+    },
+    {
+      "source": "jyotish",
+      "target": "jyotish",
+      "type": "associated_with"
+    },
+    {
+      "source": "nakshatra",
+      "target": "nakshatra",
+      "type": "associated_with"
+    },
+    {
+      "source": "jyotish_text",
+      "target": "jyotish_text",
+      "type": "associated_with"
+    },
+    {
+      "source": "parichaya",
+      "target": "parichaya",
+      "type": "associated_with"
+    },
+    {
+      "source": "parichaya_djvu",
+      "target": "parichaya_djvu",
+      "type": "associated_with"
+    },
+    {
+      "source": "devanagari",
+      "target": "devanagari",
+      "type": "associated_with"
+    },
+    {
+      "source": "lalshmi",
+      "target": "lalshmi",
+      "type": "associated_with"
+    },
+    {
+      "source": "kavya_djvu",
+      "target": "kavya_djvu",
+      "type": "associated_with"
+    },
+    {
+      "source": "astronomy",
+      "target": "astronomy",
+      "type": "associated_with"
+    },
+    {
+      "source": "parishad",
+      "target": "parishad",
+      "type": "associated_with"
+    },
+    {
+      "source": "incoming",
+      "target": "incoming",
+      "type": "associated_with"
+    },
+    {
+      "source": "archive",
+      "target": "archive",
+      "type": "associated_with"
+    },
+    {
+      "source": "google",
+      "target": "google",
+      "type": "associated_with"
+    },
+    {
+      "source": "services",
+      "target": "services",
+      "type": "associated_with"
+    },
+    {
+      "source": "krishna",
+      "target": "krishna",
+      "type": "associated_with"
+    },
+    {
+      "source": "ritual",
+      "target": "ritual",
+      "type": "associated_with"
+    },
+    {
+      "source": "calendar",
+      "target": "calendar",
+      "type": "associated_with"
+    },
+    {
+      "source": "action",
+      "target": "action",
+      "type": "associated_with"
+    },
+    {
+      "source": "category",
+      "target": "category",
+      "type": "associated_with"
+    },
+    {
+      "source": "concept",
+      "target": "concept",
+      "type": "associated_with"
     }
   ]
 }

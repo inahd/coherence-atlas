@@ -1,37 +1,13 @@
-import os, json, re
-
-seed_dir = "seeds"
-graph_file = "atlas_graph/graph.json"
-
-nodes=[]
+import os,json,re
+nodes={}
 edges=[]
-
-for fname in os.listdir(seed_dir):
-    if not fname.endswith(".md"):
-        continue
-
-    node_id=fname.replace(".md","")
-    nodes.append({"id":node_id,"type":"seed"})
-
-    text=open(os.path.join(seed_dir,fname)).read()
-
-    rel=re.findall(r"relations:(.*)",text)
-
-    for r in rel:
-        for t in [x.strip() for x in r.split(",") if x.strip()]:
-            edges.append({
-                "source":node_id,
-                "target":t,
-                "type":"relates"
-            })
-
-graph={"nodes":nodes,"edges":edges}
-
-os.makedirs("atlas_graph",exist_ok=True)
-
-with open(graph_file,"w") as f:
-    json.dump(graph,f,indent=2)
-
-print("Graph built.")
-print("Nodes:",len(nodes))
-print("Edges:",len(edges))
+for f in os.listdir("seeds"):
+    text=open("seeds/"+f).read()
+    m=re.search("TITLE\n(.+)",text)
+    if not m: continue
+    n=m.group(1).strip()
+    nodes[n]={"id":n}
+graph={"nodes":list(nodes.values()),"links":edges}
+os.makedirs("memory/graphs",exist_ok=True)
+json.dump(graph,open("memory/graphs/canonical_graph.json","w"),indent=2)
+print("nodes:",len(nodes))

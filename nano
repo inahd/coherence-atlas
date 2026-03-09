@@ -1,0 +1,9 @@
+set linenumbers
+set autoindent
+set tabsize 4
+set softwrap
+set smooth
+set mouse
+set historylog
+
+nano ~/.nanorc

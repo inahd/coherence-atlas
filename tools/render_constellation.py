@@ -1,55 +1,71 @@
-import json,math,random,os
+import json, os, random
 
-data=json.load(open("atlas_graph/graph.json"))
+graph_file="memory/cosmology_graph.json"
+out_file="visual/atlas_constellation.html"
 
-nodes=data["nodes"]
-edges=data["edges"]
+g=json.load(open(graph_file))
 
-width=900
-height=700
+nodes=g.get("nodes",[])
+links=g.get("links",g.get("edges",[]))
 
-pos={}
+html=f"""
+<html>
+<head>
+<meta charset="utf-8">
+<title>Atlas Constellation</title>
+<style>
+body {{background:black;color:white;font-family:monospace}}
+canvas {{background:black}}
+</style>
+</head>
+<body>
+<h2>Atlas Constellation</h2>
+<p>Nodes: {len(nodes)} | Edges: {len(links)}</p>
+<canvas id="c" width="1200" height="800"></canvas>
 
-# distribute nodes in circle
-for i,n in enumerate(nodes):
-    angle=(i/len(nodes))*2*math.pi
-    r=250
-    x=width/2 + r*math.cos(angle)
-    y=height/2 + r*math.sin(angle)
-    pos[n["id"]] = (x,y)
+<script>
 
-html = "<html><body style='background:black;color:white;font-family:monospace'>"
-html += f"<canvas id=c width={width} height={height}></canvas>"
-html += "<script>var ctx=c.getContext('2d');"
+const nodes={json.dumps(nodes)};
+const edges={json.dumps(links)};
 
-# draw edges
-for e in edges:
-    if e["source"] in pos and e["target"] in pos:
-        x1,y1 = pos[e["source"]]
-        x2,y2 = pos[e["target"]]
+const canvas=document.getElementById("c");
+const ctx=canvas.getContext("2d");
 
-        html += f"""
-ctx.beginPath();
-ctx.strokeStyle='rgba(200,200,255,0.3)';
-ctx.moveTo({x1},{y1});
-ctx.lineTo({x2},{y2});
-ctx.stroke();
+function rand(a,b){{return Math.random()*(b-a)+a}}
+
+nodes.forEach(n=>{{
+    n.x=rand(50,1150);
+    n.y=rand(50,750);
+}})
+
+ctx.fillStyle="white"
+
+nodes.forEach(n=>{{
+    ctx.beginPath()
+    ctx.arc(n.x,n.y,3,0,6.28)
+    ctx.fill()
+}})
+
+ctx.strokeStyle="rgba(255,255,255,0.2)"
+
+edges.forEach(e=>{{
+    const a=nodes.find(n=>n.id==e.source)
+    const b=nodes.find(n=>n.id==e.target)
+    if(!a||!b)return
+
+    ctx.beginPath()
+    ctx.moveTo(a.x,a.y)
+    ctx.lineTo(b.x,b.y)
+    ctx.stroke()
+}})
+
+</script>
+</body>
+</html>
 """
-
-# draw nodes
-for name,(x,y) in pos.items():
-    html += f"""
-ctx.beginPath();
-ctx.fillStyle='white';
-ctx.arc({x},{y},5,0,6.28);
-ctx.fill();
-ctx.fillText("{name}",{x+8},{y+8});
-"""
-
-html += "</script></body></html>"
 
 os.makedirs("visual",exist_ok=True)
+open(out_file,"w").write(html)
 
-open("visual/atlas_constellation.html","w").write(html)
-
-print("Constellation rendered with edges.")
+print("Constellation generated:",out_file)
+print("Nodes:",len(nodes),"Edges:",len(links))

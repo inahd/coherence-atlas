@@ -1,0 +1,25 @@
+{
+ "nodes":[
+  {"id":"ashwini","label":"Ashwini","type":"nakshatra"},
+  {"id":"bharani","label":"Bharani","type":"nakshatra"},
+  {"id":"krittika","label":"Krittika","type":"nakshatra"},
+
+  {"id":"ketu","label":"Ketu","type":"graha"},
+  {"id":"venus","label":"Venus","type":"graha"},
+  {"id":"sun","label":"Sun","type":"graha"},
+
+  {"id":"ashwini_kumaras","label":"Ashwini Kumaras","type":"deity"},
+  {"id":"yama","label":"Yama","type":"deity"},
+  {"id":"agni","label":"Agni","type":"deity"}
+ ],
+
+ "edges":[
+  {"source":"ashwini","target":"ketu","relation":"ruled_by"},
+  {"source":"bharani","target":"venus","relation":"ruled_by"},
+  {"source":"krittika","target":"sun","relation":"ruled_by"},
+
+  {"source":"ashwini","target":"ashwini_kumaras","relation":"presided_by"},
+  {"source":"bharani","target":"yama","relation":"presided_by"},
+  {"source":"krittika","target":"agni","relation":"presided_by"}
+ ]
+}
