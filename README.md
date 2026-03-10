@@ -12,6 +12,14 @@ The Atlas attempts to map coherence across domains of knowledge and express it t
 
 ---
 
+## Canonical Context
+
+For a concise project initiation context (for contributors and new AI chats), see [`docs/MASTER_CONTEXT.md`](docs/MASTER_CONTEXT.md).
+
+For Codex execution conventions and task templates, see [`docs/CODEX_INSTRUCTIONS.md`](docs/CODEX_INSTRUCTIONS.md).
+
+---
+
 ## Two Entry Paths
 
 ### Spiritual / Cosmological Axis

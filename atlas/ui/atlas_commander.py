@@ -1,24 +1,27 @@
 import curses
 import math
-from atlas.core.graph_store import load_graph, node_label, edge_type
+from collections import Counter
+
+from atlas.core.graph_store import edge_type, load_graph, node_label
 
 NAKSHATRAS = [
-    "Ashwini","Bharani","Krittika","Rohini","Mrigashira","Ardra",
-    "Punarvasu","Pushya","Ashlesha","Magha","PurvaPhalguni",
-    "UttaraPhalguni","Hasta","Chitra","Swati","Vishakha",
-    "Anuradha","Jyeshtha","Mula","PurvaAshadha","UttaraAshadha",
-    "Shravana","Dhanishta","Shatabhisha","PurvaBhadra",
-    "UttaraBhadra","Revati"
+    "Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira", "Ardra",
+    "Punarvasu", "Pushya", "Ashlesha", "Magha", "PurvaPhalguni",
+    "UttaraPhalguni", "Hasta", "Chitra", "Swati", "Vishakha",
+    "Anuradha", "Jyeshtha", "Mula", "PurvaAshadha", "UttaraAshadha",
+    "Shravana", "Dhanishta", "Shatabhisha", "PurvaBhadra",
+    "UttaraBhadra", "Revati",
 ]
 
 MENU = [
-    ("Home", "Atlas overview"),
-    ("Stats", "Graph statistics"),
-    ("Mandala", "Radial node map"),
-    ("Nakshatra", "27-fold wheel"),
-    ("Nodes", "Browse node labels"),
+    ("Sanctum", "Atlas readiness + coherence snapshot"),
+    ("Stats", "Graph metrics + relation signatures"),
+    ("Mandala", "Radial projection from graph nodes"),
+    ("Nakshatra", "27-fold lunar wheel"),
+    ("Nodes", "Scrollable node browser"),
     ("Quit", "Exit"),
 ]
+
 
 def safe_addstr(stdscr, y, x, text, attr=0):
     h, w = stdscr.getmaxyx()
@@ -38,6 +41,31 @@ def safe_addstr(stdscr, y, x, text, attr=0):
     except curses.error:
         pass
 
+
+def graph_metrics(graph):
+    nodes = graph.get("nodes", [])
+    edges = graph.get("edges", [])
+    node_count = len(nodes)
+    edge_count = len(edges)
+    density = (edge_count / node_count) if node_count else 0.0
+    avg_degree = (2 * edge_count / node_count) if node_count else 0.0
+
+    node_types = Counter(
+        str(n.get("type") or n.get("kind") or "unknown") for n in nodes
+    )
+    relations = Counter(edge_type(e) for e in edges)
+
+    return {
+        "source": graph.get("_source") or "none",
+        "nodes": node_count,
+        "edges": edge_count,
+        "density": density,
+        "avg_degree": avg_degree,
+        "top_node_types": node_types.most_common(6),
+        "top_relations": relations.most_common(6),
+    }
+
+
 def draw_header(stdscr, title, subtitle=""):
     h, w = stdscr.getmaxyx()
     safe_addstr(stdscr, 0, 2, title, curses.A_BOLD)
@@ -45,61 +73,72 @@ def draw_header(stdscr, title, subtitle=""):
         safe_addstr(stdscr, 1, 2, subtitle)
     safe_addstr(stdscr, 2, 0, "-" * max(1, w - 1))
 
+
 def draw_footer(stdscr, text):
     h, w = stdscr.getmaxyx()
     safe_addstr(stdscr, h - 2, 0, "-" * max(1, w - 1))
     safe_addstr(stdscr, h - 1, 2, text)
 
-def show_home(stdscr):
+
+def show_sanctum(stdscr):
     stdscr.clear()
     graph = load_graph()
-    draw_header(stdscr, "ATLAS COMMANDER", "Cosmic terminal interface")
+    metrics = graph_metrics(graph)
+    draw_header(stdscr, "ATLAS SANCTUM", "Front gate for a living relational graph")
+
     lines = [
-        f"Graph source: {graph.get('_source')}",
-        f"Nodes: {len(graph['nodes'])}",
-        f"Edges: {len(graph['edges'])}",
+        f"Source: {metrics['source']}",
+        f"Nodes: {metrics['nodes']}   Edges: {metrics['edges']}   Edges/Node: {metrics['density']:.2f}",
+        f"Avg degree: {metrics['avg_degree']:.2f}",
         "",
-        "Views:",
-        "  Stats      graph counts and sample data",
-        "  Mandala    radial projection of nodes",
-        "  Nakshatra  27-fold wheel",
-        "  Nodes      scrollable node list",
+        "Readiness pulse:",
+        f"  {'OK' if metrics['nodes'] > 0 else 'WAIT'} graph has nodes",
+        f"  {'OK' if metrics['edges'] > 0 else 'WAIT'} graph has relations",
+        f"  {'OK' if metrics['density'] >= 1.0 else 'GROW'} relation density moving toward 1.0+",
+        "",
+        "This interface is projection-only. Graph remains truth layer.",
     ]
+
     y = 4
     for line in lines:
         safe_addstr(stdscr, y, 4, line)
         y += 1
-    draw_footer(stdscr, "Press any key to return")
+
+    draw_footer(stdscr, "Enter: open selected view    q: back")
     stdscr.refresh()
     stdscr.getch()
+
 
 def show_stats(stdscr):
     stdscr.clear()
     graph = load_graph()
-    draw_header(stdscr, "GRAPH STATS")
-    safe_addstr(stdscr, 4, 4, f"Source: {graph.get('_source')}")
-    safe_addstr(stdscr, 5, 4, f"Node count: {len(graph['nodes'])}")
-    safe_addstr(stdscr, 6, 4, f"Edge count: {len(graph['edges'])}")
+    metrics = graph_metrics(graph)
 
-    y = 8
-    safe_addstr(stdscr, y, 4, "First 8 nodes:")
+    draw_header(stdscr, "GRAPH STATS", "Measured from active graph source")
+    safe_addstr(stdscr, 4, 4, f"Source: {metrics['source']}")
+    safe_addstr(stdscr, 5, 4, f"Node count: {metrics['nodes']}")
+    safe_addstr(stdscr, 6, 4, f"Edge count: {metrics['edges']}")
+    safe_addstr(stdscr, 7, 4, f"Edges per node: {metrics['density']:.2f}")
+    safe_addstr(stdscr, 8, 4, f"Average degree: {metrics['avg_degree']:.2f}")
+
+    y = 10
+    safe_addstr(stdscr, y, 4, "Top node types:", curses.A_BOLD)
     y += 1
-    for node in graph["nodes"][:8]:
-        safe_addstr(stdscr, y, 6, f"- {node_label(node)}")
+    for t, count in metrics["top_node_types"]:
+        safe_addstr(stdscr, y, 6, f"- {t}: {count}")
         y += 1
 
-    safe_addstr(stdscr, y + 1, 4, "First 8 edges:")
-    y += 2
-    for edge in graph["edges"][:8]:
-        src = edge.get("source", "?")
-        dst = edge.get("target", "?")
-        rel = edge_type(edge)
-        safe_addstr(stdscr, y, 6, f"- {src} --{rel}--> {dst}")
+    y += 1
+    safe_addstr(stdscr, y, 4, "Top relation types:", curses.A_BOLD)
+    y += 1
+    for rel, count in metrics["top_relations"]:
+        safe_addstr(stdscr, y, 6, f"- {rel}: {count}")
         y += 1
 
     draw_footer(stdscr, "Press any key to return")
     stdscr.refresh()
     stdscr.getch()
+
 
 def radial_points(labels, radius):
     if not labels:
@@ -113,10 +152,11 @@ def radial_points(labels, radius):
         out.append((label, x, y))
     return out
 
+
 def show_mandala(stdscr):
     stdscr.clear()
     graph = load_graph()
-    labels = [node_label(n) for n in graph["nodes"][:36]]
+    labels = [node_label(n) for n in graph.get("nodes", [])[:36]]
     h, w = stdscr.getmaxyx()
     cx = w // 2
     cy = h // 2
@@ -129,6 +169,7 @@ def show_mandala(stdscr):
     draw_footer(stdscr, "Press any key to return")
     stdscr.refresh()
     stdscr.getch()
+
 
 def show_nakshatra(stdscr):
     stdscr.clear()
@@ -145,15 +186,16 @@ def show_nakshatra(stdscr):
     stdscr.refresh()
     stdscr.getch()
 
+
 def show_nodes(stdscr):
     graph = load_graph()
-    labels = [node_label(n) for n in graph["nodes"]]
+    labels = [node_label(n) for n in graph.get("nodes", [])]
     if not labels:
         labels = ["No nodes found."]
     pos = 0
     while True:
         stdscr.clear()
-        h, w = stdscr.getmaxyx()
+        h, _ = stdscr.getmaxyx()
         draw_header(stdscr, "NODE BROWSER", f"Total nodes: {len(labels)}")
         page = max(1, h - 6)
         visible = labels[pos:pos + page]
@@ -161,19 +203,20 @@ def show_nodes(stdscr):
         for idx, label in enumerate(visible, start=pos + 1):
             safe_addstr(stdscr, y, 4, f"{idx:>4}. {label}")
             y += 1
-        draw_footer(stdscr, "Up/Down scroll   q return")
+        draw_footer(stdscr, "Up/Down or j/k scroll   q return")
         stdscr.refresh()
         key = stdscr.getch()
         if key in (ord("q"), ord("Q"), 27):
             return
-        if key == curses.KEY_DOWN and pos + page < len(labels):
+        if key in (curses.KEY_DOWN, ord("j")) and pos + page < len(labels):
             pos += 1
-        elif key == curses.KEY_UP and pos > 0:
+        elif key in (curses.KEY_UP, ord("k")) and pos > 0:
             pos -= 1
 
+
 def dispatch(stdscr, name):
-    if name == "Home":
-        show_home(stdscr)
+    if name == "Sanctum":
+        show_sanctum(stdscr)
     elif name == "Stats":
         show_stats(stdscr)
     elif name == "Mandala":
@@ -182,6 +225,7 @@ def dispatch(stdscr, name):
         show_nakshatra(stdscr)
     elif name == "Nodes":
         show_nodes(stdscr)
+
 
 def draw_menu(stdscr, selected):
     stdscr.clear()
@@ -194,6 +238,7 @@ def draw_menu(stdscr, selected):
     draw_footer(stdscr, "Up/Down move   Enter select   q quit")
     stdscr.refresh()
 
+
 def main(stdscr):
     curses.curs_set(0)
     stdscr.keypad(True)
@@ -203,15 +248,16 @@ def main(stdscr):
         key = stdscr.getch()
         if key in (ord("q"), ord("Q")):
             break
-        if key == curses.KEY_UP:
+        if key in (curses.KEY_UP, ord("k")):
             selected = (selected - 1) % len(MENU)
-        elif key == curses.KEY_DOWN:
+        elif key in (curses.KEY_DOWN, ord("j")):
             selected = (selected + 1) % len(MENU)
         elif key in (10, 13):
             name = MENU[selected][0]
             if name == "Quit":
                 break
             dispatch(stdscr, name)
+
 
 if __name__ == "__main__":
     curses.wrapper(main)
