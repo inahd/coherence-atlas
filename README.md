@@ -1,3 +1,88 @@
+# Coherence Atlas
+
+A living research system exploring the relationships between:
+
+• Vedic cosmology  
+• knowledge graphs  
+• symbolic systems  
+• software architecture  
+• ritual and cultural technologies  
+
+The Atlas attempts to map coherence across domains of knowledge and express it through software, research tools, and symbolic artifacts.
+
+---
+
+## Two Entry Paths
+
+### Spiritual / Cosmological Axis
+Explore the descending structure of meaning:
+
+śabda → language → tattva → cosmology → culture → ecology
+
+This path investigates traditional knowledge systems and their internal coherence.
+
+### Software / Systems Axis
+Explore the emergent architecture:
+
+graph → ontology → research ingestion → symbolic generators → interactive interfaces
+
+This path focuses on building tools that reveal relational structures within knowledge.
+
+---
+
+## What This Repository Contains
+
+Core components currently include:
+
+- **Atlas graph experiments**
+- **ontology and schema work**
+- **research ingestion pipelines**
+- **symbolic generation experiments**
+- **ncurses interface exploration**
+- **cosmology and jyotish research layers**
+
+The project is intentionally incomplete.
+
+Atlas grows through cycles of offering, reflection, and refinement.
+
+---
+
+## Project Structure
+atlas/ core engine experiments
+data/ nodes, relations, datasets
+scripts/ research and automation tools
+research/ collected knowledge materials
+docs/ architecture and philosophy
+
+
+---
+
+## Status
+
+Early research prototype.
+
+The system is evolving toward:
+
+- relational knowledge graphs
+- symbolic generators (cards / yantra / archetypes)
+- research automation
+- interactive cosmology tools
+
+---
+
+## Contributing
+
+This project is exploratory and welcomes:
+
+• researchers  
+• software developers  
+• artists  
+• philosophers  
+• practitioners of traditional knowledge systems  
+
+If the Atlas resonates with your work, you are welcome here.
+
+
 # 🌱 Coherence Atlas
 ```
         🔱
