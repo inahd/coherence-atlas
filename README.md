@@ -580,3 +580,18 @@ atlas seed <name>
 atlas board
 atlas tui
 ```
+
+## Atlas Constellation
+
+<!-- ATLAS_CONSTELLATION_START -->
+```text
+                ✶ plants
+                    │
+      jyotish ── relation ── ayurveda
+                    │
+                symbolic
+                    │
+                 research
+```
+
+<!-- ATLAS_CONSTELLATION_END -->
