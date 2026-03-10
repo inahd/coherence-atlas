@@ -1,0 +1,22 @@
+root,type,english
+rishi,role,Seer / research
+shilpi,role,Builder / artisan
+vaidya,role,Healer / diagnostics
+gopala,role,Guide / steward
+
+brahmana,varna,Knowledge role
+kshatriya,varna,Governance role
+vaishya,varna,Production role
+shudra,varna,Service role
+
+kala,domain,Creative arts
+vidya,domain,Knowledge discipline
+tattva,concept,Principle / element
+shastra,concept,Formal knowledge system
+
+jyotisha,vidya,Astronomy / astrology
+ayurveda,vidya,Life science / medicine
+vastu,vidya,Architecture science
+sangeeta,kala,Music
+natya,kala,Drama / dance
+chitra,kala,Painting

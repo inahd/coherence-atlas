@@ -1,0 +1,12 @@
+from,relation,to
+rishi,expresses,brahmana
+shilpi,expresses,shudra
+vaidya,expresses,brahmana
+gopala,expresses,vaishya
+
+jyotisha,belongs_to,kala
+ayurveda,belongs_to,vidya
+vastu,belongs_to,vidya
+sangeeta,belongs_to,kala
+natya,belongs_to,kala
+chitra,belongs_to,kala
