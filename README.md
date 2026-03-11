@@ -53,7 +53,7 @@ The graph is the truth layer; every interface is a projection.
   - Architecture overview: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
   - Codex system prompt: [`docs/CODEX_ATLAS_PROMPT.md`](docs/CODEX_ATLAS_PROMPT.md)
   - Development roadmap: [`docs/ATLAS_DEVELOPMENT_ROADMAP.md`](docs/ATLAS_DEVELOPMENT_ROADMAP.md)
-  - Agent system rules: [`atlas/system_rules.md`](atlas/system_rules.md)
+  - Agent system rules: [`atlas/SYSTEM_RULES.md`](atlas/SYSTEM_RULES.md)
 
 </details>
 
