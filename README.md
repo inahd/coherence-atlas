@@ -47,6 +47,10 @@ The graph is the truth layer; every interface is a projection.
 - **Vision + Canon**
   - [`docs/MASTER_CONTEXT.md`](docs/MASTER_CONTEXT.md)
   - [`docs/atlas_canon.md`](docs/atlas_canon.md)
+- **Orientation**
+  - Agent orientation: [`AGENTS.md`](AGENTS.md)
+  - Repo map: [`PROJECT_MAP.md`](PROJECT_MAP.md)
+  - Architecture overview: [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 
 </details>
 
