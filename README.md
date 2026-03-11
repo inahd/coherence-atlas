@@ -20,6 +20,38 @@ For Codex execution conventions and task templates, see [`docs/CODEX_INSTRUCTION
 
 ---
 
+## 🪔 Devi Field Gateway
+
+Coherence Atlas is a **navigation mandala** for a living knowledge graph.
+
+The graph is the truth layer; every interface is a projection.
+
+### 🌾 Entry Paths
+
+| Path | Focus |
+|---|---|
+| 🔭 Graph & Cosmology | [`docs/atlas_architecture.md`](docs/atlas_architecture.md), [`docs/ATLAS_ONTOLOGY_SCHEMA.md`](docs/ATLAS_ONTOLOGY_SCHEMA.md) |
+| 🧭 Atlas Commander (ncurses) | `./ac`, [`docs/MASTER_CONTEXT.md`](docs/MASTER_CONTEXT.md) |
+| 📚 Canon & Philosophy | [`docs/ATLAS_FOUNDATION.md`](docs/ATLAS_FOUNDATION.md), [`docs/ATLAS_PHILOSOPHY.md`](docs/ATLAS_PHILOSOPHY.md) |
+| 🧪 Codex Workflow | [`docs/CODEX_INSTRUCTIONS.md`](docs/CODEX_INSTRUCTIONS.md) |
+
+<details>
+<summary>Atlas Documentation Tree</summary>
+
+- **Core**
+  - [`docs/atlas_architecture.md`](docs/atlas_architecture.md)
+  - [`docs/architecture_principles.md`](docs/architecture_principles.md)
+- **Ontology + Relations**
+  - [`docs/ATLAS_ONTOLOGY_SCHEMA.md`](docs/ATLAS_ONTOLOGY_SCHEMA.md)
+  - [`docs/relation-types.md`](docs/relation-types.md)
+- **Vision + Canon**
+  - [`docs/MASTER_CONTEXT.md`](docs/MASTER_CONTEXT.md)
+  - [`docs/atlas_canon.md`](docs/atlas_canon.md)
+
+</details>
+
+---
+
 ## Two Entry Paths
 
 ### Spiritual / Cosmological Axis
@@ -103,6 +135,9 @@ If the Atlas resonates with your work, you are welcome here.
 🌱 seed → 🪷 relation → 🔱 principle → ✨ insight → 🌱 reseed
 
 ---
+<details>
+<summary>🌱 Seeds Index (generated)</summary>
+
 ## 🌱 Seeds
 - cosmic_cycle_20260308_091738
 - cosmic_seed_cycle_20260308_090538
@@ -688,3 +723,5 @@ atlas tui
 ```
 
 <!-- ATLAS_CONSTELLATION_END -->
+
+</details>
