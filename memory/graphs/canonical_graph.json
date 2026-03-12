@@ -1,6 +1,348 @@
 {
   "nodes": [
     {
+      "id": "Libra",
+      "type": "rashi"
+    },
+    {
+      "id": "Sun",
+      "type": "graha"
+    },
+    {
+      "id": "Moon",
+      "type": "graha"
+    },
+    {
+      "id": "Mars",
+      "type": "graha"
+    },
+    {
+      "id": "Mercury"
+    },
+    {
+      "id": "Jupiter"
+    },
+    {
+      "id": "Venus",
+      "type": "graha"
+    },
+    {
+      "id": "Saturn"
+    },
+    {
+      "id": "Rahu",
+      "type": "graha"
+    },
+    {
+      "id": "Ketu",
+      "type": "graha"
+    },
+    {
+      "id": "tithi:1",
+      "type": "tithi",
+      "name": "tithi:1"
+    },
+    {
+      "id": "tithi:2",
+      "type": "tithi",
+      "name": "tithi:2"
+    },
+    {
+      "id": "tithi:3",
+      "type": "tithi",
+      "name": "tithi:3"
+    },
+    {
+      "id": "tithi:4",
+      "type": "tithi",
+      "name": "tithi:4"
+    },
+    {
+      "id": "tithi:5",
+      "type": "tithi",
+      "name": "tithi:5"
+    },
+    {
+      "id": "tithi:6",
+      "type": "tithi",
+      "name": "tithi:6"
+    },
+    {
+      "id": "tithi:7",
+      "type": "tithi",
+      "name": "tithi:7"
+    },
+    {
+      "id": "tithi:8",
+      "type": "tithi",
+      "name": "tithi:8"
+    },
+    {
+      "id": "tithi:9",
+      "type": "tithi",
+      "name": "tithi:9"
+    },
+    {
+      "id": "tithi:10",
+      "type": "tithi",
+      "name": "tithi:10"
+    },
+    {
+      "id": "tithi:11",
+      "type": "tithi",
+      "name": "tithi:11"
+    },
+    {
+      "id": "tithi:12",
+      "type": "tithi",
+      "name": "tithi:12"
+    },
+    {
+      "id": "tithi:13",
+      "type": "tithi",
+      "name": "tithi:13"
+    },
+    {
+      "id": "tithi:14",
+      "type": "tithi",
+      "name": "tithi:14"
+    },
+    {
+      "id": "tithi:15",
+      "type": "tithi",
+      "name": "tithi:15"
+    },
+    {
+      "id": "nitya_devi:kameshvari",
+      "type": "nitya_devi",
+      "name": "nitya_devi:kameshvari"
+    },
+    {
+      "id": "nitya_devi:bhagamalini",
+      "type": "nitya_devi",
+      "name": "nitya_devi:bhagamalini"
+    },
+    {
+      "id": "nitya_devi:nityaklinna",
+      "type": "nitya_devi",
+      "name": "nitya_devi:nityaklinna"
+    },
+    {
+      "id": "nitya_devi:bherunda",
+      "type": "nitya_devi",
+      "name": "nitya_devi:bherunda"
+    },
+    {
+      "id": "nitya_devi:vahnivasini",
+      "type": "nitya_devi",
+      "name": "nitya_devi:vahnivasini"
+    },
+    {
+      "id": "nitya_devi:mahavajreshvari",
+      "type": "nitya_devi",
+      "name": "nitya_devi:mahavajreshvari"
+    },
+    {
+      "id": "nitya_devi:shivaduti",
+      "type": "nitya_devi",
+      "name": "nitya_devi:shivaduti"
+    },
+    {
+      "id": "nitya_devi:tvarita",
+      "type": "nitya_devi",
+      "name": "nitya_devi:tvarita"
+    },
+    {
+      "id": "nitya_devi:kulasundari",
+      "type": "nitya_devi",
+      "name": "nitya_devi:kulasundari"
+    },
+    {
+      "id": "nitya_devi:nitya",
+      "type": "nitya_devi",
+      "name": "nitya_devi:nitya"
+    },
+    {
+      "id": "nitya_devi:nilapataka",
+      "type": "nitya_devi",
+      "name": "nitya_devi:nilapataka"
+    },
+    {
+      "id": "nitya_devi:vijaya",
+      "type": "nitya_devi",
+      "name": "nitya_devi:vijaya"
+    },
+    {
+      "id": "nitya_devi:sarvamangala",
+      "type": "nitya_devi",
+      "name": "nitya_devi:sarvamangala"
+    },
+    {
+      "id": "nitya_devi:jvalamalini",
+      "type": "nitya_devi",
+      "name": "nitya_devi:jvalamalini"
+    },
+    {
+      "id": "nitya_devi:chitra",
+      "type": "nitya_devi",
+      "name": "nitya_devi:chitra"
+    },
+    {
+      "id": "nakshatra:1",
+      "type": "nakshatra",
+      "name": "nakshatra:1"
+    },
+    {
+      "id": "nakshatra:2",
+      "type": "nakshatra",
+      "name": "nakshatra:2"
+    },
+    {
+      "id": "nakshatra:3",
+      "type": "nakshatra",
+      "name": "nakshatra:3"
+    },
+    {
+      "id": "nakshatra:4",
+      "type": "nakshatra",
+      "name": "nakshatra:4"
+    },
+    {
+      "id": "nakshatra:5",
+      "type": "nakshatra",
+      "name": "nakshatra:5"
+    },
+    {
+      "id": "nakshatra:6",
+      "type": "nakshatra",
+      "name": "nakshatra:6"
+    },
+    {
+      "id": "nakshatra:7",
+      "type": "nakshatra",
+      "name": "nakshatra:7"
+    },
+    {
+      "id": "nakshatra:8",
+      "type": "nakshatra",
+      "name": "nakshatra:8"
+    },
+    {
+      "id": "nakshatra:9",
+      "type": "nakshatra",
+      "name": "nakshatra:9"
+    },
+    {
+      "id": "nakshatra:10",
+      "type": "nakshatra",
+      "name": "nakshatra:10"
+    },
+    {
+      "id": "nakshatra:11",
+      "type": "nakshatra",
+      "name": "nakshatra:11"
+    },
+    {
+      "id": "nakshatra:12",
+      "type": "nakshatra",
+      "name": "nakshatra:12"
+    },
+    {
+      "id": "nakshatra:13",
+      "type": "nakshatra",
+      "name": "nakshatra:13"
+    },
+    {
+      "id": "nakshatra:14",
+      "type": "nakshatra",
+      "name": "nakshatra:14"
+    },
+    {
+      "id": "nakshatra:15",
+      "type": "nakshatra",
+      "name": "nakshatra:15"
+    },
+    {
+      "id": "nakshatra:16",
+      "type": "nakshatra",
+      "name": "nakshatra:16"
+    },
+    {
+      "id": "nakshatra:17",
+      "type": "nakshatra",
+      "name": "nakshatra:17"
+    },
+    {
+      "id": "nakshatra:18",
+      "type": "nakshatra",
+      "name": "nakshatra:18"
+    },
+    {
+      "id": "nakshatra:19",
+      "type": "nakshatra",
+      "name": "nakshatra:19"
+    },
+    {
+      "id": "nakshatra:20",
+      "type": "nakshatra",
+      "name": "nakshatra:20"
+    },
+    {
+      "id": "nakshatra:21",
+      "type": "nakshatra",
+      "name": "nakshatra:21"
+    },
+    {
+      "id": "nakshatra:22",
+      "type": "nakshatra",
+      "name": "nakshatra:22"
+    },
+    {
+      "id": "nakshatra:23",
+      "type": "nakshatra",
+      "name": "nakshatra:23"
+    },
+    {
+      "id": "nakshatra:24",
+      "type": "nakshatra",
+      "name": "nakshatra:24"
+    },
+    {
+      "id": "nakshatra:25",
+      "type": "nakshatra",
+      "name": "nakshatra:25"
+    },
+    {
+      "id": "nakshatra:26",
+      "type": "nakshatra",
+      "name": "nakshatra:26"
+    },
+    {
+      "id": "nakshatra:27",
+      "type": "nakshatra",
+      "name": "nakshatra:27"
+    },
+    {
+      "id": "cosmic_seed_cycle_20260308_090538",
+      "type": "Concept",
+      "source": "seeds/cosmic_seed_cycle_20260308_090538.md"
+    },
+    {
+      "id": "cosmic_cycle_20260308_091738",
+      "type": "Concept",
+      "source": "seeds/cosmic_cycle_20260308_091738.md"
+    },
+    {
+      "id": "demo_seed",
+      "type": "Concept",
+      "source": "seeds/demo_seed.md"
+    },
+    {
+      "id": "seed_20260308_1619",
+      "type": "Concept",
+      "source": "seeds/seed_20260308_1619.md"
+    },
+    {
       "id": "knowledge"
     },
     {
@@ -505,13 +847,3211 @@
       "id": "dvadashi"
     },
     {
+      "id": "associated_deity",
+      "type": "Concept",
+      "source": "seeds/seed_associated_deity_20260308_194814.md"
+    },
+    {
+      "id": "associated_with",
+      "type": "Concept",
+      "source": "seeds/seed_associated_with_20260308_194814.md"
+    },
+    {
+      "id": "deity_of",
+      "type": "Concept",
+      "source": "seeds/seed_deity_of_20260308_194814.md"
+    },
+    {
+      "id": "medium_term",
+      "type": "Concept",
+      "source": "seeds/seed_medium_term_20260308_194814.md"
+    },
+    {
+      "id": "become",
+      "type": "Concept",
+      "source": "seeds/seed_become_20260308_194814.md"
+    },
+    {
+      "id": "canonization",
+      "type": "Concept",
+      "source": "seeds/seed_canonization_20260308_194814.md"
+    },
+    {
+      "id": "action",
+      "type": "Concept",
+      "source": "seeds/seed_action_20260308_194814.md"
+    },
+    {
+      "id": "bridge",
+      "type": "Concept",
+      "source": "seeds/seed_bridge_20260308_194814.md"
+    },
+    {
+      "id": "artifact_type",
+      "type": "Concept",
+      "source": "seeds/seed_artifact_type_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_layer",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_layer_20260308_194814.md"
+    },
+    {
+      "id": "active_seeds",
+      "type": "Concept",
+      "source": "seeds/seed_active_seeds_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_context",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_context_20260308_194814.md"
+    },
+    {
+      "id": "dataset_directions",
+      "type": "Concept",
+      "source": "seeds/seed_dataset_directions_20260308_194814.md"
+    },
+    {
+      "id": "alternatives",
+      "type": "Concept",
+      "source": "seeds/seed_alternatives_20260308_194814.md"
+    },
+    {
+      "id": "available",
+      "type": "Concept",
+      "source": "seeds/seed_available_20260308_194814.md"
+    },
+    {
+      "id": "nakshatra_1",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_1_20260308_194814.md"
+    },
+    {
+      "id": "nakshatra_10",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_10_20260308_194814.md"
+    },
+    {
+      "id": "ahirbudhnya",
+      "type": "Concept",
+      "source": "seeds/seed_ahirbudhnya_20260308_194814.md"
+    },
+    {
+      "id": "ajaekapada",
+      "type": "Concept",
+      "source": "seeds/seed_ajaekapada_20260308_194814.md"
+    },
+    {
+      "id": "aryaman",
+      "type": "Concept",
+      "source": "seeds/seed_aryaman_20260308_194814.md"
+    },
+    {
+      "id": "graha_jupiter",
+      "type": "Concept",
+      "source": "seeds/seed_graha_jupiter_20260308_194814.md"
+    },
+    {
+      "id": "graha_ketu",
+      "type": "Concept",
+      "source": "seeds/seed_graha_ketu_20260308_194814.md"
+    },
+    {
+      "id": "graha_mars",
+      "type": "Concept",
+      "source": "seeds/seed_graha_mars_20260308_194814.md"
+    },
+    {
+      "id": "ritual_fast",
+      "type": "Concept",
+      "source": "seeds/seed_ritual_fast_20260308_194814.md"
+    },
+    {
+      "id": "navami",
+      "type": "Concept",
+      "source": "seeds/seed_navami_20260308_194814.md"
+    },
+    {
+      "id": "densityadj",
+      "type": "Concept",
+      "source": "seeds/seed_densityadj_20260308_194814.md"
+    },
+    {
+      "id": "hemanta",
+      "type": "Concept",
+      "source": "seeds/seed_hemanta_20260308_194814.md"
+    },
+    {
+      "id": "fortnight",
+      "type": "Concept",
+      "source": "seeds/seed_fortnight_20260308_194814.md"
+    },
+    {
+      "id": "brahma",
+      "type": "Concept",
+      "source": "seeds/seed_brahma_20260308_194814.md"
+    },
+    {
+      "id": "nostril",
+      "type": "Concept",
+      "source": "seeds/seed_nostril_20260308_194814.md"
+    },
+    {
+      "id": "chakra",
+      "type": "Concept",
+      "source": "seeds/seed_chakra_20260308_194814.md"
+    },
+    {
+      "id": "freedom",
+      "type": "Concept",
+      "source": "seeds/seed_freedom_20260308_194814.md"
+    },
+    {
+      "id": "muladhara",
+      "type": "Concept",
+      "source": "seeds/seed_muladhara_20260308_194814.md"
+    },
+    {
+      "id": "chapter",
+      "type": "Concept",
+      "source": "seeds/seed_chapter_20260308_194814.md"
+    },
+    {
+      "id": "rashis",
+      "type": "Concept",
+      "source": "seeds/seed_rashis_20260308_194814.md"
+    },
+    {
+      "id": "understanding",
+      "type": "Concept",
+      "source": "seeds/seed_understanding_20260308_194814.md"
+    },
+    {
+      "id": "desire",
+      "type": "Concept",
+      "source": "seeds/seed_desire_20260308_194814.md"
+    },
+    {
+      "id": "brihaspati",
+      "type": "Concept",
+      "source": "seeds/seed_brihaspati_20260308_194814.md"
+    },
+    {
+      "id": "achala",
+      "type": "Concept",
+      "source": "seeds/seed_achala_20260308_194814.md"
+    },
+    {
+      "id": "adventurous",
+      "type": "Concept",
+      "source": "seeds/seed_adventurous_20260308_194814.md"
+    },
+    {
+      "id": "elements",
+      "type": "Concept",
+      "source": "seeds/seed_elements_20260308_194814.md"
+    },
+    {
+      "id": "purvabhadrapada",
+      "type": "Concept",
+      "source": "seeds/seed_purvabhadrapada_20260308_194814.md"
+    },
+    {
+      "id": "sexual",
+      "type": "Concept",
+      "source": "seeds/seed_sexual_20260308_194814.md"
+    },
+    {
+      "id": "controls",
+      "type": "Concept",
+      "source": "seeds/seed_controls_20260308_194814.md"
+    },
+    {
+      "id": "excited",
+      "type": "Concept",
+      "source": "seeds/seed_excited_20260308_194814.md"
+    },
+    {
+      "id": "awakened",
+      "type": "Concept",
+      "source": "seeds/seed_awakened_20260308_194814.md"
+    },
+    {
+      "id": "beautiful",
+      "type": "Concept",
+      "source": "seeds/seed_beautiful_20260308_194814.md"
+    },
+    {
+      "id": "vishnu",
+      "type": "Concept",
+      "source": "seeds/seed_vishnu_20260308_194814.md"
+    },
+    {
+      "id": "gemini",
+      "type": "Concept",
+      "source": "seeds/seed_gemini_20260308_194814.md"
+    },
+    {
+      "id": "varuna",
+      "type": "Concept",
+      "source": "seeds/seed_varuna_20260308_194814.md"
+    },
+    {
+      "id": "energised",
+      "type": "Concept",
+      "source": "seeds/seed_energised_20260308_194814.md"
+    },
+    {
+      "id": "becomes",
+      "type": "Concept",
+      "source": "seeds/seed_becomes_20260308_194814.md"
+    },
+    {
+      "id": "direction",
+      "type": "Concept",
+      "source": "seeds/seed_direction_20260308_194814.md"
+    },
+    {
+      "id": "ability",
+      "type": "Concept",
+      "source": "seeds/seed_ability_20260308_194814.md"
+    },
+    {
+      "id": "asterism",
+      "type": "Concept",
+      "source": "seeds/seed_asterism_20260308_194814.md"
+    },
+    {
+      "id": "creativity",
+      "type": "Concept",
+      "source": "seeds/seed_creativity_20260308_194814.md"
+    },
+    {
+      "id": "fifteen",
+      "type": "Concept",
+      "source": "seeds/seed_fifteen_20260308_194814.md"
+    },
+    {
+      "id": "portion",
+      "type": "Concept",
+      "source": "seeds/seed_portion_20260308_194814.md"
+    },
+    {
+      "id": "kumaras",
+      "type": "Concept",
+      "source": "seeds/seed_kumaras_20260308_194814.md"
+    },
+    {
+      "id": "savitar",
+      "type": "Concept",
+      "source": "seeds/seed_savitar_20260308_194814.md"
+    },
+    {
+      "id": "vishvakarma",
+      "type": "Concept",
+      "source": "seeds/seed_vishvakarma_20260308_194814.md"
+    },
+    {
+      "id": "indraagni",
+      "type": "Concept",
+      "source": "seeds/seed_indraagni_20260308_194814.md"
+    },
+    {
+      "id": "overlay",
+      "type": "Concept",
+      "source": "seeds/seed_overlay_20260308_194814.md"
+    },
+    {
+      "id": "nirriti",
+      "type": "Concept",
+      "source": "seeds/seed_nirriti_20260308_194814.md"
+    },
+    {
+      "id": "vishvadevas",
+      "type": "Concept",
+      "source": "seeds/seed_vishvadevas_20260308_194814.md"
+    },
+    {
+      "id": "pushan",
+      "type": "Concept",
+      "source": "seeds/seed_pushan_20260308_194814.md"
+    },
+    {
+      "id": "teentaal",
+      "type": "Concept",
+      "source": "seeds/seed_teentaal_20260308_194814.md"
+    },
+    {
+      "id": "trayodashi",
+      "type": "Concept",
+      "source": "seeds/seed_trayodashi_20260308_194814.md"
+    },
+    {
+      "id": "symbolic",
+      "type": "Concept",
+      "source": "seeds/seed_symbolic_20260308_194814.md"
+    },
+    {
+      "id": "archive",
+      "type": "Concept",
+      "source": "seeds/seed_archive_20260308_194814.md"
+    },
+    {
+      "id": "expand",
+      "type": "Concept",
+      "source": "seeds/seed_expand_20260308_194814.md"
+    },
+    {
+      "id": "actual",
+      "type": "Concept",
+      "source": "seeds/seed_actual_20260308_194814.md"
+    },
+    {
+      "id": "artifacts",
+      "type": "Concept",
+      "source": "seeds/seed_artifacts_20260308_194814.md"
+    },
+    {
+      "id": "comparative",
+      "type": "Concept",
+      "source": "seeds/seed_comparative_20260308_194814.md"
+    },
+    {
+      "id": "community_driven",
+      "type": "Concept",
+      "source": "seeds/seed_community_driven_20260308_194814.md"
+    },
+    {
+      "id": "contribution",
+      "type": "Concept",
+      "source": "seeds/seed_contribution_20260308_194814.md"
+    },
+    {
+      "id": "energetics",
+      "type": "Concept",
+      "source": "seeds/seed_energetics_20260308_194814.md"
+    },
+    {
+      "id": "anchors",
+      "type": "Concept",
+      "source": "seeds/seed_anchors_20260308_194814.md"
+    },
+    {
+      "id": "completed",
+      "type": "Concept",
+      "source": "seeds/seed_completed_20260308_194814.md"
+    },
+    {
+      "id": "branch",
+      "type": "Concept",
+      "source": "seeds/seed_branch_20260308_194814.md"
+    },
+    {
+      "id": "artifact",
+      "type": "Concept",
+      "source": "seeds/seed_artifact_20260308_194814.md"
+    },
+    {
+      "id": "population",
+      "type": "Concept",
+      "source": "seeds/seed_population_20260308_194814.md"
+    },
+    {
+      "id": "anchored",
+      "type": "Concept",
+      "source": "seeds/seed_anchored_20260308_194814.md"
+    },
+    {
+      "id": "aggressive",
+      "type": "Concept",
+      "source": "seeds/seed_aggressive_20260308_194814.md"
+    },
+    {
+      "id": "prolific",
+      "type": "Concept",
+      "source": "seeds/seed_prolific_20260308_194814.md"
+    },
+    {
+      "id": "priority",
+      "type": "Concept",
+      "source": "seeds/seed_priority_20260308_194814.md"
+    },
+    {
+      "id": "application_layers",
+      "type": "Concept",
+      "source": "seeds/seed_application_layers_20260308_194814.md"
+    },
+    {
+      "id": "breath_pattern",
+      "type": "Concept",
+      "source": "seeds/seed_breath_pattern_20260308_194814.md"
+    },
+    {
+      "id": "calendar_planning",
+      "type": "Concept",
+      "source": "seeds/seed_calendar_planning_20260308_194814.md"
+    },
+    {
+      "id": "application",
+      "type": "Concept",
+      "source": "seeds/seed_application_20260308_194814.md"
+    },
+    {
+      "id": "archetype",
+      "type": "Concept",
+      "source": "seeds/seed_archetype_20260308_194814.md"
+    },
+    {
+      "id": "chakra_layer",
+      "type": "Concept",
+      "source": "seeds/seed_chakra_layer_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_cycle",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_cycle_20260308_194814.md"
+    },
+    {
+      "id": "combinations",
+      "type": "Concept",
+      "source": "seeds/seed_combinations_20260308_194814.md"
+    },
+    {
+      "id": "activates",
+      "type": "Concept",
+      "source": "seeds/seed_activates_20260308_194814.md"
+    },
+    {
+      "id": "appears_in",
+      "type": "Concept",
+      "source": "seeds/seed_appears_in_20260308_194814.md"
+    },
+    {
+      "id": "astrology",
+      "type": "Concept",
+      "source": "seeds/seed_astrology_20260308_194814.md"
+    },
+    {
+      "id": "beauty",
+      "type": "Concept",
+      "source": "seeds/seed_beauty_20260308_194814.md"
+    },
+    {
+      "id": "chitra",
+      "type": "Concept",
+      "source": "seeds/seed_chitra_20260308_194814.md"
+    },
+    {
+      "id": "amavasya",
+      "type": "Concept",
+      "source": "seeds/seed_amavasya_20260308_194814.md"
+    },
+    {
+      "id": "ashtami",
+      "type": "Concept",
+      "source": "seeds/seed_ashtami_20260308_194814.md"
+    },
+    {
+      "id": "caturda",
+      "type": "Concept",
+      "source": "seeds/seed_caturda_20260308_194814.md"
+    },
+    {
+      "id": "devi_wields_weapon",
+      "type": "Concept",
+      "source": "seeds/seed_devi_wields_weapon_20260308_194814.md"
+    },
+    {
+      "id": "seed_unverified",
+      "type": "Concept",
+      "source": "seeds/seed_seed_unverified_20260308_194814.md"
+    },
+    {
+      "id": "nakshatra_sacred_plant",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_sacred_plant_20260308_194814.md"
+    },
+    {
+      "id": "confidence",
+      "type": "Concept",
+      "source": "seeds/seed_confidence_20260308_194814.md"
+    },
+    {
+      "id": "from_id",
+      "type": "Concept",
+      "source": "seeds/seed_from_id_20260308_194814.md"
+    },
+    {
+      "id": "attested_secondary",
+      "type": "Concept",
+      "source": "seeds/seed_attested_secondary_20260308_194814.md"
+    },
+    {
+      "id": "anuradha",
+      "type": "Concept",
+      "source": "seeds/seed_anuradha_20260308_194814.md"
+    },
+    {
+      "id": "mythic_narrative",
+      "type": "Concept",
+      "source": "seeds/seed_mythic_narrative_20260308_194814.md"
+    },
+    {
+      "id": "fertility",
+      "type": "Concept",
+      "source": "seeds/seed_fertility_20260308_194814.md"
+    },
+    {
+      "id": "symbolism",
+      "type": "Concept",
+      "source": "seeds/seed_symbolism_20260308_194814.md"
+    },
+    {
+      "id": "banyan",
+      "type": "Concept",
+      "source": "seeds/seed_banyan_20260308_194814.md"
+    },
+    {
+      "id": "purpose",
+      "type": "Concept",
+      "source": "seeds/seed_purpose_20260308_194814.md"
+    },
+    {
+      "id": "agnihotra",
+      "type": "Concept",
+      "source": "seeds/seed_agnihotra_20260308_194814.md"
+    },
+    {
+      "id": "deities",
+      "type": "Concept",
+      "source": "seeds/seed_deities_20260308_194814.md"
+    },
+    {
+      "id": "aliases",
+      "type": "Concept",
+      "source": "seeds/seed_aliases_20260308_194814.md"
+    },
+    {
+      "id": "source_file",
+      "type": "Concept",
+      "source": "seeds/seed_source_file_20260308_194814.md"
+    },
+    {
+      "id": "ashlesha",
+      "type": "Concept",
+      "source": "seeds/seed_ashlesha_20260308_194814.md"
+    },
+    {
+      "id": "schools",
+      "type": "Concept",
+      "source": "seeds/seed_schools_20260308_194814.md"
+    },
+    {
+      "id": "vedic_concepts",
+      "type": "Concept",
+      "source": "seeds/seed_vedic_concepts_20260308_194814.md"
+    },
+    {
+      "id": "jyotish",
+      "type": "Concept",
+      "source": "seeds/seed_jyotish_20260308_194814.md"
+    },
+    {
+      "id": "jyotish_core",
+      "type": "Concept",
+      "source": "seeds/seed_jyotish_core_20260308_194814.md"
+    },
+    {
+      "id": "aquarius",
+      "type": "Concept",
+      "source": "seeds/seed_aquarius_20260308_194814.md"
+    },
+    {
+      "id": "cancer",
+      "type": "Concept",
+      "source": "seeds/seed_cancer_20260308_194814.md"
+    },
+    {
+      "id": "capricorn",
+      "type": "Concept",
+      "source": "seeds/seed_capricorn_20260308_194814.md"
+    },
+    {
+      "id": "saptami",
+      "type": "Concept",
+      "source": "seeds/seed_saptami_20260308_194814.md"
+    },
+    {
+      "id": "nakshatra_associated_deity",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_associated_deity_20260308_194814.md"
+    },
+    {
+      "id": "passage",
+      "type": "Concept",
+      "source": "seeds/seed_passage_20260308_194814.md"
+    },
+    {
+      "id": "devanagari",
+      "type": "Concept",
+      "source": "seeds/seed_devanagari_20260308_194814.md"
+    },
+    {
+      "id": "model_layered",
+      "type": "Concept",
+      "source": "seeds/seed_model_layered_20260308_194814.md"
+    },
+    {
+      "id": "derived",
+      "type": "Concept",
+      "source": "seeds/seed_derived_20260308_194814.md"
+    },
+    {
+      "id": "sattva",
+      "type": "Concept",
+      "source": "seeds/seed_sattva_20260308_194814.md"
+    },
+    {
+      "id": "healing",
+      "type": "Concept",
+      "source": "seeds/seed_healing_20260308_194814.md"
+    },
+    {
+      "id": "nourishment",
+      "type": "Concept",
+      "source": "seeds/seed_nourishment_20260308_194814.md"
+    },
+    {
+      "id": "cohesion",
+      "type": "Concept",
+      "source": "seeds/seed_cohesion_20260308_194814.md"
+    },
+    {
+      "id": "dryness",
+      "type": "Concept",
+      "source": "seeds/seed_dryness_20260308_194814.md"
+    },
+    {
+      "id": "element_id",
+      "type": "Concept",
+      "source": "seeds/seed_element_id_20260308_194814.md"
+    },
+    {
+      "id": "activity",
+      "type": "Concept",
+      "source": "seeds/seed_activity_20260308_194814.md"
+    },
+    {
+      "id": "balance",
+      "type": "Concept",
+      "source": "seeds/seed_balance_20260308_194814.md"
+    },
+    {
+      "id": "clarity",
+      "type": "Concept",
+      "source": "seeds/seed_clarity_20260308_194814.md"
+    },
+    {
+      "id": "metabolism",
+      "type": "Concept",
+      "source": "seeds/seed_metabolism_20260308_194814.md"
+    },
+    {
+      "id": "structure",
+      "type": "Concept",
+      "source": "seeds/seed_structure_20260308_194814.md"
+    },
+    {
+      "id": "silver",
+      "type": "Concept",
+      "source": "seeds/seed_silver_20260308_194814.md"
+    },
+    {
+      "id": "bronze",
+      "type": "Concept",
+      "source": "seeds/seed_bronze_20260308_194814.md"
+    },
+    {
+      "id": "female",
+      "type": "Concept",
+      "source": "seeds/seed_female_20260308_194814.md"
+    },
+    {
+      "id": "manushya",
+      "type": "Concept",
+      "source": "seeds/seed_manushya_20260308_194814.md"
+    },
+    {
+      "id": "rakshasa",
+      "type": "Concept",
+      "source": "seeds/seed_rakshasa_20260308_194814.md"
+    },
+    {
+      "id": "aja_ekapada",
+      "type": "Concept",
+      "source": "seeds/seed_aja_ekapada_20260308_194814.md"
+    },
+    {
+      "id": "elephant",
+      "type": "Concept",
+      "source": "seeds/seed_elephant_20260308_194814.md"
+    },
+    {
+      "id": "peacock",
+      "type": "Concept",
+      "source": "seeds/seed_peacock_20260308_194814.md"
+    },
+    {
+      "id": "airavata_elephant",
+      "type": "Concept",
+      "source": "seeds/seed_airavata_elephant_20260308_194814.md"
+    },
+    {
+      "id": "antelope",
+      "type": "Concept",
+      "source": "seeds/seed_antelope_20260308_194814.md"
+    },
+    {
+      "id": "auspicious_beginnings",
+      "type": "Concept",
+      "source": "seeds/seed_auspicious_beginnings_20260308_194814.md"
+    },
+    {
+      "id": "chandra",
+      "type": "Concept",
+      "source": "seeds/seed_chandra_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_illumination",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_illumination_20260308_194814.md"
+    },
+    {
+      "id": "planet",
+      "type": "Concept",
+      "source": "seeds/seed_planet_20260308_194814.md"
+    },
+    {
+      "id": "luminary",
+      "type": "Concept",
+      "source": "seeds/seed_luminary_20260308_194814.md"
+    },
+    {
+      "id": "attraction",
+      "type": "Concept",
+      "source": "seeds/seed_attraction_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_sound",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_sound_20260308_194814.md"
+    },
+    {
+      "id": "creative_power",
+      "type": "Concept",
+      "source": "seeds/seed_creative_power_20260308_194814.md"
+    },
+    {
+      "id": "agni_yantra",
+      "type": "Concept",
+      "source": "seeds/seed_agni_yantra_20260308_194814.md"
+    },
+    {
+      "id": "ascension",
+      "type": "Concept",
+      "source": "seeds/seed_ascension_20260308_194814.md"
+    },
+    {
+      "id": "chakra_symbol",
+      "type": "Concept",
+      "source": "seeds/seed_chakra_symbol_20260308_194814.md"
+    },
+    {
+      "id": "intellect",
+      "type": "Concept",
+      "source": "seeds/seed_intellect_20260308_194814.md"
+    },
+    {
+      "id": "science",
+      "type": "Concept",
+      "source": "seeds/seed_science_20260308_194814.md"
+    },
+    {
+      "id": "performance",
+      "type": "Concept",
+      "source": "seeds/seed_performance_20260308_194814.md"
+    },
+    {
+      "id": "ashoka",
+      "type": "Concept",
+      "source": "seeds/seed_ashoka_20260308_194814.md"
+    },
+    {
+      "id": "buffalo",
+      "type": "Concept",
+      "source": "seeds/seed_buffalo_20260308_194814.md"
+    },
+    {
+      "id": "cosmic_motion",
+      "type": "Concept",
+      "source": "seeds/seed_cosmic_motion_20260308_194814.md"
+    },
+    {
+      "id": "ancestral_connection",
+      "type": "Concept",
+      "source": "seeds/seed_ancestral_connection_20260308_194814.md"
+    },
+    {
+      "id": "brahmana",
+      "type": "Concept",
+      "source": "seeds/seed_brahmana_20260308_194814.md"
+    },
+    {
+      "id": "madhya",
+      "type": "Concept",
+      "source": "seeds/seed_madhya_20260308_194814.md"
+    },
+    {
+      "id": "kshatriya",
+      "type": "Concept",
+      "source": "seeds/seed_kshatriya_20260308_194814.md"
+    },
+    {
+      "id": "kubera",
+      "type": "Concept",
+      "source": "seeds/seed_kubera_20260308_194814.md"
+    },
+    {
+      "id": "nirrti",
+      "type": "Concept",
+      "source": "seeds/seed_nirrti_20260308_194814.md"
+    },
+    {
+      "id": "center",
+      "type": "Concept",
+      "source": "seeds/seed_center_20260308_194814.md"
+    },
+    {
+      "id": "intellectual",
+      "type": "Concept",
+      "source": "seeds/seed_intellectual_20260308_194814.md"
+    },
+    {
+      "id": "domestic_art",
+      "type": "Concept",
+      "source": "seeds/seed_domestic_art_20260308_194814.md"
+    },
+    {
+      "id": "primary",
+      "type": "Concept",
+      "source": "seeds/seed_primary_20260308_194814.md"
+    },
+    {
+      "id": "affection",
+      "type": "Concept",
+      "source": "seeds/seed_affection_20260308_194814.md"
+    },
+    {
+      "id": "astonishes",
+      "type": "Concept",
+      "source": "seeds/seed_astonishes_20260308_194814.md"
+    },
+    {
+      "id": "cosmology_core",
+      "type": "Concept",
+      "source": "seeds/seed_cosmology_core_20260308_194814.md"
+    },
+    {
+      "id": "genealogy_layer",
+      "type": "Concept",
+      "source": "seeds/seed_genealogy_layer_20260308_194814.md"
+    },
+    {
+      "id": "historical_layer",
+      "type": "Concept",
+      "source": "seeds/seed_historical_layer_20260308_194814.md"
+    },
+    {
+      "id": "astringent",
+      "type": "Concept",
+      "source": "seeds/seed_astringent_20260308_194814.md"
+    },
+    {
+      "id": "bitter",
+      "type": "Concept",
+      "source": "seeds/seed_bitter_20260308_194814.md"
+    },
+    {
+      "id": "kashaya",
+      "type": "Concept",
+      "source": "seeds/seed_kashaya_20260308_194814.md"
+    },
+    {
+      "id": "flowing",
+      "type": "Concept",
+      "source": "seeds/seed_flowing_20260308_194814.md"
+    },
+    {
+      "id": "kathina",
+      "type": "Concept",
+      "source": "seeds/seed_kathina_20260308_194814.md"
+    },
+    {
+      "id": "ruksha",
+      "type": "Concept",
+      "source": "seeds/seed_ruksha_20260308_194814.md"
+    },
+    {
+      "id": "cooling",
+      "type": "Concept",
+      "source": "seeds/seed_cooling_20260308_194814.md"
+    },
+    {
+      "id": "heating",
+      "type": "Concept",
+      "source": "seeds/seed_heating_20260308_194814.md"
+    },
+    {
+      "id": "madhura",
+      "type": "Concept",
+      "source": "seeds/seed_madhura_20260308_194814.md"
+    },
+    {
+      "id": "pungent",
+      "type": "Concept",
+      "source": "seeds/seed_pungent_20260308_194814.md"
+    },
+    {
+      "id": "expected_count",
+      "type": "Concept",
+      "source": "seeds/seed_expected_count_20260308_194814.md"
+    },
+    {
+      "id": "grahas",
+      "type": "Concept",
+      "source": "seeds/seed_grahas_20260308_194814.md"
+    },
+    {
+      "id": "mahabhutas",
+      "type": "Concept",
+      "source": "seeds/seed_mahabhutas_20260308_194814.md"
+    },
+    {
+      "id": "northeast",
+      "type": "Concept",
+      "source": "seeds/seed_northeast_20260308_194814.md"
+    },
+    {
+      "id": "orientation",
+      "type": "Concept",
+      "source": "seeds/seed_orientation_20260308_194814.md"
+    },
+    {
+      "id": "ecology",
+      "type": "Concept",
+      "source": "seeds/seed_ecology_20260308_194814.md"
+    },
+    {
+      "id": "caitanya",
+      "type": "Concept",
+      "source": "seeds/seed_caitanya_20260308_194814.md"
+    },
+    {
+      "id": "pathway",
+      "type": "Concept",
+      "source": "seeds/seed_pathway_20260308_194814.md"
+    },
+    {
+      "id": "currently",
+      "type": "Concept",
+      "source": "seeds/seed_currently_20260308_194814.md"
+    },
+    {
+      "id": "future",
+      "type": "Concept",
+      "source": "seeds/seed_future_20260308_194814.md"
+    },
+    {
+      "id": "chains",
+      "type": "Concept",
+      "source": "seeds/seed_chains_20260308_194814.md"
+    },
+    {
+      "id": "chandas",
+      "type": "Concept",
+      "source": "seeds/seed_chandas_20260308_194814.md"
+    },
+    {
+      "id": "apprentice",
+      "type": "Concept",
+      "source": "seeds/seed_apprentice_20260308_194814.md"
+    },
+    {
+      "id": "analysis",
+      "type": "Concept",
+      "source": "seeds/seed_analysis_20260308_194814.md"
+    },
+    {
+      "id": "endobj",
+      "type": "Concept",
+      "source": "seeds/seed_endobj_20260308_194814.md"
+    },
+    {
+      "id": "endstream",
+      "type": "Concept",
+      "source": "seeds/seed_endstream_20260308_194814.md"
+    },
+    {
+      "id": "length",
+      "type": "Concept",
+      "source": "seeds/seed_length_20260308_194814.md"
+    },
+    {
+      "id": "naxatra",
+      "type": "Concept",
+      "source": "seeds/seed_naxatra_20260308_194814.md"
+    },
+    {
+      "id": "welche",
+      "type": "Concept",
+      "source": "seeds/seed_welche_20260308_194814.md"
+    },
+    {
+      "id": "werden",
+      "type": "Concept",
+      "source": "seeds/seed_werden_20260308_194814.md"
+    },
+    {
+      "id": "filter",
+      "type": "Concept",
+      "source": "seeds/seed_filter_20260308_194814.md"
+    },
+    {
+      "id": "yagyam",
+      "type": "Concept",
+      "source": "seeds/seed_yagyam_20260308_194814.md"
+    },
+    {
+      "id": "havishaa",
+      "type": "Concept",
+      "source": "seeds/seed_havishaa_20260308_194814.md"
+    },
+    {
+      "id": "vishvaa",
+      "type": "Concept",
+      "source": "seeds/seed_vishvaa_20260308_194814.md"
+    },
+    {
+      "id": "google",
+      "type": "Concept",
+      "source": "seeds/seed_google_20260308_194816.md"
+    },
+    {
+      "id": "services",
+      "type": "Concept",
+      "source": "seeds/seed_services_20260308_194816.md"
+    },
+    {
+      "id": "cdefghijstuvwxyzcdefghijstuvwxyz",
+      "type": "Concept",
+      "source": "seeds/seed_cdefghijstuvwxyzcdefghijstuvwxyz_20260308_194817.md"
+    },
+    {
+      "id": "amrita",
+      "type": "Concept",
+      "source": "seeds/seed_amrita_20260308_194817.md"
+    },
+    {
+      "id": "dharmartha",
+      "type": "Concept",
+      "source": "seeds/seed_dharmartha_20260308_194817.md"
+    },
+    {
+      "id": "digitized",
+      "type": "Concept",
+      "source": "seeds/seed_digitized_20260308_194817.md"
+    },
+    {
+      "id": "egangotri",
+      "type": "Concept",
+      "source": "seeds/seed_egangotri_20260308_194817.md"
+    },
+    {
+      "id": "df72af0aa244c026a89e8f679b819f63ebdaa4168cc3959db87c1848cf40213",
+      "type": "Concept",
+      "source": "seeds/seed_df72af0aa244c026a89e8f679b819f63ebdaa4168cc3959db87c1848cf40213_20260308_194819.md"
+    },
+    {
+      "id": "df72af0aa24_die_vedischen_nachrichten_von_den_naxatr",
+      "type": "Concept",
+      "source": "seeds/seed_df72af0aa24_die_vedischen_nachrichten_von_den_naxatr_20260308_194819.md"
+    },
+    {
+      "id": "a5d450ee6aa25b9313dc49aeaf1b9abb5da53c6af4a71d4263c32a7f90436154",
+      "type": "Concept",
+      "source": "seeds/seed_a5d450ee6aa25b9313dc49aeaf1b9abb5da53c6af4a71d4263c32a7f90436154_20260308_194819.md"
+    },
+    {
+      "id": "a5d450ee6aa2_die_vedischen_nachrichten_von_den_naxatr",
+      "type": "Concept",
+      "source": "seeds/seed_a5d450ee6aa2_die_vedischen_nachrichten_von_den_naxatr_20260308_194819.md"
+    },
+    {
+      "id": "b70b8e25a1911281b4d6956561d1623711fcc66255983b549cb11d464d174c8",
+      "type": "Concept",
+      "source": "seeds/seed_b70b8e25a1911281b4d6956561d1623711fcc66255983b549cb11d464d174c8_20260308_194819.md"
+    },
+    {
+      "id": "b70b8e25a19_nakshatra_sooktam_eng_v1",
+      "type": "Concept",
+      "source": "seeds/seed_b70b8e25a19_nakshatra_sooktam_eng_v1_20260308_194819.md"
+    },
+    {
+      "id": "a18f041_nakshatra_sooktam_eng_v1_djvu",
+      "type": "Concept",
+      "source": "seeds/seed_a18f041_nakshatra_sooktam_eng_v1_djvu_20260308_194819.md"
+    },
+    {
+      "id": "a18f041d86cac27bb60a2d24ff05cc5b0a8fbd2ee3729687dfd492616d7",
+      "type": "Concept",
+      "source": "seeds/seed_a18f041d86cac27bb60a2d24ff05cc5b0a8fbd2ee3729687dfd492616d7_20260308_194819.md"
+    },
+    {
+      "id": "nakshatra_vidnyana",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_vidnyana_20260308_194819.md"
+    },
+    {
+      "id": "aea77d2967a276bb89c5c58b50127a96aa812852795ba3a4ef2144d29ae6462a",
+      "type": "Concept",
+      "source": "seeds/seed_aea77d2967a276bb89c5c58b50127a96aa812852795ba3a4ef2144d29ae6462a_20260308_194819.md"
+    },
+    {
+      "id": "nakshatra_vidnyana_text",
+      "type": "Concept",
+      "source": "seeds/seed_nakshatra_vidnyana_text_20260308_194819.md"
+    },
+    {
+      "id": "dst_path",
+      "type": "Concept",
+      "source": "seeds/seed_dst_path_20260308_194819.md"
+    },
+    {
+      "id": "jyotish_text",
+      "type": "Concept",
+      "source": "seeds/seed_jyotish_text_20260308_194819.md"
+    },
+    {
+      "id": "parichaya",
+      "type": "Concept",
+      "source": "seeds/seed_parichaya_20260308_194819.md"
+    },
+    {
+      "id": "parichaya_djvu",
+      "type": "Concept",
+      "source": "seeds/seed_parichaya_djvu_20260308_194819.md"
+    },
+    {
+      "id": "lalshmi",
+      "type": "Concept",
+      "source": "seeds/seed_lalshmi_20260308_194819.md"
+    },
+    {
+      "id": "kavya_djvu",
+      "type": "Concept",
+      "source": "seeds/seed_kavya_djvu_20260308_194819.md"
+    },
+    {
+      "id": "astronomy",
+      "type": "Concept",
+      "source": "seeds/seed_astronomy_20260308_194819.md"
+    },
+    {
+      "id": "parishad",
+      "type": "Concept",
+      "source": "seeds/seed_parishad_20260308_194819.md"
+    },
+    {
+      "id": "incoming",
+      "type": "Concept",
+      "source": "seeds/seed_incoming_20260308_194819.md"
+    },
+    {
+      "id": "calendar",
+      "type": "Concept",
+      "source": "seeds/seed_calendar_20260308_194820.md"
+    },
+    {
+      "id": "Ashwini"
+    },
+    {
+      "id": "fire",
+      "type": "element"
+    },
+    {
+      "id": "rajas",
+      "type": "guna"
+    },
+    {
+      "id": "deva",
+      "type": "gana"
+    },
+    {
+      "id": "vata",
+      "type": "dosha"
+    },
+    {
+      "id": "horse",
+      "type": "yoni"
+    },
+    {
+      "id": "horse_head",
+      "type": "symbol"
+    },
+    {
+      "id": "Bharani"
+    },
+    {
+      "id": "earth",
+      "type": "element"
+    },
+    {
+      "id": "pitta",
+      "type": "dosha"
+    },
+    {
+      "id": "yoni",
+      "type": "symbol"
+    },
+    {
+      "id": "Krittika"
+    },
+    {
+      "id": "sheep",
+      "type": "yoni"
+    },
+    {
+      "id": "razor",
+      "type": "symbol"
+    },
+    {
+      "id": "Rohini"
+    },
+    {
+      "id": "kapha",
+      "type": "dosha"
+    },
+    {
+      "id": "serpent",
+      "type": "yoni"
+    },
+    {
+      "id": "chariot",
+      "type": "symbol"
+    },
+    {
+      "id": "Mrigashira",
+      "type": "nakshatra"
+    },
+    {
+      "id": "tamas",
+      "type": "guna"
+    },
+    {
+      "id": "deer_head",
+      "type": "symbol"
+    },
+    {
+      "id": "Ardra",
+      "type": "nakshatra"
+    },
+    {
+      "id": "water",
+      "type": "element"
+    },
+    {
+      "id": "dog",
+      "type": "yoni"
+    },
+    {
+      "id": "teardrop",
+      "type": "symbol"
+    },
+    {
+      "id": "Punarvasu",
+      "type": "nakshatra"
+    },
+    {
+      "id": "air",
+      "type": "element"
+    },
+    {
+      "id": "cat",
+      "type": "yoni"
+    },
+    {
+      "id": "quiver",
+      "type": "symbol"
+    },
+    {
+      "id": "Pushya",
+      "type": "nakshatra"
+    },
+    {
+      "id": "lotus",
+      "type": "symbol"
+    },
+    {
+      "id": "Ashlesha"
+    },
+    {
+      "id": "coiled_serpent",
+      "type": "symbol"
+    },
+    {
+      "id": "Magha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "rat",
+      "type": "yoni"
+    },
+    {
+      "id": "throne",
+      "type": "symbol"
+    },
+    {
+      "id": "Purva_Phalguni",
+      "type": "nakshatra"
+    },
+    {
+      "id": "hammock",
+      "type": "symbol"
+    },
+    {
+      "id": "Uttara_Phalguni",
+      "type": "nakshatra"
+    },
+    {
+      "id": "cow",
+      "type": "yoni"
+    },
+    {
+      "id": "bed",
+      "type": "symbol"
+    },
+    {
+      "id": "Hasta",
+      "type": "nakshatra"
+    },
+    {
+      "id": "hand",
+      "type": "symbol"
+    },
+    {
+      "id": "Chitra"
+    },
+    {
+      "id": "tiger",
+      "type": "yoni"
+    },
+    {
+      "id": "pearl",
+      "type": "symbol"
+    },
+    {
+      "id": "Swati",
+      "type": "nakshatra"
+    },
+    {
+      "id": "young_shoot",
+      "type": "symbol"
+    },
+    {
+      "id": "Vishakha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "triumph_arch",
+      "type": "symbol"
+    },
+    {
+      "id": "Anuradha"
+    },
+    {
+      "id": "deer",
+      "type": "yoni"
+    },
+    {
+      "id": "Jyeshtha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "earring",
+      "type": "symbol"
+    },
+    {
+      "id": "Mula",
+      "type": "nakshatra"
+    },
+    {
+      "id": "root",
+      "type": "symbol"
+    },
+    {
+      "id": "Purva_Ashadha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "monkey",
+      "type": "yoni"
+    },
+    {
+      "id": "fan",
+      "type": "symbol"
+    },
+    {
+      "id": "Uttara_Ashadha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "elephant_tusk",
+      "type": "symbol"
+    },
+    {
+      "id": "Shravana",
+      "type": "nakshatra"
+    },
+    {
+      "id": "ear",
+      "type": "symbol"
+    },
+    {
+      "id": "Dhanishta",
+      "type": "nakshatra"
+    },
+    {
+      "id": "lion",
+      "type": "yoni"
+    },
+    {
+      "id": "drum",
+      "type": "symbol"
+    },
+    {
+      "id": "Shatabhisha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "empty_circle",
+      "type": "symbol"
+    },
+    {
+      "id": "Purva_Bhadrapada",
+      "type": "nakshatra"
+    },
+    {
+      "id": "front_legs_of_bed",
+      "type": "symbol"
+    },
+    {
+      "id": "Uttara_Bhadrapada",
+      "type": "nakshatra"
+    },
+    {
+      "id": "back_legs_of_bed",
+      "type": "symbol"
+    },
+    {
+      "id": "Revati",
+      "type": "nakshatra"
+    },
+    {
+      "id": "fish",
+      "type": "symbol"
+    },
+    {
+      "id": "Ashwini_Kumaras",
+      "type": "deity"
+    },
+    {
+      "id": "Yama",
+      "type": "deity"
+    },
+    {
+      "id": "Agni",
+      "type": "deity"
+    },
+    {
+      "id": "Brahma"
+    },
+    {
+      "id": "Soma",
+      "type": "deity"
+    },
+    {
+      "id": "Rudra",
+      "type": "deity"
+    },
+    {
+      "id": "Aditi",
+      "type": "deity"
+    },
+    {
+      "id": "Brihaspati"
+    },
+    {
+      "id": "Nagas",
+      "type": "deity"
+    },
+    {
+      "id": "Pitrs",
+      "type": "deity"
+    },
+    {
+      "id": "Bhaga",
+      "type": "deity"
+    },
+    {
+      "id": "Aryaman"
+    },
+    {
+      "id": "Savitar"
+    },
+    {
+      "id": "Tvashtar",
+      "type": "deity"
+    },
+    {
+      "id": "Vayu",
+      "type": "deity"
+    },
+    {
+      "id": "Indra_Agni",
+      "type": "deity"
+    },
+    {
+      "id": "Mitra",
+      "type": "deity"
+    },
+    {
+      "id": "Indra",
+      "type": "deity"
+    },
+    {
+      "id": "Nirriti"
+    },
+    {
+      "id": "Apas",
+      "type": "deity"
+    },
+    {
+      "id": "Vishvadevas"
+    },
+    {
+      "id": "Vishnu"
+    },
+    {
+      "id": "Vasus",
+      "type": "deity"
+    },
+    {
+      "id": "Varuna"
+    },
+    {
+      "id": "Aja_Ekapada"
+    },
+    {
+      "id": "Ahirbudhnya"
+    },
+    {
+      "id": "Pushan"
+    },
+    {
+      "id": "ram",
+      "type": "bija"
+    },
+    {
+      "id": "shram",
+      "type": "bija"
+    },
+    {
+      "id": "krim",
+      "type": "bija"
+    },
+    {
+      "id": "bum",
+      "type": "bija"
+    },
+    {
+      "id": "brim",
+      "type": "bija"
+    },
+    {
+      "id": "shum",
+      "type": "bija"
+    },
+    {
+      "id": "sham",
+      "type": "bija"
+    },
+    {
+      "id": "rahm",
+      "type": "bija"
+    },
+    {
+      "id": "kem",
+      "type": "bija"
+    },
+    {
+      "id": "Ishanya",
+      "type": "vastu_zone"
+    },
+    {
+      "id": "NE",
+      "type": "direction"
+    },
+    {
+      "id": "Shiva",
+      "type": "deity"
+    },
+    {
+      "id": "E",
+      "type": "direction"
+    },
+    {
+      "id": "SE",
+      "type": "direction"
+    },
+    {
+      "id": "S",
+      "type": "direction"
+    },
+    {
+      "id": "Nirrti"
+    },
+    {
+      "id": "SW",
+      "type": "direction"
+    },
+    {
+      "id": "W",
+      "type": "direction"
+    },
+    {
+      "id": "NW",
+      "type": "direction"
+    },
+    {
+      "id": "Kubera"
+    },
+    {
+      "id": "N",
+      "type": "direction"
+    },
+    {
+      "id": "Center"
+    },
+    {
+      "id": "ether",
+      "type": "element"
+    },
+    {
+      "id": "East",
+      "type": "direction"
+    },
+    {
+      "id": "SouthEast",
+      "type": "direction"
+    },
+    {
+      "id": "South",
+      "type": "direction"
+    },
+    {
+      "id": "SouthWest",
+      "type": "direction"
+    },
+    {
+      "id": "West",
+      "type": "direction"
+    },
+    {
+      "id": "NorthWest",
+      "type": "direction"
+    },
+    {
+      "id": "North",
+      "type": "direction"
+    },
+    {
+      "id": "NorthEast",
+      "type": "direction"
+    },
+    {
+      "id": "Ishana",
+      "type": "deity"
+    },
+    {
+      "id": "mantra"
+    },
+    {
+      "id": "yantra"
+    },
+    {
+      "id": "software implications:"
+    },
+    {
+      "id": "paksha:shukla",
+      "type": "paksha",
+      "name": "paksha:shukla"
+    },
+    {
+      "id": "tithi_index:1",
+      "type": "tithi_index",
+      "name": "tithi_index:1"
+    },
+    {
+      "id": "tithi_index:2",
+      "type": "tithi_index",
+      "name": "tithi_index:2"
+    },
+    {
+      "id": "tithi_index:3",
+      "type": "tithi_index",
+      "name": "tithi_index:3"
+    },
+    {
+      "id": "tithi_index:4",
+      "type": "tithi_index",
+      "name": "tithi_index:4"
+    },
+    {
+      "id": "tithi_index:5",
+      "type": "tithi_index",
+      "name": "tithi_index:5"
+    },
+    {
+      "id": "tithi_index:6",
+      "type": "tithi_index",
+      "name": "tithi_index:6"
+    },
+    {
+      "id": "tithi_index:7",
+      "type": "tithi_index",
+      "name": "tithi_index:7"
+    },
+    {
+      "id": "tithi_index:8",
+      "type": "tithi_index",
+      "name": "tithi_index:8"
+    },
+    {
+      "id": "tithi_index:9",
+      "type": "tithi_index",
+      "name": "tithi_index:9"
+    },
+    {
+      "id": "tithi_index:10",
+      "type": "tithi_index",
+      "name": "tithi_index:10"
+    },
+    {
+      "id": "tithi_index:11",
+      "type": "tithi_index",
+      "name": "tithi_index:11"
+    },
+    {
+      "id": "tithi_index:12",
+      "type": "tithi_index",
+      "name": "tithi_index:12"
+    },
+    {
+      "id": "tithi_index:13",
+      "type": "tithi_index",
+      "name": "tithi_index:13"
+    },
+    {
+      "id": "tithi_index:14",
+      "type": "tithi_index",
+      "name": "tithi_index:14"
+    },
+    {
+      "id": "tithi_index:15",
+      "type": "tithi_index",
+      "name": "tithi_index:15"
+    },
+    {
+      "id": "pada:1",
+      "type": "pada",
+      "name": "pada:1"
+    },
+    {
+      "id": "nakshatra_pada:1_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:1_1"
+    },
+    {
+      "id": "pada:2",
+      "type": "pada",
+      "name": "pada:2"
+    },
+    {
+      "id": "nakshatra_pada:1_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:1_2"
+    },
+    {
+      "id": "pada:3",
+      "type": "pada",
+      "name": "pada:3"
+    },
+    {
+      "id": "nakshatra_pada:1_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:1_3"
+    },
+    {
+      "id": "pada:4",
+      "type": "pada",
+      "name": "pada:4"
+    },
+    {
+      "id": "nakshatra_pada:1_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:1_4"
+    },
+    {
+      "id": "nakshatra_pada:2_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:2_1"
+    },
+    {
+      "id": "nakshatra_pada:2_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:2_2"
+    },
+    {
+      "id": "nakshatra_pada:2_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:2_3"
+    },
+    {
+      "id": "nakshatra_pada:2_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:2_4"
+    },
+    {
+      "id": "nakshatra_pada:3_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:3_1"
+    },
+    {
+      "id": "nakshatra_pada:3_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:3_2"
+    },
+    {
+      "id": "nakshatra_pada:3_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:3_3"
+    },
+    {
+      "id": "nakshatra_pada:3_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:3_4"
+    },
+    {
+      "id": "nakshatra_pada:4_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:4_1"
+    },
+    {
+      "id": "nakshatra_pada:4_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:4_2"
+    },
+    {
+      "id": "nakshatra_pada:4_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:4_3"
+    },
+    {
+      "id": "nakshatra_pada:4_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:4_4"
+    },
+    {
+      "id": "nakshatra_pada:5_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:5_1"
+    },
+    {
+      "id": "nakshatra_pada:5_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:5_2"
+    },
+    {
+      "id": "nakshatra_pada:5_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:5_3"
+    },
+    {
+      "id": "nakshatra_pada:5_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:5_4"
+    },
+    {
+      "id": "nakshatra_pada:6_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:6_1"
+    },
+    {
+      "id": "nakshatra_pada:6_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:6_2"
+    },
+    {
+      "id": "nakshatra_pada:6_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:6_3"
+    },
+    {
+      "id": "nakshatra_pada:6_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:6_4"
+    },
+    {
+      "id": "nakshatra_pada:7_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:7_1"
+    },
+    {
+      "id": "nakshatra_pada:7_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:7_2"
+    },
+    {
+      "id": "nakshatra_pada:7_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:7_3"
+    },
+    {
+      "id": "nakshatra_pada:7_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:7_4"
+    },
+    {
+      "id": "nakshatra_pada:8_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:8_1"
+    },
+    {
+      "id": "nakshatra_pada:8_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:8_2"
+    },
+    {
+      "id": "nakshatra_pada:8_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:8_3"
+    },
+    {
+      "id": "nakshatra_pada:8_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:8_4"
+    },
+    {
+      "id": "nakshatra_pada:9_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:9_1"
+    },
+    {
+      "id": "nakshatra_pada:9_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:9_2"
+    },
+    {
+      "id": "nakshatra_pada:9_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:9_3"
+    },
+    {
+      "id": "nakshatra_pada:9_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:9_4"
+    },
+    {
+      "id": "nakshatra_pada:10_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:10_1"
+    },
+    {
+      "id": "nakshatra_pada:10_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:10_2"
+    },
+    {
+      "id": "nakshatra_pada:10_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:10_3"
+    },
+    {
+      "id": "nakshatra_pada:10_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:10_4"
+    },
+    {
+      "id": "nakshatra_pada:11_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:11_1"
+    },
+    {
+      "id": "nakshatra_pada:11_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:11_2"
+    },
+    {
+      "id": "nakshatra_pada:11_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:11_3"
+    },
+    {
+      "id": "nakshatra_pada:11_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:11_4"
+    },
+    {
+      "id": "nakshatra_pada:12_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:12_1"
+    },
+    {
+      "id": "nakshatra_pada:12_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:12_2"
+    },
+    {
+      "id": "nakshatra_pada:12_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:12_3"
+    },
+    {
+      "id": "nakshatra_pada:12_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:12_4"
+    },
+    {
+      "id": "nakshatra_pada:13_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:13_1"
+    },
+    {
+      "id": "nakshatra_pada:13_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:13_2"
+    },
+    {
+      "id": "nakshatra_pada:13_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:13_3"
+    },
+    {
+      "id": "nakshatra_pada:13_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:13_4"
+    },
+    {
+      "id": "nakshatra_pada:14_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:14_1"
+    },
+    {
+      "id": "nakshatra_pada:14_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:14_2"
+    },
+    {
+      "id": "nakshatra_pada:14_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:14_3"
+    },
+    {
+      "id": "nakshatra_pada:14_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:14_4"
+    },
+    {
+      "id": "nakshatra_pada:15_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:15_1"
+    },
+    {
+      "id": "nakshatra_pada:15_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:15_2"
+    },
+    {
+      "id": "nakshatra_pada:15_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:15_3"
+    },
+    {
+      "id": "nakshatra_pada:15_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:15_4"
+    },
+    {
+      "id": "nakshatra_pada:16_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:16_1"
+    },
+    {
+      "id": "nakshatra_pada:16_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:16_2"
+    },
+    {
+      "id": "nakshatra_pada:16_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:16_3"
+    },
+    {
+      "id": "nakshatra_pada:16_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:16_4"
+    },
+    {
+      "id": "nakshatra_pada:17_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:17_1"
+    },
+    {
+      "id": "nakshatra_pada:17_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:17_2"
+    },
+    {
+      "id": "nakshatra_pada:17_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:17_3"
+    },
+    {
+      "id": "nakshatra_pada:17_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:17_4"
+    },
+    {
+      "id": "nakshatra_pada:18_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:18_1"
+    },
+    {
+      "id": "nakshatra_pada:18_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:18_2"
+    },
+    {
+      "id": "nakshatra_pada:18_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:18_3"
+    },
+    {
+      "id": "nakshatra_pada:18_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:18_4"
+    },
+    {
+      "id": "nakshatra_pada:19_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:19_1"
+    },
+    {
+      "id": "nakshatra_pada:19_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:19_2"
+    },
+    {
+      "id": "nakshatra_pada:19_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:19_3"
+    },
+    {
+      "id": "nakshatra_pada:19_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:19_4"
+    },
+    {
+      "id": "nakshatra_pada:20_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:20_1"
+    },
+    {
+      "id": "nakshatra_pada:20_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:20_2"
+    },
+    {
+      "id": "nakshatra_pada:20_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:20_3"
+    },
+    {
+      "id": "nakshatra_pada:20_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:20_4"
+    },
+    {
+      "id": "nakshatra_pada:21_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:21_1"
+    },
+    {
+      "id": "nakshatra_pada:21_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:21_2"
+    },
+    {
+      "id": "nakshatra_pada:21_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:21_3"
+    },
+    {
+      "id": "nakshatra_pada:21_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:21_4"
+    },
+    {
+      "id": "nakshatra_pada:22_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:22_1"
+    },
+    {
+      "id": "nakshatra_pada:22_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:22_2"
+    },
+    {
+      "id": "nakshatra_pada:22_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:22_3"
+    },
+    {
+      "id": "nakshatra_pada:22_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:22_4"
+    },
+    {
+      "id": "nakshatra_pada:23_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:23_1"
+    },
+    {
+      "id": "nakshatra_pada:23_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:23_2"
+    },
+    {
+      "id": "nakshatra_pada:23_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:23_3"
+    },
+    {
+      "id": "nakshatra_pada:23_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:23_4"
+    },
+    {
+      "id": "nakshatra_pada:24_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:24_1"
+    },
+    {
+      "id": "nakshatra_pada:24_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:24_2"
+    },
+    {
+      "id": "nakshatra_pada:24_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:24_3"
+    },
+    {
+      "id": "nakshatra_pada:24_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:24_4"
+    },
+    {
+      "id": "nakshatra_pada:25_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:25_1"
+    },
+    {
+      "id": "nakshatra_pada:25_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:25_2"
+    },
+    {
+      "id": "nakshatra_pada:25_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:25_3"
+    },
+    {
+      "id": "nakshatra_pada:25_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:25_4"
+    },
+    {
+      "id": "nakshatra_pada:26_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:26_1"
+    },
+    {
+      "id": "nakshatra_pada:26_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:26_2"
+    },
+    {
+      "id": "nakshatra_pada:26_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:26_3"
+    },
+    {
+      "id": "nakshatra_pada:26_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:26_4"
+    },
+    {
+      "id": "nakshatra_pada:27_1",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:27_1"
+    },
+    {
+      "id": "nakshatra_pada:27_2",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:27_2"
+    },
+    {
+      "id": "nakshatra_pada:27_3",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:27_3"
+    },
+    {
+      "id": "nakshatra_pada:27_4",
+      "type": "nakshatra_pada",
+      "name": "nakshatra_pada:27_4"
+    },
+    {
+      "id": "deity:ashwini_kumaras",
+      "type": "deity",
+      "name": "deity:ashwini_kumaras"
+    },
+    {
+      "id": "graha:ketu",
+      "type": "graha",
+      "name": "graha:ketu"
+    },
+    {
+      "id": "deity:yama",
+      "type": "deity",
+      "name": "deity:yama"
+    },
+    {
+      "id": "graha:venus",
+      "type": "graha",
+      "name": "graha:venus"
+    },
+    {
+      "id": "deity:agni",
+      "type": "deity",
+      "name": "deity:agni"
+    },
+    {
+      "id": "graha:sun",
+      "type": "graha",
+      "name": "graha:sun"
+    },
+    {
+      "id": "deity:brahma",
+      "type": "deity",
+      "name": "deity:brahma"
+    },
+    {
+      "id": "graha:moon",
+      "type": "graha",
+      "name": "graha:moon"
+    },
+    {
+      "id": "deity:soma",
+      "type": "deity",
+      "name": "deity:soma"
+    },
+    {
+      "id": "graha:mars",
+      "type": "graha",
+      "name": "graha:mars"
+    },
+    {
+      "id": "deity:rudra",
+      "type": "deity",
+      "name": "deity:rudra"
+    },
+    {
+      "id": "graha:rahu",
+      "type": "graha",
+      "name": "graha:rahu"
+    },
+    {
+      "id": "deity:aditi",
+      "type": "deity",
+      "name": "deity:aditi"
+    },
+    {
+      "id": "graha:jupiter",
+      "type": "graha",
+      "name": "graha:jupiter"
+    },
+    {
+      "id": "deity:brihaspati",
+      "type": "deity",
+      "name": "deity:brihaspati"
+    },
+    {
+      "id": "graha:saturn",
+      "type": "graha",
+      "name": "graha:saturn"
+    },
+    {
+      "id": "deity:nagas",
+      "type": "deity",
+      "name": "deity:nagas"
+    },
+    {
+      "id": "graha:mercury",
+      "type": "graha",
+      "name": "graha:mercury"
+    },
+    {
+      "id": "deity:pitrs",
+      "type": "deity",
+      "name": "deity:pitrs"
+    },
+    {
+      "id": "deity:bhaga",
+      "type": "deity",
+      "name": "deity:bhaga"
+    },
+    {
+      "id": "deity:aryaman",
+      "type": "deity",
+      "name": "deity:aryaman"
+    },
+    {
+      "id": "deity:savitar",
+      "type": "deity",
+      "name": "deity:savitar"
+    },
+    {
+      "id": "deity:vishvakarma",
+      "type": "deity",
+      "name": "deity:vishvakarma"
+    },
+    {
+      "id": "deity:vayu",
+      "type": "deity",
+      "name": "deity:vayu"
+    },
+    {
+      "id": "deity:indraagni",
+      "type": "deity",
+      "name": "deity:indraagni"
+    },
+    {
+      "id": "deity:mitra",
+      "type": "deity",
+      "name": "deity:mitra"
+    },
+    {
+      "id": "deity:indra",
+      "type": "deity",
+      "name": "deity:indra"
+    },
+    {
+      "id": "deity:nirriti",
+      "type": "deity",
+      "name": "deity:nirriti"
+    },
+    {
+      "id": "deity:apas",
+      "type": "deity",
+      "name": "deity:apas"
+    },
+    {
+      "id": "deity:vishvadevas",
+      "type": "deity",
+      "name": "deity:vishvadevas"
+    },
+    {
+      "id": "deity:vishnu",
+      "type": "deity",
+      "name": "deity:vishnu"
+    },
+    {
+      "id": "deity:vasus",
+      "type": "deity",
+      "name": "deity:vasus"
+    },
+    {
+      "id": "deity:varuna",
+      "type": "deity",
+      "name": "deity:varuna"
+    },
+    {
+      "id": "deity:ajaekapada",
+      "type": "deity",
+      "name": "deity:ajaekapada"
+    },
+    {
+      "id": "deity:ahirbudhnya",
+      "type": "deity",
+      "name": "deity:ahirbudhnya"
+    },
+    {
+      "id": "deity:pushan",
+      "type": "deity",
+      "name": "deity:pushan"
+    },
+    {
+      "id": "deity:surya",
+      "type": "deity",
+      "name": "deity:surya"
+    },
+    {
+      "id": "graha:surya",
+      "type": "graha",
+      "name": "graha:surya"
+    },
+    {
+      "id": "deity:chandra",
+      "type": "deity",
+      "name": "deity:chandra"
+    },
+    {
+      "id": "graha:chandra",
+      "type": "graha",
+      "name": "graha:chandra"
+    },
+    {
+      "id": "devi:bhagamalini",
+      "type": "devi",
+      "name": "devi:bhagamalini"
+    },
+    {
+      "id": "todo:devi_wields_weapon",
+      "type": "todo",
+      "name": "todo:devi_wields_weapon"
+    },
+    {
+      "id": "devi:bherunda",
+      "type": "devi",
+      "name": "devi:bherunda"
+    },
+    {
+      "id": "devi:chitra",
+      "type": "devi",
+      "name": "devi:chitra"
+    },
+    {
+      "id": "devi:jvalamalini",
+      "type": "devi",
+      "name": "devi:jvalamalini"
+    },
+    {
+      "id": "devi:kameshvari",
+      "type": "devi",
+      "name": "devi:kameshvari"
+    },
+    {
+      "id": "devi:kulasundari",
+      "type": "devi",
+      "name": "devi:kulasundari"
+    },
+    {
+      "id": "devi:mahavajreshvari",
+      "type": "devi",
+      "name": "devi:mahavajreshvari"
+    },
+    {
+      "id": "devi:nilapataka",
+      "type": "devi",
+      "name": "devi:nilapataka"
+    },
+    {
+      "id": "devi:nitya",
+      "type": "devi",
+      "name": "devi:nitya"
+    },
+    {
+      "id": "devi:nityaklinna",
+      "type": "devi",
+      "name": "devi:nityaklinna"
+    },
+    {
+      "id": "devi:sarvamangala",
+      "type": "devi",
+      "name": "devi:sarvamangala"
+    },
+    {
+      "id": "devi:shivaduti",
+      "type": "devi",
+      "name": "devi:shivaduti"
+    },
+    {
+      "id": "devi:tvarita",
+      "type": "devi",
+      "name": "devi:tvarita"
+    },
+    {
+      "id": "devi:vahnivasini",
+      "type": "devi",
+      "name": "devi:vahnivasini"
+    },
+    {
+      "id": "devi:vijaya",
+      "type": "devi",
+      "name": "devi:vijaya"
+    },
+    {
+      "id": "todo:nakshatra_sacred_plant",
+      "type": "todo",
+      "name": "todo:nakshatra_sacred_plant"
+    },
+    {
+      "id": "ritual:fast",
+      "type": "ritual",
+      "name": "ritual:fast"
+    },
+    {
+      "id": "tithi:Ekadashi",
+      "type": "tithi",
+      "name": "tithi:Ekadashi"
+    },
+    {
+      "id": "tithi:Dvadashi",
+      "type": "tithi",
+      "name": "tithi:Dvadashi"
+    },
+    {
+      "id": "tithi:Trayodashi",
+      "type": "tithi",
+      "name": "tithi:Trayodashi"
+    },
+    {
+      "id": "tithi:Navami",
+      "type": "tithi",
+      "name": "tithi:Navami"
+    },
+    {
+      "id": "Aries",
+      "type": "rashi"
+    },
+    {
+      "id": "Taurus",
+      "type": "rashi"
+    },
+    {
+      "id": "Gemini"
+    },
+    {
+      "id": "Cancer"
+    },
+    {
+      "id": "Leo",
+      "type": "rashi"
+    },
+    {
+      "id": "Virgo",
+      "type": "rashi"
+    },
+    {
+      "id": "Scorpio",
+      "type": "rashi"
+    },
+    {
+      "id": "Sagittarius",
+      "type": "rashi"
+    },
+    {
+      "id": "Capricorn"
+    },
+    {
+      "id": "Aquarius"
+    },
+    {
+      "id": "Pisces",
+      "type": "rashi"
+    },
+    {
+      "id": "Purva Phalguni",
+      "type": "nakshatra"
+    },
+    {
+      "id": "Uttara Phalguni",
+      "type": "nakshatra"
+    },
+    {
+      "id": "Purva Ashadha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "Uttara Ashadha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "Purva Bhadrapada",
+      "type": "nakshatra"
+    },
+    {
+      "id": "Uttara Bhadrapada",
+      "type": "nakshatra"
+    },
+    {
+      "id": "Ashwini_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Ashwini_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Ashwini_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Ashwini_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Bharani_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Bharani_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Bharani_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Bharani_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Krittika_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Krittika_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Krittika_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Krittika_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Rohini_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Rohini_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Rohini_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Rohini_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Mrigashira_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Mrigashira_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Mrigashira_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Mrigashira_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Ardra_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Ardra_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Ardra_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Ardra_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Punarvasu_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Punarvasu_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Punarvasu_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Punarvasu_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Pushya_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Pushya_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Pushya_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Pushya_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Ashlesha_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Ashlesha_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Ashlesha_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Ashlesha_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Magha_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Magha_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Magha_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Magha_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Phalguni_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Phalguni_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Phalguni_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Phalguni_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Phalguni_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Phalguni_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Phalguni_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Phalguni_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Hasta_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Hasta_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Hasta_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Hasta_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Chitra_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Chitra_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Chitra_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Chitra_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Swati_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Swati_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Swati_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Swati_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Vishakha_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Vishakha_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Vishakha_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Vishakha_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Anuradha_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Anuradha_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Anuradha_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Anuradha_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Jyeshtha_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Jyeshtha_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Jyeshtha_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Jyeshtha_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Mula_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Mula_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Mula_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Mula_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Ashadha_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Ashadha_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Ashadha_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Ashadha_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Ashadha_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Ashadha_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Ashadha_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Ashadha_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Shravana_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Shravana_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Shravana_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Shravana_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Dhanishta_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Dhanishta_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Dhanishta_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Dhanishta_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Shatabhisha_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Shatabhisha_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Shatabhisha_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Shatabhisha_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Bhadrapada_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Bhadrapada_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Bhadrapada_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Purva Bhadrapada_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Bhadrapada_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Bhadrapada_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Bhadrapada_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Uttara Bhadrapada_pada_4",
+      "type": "pada"
+    },
+    {
+      "id": "Revati_pada_1",
+      "type": "pada"
+    },
+    {
+      "id": "Revati_pada_2",
+      "type": "pada"
+    },
+    {
+      "id": "Revati_pada_3",
+      "type": "pada"
+    },
+    {
+      "id": "Revati_pada_4",
+      "type": "pada"
+    },
+    {
       "id": "Uttara"
     },
     {
       "id": "Ashadha"
-    },
-    {
-      "id": "Ashwini"
     },
     {
       "id": "Associated_Deity"
@@ -533,9 +4073,6 @@
     },
     {
       "id": "Cluster"
-    },
-    {
-      "id": "Rohini"
     },
     {
       "id": "Inference"
@@ -703,13 +4240,7 @@
       "id": "Nakshatra__10"
     },
     {
-      "id": "Ahirbudhnya"
-    },
-    {
       "id": "Ajaekapada"
-    },
-    {
-      "id": "Aryaman"
     },
     {
       "id": "Graha__Jupiter"
@@ -739,9 +4270,6 @@
       "id": "Hemanta"
     },
     {
-      "id": "Mercury"
-    },
-    {
       "id": "Pingala"
     },
     {
@@ -749,9 +4277,6 @@
     },
     {
       "id": "Paksha"
-    },
-    {
-      "id": "Brahma"
     },
     {
       "id": "Active"
@@ -784,9 +4309,6 @@
       "id": "Desire"
     },
     {
-      "id": "Brihaspati"
-    },
-    {
       "id": "Achala"
     },
     {
@@ -797,9 +4319,6 @@
     },
     {
       "id": "Purvabhadrapada"
-    },
-    {
-      "id": "Saturn"
     },
     {
       "id": "Sexual"
@@ -820,16 +4339,7 @@
       "id": "Beautiful"
     },
     {
-      "id": "Vishnu"
-    },
-    {
-      "id": "Gemini"
-    },
-    {
       "id": "Dvitiya"
-    },
-    {
-      "id": "Varuna"
     },
     {
       "id": "Energised"
@@ -839,9 +4349,6 @@
     },
     {
       "id": "Becomes"
-    },
-    {
-      "id": "Jupiter"
     },
     {
       "id": "Direction"
@@ -865,9 +4372,6 @@
       "id": "Kumaras"
     },
     {
-      "id": "Savitar"
-    },
-    {
       "id": "Vishvakarma"
     },
     {
@@ -875,15 +4379,6 @@
     },
     {
       "id": "Overlay"
-    },
-    {
-      "id": "Nirriti"
-    },
-    {
-      "id": "Vishvadevas"
-    },
-    {
-      "id": "Pushan"
     },
     {
       "id": "Teentaal"
@@ -1036,9 +4531,6 @@
       "id": "Bherunda"
     },
     {
-      "id": "Chitra"
-    },
-    {
       "id": "Amavasya"
     },
     {
@@ -1070,9 +4562,6 @@
     },
     {
       "id": "Attested_Secondary"
-    },
-    {
-      "id": "Anuradha"
     },
     {
       "id": "Mythic_Narrative"
@@ -1111,9 +4600,6 @@
       "id": "Source_File"
     },
     {
-      "id": "Ashlesha"
-    },
-    {
       "id": "Concept"
     },
     {
@@ -1127,15 +4613,6 @@
     },
     {
       "id": "Jyotish_Core"
-    },
-    {
-      "id": "Aquarius"
-    },
-    {
-      "id": "Cancer"
-    },
-    {
-      "id": "Capricorn"
     },
     {
       "id": "Saptami"
@@ -1205,15 +4682,6 @@
     },
     {
       "id": "Rakshasa"
-    },
-    {
-      "id": "Aja_Ekapada"
-    },
-    {
-      "id": "Bharani"
-    },
-    {
-      "id": "Krittika"
     },
     {
       "id": "Elephant"
@@ -1289,15 +4757,6 @@
     },
     {
       "id": "Kshatriya"
-    },
-    {
-      "id": "Kubera"
-    },
-    {
-      "id": "Nirrti"
-    },
-    {
-      "id": "Center"
     },
     {
       "id": "Intellectual"
@@ -1551,24 +5010,89 @@
   ],
   "edges": [
     {
-      "source": "ashwini",
-      "target": "ketu",
+      "source": "Bharani",
+      "target": "Bharani_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Krittika",
+      "target": "Krittika_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Phalguni",
+      "target": "Uttara Phalguni_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ashwini",
+      "target": "Ashwini_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Bhadrapada",
+      "target": "Jupiter",
       "relation": "ruled_by"
     },
     {
-      "source": "bharani",
-      "target": "venus",
+      "source": "Krittika",
+      "target": "Sun",
       "relation": "ruled_by"
     },
     {
-      "source": "krittika",
-      "target": "sun",
+      "source": "Hasta",
+      "target": "Hasta_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Bhadrapada",
+      "target": "Uttara Bhadrapada_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "Shatabhisha_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "Mrigashira_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Mula",
+      "target": "Mula_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Bhadrapada",
+      "target": "Uttara Bhadrapada_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Ashadha",
+      "target": "Uttara Ashadha_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Phalguni",
+      "target": "Uttara Phalguni_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Pushya",
+      "target": "Pushya_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Mula",
+      "target": "Ketu",
       "relation": "ruled_by"
     },
     {
-      "source": "ashwini",
-      "target": "ashwini_kumaras",
-      "relation": "presided_by"
+      "source": "Purva Bhadrapada",
+      "target": "Purva Bhadrapada_pada_3",
+      "relation": "has_pada"
     },
     {
       "source": "bharani",
@@ -1576,9 +5100,639 @@
       "relation": "presided_by"
     },
     {
+      "source": "Uttara Ashadha",
+      "target": "Uttara Ashadha_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "ashwini",
+      "target": "ashwini_kumaras",
+      "relation": "presided_by"
+    },
+    {
+      "source": "Hasta",
+      "target": "Hasta_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Ashadha",
+      "target": "Purva Ashadha_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "Dhanishta_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Anuradha",
+      "target": "Anuradha_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "Mrigashira_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Mula",
+      "target": "Mula_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Pushya",
+      "target": "Pushya_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Anuradha",
+      "target": "Anuradha_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ardra",
+      "target": "Ardra_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Vishakha",
+      "target": "Vishakha_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "Mercury",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "Mars",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Swati",
+      "target": "Swati_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Magha",
+      "target": "Ketu",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Revati",
+      "target": "Mercury",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Rohini",
+      "target": "Rohini_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Vishakha",
+      "target": "Vishakha_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Phalguni",
+      "target": "Purva Phalguni_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Shravana",
+      "target": "Shravana_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "Dhanishta_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "Rahu",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "Jyeshtha_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Bhadrapada",
+      "target": "Purva Bhadrapada_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Ashadha",
+      "target": "Sun",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Purva Ashadha",
+      "target": "Purva Ashadha_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "Shatabhisha_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "Mercury",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Shravana",
+      "target": "Shravana_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Magha",
+      "target": "Magha_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "Dhanishta_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Chitra",
+      "target": "Chitra_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Pushya",
+      "target": "Saturn",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "Shatabhisha_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "Mrigashira_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "Jyeshtha_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "Punarvasu_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Phalguni",
+      "target": "Purva Phalguni_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Ashadha",
+      "target": "Uttara Ashadha_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Bharani",
+      "target": "Bharani_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Shravana",
+      "target": "Moon",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Ashwini",
+      "target": "Ashwini_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Magha",
+      "target": "Magha_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Bharani",
+      "target": "Venus",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Purva Ashadha",
+      "target": "Purva Ashadha_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Vishakha",
+      "target": "Vishakha_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Phalguni",
+      "target": "Sun",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "Ashlesha_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "demo_seed",
+      "target": "yantra",
+      "relation": "related_to"
+    },
+    {
+      "source": "Uttara Bhadrapada",
+      "target": "Saturn",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Ardra",
+      "target": "Ardra_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "demo_seed",
+      "target": "geometry",
+      "relation": "related_to"
+    },
+    {
+      "source": "Purva Phalguni",
+      "target": "Purva Phalguni_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Bhadrapada",
+      "target": "Uttara Bhadrapada_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Bhadrapada",
+      "target": "Purva Bhadrapada_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Krittika",
+      "target": "Krittika_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "Jupiter",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Ardra",
+      "target": "Ardra_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Ashadha",
+      "target": "Venus",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Swati",
+      "target": "Rahu",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Shravana",
+      "target": "Shravana_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Chitra",
+      "target": "Mars",
+      "relation": "ruled_by"
+    },
+    {
       "source": "krittika",
       "target": "agni",
       "relation": "presided_by"
+    },
+    {
+      "source": "Pushya",
+      "target": "Pushya_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "Ashlesha_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "Mrigashira_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "bharani",
+      "target": "venus",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Swati",
+      "target": "Swati_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Shravana",
+      "target": "Shravana_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Bharani",
+      "target": "Bharani_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Vishakha",
+      "target": "Jupiter",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Rohini",
+      "target": "Rohini_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Phalguni",
+      "target": "Uttara Phalguni_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "seed_20260308_1619",
+      "target": "software implications:",
+      "relation": "related_to"
+    },
+    {
+      "source": "Bharani",
+      "target": "Bharani_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ardra",
+      "target": "Rahu",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Chitra",
+      "target": "Chitra_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ashwini",
+      "target": "Ashwini_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "Ashlesha_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "Mars",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "Ashlesha_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Revati",
+      "target": "Revati_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Mula",
+      "target": "Mula_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Revati",
+      "target": "Revati_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Magha",
+      "target": "Magha_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Chitra",
+      "target": "Chitra_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "Punarvasu_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "Jyeshtha_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Bhadrapada",
+      "target": "Uttara Bhadrapada_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Bhadrapada",
+      "target": "Purva Bhadrapada_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Ashadha",
+      "target": "Purva Ashadha_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "Punarvasu_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Rohini",
+      "target": "Rohini_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "Shatabhisha_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Anuradha",
+      "target": "Saturn",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Anuradha",
+      "target": "Anuradha_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "Punarvasu_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Phalguni",
+      "target": "Purva Phalguni_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ardra",
+      "target": "Ardra_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Chitra",
+      "target": "Chitra_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Revati",
+      "target": "Revati_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Hasta",
+      "target": "Hasta_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "Dhanishta_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Hasta",
+      "target": "Moon",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Rohini",
+      "target": "Rohini_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ashwini",
+      "target": "Ketu",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Swati",
+      "target": "Swati_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Rohini",
+      "target": "Moon",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "Jyeshtha_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Magha",
+      "target": "Magha_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Anuradha",
+      "target": "Anuradha_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "demo_seed",
+      "target": "mantra",
+      "relation": "related_to"
+    },
+    {
+      "source": "Hasta",
+      "target": "Hasta_pada_4",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Mula",
+      "target": "Mula_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Revati",
+      "target": "Revati_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "krittika",
+      "target": "sun",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Swati",
+      "target": "Swati_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Phalguni",
+      "target": "Uttara Phalguni_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Krittika",
+      "target": "Krittika_pada_2",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Uttara Ashadha",
+      "target": "Uttara Ashadha_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Purva Phalguni",
+      "target": "Venus",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "ashwini",
+      "target": "ketu",
+      "relation": "ruled_by"
+    },
+    {
+      "source": "Pushya",
+      "target": "Pushya_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Vishakha",
+      "target": "Vishakha_pada_1",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Ashwini",
+      "target": "Ashwini_pada_3",
+      "relation": "has_pada"
+    },
+    {
+      "source": "Krittika",
+      "target": "Krittika_pada_1",
+      "relation": "has_pada"
     }
   ]
 }
