@@ -1,25 +1,91 @@
+import json
+import os
 from pathlib import Path
-import re
 
-seed_dir = Path("seeds")
+ROOT = Path("/opt/atlas")
+DATA = ROOT / "data"
+OFFERINGS = ROOT / "atlas_codex" / "offerings"
 
-titles = []
+def graph_stats():
+    nodes = 0
+    rels = 0
 
-for f in seed_dir.glob("*.md"):
-    text = f.read_text()
-    titles += re.findall(r"## (.+)", text)
+    for f in DATA.glob("*.json"):
+        try:
+            j = json.loads(open(f).read())
+            if isinstance(j, dict):
+                nodes += len(j.get("nodes", []))
+                rels += len(j.get("links", []))
+        except:
+            pass
 
-section = "\n".join([f"- {t}" for t in titles])
+    return nodes, rels
 
-readme = Path("README.md")
-content = readme.read_text()
 
-marker = "<!-- ATLAS_SEEDS -->"
+def offerings_list():
+    if not OFFERINGS.exists():
+        return []
 
-if marker in content:
-    pre,post = content.split(marker)
-    new = pre + marker + "\n\n## Current Atlas Seeds\n\n" + section + "\n\n"
-    readme.write_text(new)
-    print("README updated.")
-else:
-    print("Seed marker not found in README.")
+    files = sorted(OFFERINGS.glob("[0-9][0-9][0-9]_*.md"))
+    result = []
+
+    for f in files:
+        num = f.name.split("_")[0]
+        name = f.name.replace(".md","").split("_",1)[1].replace("_"," ").title()
+        result.append(f"{num} {name}")
+
+    return result
+
+
+nodes, rels = graph_stats()
+offerings = offerings_list()
+
+readme = f"""
+# Coherence Atlas
+
+Atlas is a cosmological knowledge system connecting:
+
+• cosmic cycles  
+• ecology  
+• human culture  
+• sound and geometry  
+
+---
+
+## Current Graph State
+
+Nodes: {nodes}  
+Relations: {rels}
+
+---
+
+## Core Layers
+
+Eternal Layer  
+Cosmic Layer (Jyotish engine)  
+Natural Layer (Ecology)  
+Human Layer (Culture and practice)
+
+---
+
+## Key Systems
+
+• Graph engine  
+• Research ingestion pipeline  
+• Cosmic swara generator  
+• Mandala visualizations  
+• CLI tools
+
+---
+
+## Codex Offerings
+"""
+
+for o in offerings:
+    readme += f"\n{o}"
+
+readme += "\n\n---\nGenerated automatically by Atlas."
+
+open(ROOT / "README.md","w").write(readme)
+print("README regenerated")
+
