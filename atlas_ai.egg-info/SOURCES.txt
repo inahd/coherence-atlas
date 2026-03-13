@@ -1,0 +1,9 @@
+README.md
+atlas.py
+setup.py
+atlas_ai.egg-info/PKG-INFO
+atlas_ai.egg-info/SOURCES.txt
+atlas_ai.egg-info/dependency_links.txt
+atlas_ai.egg-info/entry_points.txt
+atlas_ai.egg-info/top_level.txt
+tests/test_sanity.py

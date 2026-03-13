@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "cosmic_seed_cycle_20260308_090538"
+    },
+    {
+      "id": "cosmic_cycle_20260308_091738"
+    },
+    {
+      "id": "demo_seed"
+    },
+    {
+      "id": "mantra"
+    },
+    {
+      "id": "yantra"
+    },
+    {
+      "id": "geometry"
+    },
+    {
+      "id": "seed_20260308_1619"
+    },
+    {
+      "id": "software implications:"
+    }
+  ],
+  "edges": [
+    {
+      "source": "demo_seed",
+      "target": "mantra"
+    },
+    {
+      "source": "demo_seed",
+      "target": "yantra"
+    },
+    {
+      "source": "demo_seed",
+      "target": "geometry"
+    },
+    {
+      "source": "seed_20260308_1619",
+      "target": "software implications:"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "title": "Yantra Geometry",
+  "properties": {
+    "bhupura": {
+      "type": "object"
+    },
+    "circle_count": {
+      "type": "integer"
+    },
+    "petal_count": {
+      "type": "integer"
+    },
+    "triangle_structure": {
+      "type": "string"
+    },
+    "bindu": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,1492 @@
+{
+  "nodes": [
+    {
+      "id": "Ashwini",
+      "type": "nakshatra"
+    },
+    {
+      "id": "fire",
+      "type": "element"
+    },
+    {
+      "id": "rajas",
+      "type": "guna"
+    },
+    {
+      "id": "deva",
+      "type": "gana"
+    },
+    {
+      "id": "vata",
+      "type": "dosha"
+    },
+    {
+      "id": "horse",
+      "type": "yoni"
+    },
+    {
+      "id": "horse_head",
+      "type": "symbol"
+    },
+    {
+      "id": "Bharani",
+      "type": "nakshatra"
+    },
+    {
+      "id": "earth",
+      "type": "element"
+    },
+    {
+      "id": "manushya",
+      "type": "gana"
+    },
+    {
+      "id": "pitta",
+      "type": "dosha"
+    },
+    {
+      "id": "elephant",
+      "type": "yoni"
+    },
+    {
+      "id": "yoni",
+      "type": "symbol"
+    },
+    {
+      "id": "Krittika",
+      "type": "nakshatra"
+    },
+    {
+      "id": "rakshasa",
+      "type": "gana"
+    },
+    {
+      "id": "sheep",
+      "type": "yoni"
+    },
+    {
+      "id": "razor",
+      "type": "symbol"
+    },
+    {
+      "id": "Rohini",
+      "type": "nakshatra"
+    },
+    {
+      "id": "kapha",
+      "type": "dosha"
+    },
+    {
+      "id": "serpent",
+      "type": "yoni"
+    },
+    {
+      "id": "chariot",
+      "type": "symbol"
+    },
+    {
+      "id": "Mrigashira",
+      "type": "nakshatra"
+    },
+    {
+      "id": "tamas",
+      "type": "guna"
+    },
+    {
+      "id": "deer_head",
+      "type": "symbol"
+    },
+    {
+      "id": "Ardra",
+      "type": "nakshatra"
+    },
+    {
+      "id": "water",
+      "type": "element"
+    },
+    {
+      "id": "dog",
+      "type": "yoni"
+    },
+    {
+      "id": "teardrop",
+      "type": "symbol"
+    },
+    {
+      "id": "Punarvasu",
+      "type": "nakshatra"
+    },
+    {
+      "id": "air",
+      "type": "element"
+    },
+    {
+      "id": "sattva",
+      "type": "guna"
+    },
+    {
+      "id": "cat",
+      "type": "yoni"
+    },
+    {
+      "id": "quiver",
+      "type": "symbol"
+    },
+    {
+      "id": "Pushya",
+      "type": "nakshatra"
+    },
+    {
+      "id": "lotus",
+      "type": "symbol"
+    },
+    {
+      "id": "Ashlesha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "coiled_serpent",
+      "type": "symbol"
+    },
+    {
+      "id": "Magha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "rat",
+      "type": "yoni"
+    },
+    {
+      "id": "throne",
+      "type": "symbol"
+    },
+    {
+      "id": "Purva_Phalguni",
+      "type": "nakshatra"
+    },
+    {
+      "id": "hammock",
+      "type": "symbol"
+    },
+    {
+      "id": "Uttara_Phalguni",
+      "type": "nakshatra"
+    },
+    {
+      "id": "cow",
+      "type": "yoni"
+    },
+    {
+      "id": "bed",
+      "type": "symbol"
+    },
+    {
+      "id": "Hasta",
+      "type": "nakshatra"
+    },
+    {
+      "id": "buffalo",
+      "type": "yoni"
+    },
+    {
+      "id": "hand",
+      "type": "symbol"
+    },
+    {
+      "id": "Chitra",
+      "type": "nakshatra"
+    },
+    {
+      "id": "tiger",
+      "type": "yoni"
+    },
+    {
+      "id": "pearl",
+      "type": "symbol"
+    },
+    {
+      "id": "Swati",
+      "type": "nakshatra"
+    },
+    {
+      "id": "young_shoot",
+      "type": "symbol"
+    },
+    {
+      "id": "Vishakha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "triumph_arch",
+      "type": "symbol"
+    },
+    {
+      "id": "Anuradha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "deer",
+      "type": "yoni"
+    },
+    {
+      "id": "Jyeshtha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "earring",
+      "type": "symbol"
+    },
+    {
+      "id": "Mula",
+      "type": "nakshatra"
+    },
+    {
+      "id": "root",
+      "type": "symbol"
+    },
+    {
+      "id": "Purva_Ashadha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "monkey",
+      "type": "yoni"
+    },
+    {
+      "id": "fan",
+      "type": "symbol"
+    },
+    {
+      "id": "Uttara_Ashadha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "elephant_tusk",
+      "type": "symbol"
+    },
+    {
+      "id": "Shravana",
+      "type": "nakshatra"
+    },
+    {
+      "id": "ear",
+      "type": "symbol"
+    },
+    {
+      "id": "Dhanishta",
+      "type": "nakshatra"
+    },
+    {
+      "id": "lion",
+      "type": "yoni"
+    },
+    {
+      "id": "drum",
+      "type": "symbol"
+    },
+    {
+      "id": "Shatabhisha",
+      "type": "nakshatra"
+    },
+    {
+      "id": "empty_circle",
+      "type": "symbol"
+    },
+    {
+      "id": "Purva_Bhadrapada",
+      "type": "nakshatra"
+    },
+    {
+      "id": "front_legs_of_bed",
+      "type": "symbol"
+    },
+    {
+      "id": "Uttara_Bhadrapada",
+      "type": "nakshatra"
+    },
+    {
+      "id": "back_legs_of_bed",
+      "type": "symbol"
+    },
+    {
+      "id": "Revati",
+      "type": "nakshatra"
+    },
+    {
+      "id": "fish",
+      "type": "symbol"
+    },
+    {
+      "id": "Ashwini_Kumaras",
+      "type": "deity"
+    },
+    {
+      "id": "Yama",
+      "type": "deity"
+    },
+    {
+      "id": "Agni",
+      "type": "deity"
+    },
+    {
+      "id": "Brahma",
+      "type": "deity"
+    },
+    {
+      "id": "Soma",
+      "type": "deity"
+    },
+    {
+      "id": "Rudra",
+      "type": "deity"
+    },
+    {
+      "id": "Aditi",
+      "type": "deity"
+    },
+    {
+      "id": "Brihaspati",
+      "type": "deity"
+    },
+    {
+      "id": "Nagas",
+      "type": "deity"
+    },
+    {
+      "id": "Pitrs",
+      "type": "deity"
+    },
+    {
+      "id": "Bhaga",
+      "type": "deity"
+    },
+    {
+      "id": "Aryaman",
+      "type": "deity"
+    },
+    {
+      "id": "Savitar",
+      "type": "deity"
+    },
+    {
+      "id": "Tvashtar",
+      "type": "deity"
+    },
+    {
+      "id": "Vayu",
+      "type": "deity"
+    },
+    {
+      "id": "Indra_Agni",
+      "type": "deity"
+    },
+    {
+      "id": "Mitra",
+      "type": "deity"
+    },
+    {
+      "id": "Indra",
+      "type": "deity"
+    },
+    {
+      "id": "Nirriti",
+      "type": "deity"
+    },
+    {
+      "id": "Apas",
+      "type": "deity"
+    },
+    {
+      "id": "Vishvadevas",
+      "type": "deity"
+    },
+    {
+      "id": "Vishnu",
+      "type": "deity"
+    },
+    {
+      "id": "Vasus",
+      "type": "deity"
+    },
+    {
+      "id": "Varuna",
+      "type": "deity"
+    },
+    {
+      "id": "Aja_Ekapada",
+      "type": "deity"
+    },
+    {
+      "id": "Ahirbudhnya",
+      "type": "deity"
+    },
+    {
+      "id": "Pushan",
+      "type": "deity"
+    },
+    {
+      "id": "Sun",
+      "type": "graha"
+    },
+    {
+      "id": "ram",
+      "type": "bija"
+    },
+    {
+      "id": "Moon",
+      "type": "graha"
+    },
+    {
+      "id": "shram",
+      "type": "bija"
+    },
+    {
+      "id": "Mars",
+      "type": "graha"
+    },
+    {
+      "id": "krim",
+      "type": "bija"
+    },
+    {
+      "id": "Mercury",
+      "type": "graha"
+    },
+    {
+      "id": "bum",
+      "type": "bija"
+    },
+    {
+      "id": "Jupiter",
+      "type": "graha"
+    },
+    {
+      "id": "brim",
+      "type": "bija"
+    },
+    {
+      "id": "Venus",
+      "type": "graha"
+    },
+    {
+      "id": "shum",
+      "type": "bija"
+    },
+    {
+      "id": "Saturn",
+      "type": "graha"
+    },
+    {
+      "id": "sham",
+      "type": "bija"
+    },
+    {
+      "id": "Rahu",
+      "type": "graha"
+    },
+    {
+      "id": "rahm",
+      "type": "bija"
+    },
+    {
+      "id": "Ketu",
+      "type": "graha"
+    },
+    {
+      "id": "kem",
+      "type": "bija"
+    }
+  ],
+  "links": [
+    {
+      "source": "Ashwini",
+      "target": "fire",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Ashwini",
+      "target": "rajas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Ashwini",
+      "target": "deva",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Ashwini",
+      "target": "vata",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Ashwini",
+      "target": "horse",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Ashwini",
+      "target": "horse_head",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Bharani",
+      "target": "earth",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Bharani",
+      "target": "rajas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Bharani",
+      "target": "manushya",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Bharani",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Bharani",
+      "target": "elephant",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Bharani",
+      "target": "yoni",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Krittika",
+      "target": "fire",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Krittika",
+      "target": "rajas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Krittika",
+      "target": "rakshasa",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Krittika",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Krittika",
+      "target": "sheep",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Krittika",
+      "target": "razor",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Rohini",
+      "target": "earth",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Rohini",
+      "target": "rajas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Rohini",
+      "target": "manushya",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Rohini",
+      "target": "kapha",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Rohini",
+      "target": "serpent",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Rohini",
+      "target": "chariot",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "earth",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "tamas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "deva",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "vata",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "serpent",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "deer_head",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Ardra",
+      "target": "water",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Ardra",
+      "target": "tamas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Ardra",
+      "target": "manushya",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Ardra",
+      "target": "vata",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Ardra",
+      "target": "dog",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Ardra",
+      "target": "teardrop",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "air",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "sattva",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "deva",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "vata",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "cat",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "quiver",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Pushya",
+      "target": "water",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Pushya",
+      "target": "sattva",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Pushya",
+      "target": "deva",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Pushya",
+      "target": "kapha",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Pushya",
+      "target": "sheep",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Pushya",
+      "target": "lotus",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "water",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "tamas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "rakshasa",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "kapha",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "cat",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "coiled_serpent",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Magha",
+      "target": "fire",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Magha",
+      "target": "tamas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Magha",
+      "target": "rakshasa",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Magha",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Magha",
+      "target": "rat",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Magha",
+      "target": "throne",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Purva_Phalguni",
+      "target": "earth",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Purva_Phalguni",
+      "target": "rajas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Purva_Phalguni",
+      "target": "manushya",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Purva_Phalguni",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Purva_Phalguni",
+      "target": "rat",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Purva_Phalguni",
+      "target": "hammock",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Uttara_Phalguni",
+      "target": "earth",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Uttara_Phalguni",
+      "target": "sattva",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Uttara_Phalguni",
+      "target": "manushya",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Uttara_Phalguni",
+      "target": "kapha",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Uttara_Phalguni",
+      "target": "cow",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Uttara_Phalguni",
+      "target": "bed",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Hasta",
+      "target": "air",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Hasta",
+      "target": "sattva",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Hasta",
+      "target": "deva",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Hasta",
+      "target": "vata",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Hasta",
+      "target": "buffalo",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Hasta",
+      "target": "hand",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Chitra",
+      "target": "fire",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Chitra",
+      "target": "tamas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Chitra",
+      "target": "rakshasa",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Chitra",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Chitra",
+      "target": "tiger",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Chitra",
+      "target": "pearl",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Swati",
+      "target": "air",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Swati",
+      "target": "rajas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Swati",
+      "target": "deva",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Swati",
+      "target": "vata",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Swati",
+      "target": "buffalo",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Swati",
+      "target": "young_shoot",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Vishakha",
+      "target": "fire",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Vishakha",
+      "target": "rajas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Vishakha",
+      "target": "rakshasa",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Vishakha",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Vishakha",
+      "target": "tiger",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Vishakha",
+      "target": "triumph_arch",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Anuradha",
+      "target": "water",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Anuradha",
+      "target": "sattva",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Anuradha",
+      "target": "deva",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Anuradha",
+      "target": "kapha",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Anuradha",
+      "target": "deer",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Anuradha",
+      "target": "lotus",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "air",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "tamas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "rakshasa",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "deer",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "earring",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Mula",
+      "target": "air",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Mula",
+      "target": "tamas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Mula",
+      "target": "rakshasa",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Mula",
+      "target": "vata",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Mula",
+      "target": "dog",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Mula",
+      "target": "root",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Purva_Ashadha",
+      "target": "water",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Purva_Ashadha",
+      "target": "rajas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Purva_Ashadha",
+      "target": "manushya",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Purva_Ashadha",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Purva_Ashadha",
+      "target": "monkey",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Purva_Ashadha",
+      "target": "fan",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Uttara_Ashadha",
+      "target": "earth",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Uttara_Ashadha",
+      "target": "sattva",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Uttara_Ashadha",
+      "target": "manushya",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Uttara_Ashadha",
+      "target": "kapha",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Uttara_Ashadha",
+      "target": "monkey",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Uttara_Ashadha",
+      "target": "elephant_tusk",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Shravana",
+      "target": "air",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Shravana",
+      "target": "sattva",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Shravana",
+      "target": "deva",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Shravana",
+      "target": "vata",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Shravana",
+      "target": "monkey",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Shravana",
+      "target": "ear",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "fire",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "rajas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "rakshasa",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "lion",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "drum",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "air",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "tamas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "rakshasa",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "vata",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "horse",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "empty_circle",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Purva_Bhadrapada",
+      "target": "fire",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Purva_Bhadrapada",
+      "target": "tamas",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Purva_Bhadrapada",
+      "target": "manushya",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Purva_Bhadrapada",
+      "target": "pitta",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Purva_Bhadrapada",
+      "target": "lion",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Purva_Bhadrapada",
+      "target": "front_legs_of_bed",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Uttara_Bhadrapada",
+      "target": "water",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Uttara_Bhadrapada",
+      "target": "sattva",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Uttara_Bhadrapada",
+      "target": "manushya",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Uttara_Bhadrapada",
+      "target": "kapha",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Uttara_Bhadrapada",
+      "target": "cow",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Uttara_Bhadrapada",
+      "target": "back_legs_of_bed",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Revati",
+      "target": "water",
+      "type": "nakshatra_element"
+    },
+    {
+      "source": "Revati",
+      "target": "sattva",
+      "type": "nakshatra_guna"
+    },
+    {
+      "source": "Revati",
+      "target": "deva",
+      "type": "nakshatra_gana"
+    },
+    {
+      "source": "Revati",
+      "target": "kapha",
+      "type": "nakshatra_dosha"
+    },
+    {
+      "source": "Revati",
+      "target": "elephant",
+      "type": "nakshatra_yoni"
+    },
+    {
+      "source": "Revati",
+      "target": "fish",
+      "type": "nakshatra_symbol"
+    },
+    {
+      "source": "Ashwini",
+      "target": "Ashwini_Kumaras",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Bharani",
+      "target": "Yama",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Krittika",
+      "target": "Agni",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Rohini",
+      "target": "Brahma",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Mrigashira",
+      "target": "Soma",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Ardra",
+      "target": "Rudra",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Punarvasu",
+      "target": "Aditi",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Pushya",
+      "target": "Brihaspati",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Ashlesha",
+      "target": "Nagas",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Magha",
+      "target": "Pitrs",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Purva_Phalguni",
+      "target": "Bhaga",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Uttara_Phalguni",
+      "target": "Aryaman",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Hasta",
+      "target": "Savitar",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Chitra",
+      "target": "Tvashtar",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Swati",
+      "target": "Vayu",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Vishakha",
+      "target": "Indra_Agni",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Anuradha",
+      "target": "Mitra",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Jyeshtha",
+      "target": "Indra",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Mula",
+      "target": "Nirriti",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Purva_Ashadha",
+      "target": "Apas",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Uttara_Ashadha",
+      "target": "Vishvadevas",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Shravana",
+      "target": "Vishnu",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Dhanishta",
+      "target": "Vasus",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Shatabhisha",
+      "target": "Varuna",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Purva_Bhadrapada",
+      "target": "Aja_Ekapada",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Uttara_Bhadrapada",
+      "target": "Ahirbudhnya",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Revati",
+      "target": "Pushan",
+      "type": "nakshatra_deity"
+    },
+    {
+      "source": "Sun",
+      "target": "ram",
+      "type": "graha_bija"
+    },
+    {
+      "source": "Moon",
+      "target": "shram",
+      "type": "graha_bija"
+    },
+    {
+      "source": "Mars",
+      "target": "krim",
+      "type": "graha_bija"
+    },
+    {
+      "source": "Mercury",
+      "target": "bum",
+      "type": "graha_bija"
+    },
+    {
+      "source": "Jupiter",
+      "target": "brim",
+      "type": "graha_bija"
+    },
+    {
+      "source": "Venus",
+      "target": "shum",
+      "type": "graha_bija"
+    },
+    {
+      "source": "Saturn",
+      "target": "sham",
+      "type": "graha_bija"
+    },
+    {
+      "source": "Rahu",
+      "target": "rahm",
+      "type": "graha_bija"
+    },
+    {
+      "source": "Ketu",
+      "target": "kem",
+      "type": "graha_bija"
+    }
+  ]
+}

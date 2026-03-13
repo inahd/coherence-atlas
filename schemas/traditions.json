@@ -1,0 +1,8 @@
+{
+  "profiles": [
+    {"name":"classical", "notes":"Classical jyotisha/puranic framing"},
+    {"name":"tantric", "notes":"Tantric mapping families; may differ"},
+    {"name":"regional", "notes":"Regional/lineage-specific associations"},
+    {"name":"unknown", "notes":"Temporary placeholder; should be refined"}
+  ]
+}

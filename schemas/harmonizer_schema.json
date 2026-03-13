@@ -1,0 +1,32 @@
+{
+  "stability_layers": [
+    "stable",
+    "working",
+    "experimental"
+  ],
+  "authority_sources": [
+    "shastra",
+    "sadhu",
+    "guru",
+    "secondary",
+    "inferred"
+  ],
+  "visualization_levels": [
+    "blocked",
+    "relation",
+    "analytic",
+    "symbolic",
+    "canonical"
+  ],
+  "promotion_rules": {
+    "canonical": {
+      "requires": ["shastra"]
+    },
+    "symbolic": {
+      "requires_any": ["sadhu", "guru"]
+    },
+    "analytic": {
+      "requires_any": ["inferred", "guru"]
+    }
+  }
+}

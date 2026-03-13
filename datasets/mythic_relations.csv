@@ -1,0 +1,6 @@
+source,relation,target,bhava,layer
+Krishna,friend_of,Arjuna,bhava_sakhya,mythic_narrative
+Krishna,instructs,Arjuna,bhava_santa,mythic_narrative
+Radha,beloved_of,Krishna,bhava_madhurya,mythic_narrative
+Yashoda,cares_for,Krishna,bhava_vatsalya,mythic_narrative
+Hanuman,serves,Rama,bhava_dasya,mythic_narrative

@@ -1,0 +1,44 @@
+{
+  "entity_fields": [
+    "id",
+    "name",
+    "type",
+    "domains",
+    "description",
+    "stability_layer",
+    "authority",
+    "visualization_permission"
+  ],
+
+  "relation_fields": [
+    "source",
+    "target",
+    "relation_type",
+    "description",
+    "stability_layer",
+    "authority",
+    "visualization_permission"
+  ],
+
+  "authority_structure": {
+    "shastra": "textual support",
+    "sadhu": "community/practitioner support",
+    "guru": "interpretive synthesis",
+    "secondary": "supporting reference",
+    "inferred": "ai or research inference"
+  },
+
+  "stability_layers": [
+    "stable",
+    "working",
+    "experimental"
+  ],
+
+  "visualization_permissions": [
+    "blocked",
+    "relation",
+    "analytic",
+    "symbolic",
+    "canonical"
+  ]
+}

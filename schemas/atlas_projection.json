@@ -1,0 +1,76 @@
+{
+  "version": "0.1",
+  "principle": "No inference into canonical layer. All canonical relations must be extant and evidence-backed.",
+  "evidence_required_fields": ["source_title", "source_locator", "excerpt", "tradition", "confidence"],
+  "targets": {
+    "jyotish": {
+      "entities": {
+        "tithi": 30,
+        "nakshatra": 27,
+        "vara": 7,
+        "graha": 9
+      },
+      "relations": {
+        "tithi_associated_nitya_devi": 30,
+        "nakshatra_associated_deity": 27,
+        "nakshatra_ruling_graha": 27,
+        "vara_ruling_graha": 7
+      }
+    },
+    "deity_iconography": {
+      "entities": {
+        "devi": 24,
+        "weapon": 50,
+        "symbol": 80
+      },
+      "relations": {
+        "devi_wields_weapon": 80,
+        "devi_has_symbol": 120
+      }
+    },
+    "ritual_calendar": {
+      "entities": {
+        "ritual": 50,
+        "festival": 30,
+        "offering": 80
+      },
+      "relations": {
+        "ritual_prescribed_on": 120,
+        "ritual_invokes_deity": 120,
+        "ritual_uses_offering": 120
+      }
+    },
+    "plants_materia": {
+      "entities": {
+        "plant": 200
+      },
+      "relations": {
+        "plant_sacred_to_deity": 200,
+        "plant_used_in_ritual": 200
+      }
+    },
+    "music": {
+      "entities": {
+        "raga": 50,
+        "tala": 20,
+        "instrument": 40
+      },
+      "relations": {
+        "ritual_uses_raga": 50,
+        "raga_associated_deity": 30
+      }
+    }
+  },
+  "canonical_datasets_expected": [
+    "tithi_list.csv",
+    "nakshatra_list.csv",
+    "nitya_devi_mapping.csv"
+  ],
+  "relation_datasets_expected": [
+    "relations_nakshatra_deity.csv",
+    "relations_devi_weapon.csv",
+    "relations_nakshatra_plants.csv",
+    "relations_ritual_calendar.csv",
+    "relations_raga_ritual.csv"
+  ]
+}

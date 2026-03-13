@@ -1,0 +1,26 @@
+{
+  "convention_categories": [
+    "entity_type",
+    "relation_type",
+    "authority_rule",
+    "visualization_rule",
+    "domain_rule",
+    "harmonizer_rule",
+    "ingestion_rule"
+  ],
+  "convention_status": [
+    "proposed",
+    "active",
+    "deprecated",
+    "blocked"
+  ],
+  "required_fields": [
+    "name",
+    "category",
+    "description",
+    "status",
+    "source",
+    "introduced_by",
+    "date"
+  ]
+}

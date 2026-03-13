@@ -1,0 +1,1843 @@
+.
+├── 26.0.1
+├── ac
+├── analysis
+│   ├── archive
+│   │   └── repo_structure_snapshot.txt
+│   └── turn_logs
+│       └── 2026-03-08_010859_turn.md
+├── architecture
+│   ├── atlas_cosmology.md
+│   ├── atlas_cosmology_schema.md
+│   ├── atlas_node_types.md
+│   ├── atlas_offering_protocol.md
+│   ├── atlas_relations.md
+│   ├── cosmology_layers.json
+│   └── system_architecture.md
+├── associated_deity
+├── astro_block.py
+├── atlas
+│   ├── astro_to_graph.py
+│   ├── cards
+│   ├── commands_cosmology.py
+│   ├── core
+│   │   ├── cards.py
+│   │   ├── graph.py
+│   │   ├── graph_store.py
+│   │   ├── __init__.py
+│   │   ├── legend.py
+│   │   ├── mandala.py
+│   │   ├── output.py
+│   │   ├── prompts.py
+│   │   ├── __pycache__
+│   │   │   ├── graph.cpython-313.pyc
+│   │   │   ├── graph_store.cpython-313.pyc
+│   │   │   ├── __init__.cpython-313.pyc
+│   │   │   ├── legend.cpython-313.pyc
+│   │   │   ├── mandala.cpython-313.pyc
+│   │   │   ├── output.cpython-313.pyc
+│   │   │   └── prompts.cpython-313.pyc
+│   │   ├── schema.py
+│   │   └── seeds.py
+│   ├── cycle_runner.py
+│   ├── data_loader.py
+│   ├── generators
+│   ├── graph_engine.py
+│   ├── graph_merge.py
+│   ├── __init__.py
+│   ├── modes
+│   │   ├── kala.py
+│   │   └── __pycache__
+│   │       └── kala.cpython-313.pyc
+│   ├── ontology
+│   │   └── cosmology.py
+│   ├── __pycache__
+│   │   ├── data_loader.cpython-313.pyc
+│   │   ├── graph_engine.cpython-313.pyc
+│   │   └── __init__.cpython-313.pyc
+│   ├── render_constellation.py
+│   ├── render_from_merged.py
+│   ├── runtime
+│   │   └── cycle.py
+│   ├── seeds
+│   └── ui
+│       ├── atlas_commander.py
+│       ├── calendar_view.py
+│       ├── chart_view.py
+│       ├── commander.py
+│       ├── graph_view.py
+│       ├── __init__.py
+│       ├── main_menu.py
+│       ├── mandala_view.py
+│       ├── nakshatra_view.py
+│       ├── node_view.py
+│       └── __pycache__
+│           ├── atlas_commander.cpython-313.pyc
+│           ├── calendar_view.cpython-313.pyc
+│           ├── graph_view.cpython-313.pyc
+│           ├── __init__.cpython-313.pyc
+│           ├── mandala_view.cpython-313.pyc
+│           ├── nakshatra_view.cpython-313.pyc
+│           └── node_view.cpython-313.pyc
+├── atlas_ai.egg-info
+│   ├── dependency_links.txt
+│   ├── entry_points.txt
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   └── top_level.txt
+├── atlas_broken_files.tar.gz
+├── atlas_cards
+│   ├── cards
+│   │   └── cards.json
+│   ├── explorer.html
+│   ├── nakshatra_sample.json
+│   ├── output
+│   └── viewer.html
+├── atlas-chart
+├── atlas_engine.sh
+├── atlas_graph
+│   └── graph.json
+├── ATLAS_PRINCIPLES.md
+├── atlas.py
+├── atlas-rebuild
+├── atlas_tui.py
+├── backups
+│   ├── cosmology_graph_1772891991.json
+│   ├── cosmology_graph_1772892023.json
+│   ├── snap_20260305_064824.tgz
+│   ├── snap_20260305_065314.tgz
+│   ├── snap_20260305_070026.tgz
+│   ├── snap_20260305_072158.tgz
+│   ├── snap_20260305_073029.tgz
+│   ├── snap_20260305_073156.tgz
+│   ├── snap_20260305_074004.tgz
+│   ├── snap_20260305_075619.tgz
+│   ├── snap_20260305_100840.tgz
+│   ├── snap_20260305_101142.tgz
+│   ├── snap_20260306_072045.tgz
+│   ├── snap_20260306_075113.tgz
+│   ├── snap_20260306_082117.tgz
+│   ├── snap_20260306_085141.tgz
+│   ├── snap_20260306_092229.tgz
+│   ├── snap_20260306_095259.tgz
+│   ├── snap_20260306_102309.tgz
+│   ├── snap_20260306_120711.tgz
+│   ├── snap_20260306_121000.tgz
+│   ├── snap_20260306_121519.tgz
+│   ├── snap_20260306_121616.tgz
+│   ├── snap_20260306_121723.tgz
+│   ├── snap_20260306_122053.tgz
+│   ├── snap_20260306_122211.tgz
+│   ├── snap_20260306_122410.tgz
+│   ├── snap_20260306_123800.tgz
+│   ├── snap_20260306_124004.tgz
+│   ├── snap_20260306_130840.tgz
+│   ├── snap_20260306_133840.tgz
+│   ├── snap_20260306_140923.tgz
+│   ├── snap_20260306_143927.tgz
+│   ├── snap_20260306_151016.tgz
+│   ├── snap_20260306_154112.tgz
+│   ├── snap_20260306_161148.tgz
+│   ├── snap_20260306_164225.tgz
+│   ├── snap_20260306_171235.tgz
+│   ├── snap_20260306_174334.tgz
+│   ├── snap_20260306_181354.tgz
+│   ├── snap_20260306_184444.tgz
+│   ├── snap_20260306_191510.tgz
+│   ├── snap_20260306_194536.tgz
+│   ├── snap_20260306_201547.tgz
+│   ├── snap_20260306_204630.tgz
+│   ├── snap_20260306_211643.tgz
+│   ├── snap_20260306_214647.tgz
+│   ├── snap_20260306_221650.tgz
+│   ├── snap_20260306_224727.tgz
+│   ├── snap_20260306_231750.tgz
+│   ├── snap_20260306_234823.tgz
+│   ├── snap_20260307_001843.tgz
+│   ├── snap_20260307_004850.tgz
+│   ├── snap_20260307_011943.tgz
+│   ├── snap_20260307_014949.tgz
+│   ├── snap_20260307_022000.tgz
+│   ├── snap_20260307_025016.tgz
+│   ├── snap_20260307_032033.tgz
+│   ├── snap_20260307_035100.tgz
+│   ├── snap_20260307_042126.tgz
+│   ├── snap_20260307_045143.tgz
+│   ├── snap_20260307_052229.tgz
+│   ├── snap_20260307_055239.tgz
+│   ├── snap_20260307_062322.tgz
+│   ├── snap_20260307_065348.tgz
+│   ├── snap_20260307_072420.tgz
+│   ├── snap_20260307_075430.tgz
+│   ├── snap_20260307_082445.tgz
+│   ├── snap_20260307_085525.tgz
+│   ├── snap_20260307_092615.tgz
+│   ├── snap_20260307_095702.tgz
+│   ├── snap_20260307_102756.tgz
+│   ├── snap_20260307_105833.tgz
+│   ├── snap_20260307_112934.tgz
+│   ├── snap_20260307_115958.tgz
+│   ├── snap_20260307_123027.tgz
+│   ├── snap_20260307_130044.tgz
+│   ├── snap_20260307_133054.tgz
+│   ├── snap_20260307_140127.tgz
+│   ├── snap_20260307_143141.tgz
+│   ├── snap_20260307_150145.tgz
+│   ├── snap_20260307_153217.tgz
+│   ├── snap_20260307_160316.tgz
+│   ├── snap_20260307_163413.tgz
+│   ├── snap_20260307_170429.tgz
+│   ├── snap_20260307_173526.tgz
+│   ├── snap_20260307_180534.tgz
+│   ├── snap_20260307_183625.tgz
+│   ├── snap_20260307_190659.tgz
+│   ├── snap_20260307_193744.tgz
+│   ├── snap_20260307_200843.tgz
+│   ├── snap_20260307_203926.tgz
+│   ├── snap_20260307_210931.tgz
+│   ├── snap_20260307_214005.tgz
+│   ├── snap_20260307_221045.tgz
+│   ├── snap_20260307_224137.tgz
+│   ├── snap_20260307_231228.tgz
+│   ├── snap_20260307_234236.tgz
+│   ├── snap_20260308_001325.tgz
+│   ├── snap_20260308_004413.tgz
+│   ├── snap_20260308_011434.tgz
+│   ├── snap_20260308_014448.tgz
+│   ├── snap_20260308_031451.tgz
+│   ├── snap_20260308_034544.tgz
+│   ├── snap_20260308_041557.tgz
+│   ├── snap_20260308_044610.tgz
+│   ├── snap_20260308_072912.tgz
+│   ├── snap_20260308_075942.tgz
+│   ├── snap_20260308_082946.tgz
+│   ├── snap_20260308_085959.tgz
+│   ├── snap_20260308_093013.tgz
+│   ├── snap_20260308_100105.tgz
+│   ├── snap_20260308_103204.tgz
+│   ├── snap_20260308_110257.tgz
+│   ├── snap_20260308_113310.tgz
+│   ├── snap_20260308_120356.tgz
+│   ├── snap_20260308_123456.tgz
+│   ├── snap_20260308_130505.tgz
+│   ├── snap_20260308_133604.tgz
+│   ├── snap_20260308_140611.tgz
+│   ├── snap_20260308_143701.tgz
+│   ├── snap_20260308_150704.tgz
+│   ├── snap_20260308_153741.tgz
+│   ├── snap_20260308_160801.tgz
+│   ├── snap_20260308_163830.tgz
+│   ├── snap_20260308_170834.tgz
+│   ├── snap_20260308_173927.tgz
+│   ├── snap_20260308_180934.tgz
+│   ├── snap_20260308_184013.tgz
+│   ├── snap_20260308_191037.tgz
+│   ├── snap_20260308_194113.tgz
+│   ├── snap_20260308_201129.tgz
+│   ├── snap_20260308_204139.tgz
+│   ├── snap_20260308_211156.tgz
+│   ├── snap_20260308_214216.tgz
+│   ├── snap_20260308_221220.tgz
+│   ├── snap_20260308_224234.tgz
+│   ├── snap_20260308_231240.tgz
+│   ├── snap_20260308_234303.tgz
+│   ├── snap_20260309_001402.tgz
+│   ├── snap_20260309_004428.tgz
+│   ├── snap_20260309_011448.tgz
+│   ├── snap_20260309_014544.tgz
+│   ├── snap_20260309_021604.tgz
+│   ├── snap_20260309_024624.tgz
+│   ├── snap_20260309_031631.tgz
+│   ├── snap_20260309_034703.tgz
+│   ├── snap_20260309_041714.tgz
+│   ├── snap_20260309_044714.tgz
+│   ├── snap_20260309_051728.tgz
+│   ├── snap_20260309_054741.tgz
+│   ├── snap_20260309_061834.tgz
+│   ├── snap_20260309_064850.tgz
+│   ├── snap_20260309_071917.tgz
+│   ├── snap_20260309_074930.tgz
+│   ├── snap_20260309_081931.tgz
+│   ├── snap_20260309_085020.tgz
+│   ├── snap_20260309_092114.tgz
+│   ├── snap_20260309_095119.tgz
+│   ├── snap_20260309_102202.tgz
+│   ├── snap_20260309_105300.tgz
+│   ├── snap_20260309_112317.tgz
+│   ├── snap_20260309_115409.tgz
+│   ├── snap_20260309_122458.tgz
+│   ├── snap_20260309_125518.tgz
+│   ├── snap_20260309_132541.tgz
+│   ├── snap_20260309_135605.tgz
+│   ├── snap_20260309_142628.tgz
+│   ├── snap_20260309_145644.tgz
+│   ├── snap_20260309_152731.tgz
+│   ├── snap_20260309_155826.tgz
+│   ├── snap_20260309_162846.tgz
+│   ├── snap_20260309_165942.tgz
+│   ├── snap_20260309_173041.tgz
+│   ├── snap_20260309_180104.tgz
+│   ├── snap_20260309_183156.tgz
+│   ├── snap_20260309_190207.tgz
+│   ├── snap_20260309_193302.tgz
+│   ├── snap_20260309_200319.tgz
+│   ├── snap_20260309_203336.tgz
+│   ├── snap_20260309_210343.tgz
+│   ├── snap_20260309_213425.tgz
+│   ├── snap_20260309_220436.tgz
+│   ├── snap_20260309_223514.tgz
+│   ├── snap_20260309_230601.tgz
+│   ├── snap_20260309_233614.tgz
+│   ├── snap_20260310_000657.tgz
+│   ├── snap_20260310_003658.tgz
+│   ├── snap_20260310_010727.tgz
+│   ├── snap_20260310_013754.tgz
+│   ├── snap_20260310_020853.tgz
+│   ├── snap_20260310_023914.tgz
+│   ├── snap_20260310_030923.tgz
+│   ├── snap_20260310_033950.tgz
+│   ├── snap_20260310_040957.tgz
+│   ├── snap_20260310_044030.tgz
+│   ├── snap_20260310_051112.tgz
+│   ├── snap_20260310_054139.tgz
+│   ├── snap_20260310_061149.tgz
+│   ├── snap_20260310_064248.tgz
+│   ├── snap_20260310_071314.tgz
+│   ├── snap_20260310_074410.tgz
+│   ├── snap_20260310_081433.tgz
+│   ├── snap_20260310_084507.tgz
+│   ├── snap_20260310_091602.tgz
+│   ├── snap_20260310_094606.tgz
+│   ├── snap_20260310_101705.tgz
+│   ├── snap_20260310_104714.tgz
+│   ├── snap_20260310_111808.tgz
+│   ├── snap_20260310_114825.tgz
+│   ├── snap_20260310_121844.tgz
+│   ├── snap_20260310_124851.tgz
+│   ├── snap_20260310_131914.tgz
+│   └── snap_20260310_135013.tgz
+├── bootstrap.py
+├── capsules
+│   └── 2026-03-05_0104
+│       ├── architecture
+│       │   ├── cosmology_layers.json
+│       │   └── system_architecture.md
+│       ├── conversation_summary.md
+│       ├── datasets
+│       │   ├── nakshatra_list.csv
+│       │   ├── nitya_devi_mapping.csv
+│       │   └── tithi_list.csv
+│       ├── instructions_for_new_chat.md
+│       ├── ontology
+│       │   └── vedic_cosmology_graph.json
+│       ├── prompts
+│       │   └── atlas_super_extractor.md
+│       ├── README.md
+│       └── schemas
+│           ├── nakshatra_schema.json
+│           ├── tithi_schema.json
+│           └── yantra_geometry_schema.json
+├── cards
+│   ├── nakshatra
+│   │   ├── anuradha.md
+│   │   ├── ardra.md
+│   │   ├── ashlesha.md
+│   │   ├── ashwini.md
+│   │   ├── bharani.md
+│   │   ├── chitra.md
+│   │   ├── dhanishta.md
+│   │   ├── hasta.md
+│   │   ├── jyeshtha.md
+│   │   ├── krittika.md
+│   │   ├── magha.md
+│   │   ├── mrigashira.md
+│   │   ├── mula.md
+│   │   ├── punarvasu.md
+│   │   ├── purva_ashadha.md
+│   │   ├── purva_bhadrapada.md
+│   │   ├── purva_phalguni.md
+│   │   ├── pushya.md
+│   │   ├── revati.md
+│   │   ├── rohini.md
+│   │   ├── shatabhisha.md
+│   │   ├── shravana.md
+│   │   ├── swati.md
+│   │   ├── uttara_ashadha.md
+│   │   ├── uttara_bhadrapada.md
+│   │   ├── uttara_phalguni.md
+│   │   └── vishakha.md
+│   └── nakshatra.tar.gz
+├── chart_to_nodes.py
+├── core
+│   ├── cycle_types.py
+│   ├── __init__.py
+│   └── __pycache__
+│       ├── cycle_types.cpython-313.pyc
+│       └── __init__.cpython-313.pyc
+├── curl
+├── curses
+├── data
+│   ├── conventions_registry.json
+│   ├── cosmology
+│   │   └── nakshatra_offering.json
+│   ├── cosmology.json
+│   ├── graph.json
+│   ├── nodes
+│   ├── nodes.csv
+│   ├── placeholder_nodes.json
+│   ├── principles
+│   ├── relations.csv
+│   ├── root_relations.csv
+│   ├── sanskrit_roots.csv
+│   └── seeds
+│       ├── books_are_the_basis.md
+│       ├── purity_is_the_force.md
+│       └── rasa_integrity.md
+├── datasets
+│   ├── astro
+│   │   ├── nakshatra_core.csv
+│   │   ├── nakshatra_full.csv
+│   │   ├── nakshatra_padas.csv
+│   │   └── tithi_core.csv
+│   ├── ayurveda
+│   │   ├── dosha.csv
+│   │   ├── guna.csv
+│   │   ├── rasa.csv
+│   │   ├── vipaka.csv
+│   │   └── virya.csv
+│   ├── _backups
+│   ├── canonical
+│   │   ├── directions.json
+│   │   ├── grahas.json
+│   │   ├── gunas.json
+│   │   ├── mahabhutas.json
+│   │   ├── nakshatras.json
+│   │   └── rashis.json
+│   ├── cosmology
+│   │   ├── bija_master.csv
+│   │   ├── deity_domains.csv
+│   │   ├── deity_master.csv
+│   │   ├── deity_vahana.csv
+│   │   ├── deity_vahana_extended.csv
+│   │   ├── doshas.csv
+│   │   ├── geometry_archetypes.csv
+│   │   ├── graha_bija.csv
+│   │   ├── graha_master.csv
+│   │   ├── grahas.csv
+│   │   ├── gunas.csv
+│   │   ├── mahabhutas.csv
+│   │   ├── nakshatra_core.csv
+│   │   ├── nakshatra_deities.csv
+│   │   ├── nakshatra_extended.csv
+│   │   ├── nakshatra_master.csv
+│   │   ├── nakshatra_syllables.csv
+│   │   ├── sacred_plants.csv
+│   │   ├── tithi_deities.csv
+│   │   ├── vastu_directions.csv
+│   │   ├── vastu_zones.csv
+│   │   └── vedic_arts_64.csv
+│   ├── deities.yaml
+│   ├── entities
+│   │   ├── concept.csv
+│   │   ├── deity.csv
+│   │   ├── graha.csv
+│   │   ├── jyotish.csv
+│   │   ├── nakshatra.csv
+│   │   ├── rashi.csv
+│   │   └── text.csv
+│   ├── graha.yaml
+│   ├── jyotish
+│   │   ├── graha.yaml
+│   │   ├── nakshatra.yaml
+│   │   └── rashi.yaml
+│   ├── jyotish_core.yaml
+│   ├── mappings
+│   │   └── graha_rulerships.json
+│   ├── mythic_relations.csv
+│   ├── nakshatra_list.csv
+│   ├── nakshatra_num_to_name.csv
+│   ├── nakshatra.yaml
+│   ├── nitya_devi_mapping.csv
+│   ├── ontology
+│   │   ├── bhava_relations.csv
+│   │   ├── bhava_types.csv
+│   │   └── knowledge_layers.csv
+│   ├── overlays
+│   │   └── relations_layered.csv
+│   ├── plants
+│   │   └── sacred_plants.yaml
+│   ├── rashi.yaml
+│   ├── relations
+│   │   └── nakshatra_associated_deity.csv
+│   ├── relations_auto
+│   │   ├── nakshatra_associated_deity.csv
+│   │   └── relations_auto.csv
+│   ├── relations_devi_weapon.csv
+│   ├── relations_inbox.csv
+│   ├── relations_nakshatra_deity.csv
+│   ├── relations_nakshatra_graha.csv
+│   ├── relations_nakshatra_plants.csv
+│   ├── relations_raga_ritual.csv
+│   ├── relations_resolved_canon.csv
+│   ├── relations_resolved_inference.csv
+│   ├── relations_resolved_overlays.csv
+│   ├── relations_resolved_proto_canon.csv
+│   ├── relations_ritual_calendar.csv
+│   ├── relations_strict
+│   │   ├── nakshatra_associated_deity.csv
+│   │   └── nakshatra_ruling_graha.csv
+│   ├── ritual
+│   │   └── rituals.yaml
+│   ├── seed
+│   │   ├── relations_devi_weapon.csv
+│   │   ├── relations_nakshatra_deity.csv
+│   │   ├── relations_nakshatra_plants.csv
+│   │   ├── relations_raga_ritual.csv
+│   │   └── relations_ritual_calendar.csv
+│   ├── semantics
+│   │   └── vedic_arts_semantic_layer.csv
+│   ├── sources
+│   │   ├── passages.csv
+│   │   └── sources.csv
+│   ├── texts.yaml
+│   ├── tithi_list.csv
+│   └── vedic_concepts.yaml
+├── day_of_brahma_thali.sh
+├── deity
+├── docs
+│   ├── architecture_principles.md
+│   ├── atlas_architecture.md
+│   ├── atlas_axes.md
+│   ├── atlas_canon.md
+│   ├── atlas_domains.md
+│   ├── ATLAS_FOUNDATION.md
+│   ├── ATLAS_ONTOLOGY_SCHEMA.md
+│   ├── atlas-overview.md
+│   ├── atlas_patterns.md
+│   ├── ATLAS_PHILOSOPHY.md
+│   ├── atlas_pulse
+│   ├── atlas_state.json
+│   ├── CONCEPT_PUSH_2026_03_06.md
+│   ├── COSMOLOGY_REGISTRY.md
+│   ├── demo_rohini.md
+│   ├── FUTURE_DIRECTIONS_2026_03_06.md
+│   ├── LITERATURE_MATURATION.md
+│   ├── node-types.md
+│   ├── north_star_demo.md
+│   ├── OFFERING_CYCLE.md
+│   ├── OFFERING_PLATE_SCHEMA.md
+│   ├── README_SEEDS.md
+│   ├── relation-types.md
+│   ├── research
+│   │   ├── ACTIVE_TOPICS.md
+│   │   ├── AGGRESSIVE_RESEARCH_MODE.md
+│   │   ├── atlas_resonance_cosmology_paper.md
+│   │   ├── COMPLETED_FINDINGS.md
+│   │   ├── CONVERSATION_INDEX.md
+│   │   ├── LONG_TERM.md
+│   │   ├── MID_TERM.md
+│   │   ├── NEXT_CYCLE.md
+│   │   ├── POPULATION_PRIORITY.md
+│   │   ├── README.md
+│   │   └── SHORT_TERM.md
+│   ├── rituals
+│   │   └── GENERATION_SNAFUS.md
+│   ├── rohini_graph.html
+│   ├── SEED_INTERPRETER.md
+│   ├── SUPREME_SEED_CYCLE.md
+│   ├── system_potentials.md
+│   ├── UNIVERSAL_SEED_SCHEMA.md
+│   ├── UNIVERSAL_SEED_TEMPLATE.md
+│   ├── vision.md
+│   ├── wiki
+│   │   ├── deity__aditi.md
+│   │   ├── deity__agni.md
+│   │   ├── deity__ahirbudhnya.md
+│   │   ├── deity__ajaekapada.md
+│   │   ├── deity__apas.md
+│   │   ├── deity__aryaman.md
+│   │   ├── deity__ashwini_kumaras.md
+│   │   ├── deity__bhaga.md
+│   │   ├── deity__brahma.md
+│   │   ├── deity__brihaspati.md
+│   │   ├── deity__indraagni.md
+│   │   ├── deity__indra.md
+│   │   ├── deity__mitra.md
+│   │   ├── deity__nagas.md
+│   │   ├── deity__nirriti.md
+│   │   ├── deity__pitrs.md
+│   │   ├── deity__pushan.md
+│   │   ├── deity__rudra.md
+│   │   ├── deity__savitar.md
+│   │   ├── deity__soma.md
+│   │   ├── deity__varuna.md
+│   │   ├── deity__vasus.md
+│   │   ├── deity__vayu.md
+│   │   ├── deity__vishnu.md
+│   │   ├── deity__vishvadevas.md
+│   │   ├── deity__vishvakarma.md
+│   │   ├── deity__yama.md
+│   │   ├── graha__jupiter.md
+│   │   ├── graha__ketu.md
+│   │   ├── graha__mars.md
+│   │   ├── graha__mercury.md
+│   │   ├── graha__moon.md
+│   │   ├── graha__rahu.md
+│   │   ├── graha__saturn.md
+│   │   ├── graha__sun.md
+│   │   ├── graha__venus.md
+│   │   ├── Home.md
+│   │   ├── index_deity.md
+│   │   ├── index_graha.md
+│   │   ├── index_nakshatra.md
+│   │   ├── index_ritual.md
+│   │   ├── index_tithi.md
+│   │   ├── nakshatra__10.md
+│   │   ├── nakshatra__11.md
+│   │   ├── nakshatra__12.md
+│   │   ├── nakshatra__13.md
+│   │   ├── nakshatra__14.md
+│   │   ├── nakshatra__15.md
+│   │   ├── nakshatra__16.md
+│   │   ├── nakshatra__17.md
+│   │   ├── nakshatra__18.md
+│   │   ├── nakshatra__19.md
+│   │   ├── nakshatra__1.md
+│   │   ├── nakshatra__20.md
+│   │   ├── nakshatra__21.md
+│   │   ├── nakshatra__22.md
+│   │   ├── nakshatra__23.md
+│   │   ├── nakshatra__24.md
+│   │   ├── nakshatra__25.md
+│   │   ├── nakshatra__26.md
+│   │   ├── nakshatra__27.md
+│   │   ├── nakshatra__2.md
+│   │   ├── nakshatra__3.md
+│   │   ├── nakshatra__4.md
+│   │   ├── nakshatra__5.md
+│   │   ├── nakshatra__6.md
+│   │   ├── nakshatra__7.md
+│   │   ├── nakshatra__8.md
+│   │   ├── nakshatra__9.md
+│   │   ├── ritual__fast.md
+│   │   ├── tithi__Dvadashi.md
+│   │   ├── tithi__Ekadashi.md
+│   │   ├── tithi__Navami.md
+│   │   └── tithi__Trayodashi.md
+│   └── wiki_entities
+├── echo
+├── ed -E s#\.git$#
+├── engine
+├── EOF
+├── experiments
+├── explain
+├── explorer
+│   └── atlas_cosmic_map.html
+├── generate_nakshatra_cards.py
+├── graph
+│   └── graph.yaml
+├── | head -n 40 || true
+├── html+=fctx.beginPath();ctx.arc({x},{y},5,0,6.28);ctx.fill();ctx.fillText('{n}',{x+8},{y+8});
+├── h -u origin $(git branch --show-current)"
+├── if
+├── import
+│   ├── failed
+│   ├── imported
+│   ├── incoming
+│   ├── logs
+│   ├── processing
+│   └── README.md
+├── install_cosmic_layer.sh
+├── install_nakshatra_layer.sh
+├── journals
+│   └── 2026-03-05.md
+├── json
+├── lib
+│   ├── bindings
+│   │   └── utils.js
+│   ├── tom-select
+│   │   ├── tom-select.complete.min.js
+│   │   └── tom-select.css
+│   └── vis-9.1.2
+│       ├── vis-network.css
+│       └── vis-network.min.js
+├── logs
+│   ├── mine_candidates_20260306_091908.log
+│   ├── mine_candidates_20260306_092223.log
+│   ├── one_safe_aggressive_20260306_121000.log
+│   ├── run_20260306_073459.log
+│   ├── run_safe_aggr_20260306_124004.log
+│   ├── safe_aggr_20260306_121723.log
+│   ├── safe_aggressive_20260306_121519.log
+│   ├── safe_aggressive_20260306_121616.log
+│   ├── wget_cycle_20260306_062627.log
+│   ├── wget_cycle_20260306_062832.log
+│   ├── wget_cycle_20260306_062903.log
+│   ├── wget_cycle_20260306_063102.log
+│   ├── wget_cycle_20260306_071747.log
+│   ├── wget_cycle_20260306_071815.log
+│   ├── wget_guarded_nakshatra_20260305_100831.log
+│   └── wget_guarded_nakshatra_20260305_101135.log
+├── manifests
+│   ├── allow_domains.txt
+│   ├── wget_music.txt
+│   ├── wget_nakshatra.txt
+│   ├── wget_plants.txt
+│   ├── wget_ritual.txt
+│   └── wget_tithi_nitya.txt
+├── map_graph.py
+├── memory
+│   ├── card_images
+│   │   ├── Anuradha.png
+│   │   ├── Ardra.png
+│   │   ├── Ashlesha.png
+│   │   ├── Ashwini.png
+│   │   ├── Bharani.png
+│   │   ├── Chitra.png
+│   │   ├── deity:aditi.png
+│   │   ├── deity:agni.png
+│   │   ├── deity:ajaekapada.png
+│   │   ├── deity:apas.png
+│   │   ├── deity:aryaman.png
+│   │   ├── deity:ashwini_kumaras.png
+│   │   ├── deity:bhaga.png
+│   │   ├── deity:brahma.png
+│   │   ├── deity:brihaspati.png
+│   │   ├── deity:indraagni.png
+│   │   ├── deity:indra.png
+│   │   ├── deity:mitra.png
+│   │   ├── deity:nagas.png
+│   │   ├── deity:nirriti.png
+│   │   ├── deity:pitrs.png
+│   │   ├── deity:rudra.png
+│   │   ├── deity:savitar.png
+│   │   ├── deity:soma.png
+│   │   ├── deity:varuna.png
+│   │   ├── deity:vasus.png
+│   │   ├── deity:vayu.png
+│   │   ├── deity:vishnu.png
+│   │   ├── deity:vishvadevas.png
+│   │   ├── deity:vishvakarma.png
+│   │   ├── deity:yama.png
+│   │   ├── Dhanishta.png
+│   │   ├── Hasta.png
+│   │   ├── Jyeshtha.png
+│   │   ├── Krittika.png
+│   │   ├── Magha.png
+│   │   ├── Mrigashira.png
+│   │   ├── Mula.png
+│   │   ├── nakshatra:10.png
+│   │   ├── nakshatra:11.png
+│   │   ├── nakshatra:12.png
+│   │   ├── nakshatra:13.png
+│   │   ├── nakshatra:14.png
+│   │   ├── nakshatra:15.png
+│   │   ├── nakshatra:16.png
+│   │   ├── nakshatra:17.png
+│   │   ├── nakshatra:18.png
+│   │   ├── nakshatra:19.png
+│   │   ├── nakshatra:1.png
+│   │   ├── nakshatra:20.png
+│   │   ├── nakshatra:21.png
+│   │   ├── nakshatra:22.png
+│   │   ├── nakshatra:23.png
+│   │   ├── nakshatra:24.png
+│   │   ├── nakshatra:25.png
+│   │   ├── nakshatra:2.png
+│   │   ├── nakshatra:3.png
+│   │   ├── nakshatra:4.png
+│   │   ├── nakshatra:5.png
+│   │   ├── nakshatra:6.png
+│   │   ├── nakshatra:7.png
+│   │   ├── nakshatra:8.png
+│   │   ├── nakshatra:9.png
+│   │   ├── Punarvasu.png
+│   │   ├── Purva Ashadha.png
+│   │   ├── Purva Bhadrapada.png
+│   │   ├── Purva Phalguni.png
+│   │   ├── Pushya.png
+│   │   ├── Revati.png
+│   │   ├── Rohini.png
+│   │   ├── Shatabhisha.png
+│   │   ├── Shravana.png
+│   │   ├── Swati.png
+│   │   ├── Uttara Ashadha.png
+│   │   ├── Uttara Bhadrapada.png
+│   │   ├── Uttara Phalguni.png
+│   │   └── Vishakha.png
+│   ├── cards
+│   │   └── cards.json
+│   ├── concepts.json
+│   ├── corpus.db
+│   ├── cosmic_mandala.html
+│   ├── cosmology_graph.json
+│   ├── cycle_plan.json
+│   ├── graph_canonical_1772713919.html
+│   ├── graph_canonical_1772715999.html
+│   ├── graph.html
+│   ├── graphs
+│   │   ├── atlas_merged_graph.json
+│   │   ├── canonical_graph.json
+│   │   ├── cosmology_graph.json
+│   │   ├── layered_graph.json
+│   │   ├── resolved_graph.html
+│   │   ├── resolved_graph.json
+│   │   └── seed_graph.json
+│   ├── graph_seed_1772698497.html
+│   ├── graph_seed_1772698683.html
+│   ├── graph_seed_1772699534.html
+│   ├── graph_seed_1772711315.html
+│   ├── graph_seed_1772711605.html
+│   ├── graph_seed_1772713918.html
+│   ├── graph_seed_1772715752.html
+│   ├── graph_seed_1772721765.html
+│   ├── graph_seed_1772827462.html
+│   ├── interface
+│   │   ├── atlas_explorer.html
+│   │   └── atlas_launcher.html
+│   ├── patterns
+│   │   └── pattern_clusters.json
+│   ├── project_index.txt
+│   ├── pulse_state.json
+│   ├── reports
+│   │   ├── aggregate.json
+│   │   ├── atlas_clusters.json
+│   │   ├── atlas_relations.json
+│   │   ├── canon_guard.json
+│   │   ├── cluster_nakshatra_rohini.md
+│   │   ├── clusters.json
+│   │   ├── cycle_report.json
+│   │   ├── dashboard.html
+│   │   ├── dataset_report.json
+│   │   ├── evidence_todo.txt
+│   │   ├── gaps.json
+│   │   ├── gaps_top.txt
+│   │   ├── journey_moon_passages.csv
+│   │   ├── next_domain.txt
+│   │   ├── pb_state.json
+│   │   ├── quality_report.json
+│   │   ├── research_fingerprint.txt
+│   │   └── stability_report.json
+│   ├── rohini_card.html
+│   ├── vector.index
+│   ├── vector_texts.txt
+│   ├── vedic_cosmology_graph.json
+│   ├── visualizations
+│   │   ├── atlas_constellation.html
+│   │   ├── atlas_graph_explorer.html
+│   │   ├── atlas_home.html
+│   │   ├── atlas_layout_engine.js
+│   │   ├── atlas_mandala.html
+│   │   ├── cosmic_mandala.html
+│   │   ├── cosmic_map.html
+│   │   ├── cosmic_multiring_mandala.html
+│   │   ├── day_of_brahma_report.json
+│   │   ├── nakshatra_wheel.html
+│   │   ├── node_inspector.html
+│   │   ├── node_panel_patch.js
+│   │   ├── vastu_layout.json
+│   │   └── zoom_patch.js
+│   └── yantra
+│       ├── atlas_coherence_metrics.json
+│       └── yantra_scope_bridge.json
+├── nano
+├── nodes[name]=data
+├── notes
+├── offerings
+│   ├── archive
+│   ├── cosmic_seeds_1772975024.md
+│   └── current
+├── ontology
+│   ├── relation_templates.yaml
+│   └── vedic_cosmology_graph.json
+├── panchanga
+│   └── 2026-03-05.yaml
+├── patches
+│   └── auto_proposed_relations.csv
+├── pathlib
+├── prompts
+│   ├── atlas_super_extractor.md
+│   ├── generated
+│   │   └── discovery_prompts.txt
+│   ├── seed_prompts.md
+│   └── superblocks
+├── PY
+├── __pycache__
+│   └── atlas.cpython-313.pyc
+├── python:
+├── re
+├── README.md
+├── recovery
+│   └── thesis
+├── requests
+├── research
+│   ├── 3b70b8e25a19__Nakshatra-Sooktam-Eng-v1.pdf
+│   ├── 55638a18f041__Nakshatra-Sooktam-Eng-v1_djvu.txt
+│   ├── 6eb2ab658599__nakshatra parichaya.pdf
+│   ├── 7df72af0aa24__Die_vedischen_Nachrichten_von_den_naxatr T 2  .pdf
+│   ├── a215369f80e5__Nakshatra Jyotish.pdf
+│   ├── a5d450ee6aa2__Die_vedischen_Nachrichten_von_den_naxatr T 2  _djvu.txt
+│   ├── ab2febeb4cc6__Nakshatra Mala Vyakhya Lalshmi Vilas - Shivram Tripathi_222_Gha_Alm_2_Shlf_2 _Devanagari - Kavya_djvu.txt
+│   ├── aea77d2967a2__2015.382306.Nakshatra-Vidnyana.pdf
+│   ├── _bad
+│   │   └── nakshatra parichaya.pdf
+│   ├── c336724eac0f__Nakshatra Mala Vyakhya Lalshmi Vilas - Shivram Tripathi_222_Gha_Alm_2_Shlf_2 _Devanagari - Kavya.pdf
+│   ├── dcf4416025e7__Nakshatra Jyotish_text.pdf
+│   ├── de51c1ccd87a__nakshatra parichaya_djvu.txt
+│   ├── e3e399cf617f__2015.382306.Nakshatra-Vidnyana_text.pdf
+│   ├── eef9ff9f47bf__Grah Nakshatra by Shri Triveni Prasad Singh Hindi Astronomy 1955 Patna - Bihar Rashtrabhasha Parishad.pdf
+│   ├── _incoming
+│   │   └── nakshatra
+│   │       ├── 2015.382306.Nakshatra-Vidnyana.pdf
+│   │       ├── 2015.382306.Nakshatra-Vidnyana_text.pdf
+│   │       ├── Die_vedischen_Nachrichten_von_den_naxatr T 2  _djvu.txt
+│   │       ├── Die_vedischen_Nachrichten_von_den_naxatr T 2  .pdf
+│   │       ├── Grah Nakshatra by Shri Triveni Prasad Singh Hindi Astronomy 1955 Patna - Bihar Rashtrabhasha Parishad.pdf
+│   │       ├── Nakshatra Jyotish.pdf
+│   │       ├── Nakshatra Jyotish_text.pdf
+│   │       ├── Nakshatra Mala Vyakhya Lalshmi Vilas - Shivram Tripathi_222_Gha_Alm_2_Shlf_2 _Devanagari - Kavya_djvu.txt
+│   │       ├── Nakshatra Mala Vyakhya Lalshmi Vilas - Shivram Tripathi_222_Gha_Alm_2_Shlf_2 _Devanagari - Kavya.pdf
+│   │       ├── nakshatra parichaya_djvu.txt
+│   │       ├── Nakshatra-Sooktam-Eng-v1_djvu.txt
+│   │       └── Nakshatra-Sooktam-Eng-v1.pdf
+│   ├── _incoming_remote
+│   ├── _ingest
+│   ├── Kurukṣetra Aftermath as Canonical Memory_ Dynastic Continuity, Displacement Motifs, and Cross-Civili.pdf
+│   ├── _meta
+│   │   ├── 3b70b8e25a1911281b4d6956561d1623711fcc66255983b549cb11d464d174c8.json
+│   │   ├── 55638a18f041d86cac27bb60a2d24ff05cc5b0a8fbd2ee3729687dfd492616d7.json
+│   │   ├── 6eb2ab658599e4c606857eca49a0eba57857110e6bdc4a449a03deb3f405ba7d.json
+│   │   ├── 7df72af0aa244c026a89e8f679b819f63ebdaa4168cc3959db87c1848cf40213.json
+│   │   ├── a215369f80e5bfc64e6d1f1b2f5066910c79e79604167e8d09b77526299b2c3c.json
+│   │   ├── a5d450ee6aa25b9313dc49aeaf1b9abb5da53c6af4a71d4263c32a7f90436154.json
+│   │   ├── ab2febeb4cc6cd6303ef9a518d0fb56d0a2e453d613f7ecb036f96056711d87c.json
+│   │   ├── aea77d2967a276bb89c5c58b50127a96aa812852795ba3a4ef2144d29ae6462a.json
+│   │   ├── c336724eac0f7029808175990e10dcf011bfc943d5d709c68b9f899188c7bb1e.json
+│   │   ├── dcf4416025e73272ab9f3ee814b0d972aead57b58f6cf74af6f7ee5c50aa2f9f.json
+│   │   ├── de51c1ccd87a0494df53dc399479e92cc6809aa41e2c17d0adf264c889750379.json
+│   │   ├── e3e399cf617f81ba39720aad6bf16ed9b8f9b28c87a9624aab5f7e7b900c8afa.json
+│   │   └── eef9ff9f47bfc033fc8b48c976e41a85b8def9901fa483d73064158b254fc6a2.json
+│   ├── _ocr
+│   │   ├── lowtext_pdfs.txt
+│   │   └── _tmp
+│   ├── seeds
+│   │   ├── auto_generated_seeds.md
+│   │   └── supreme_seed_log.md
+│   ├── Simultaneous Unity and Difference_ Acintya-bhedābheda in Gauḍīya Vedānta and Cross-Domain Formal Mod.pdf
+│   ├── sources
+│   ├── _text
+│   │   ├── 2015.382306.Nakshatra-Vidnyana_text.txt
+│   │   ├── 2015.382306.Nakshatra-Vidnyana.txt
+│   │   ├── 3b70b8e25a19__Nakshatra-Sooktam-Eng-v1.txt
+│   │   ├── 7df72af0aa24__Die_vedischen_Nachrichten_von_den_naxatr T 2  .txt
+│   │   ├── a215369f80e5__Nakshatra Jyotish.txt
+│   │   ├── aea77d2967a2__2015.382306.Nakshatra-Vidnyana.txt
+│   │   ├── c336724eac0f__Nakshatra Mala Vyakhya Lalshmi Vilas - Shivram Tripathi_222_Gha_Alm_2_Shlf_2 _Devanagari - Kavya.txt
+│   │   ├── Die_vedischen_Nachrichten_von_den_naxatr_T_2__djvu.txt
+│   │   ├── Die_vedischen_Nachrichten_von_den_naxatr T 2  .txt
+│   │   ├── e3e399cf617f__2015.382306.Nakshatra-Vidnyana_text.txt
+│   │   ├── journey-with-the-moon__a80ecfcb.txt
+│   │   ├── Nakshatra Jyotish.txt
+│   │   ├── Nakshatra_Mala_Vyakhya_Lalshmi_Vilas_-_Shivram_Tripathi_222_Gha_Alm_2_Shlf_2__Devanagari_-_Kavya_djvu.txt
+│   │   ├── Nakshatra Mala Vyakhya Lalshmi Vilas - Shivram Tripathi_222_Gha_Alm_2_Shlf_2 _Devanagari - Kavya.txt
+│   │   ├── nakshatra_parichaya_djvu.txt
+│   │   ├── Nakshatra-Sooktam-Eng-v1_djvu.txt
+│   │   └── Nakshatra-Sooktam-Eng-v1.txt
+│   ├── _wget
+│   │   └── jobs
+│   └── Yantra and Mandala Systems as Relational Geometric Encodings of Cosmology.pdf
+├── research_archive
+│   ├── conversations
+│   ├── notes
+│   ├── prompts
+│   └── source_extracts
+├── research_logs
+├── research_outputs
+├── research_private
+│   ├── _incoming
+│   ├── _meta
+│   ├── _ocr
+│   └── _text
+├── research_public
+│   ├── curated
+│   ├── README
+│   └── README.md
+├── research_queue
+│   ├── queue.json
+│   └── queue.yaml
+├── ruled_by
+├── run_panel.sh
+├── run.sh
+├── schemas
+│   ├── atlas_graph_schema.json
+│   ├── atlas_projection.json
+│   ├── convention_protocol.json
+│   ├── entity_aliases.json
+│   ├── entity_types.json
+│   ├── harmonizer_schema.json
+│   ├── nakshatra_schema.json
+│   ├── ontology.json
+│   ├── placeholder_protocol.json
+│   ├── tithi_schema.json
+│   ├── traditions.json
+│   └── yantra_geometry_schema.json
+├── scripts
+│   ├── add_deity_layer.py
+│   ├── add_nakshatra_qualities.py
+│   ├── add_tithi_layer.py
+│   ├── adopt_staged.py
+│   ├── aggregate_report.py
+│   ├── ai_patch.py
+│   ├── ai_router.py
+│   ├── atlas_api.py
+│   ├── atlas_build_relations.py
+│   ├── atlas_build_research_queue.py
+│   ├── atlas_cluster_cycle.py
+│   ├── atlas_compute_coherence.py
+│   ├── atlas_cycle.sh
+│   ├── atlas_dataset_scan.py
+│   ├── atlas_discovery.py
+│   ├── atlas_doctor.py
+│   ├── atlas_env.py
+│   ├── atlas_execute_research.py
+│   ├── atlas_gap_detector.py
+│   ├── atlas_grow.py
+│   ├── atlas_growth_cycle.sh
+│   ├── atlas_harmonizer.py
+│   ├── atlas_ingest.py
+│   ├── atlas_load_canon.py
+│   ├── atlas_meaning_today.py
+│   ├── atlas_normalize_entities.py
+│   ├── atlas_open.py
+│   ├── atlas_pattern_engine.py
+│   ├── atlas_research_queue.py
+│   ├── atlas_review.sh
+│   ├── atlas_run_pipeline.py
+│   ├── atlas_run.sh
+│   ├── atlas_seed_cycle.py
+│   ├── atlas_think.py
+│   ├── atlas_update.py
+│   ├── autolink.py
+│   ├── automation_cycle.py
+│   ├── auto_no_review.sh
+│   ├── auto_no_review.sh.bak
+│   ├── auto_populate.py
+│   ├── auto_watch.py
+│   ├── build_canonical_graph_ideal.py
+│   ├── build_capsule_graph.py
+│   ├── build_cosmic_mandala.py
+│   ├── build_cosmology_graph.py
+│   ├── build_seed_graph.py
+│   ├── build_universe.py
+│   ├── canon_build_strict.py
+│   ├── chat_seed_extractor.py
+│   ├── concept_extract.py
+│   ├── control_panel.py
+│   ├── corpus_db.py
+│   ├── corpus_extract_pdftext.py
+│   ├── corpus_harvest_passages.py
+│   ├── corpus_scan.py
+│   ├── cosmic_multiring_mandala.py
+│   ├── cycle_scheduled.sh
+│   ├── cycle.sh
+│   ├── dashboard.py
+│   ├── detect_clusters.py
+│   ├── dev_agent.py
+│   ├── dev_ai_shell.py
+│   ├── devcycle.py
+│   ├── devmode.py
+│   ├── devset.py
+│   ├── devtodo.py
+│   ├── doctor.py
+│   ├── enable_layout_modes.py
+│   ├── ensure_graph_integrity.py
+│   ├── evidencefill_passages.py
+│   ├── evidencefill.py
+│   ├── evidencefill_v2.py
+│   ├── expand_structure.py
+│   ├── export_atlas_canon.py
+│   ├── export_coherence_metrics.py
+│   ├── extract_nonpdf.py
+│   ├── extract_text_knowledge.py
+│   ├── factcheck_relations.py
+│   ├── fast_run.sh
+│   ├── fill_toid_fast.py
+│   ├── fill_toid_from_nakshatra_yaml.py
+│   ├── find_lowtext_pdfs.py
+│   ├── find_missing_relations.py
+│   ├── gap_score.py
+│   ├── generate_baseline.sh
+│   ├── generate_docs.py
+│   ├── generate_jyotish.py
+│   ├── generate_nakshatra_cards.py
+│   ├── generate_readme_seeds.py
+│   ├── generate_research_tasks.py
+│   ├── generate_seed_prompts.py
+│   ├── graph_utils.py
+│   ├── graph_viewer.py
+│   ├── grow.sh
+│   ├── guard_canon.py
+│   ├── guarded_exec.py
+│   ├── harvest_pdf.py
+│   ├── harvest_text_passages.py
+│   ├── ia_direct_manifest.py
+│   ├── ia_manifest.py
+│   ├── index_project.py
+│   ├── ingest_all.py
+│   ├── ingest_dataset.py
+│   ├── ingest_relations_auto.py
+│   ├── ingest_research.py
+│   ├── inspect_graph_structure.py
+│   ├── install_cycle_cron.sh
+│   ├── layered_graph_open.sh
+│   ├── layered_relations_build.py
+│   ├── links_cycle.py
+│   ├── nakshatra_cosmic_mandala.py
+│   ├── nakshatra_cosmic_wheel.py
+│   ├── nightly.py
+│   ├── node_inspector_api.py
+│   ├── node_report.py
+│   ├── normalize_to_ideal.py
+│   ├── ocr_lowtext.sh
+│   ├── ollama_client.py
+│   ├── ollama_ping.py
+│   ├── ollama_plan.py
+│   ├── ollama_plan.py.bak
+│   ├── openai_client.py
+│   ├── open_dashboard.sh
+│   ├── panchanga.py
+│   ├── pb_cli.sh
+│   ├── pb_emit.py
+│   ├── pb_state.py
+│   ├── pdftext_all.py
+│   ├── pdftext_parallel.py
+│   ├── pick_manifest.py
+│   ├── pipeline.py
+│   ├── project_ai.py
+│   ├── promote_incoming.py
+│   ├── prompts_cli.sh
+│   ├── prompts_commit.sh
+│   ├── prompts_to_seeds.py
+│   ├── prompts_write.sh
+│   ├── propose_evidence.py
+│   ├── pulse
+│   │   └── svara_monitor.py
+│   ├── __pycache__
+│   │   ├── ollama_client.cpython-313.pyc
+│   │   ├── openai_client.cpython-313.pyc
+│   │   └── vector_memory.cpython-313.pyc
+│   ├── query_graph.py
+│   ├── query.py
+│   ├── rebuild_cosmology_graph.py
+│   ├── refresh.py
+│   ├── register_pb.py
+│   ├── remote_fetch.py
+│   ├── research
+│   │   ├── crawler.py
+│   │   └── ingest_text.py
+│   ├── research_ingest.py
+│   ├── research_search.py
+│   ├── resolve_clusters.py
+│   ├── resolve_layers.py
+│   ├── resolve_layers_simple.py
+│   ├── ritual_calendar.py
+│   ├── rollback.py
+│   ├── rollback.sh
+│   ├── run_day_of_brahma.sh
+│   ├── run.py
+│   ├── run_tests.sh
+│   ├── safeupdate.sh
+│   ├── sanitize_incoming_pdfs.py
+│   ├── sanitize_incoming.py
+│   ├── seed_relations.py
+│   ├── snapshot.sh
+│   ├── stage_candidates.py
+│   ├── status.py
+│   ├── system
+│   │   ├── detect_incomplete_python.py
+│   │   ├── __pycache__
+│   │   │   └── render_constellation.cpython-313.pyc
+│   │   └── render_constellation.py
+│   ├── update_readme.py
+│   ├── update_vastu_layout.py
+│   ├── update_yantra_bridge.py
+│   ├── upgrade_atlas_explorer.py
+│   ├── validate_projection.py
+│   ├── vector_memory.py
+│   ├── wget_cycle.sh
+│   ├── wget_guarded.sh
+│   └── wiki_build.py
+├── scripts_dev
+├── seeds
+│   ├── cosmic_cycle_20260308_091738.md
+│   ├── cosmic_seed_cycle_20260308_090538.md
+│   ├── demo_seed.md
+│   ├── seed_20260308_1619.md
+│   ├── seed_a18f041d86cac27bb60a2d24ff05cc5b0a8fbd2ee3729687dfd492616d7_20260308_194819.md
+│   ├── seed_a18f041_nakshatra_sooktam_eng_v1_djvu_20260308_194819.md
+│   ├── seed_a5d450ee6aa25b9313dc49aeaf1b9abb5da53c6af4a71d4263c32a7f90436154_20260308_194819.md
+│   ├── seed_a5d450ee6aa2_die_vedischen_nachrichten_von_den_naxatr_20260308_194819.md
+│   ├── seed_ability_20260308_194814.md
+│   ├── seed_achala_20260308_194814.md
+│   ├── seed_action_20260308_194814.md
+│   ├── seed_action_20260308_194820.md
+│   ├── seed_activates_20260308_194814.md
+│   ├── seed_active_192513.md
+│   ├── seed_active_20260308_194814.md
+│   ├── seed_active_seeds_20260308_194814.md
+│   ├── seed_activity_20260308_194814.md
+│   ├── seed_actual_20260308_194814.md
+│   ├── seed_adventurous_20260308_194814.md
+│   ├── seed_aea77d2967a276bb89c5c58b50127a96aa812852795ba3a4ef2144d29ae6462a_20260308_194819.md
+│   ├── seed_affection_20260308_194814.md
+│   ├── seed_aggressive_20260308_194814.md
+│   ├── seed_agnihotra_20260308_194814.md
+│   ├── seed_agni_yantra_20260308_194814.md
+│   ├── seed_ahirbudhnya_20260308_194814.md
+│   ├── seed_airavata_elephant_20260308_194814.md
+│   ├── seed_aja_ekapada_20260308_194814.md
+│   ├── seed_ajaekapada_20260308_194814.md
+│   ├── seed_aliases_20260308_194814.md
+│   ├── seed_alternatives_20260308_194814.md
+│   ├── seed_amavasya_20260308_194814.md
+│   ├── seed_amrita_20260308_194817.md
+│   ├── seed_analysis_20260308_194814.md
+│   ├── seed_ancestral_connection_20260308_194814.md
+│   ├── seed_anchored_20260308_194814.md
+│   ├── seed_anchors_20260308_194814.md
+│   ├── seed_antelope_20260308_194814.md
+│   ├── seed_anuradha_20260308_194814.md
+│   ├── seed_appears_in_20260308_194814.md
+│   ├── seed_application_20260308_194814.md
+│   ├── seed_application_layers_20260308_194814.md
+│   ├── seed_apprentice_20260308_194814.md
+│   ├── seed_aquarius_20260308_194814.md
+│   ├── seed_archetypal_192513.md
+│   ├── seed_archetypal_20260308_194814.md
+│   ├── seed_archetype_20260308_194814.md
+│   ├── seed_architecture_192513.md
+│   ├── seed_architecture_20260308_194814.md
+│   ├── seed_archive_20260308_194814.md
+│   ├── seed_archive_20260308_194816.md
+│   ├── seed_archive_20260308_194817.md
+│   ├── seed_archive_20260308_194818.md
+│   ├── seed_archive_20260308_194820.md
+│   ├── seed_arjuna_192513.md
+│   ├── seed_arjuna_20260308_194814.md
+│   ├── seed_artifact_20260308_194814.md
+│   ├── seed_artifacts_20260308_194814.md
+│   ├── seed_artifact_type_20260308_194814.md
+│   ├── seed_aryaman_20260308_194814.md
+│   ├── seed_ascension_20260308_194814.md
+│   ├── seed_ashadha_192513.md
+│   ├── seed_ashadha_20260308_194814.md
+│   ├── seed_ashlesha_20260308_194814.md
+│   ├── seed_ashoka_20260308_194814.md
+│   ├── seed_ashtami_20260308_194814.md
+│   ├── seed_ashwini_192513.md
+│   ├── seed_ashwini_20260308_194814.md
+│   ├── seed_associated_192513.md
+│   ├── seed_associated_deity_20260308_194814.md
+│   ├── seed_associated_with_20260308_194814.md
+│   ├── seed_asterism_20260308_194814.md
+│   ├── seed_astonishes_20260308_194814.md
+│   ├── seed_astringent_20260308_194814.md
+│   ├── seed_astrology_20260308_194814.md
+│   ├── seed_astronomy_20260308_194819.md
+│   ├── seed_attested_192513.md
+│   ├── seed_attested_secondary_20260308_194814.md
+│   ├── seed_attraction_20260308_194814.md
+│   ├── seed_auspicious_beginnings_20260308_194814.md
+│   ├── seed_authority_192513.md
+│   ├── seed_authority_20260308_194814.md
+│   ├── seed_available_20260308_194814.md
+│   ├── seed_avatar_192513.md
+│   ├── seed_awakened_20260308_194814.md
+│   ├── seed_ayurveda_192513.md
+│   ├── seed_ayurveda_20260308_194814.md
+│   ├── seed_b70b8e25a1911281b4d6956561d1623711fcc66255983b549cb11d464d174c8_20260308_194819.md
+│   ├── seed_b70b8e25a19_nakshatra_sooktam_eng_v1_20260308_194819.md
+│   ├── seed_balance_20260308_194814.md
+│   ├── seed_banyan_20260308_194814.md
+│   ├── seed_beautiful_20260308_194814.md
+│   ├── seed_beauty_20260308_194814.md
+│   ├── seed_become_20260308_194814.md
+│   ├── seed_becomes_20260308_194814.md
+│   ├── seed_before_192513.md
+│   ├── seed_bhadrapada_192513.md
+│   ├── seed_bhadrapada_20260308_194814.md
+│   ├── seed_bhagamalini_192513.md
+│   ├── seed_bhagamalini_20260308_194814.md
+│   ├── seed_bhagavad_192513.md
+│   ├── seed_bhagavad_20260308_194814.md
+│   ├── seed_bharani_192513.md
+│   ├── seed_bharani_20260308_194814.md
+│   ├── seed_bherunda_192513.md
+│   ├── seed_bherunda_20260308_194814.md
+│   ├── seed_bitter_20260308_194814.md
+│   ├── seed_brahma_20260308_194814.md
+│   ├── seed_brahman_192513.md
+│   ├── seed_brahmana_20260308_194814.md
+│   ├── seed_branch_20260308_194814.md
+│   ├── seed_breath_pattern_20260308_194814.md
+│   ├── seed_bridge_20260308_194814.md
+│   ├── seed_brihaspati_20260308_194814.md
+│   ├── seed_bronze_20260308_194814.md
+│   ├── seed_buffalo_20260308_194814.md
+│   ├── seed_caitanya_20260308_194814.md
+│   ├── seed_calendar_20260308_194820.md
+│   ├── seed_calendar_planning_20260308_194814.md
+│   ├── seed_cancer_20260308_194814.md
+│   ├── seed_canonical_192513.md
+│   ├── seed_canonical_20260308_194814.md
+│   ├── seed_canonization_20260308_194814.md
+│   ├── seed_capricorn_20260308_194814.md
+│   ├── seed_categories_192513.md
+│   ├── seed_category_192513.md
+│   ├── seed_category_20260308_194814.md
+│   ├── seed_category_20260308_194820.md
+│   ├── seed_caturda_20260308_194814.md
+│   ├── seed_cdefghijstuvwxyzcdefghijstuvwxyz_20260308_194817.md
+│   ├── seed_cdefghijstuvwxyzcdefghijstuvwxyz_20260308_194819.md
+│   ├── seed_celestial_192513.md
+│   ├── seed_center_20260308_194814.md
+│   ├── seed_chains_20260308_194814.md
+│   ├── seed_chakra_20260308_194814.md
+│   ├── seed_chakra_layer_20260308_194814.md
+│   ├── seed_chakra_symbol_20260308_194814.md
+│   ├── seed_chandas_20260308_194814.md
+│   ├── seed_chandra_20260308_194814.md
+│   ├── seed_changes_192513.md
+│   ├── seed_changes_20260308_194814.md
+│   ├── seed_chapter_20260308_194814.md
+│   ├── seed_chapters_192513.md
+│   ├── seed_chitra_20260308_194814.md
+│   ├── seed_clarity_20260308_194814.md
+│   ├── seed_cluster_192513.md
+│   ├── seed_cluster_20260308_194814.md
+│   ├── seed_clusters_192513.md
+│   ├── seed_clusters_20260308_194814.md
+│   ├── seed_coherence_192513.md
+│   ├── seed_coherence_20260308_194814.md
+│   ├── seed_coherent_192513.md
+│   ├── seed_coherent_20260308_194814.md
+│   ├── seed_cohesion_20260308_194814.md
+│   ├── seed_combination_192513.md
+│   ├── seed_combinations_20260308_194814.md
+│   ├── seed_common_192513.md
+│   ├── seed_common_20260308_194814.md
+│   ├── seed_community_driven_20260308_194814.md
+│   ├── seed_comparative_20260308_194814.md
+│   ├── seed_completed_20260308_194814.md
+│   ├── seed_composed_192513.md
+│   ├── seed_composed_20260308_194814.md
+│   ├── seed_concept_192513.md
+│   ├── seed_concept_20260308_194814.md
+│   ├── seed_concept_20260308_194820.md
+│   ├── seed_confidence_20260308_194814.md
+│   ├── seed_connect_192513.md
+│   ├── seed_connected_192513.md
+│   ├── seed_connected_20260308_194814.md
+│   ├── seed_context_192513.md
+│   ├── seed_contribution_20260308_194814.md
+│   ├── seed_controls_20260308_194814.md
+│   ├── seed_conversation_192513.md
+│   ├── seed_conversation_20260308_194814.md
+│   ├── seed_cooling_20260308_194814.md
+│   ├── seed_cosmic_192513.md
+│   ├── seed_cosmicbody_192513.md
+│   ├── seed_cosmic_context_20260308_194814.md
+│   ├── seed_cosmic_cycle_20260308_194814.md
+│   ├── seed_cosmic_illumination_20260308_194814.md
+│   ├── seed_cosmic_layer_20260308_194814.md
+│   ├── seed_cosmic_motion_20260308_194814.md
+│   ├── seed_cosmic_sound_20260308_194814.md
+│   ├── seed_cosmological_192513.md
+│   ├── seed_cosmological_20260308_194814.md
+│   ├── seed_cosmology_192513.md
+│   ├── seed_cosmology_20260308_194814.md
+│   ├── seed_cosmology_core_20260308_194814.md
+│   ├── seed_creative_192513.md
+│   ├── seed_creative_power_20260308_194814.md
+│   ├── seed_creativity_20260308_194814.md
+│   ├── seed_cultural_192513.md
+│   ├── seed_cultural_20260308_194814.md
+│   ├── seed_current_192513.md
+│   ├── seed_current_20260308_194814.md
+│   ├── seed_currently_20260308_194814.md
+│   ├── seed_cycles_192513.md
+│   ├── seed_dataset_directions_20260308_194814.md
+│   ├── seed_datasets_192513.md
+│   ├── seed_datasets_20260308_194814.md
+│   ├── seed_deities_20260308_194814.md
+│   ├── seed_deity_of_20260308_194814.md
+│   ├── seed_densityadj_20260308_194814.md
+│   ├── seed_derived_20260308_194814.md
+│   ├── seed_desire_20260308_194814.md
+│   ├── seed_devanagari_20260308_194814.md
+│   ├── seed_devanagari_20260308_194819.md
+│   ├── seed_devi_wields_weapon_20260308_194814.md
+│   ├── seed_devotion_192513.md
+│   ├── seed_devotion_20260308_194814.md
+│   ├── seed_df72af0aa244c026a89e8f679b819f63ebdaa4168cc3959db87c1848cf40213_20260308_194819.md
+│   ├── seed_df72af0aa24_die_vedischen_nachrichten_von_den_naxatr_20260308_194819.md
+│   ├── seed_dharmartha_20260308_194817.md
+│   ├── seed_diagrams_192513.md
+│   ├── seed_diagrams_20260308_194814.md
+│   ├── seed_difference_192513.md
+│   ├── seed_difference_20260308_194814.md
+│   ├── seed_digitized_20260308_194817.md
+│   ├── seed_direction_20260308_194814.md
+│   ├── seed_directions_192513.md
+│   ├── seed_directions_20260308_194814.md
+│   ├── seed_documents_192513.md
+│   ├── seed_documents_20260308_194814.md
+│   ├── seed_domain_192513.md
+│   ├── seed_domain_20260308_194814.md
+│   ├── seed_domestic_art_20260308_194814.md
+│   ├── seed_dryness_20260308_194814.md
+│   ├── seed_dst_path_20260308_194819.md
+│   ├── seed_dvadashi_192513.md
+│   ├── seed_dvadashi_20260308_194814.md
+│   ├── seed_dvitiya_192513.md
+│   ├── seed_dvitiya_20260308_194814.md
+│   ├── seed_earthly_192513.md
+│   ├── seed_ecology_20260308_194814.md
+│   ├── seed_egangotri_20260308_194817.md
+│   ├── seed_ekadashi_192513.md
+│   ├── seed_ekadashi_20260308_194814.md
+│   ├── seed_element_192513.md
+│   ├── seed_element_20260308_194814.md
+│   ├── seed_element_id_20260308_194814.md
+│   ├── seed_elements_20260308_194814.md
+│   ├── seed_elephant_20260308_194814.md
+│   ├── seed_emotion_192513.md
+│   ├── seed_endobj_20260308_194814.md
+│   ├── seed_endobj_20260308_194815.md
+│   ├── seed_endobj_20260308_194816.md
+│   ├── seed_endobj_20260308_194817.md
+│   ├── seed_endobj_20260308_194818.md
+│   ├── seed_endobj_20260308_194819.md
+│   ├── seed_endstream_20260308_194814.md
+│   ├── seed_endstream_20260308_194815.md
+│   ├── seed_endstream_20260308_194816.md
+│   ├── seed_endstream_20260308_194817.md
+│   ├── seed_endstream_20260308_194818.md
+│   ├── seed_endstream_20260308_194819.md
+│   ├── seed_energetics_20260308_194814.md
+│   ├── seed_energised_20260308_194814.md
+│   ├── seed_energy_192513.md
+│   ├── seed_entity_192513.md
+│   ├── seed_entity_20260308_194814.md
+│   ├── seed_evidence_192513.md
+│   ├── seed_evidence_20260308_194814.md
+│   ├── seed_example_192513.md
+│   ├── seed_example_20260308_194814.md
+│   ├── seed_excerpt_192513.md
+│   ├── seed_excerpt_20260308_194814.md
+│   ├── seed_excited_20260308_194814.md
+│   ├── seed_execution_192513.md
+│   ├── seed_expand_20260308_194814.md
+│   ├── seed_expected_count_20260308_194814.md
+│   ├── seed_female_20260308_194814.md
+│   ├── seed_fertility_20260308_194814.md
+│   ├── seed_fields_192513.md
+│   ├── seed_fields_20260308_194814.md
+│   ├── seed_fifteen_20260308_194814.md
+│   ├── seed_filter_20260308_194814.md
+│   ├── seed_filter_20260308_194816.md
+│   ├── seed_filter_20260308_194817.md
+│   ├── seed_filter_20260308_194818.md
+│   ├── seed_flowing_20260308_194814.md
+│   ├── seed_fortnight_20260308_194814.md
+│   ├── seed_founder_192513.md
+│   ├── seed_freedom_20260308_194814.md
+│   ├── seed_from_id_20260308_194814.md
+│   ├── seed_future_20260308_194814.md
+│   ├── seed_gemini_20260308_194814.md
+│   ├── seed_genealogy_layer_20260308_194814.md
+│   ├── seed_generated_192513.md
+│   ├── seed_generated_20260308_194814.md
+│   ├── seed_generation_192513.md
+│   ├── seed_generation_20260308_194814.md
+│   ├── seed_geometry_192513.md
+│   ├── seed_geometry_20260308_194814.md
+│   ├── seed_goddess_192513.md
+│   ├── seed_goddess_20260308_194814.md
+│   ├── seed_goddess_20260308_194817.md
+│   ├── seed_google_20260308_194816.md
+│   ├── seed_google_20260308_194817.md
+│   ├── seed_google_20260308_194818.md
+│   ├── seed_google_20260308_194820.md
+│   ├── seed_graha_jupiter_20260308_194814.md
+│   ├── seed_graha_ketu_20260308_194814.md
+│   ├── seed_graha_mars_20260308_194814.md
+│   ├── seed_grahas_20260308_194814.md
+│   ├── seed_hanuman_192513.md
+│   ├── seed_hanuman_20260308_194814.md
+│   ├── seed_havishaa_20260308_194814.md
+│   ├── seed_havishaa_20260308_194817.md
+│   ├── seed_healing_20260308_194814.md
+│   ├── seed_heating_20260308_194814.md
+│   ├── seed_hemanta_20260308_194814.md
+│   ├── seed_historical_layer_20260308_194814.md
+│   ├── seed_identity_192513.md
+│   ├── seed_impetus_192513.md
+│   ├── seed_impetus_20260308_194814.md
+│   ├── seed_incoming_20260308_194819.md
+│   ├── seed_indraagni_20260308_194814.md
+│   ├── seed_inference_192513.md
+│   ├── seed_inference_20260308_194814.md
+│   ├── seed_intellect_20260308_194814.md
+│   ├── seed_intellectual_20260308_194814.md
+│   ├── seed_interpreter_192513.md
+│   ├── seed_interpreter_20260308_194814.md
+│   ├── seed_introduced_192513.md
+│   ├── seed_jupiter_192513.md
+│   ├── seed_jupiter_20260308_194814.md
+│   ├── seed_jyotish_20260308_194814.md
+│   ├── seed_jyotish_20260308_194819.md
+│   ├── seed_jyotish_core_20260308_194814.md
+│   ├── seed_jyotish_text_20260308_194819.md
+│   ├── seed_kameshvari_192513.md
+│   ├── seed_kashaya_20260308_194814.md
+│   ├── seed_kathina_20260308_194814.md
+│   ├── seed_kavya_djvu_20260308_194819.md
+│   ├── seed_kernel_192513.md
+│   ├── seed_knowledge_192513.md
+│   ├── seed_krishna_192513.md
+│   ├── seed_krishna_20260308_194814.md
+│   ├── seed_krishna_20260308_194820.md
+│   ├── seed_krittika_192513.md
+│   ├── seed_krittika_20260308_194814.md
+│   ├── seed_kshatriya_20260308_194814.md
+│   ├── seed_kubera_20260308_194814.md
+│   ├── seed_kumaras_20260308_194814.md
+│   ├── seed_lalshmi_20260308_194819.md
+│   ├── seed_layered_192513.md
+│   ├── seed_layers_192513.md
+│   ├── seed_length_20260308_194814.md
+│   ├── seed_length_20260308_194815.md
+│   ├── seed_length_20260308_194816.md
+│   ├── seed_length_20260308_194817.md
+│   ├── seed_length_20260308_194818.md
+│   ├── seed_length_20260308_194819.md
+│   ├── seed_literature_192513.md
+│   ├── seed_literature_20260308_194814.md
+│   ├── seed_locator_192513.md
+│   ├── seed_luminary_20260308_194814.md
+│   ├── seed_madhura_20260308_194814.md
+│   ├── seed_madhya_20260308_194814.md
+│   ├── seed_mahabhutas_20260308_194814.md
+│   ├── seed_manifests_192513.md
+│   ├── seed_manushya_20260308_194814.md
+│   ├── seed_maturation_192513.md
+│   ├── seed_medium_192513.md
+│   ├── seed_medium_term_20260308_194814.md
+│   ├── seed_mercury_192513.md
+│   ├── seed_mercury_20260308_194814.md
+│   ├── seed_metabolism_20260308_194814.md
+│   ├── seed_model_layered_20260308_194814.md
+│   ├── seed_muladhara_20260308_194814.md
+│   ├── seed_mythic_192513.md
+│   ├── seed_mythic_narrative_20260308_194814.md
+│   ├── seed_nakshatra_10_20260308_194814.md
+│   ├── seed_nakshatra_1_20260308_194814.md
+│   ├── seed_nakshatra_192513.md
+│   ├── seed_nakshatra_20260308_194814.md
+│   ├── seed_nakshatra_20260308_194819.md
+│   ├── seed_nakshatra_associated_deity_20260308_194814.md
+│   ├── seed_nakshatras_192513.md
+│   ├── seed_nakshatra_sacred_plant_20260308_194814.md
+│   ├── seed_nakshatra_vidnyana_20260308_194819.md
+│   ├── seed_nakshatra_vidnyana_text_20260308_194819.md
+│   ├── seed_narrative_192513.md
+│   ├── seed_navami_20260308_194814.md
+│   ├── seed_naxatra_20260308_194814.md
+│   ├── seed_naxatra_20260308_194817.md
+│   ├── seed_nirriti_20260308_194814.md
+│   ├── seed_nirrti_20260308_194814.md
+│   ├── seed_nityaklinna_192513.md
+│   ├── seed_northeast_20260308_194814.md
+│   ├── seed_nostril_20260308_194814.md
+│   ├── seed_nourishment_20260308_194814.md
+│   ├── seed_number_192513.md
+│   ├── seed_offering_192513.md
+│   ├── seed_offering_20260308_194814.md
+│   ├── seed_offerings_192513.md
+│   ├── seed_offerings_20260308_194814.md
+│   ├── seed_oneness_192513.md
+│   ├── seed_oneness_20260308_194814.md
+│   ├── seed_organized_192513.md
+│   ├── seed_organizes_192513.md
+│   ├── seed_orientation_20260308_194814.md
+│   ├── seed_outputs_192513.md
+│   ├── seed_overlay_20260308_194814.md
+│   ├── seed_overlays_192513.md
+│   ├── seed_paksha_192513.md
+│   ├── seed_paksha_20260308_194814.md
+│   ├── seed_parent_192513.md
+│   ├── seed_parichaya_20260308_194819.md
+│   ├── seed_parichaya_djvu_20260308_194819.md
+│   ├── seed_parishad_20260308_194819.md
+│   ├── seed_passage_20260308_194814.md
+│   ├── seed_pathway_20260308_194814.md
+│   ├── seed_pattern_192513.md
+│   ├── seed_pattern_20260308_194814.md
+│   ├── seed_peacock_20260308_194814.md
+│   ├── seed_performance_20260308_194814.md
+│   ├── seed_phalguni_192513.md
+│   ├── seed_phalguni_20260308_194814.md
+│   ├── seed_pingala_192513.md
+│   ├── seed_pingala_20260308_194814.md
+│   ├── seed_planet_20260308_194814.md
+│   ├── seed_population_20260308_194814.md
+│   ├── seed_portion_20260308_194814.md
+│   ├── seed_practice_192513.md
+│   ├── seed_pratipad_192513.md
+│   ├── seed_pratipat_192513.md
+│   ├── seed_preserve_192513.md
+│   ├── seed_primary_20260308_194814.md
+│   ├── seed_priority_20260308_194814.md
+│   ├── seed_profile_192513.md
+│   ├── seed_projection_192513.md
+│   ├── seed_projection_20260308_194814.md
+│   ├── seed_prolific_20260308_194814.md
+│   ├── seed_protocol_192513.md
+│   ├── seed_pungent_20260308_194814.md
+│   ├── seed_purpose_20260308_194814.md
+│   ├── seed_purvabhadrapada_20260308_194814.md
+│   ├── seed_pushan_20260308_194814.md
+│   ├── seed_qualities_192513.md
+│   ├── seed_qualities_20260308_194814.md
+│   ├── seed_quality_192513.md
+│   ├── seed_rakshasa_20260308_194814.md
+│   ├── seed_rashis_20260308_194814.md
+│   ├── seed_rather_192513.md
+│   ├── seed_readme_192513.md
+│   ├── seed_readme_20260308_194814.md
+│   ├── seed_relation_192513.md
+│   ├── seed_relation_20260308_194814.md
+│   ├── seed_relational_192513.md
+│   ├── seed_relational_20260308_194814.md
+│   ├── seed_relations_192513.md
+│   ├── seed_relations_20260308_194814.md
+│   ├── seed_report_192513.md
+│   ├── seed_report_20260308_194814.md
+│   ├── seed_represents_192513.md
+│   ├── seed_research_192513.md
+│   ├── seed_research_20260308_194814.md
+│   ├── seed_research_20260308_194819.md
+│   ├── seed_resonance_192513.md
+│   ├── seed_resonance_20260308_194814.md
+│   ├── seed_ritual_192513.md
+│   ├── seed_ritual_20260308_194814.md
+│   ├── seed_ritual_20260308_194820.md
+│   ├── seed_ritual_fast_20260308_194814.md
+│   ├── seed_rohini_192513.md
+│   ├── seed_rohini_20260308_194814.md
+│   ├── seed_ruksha_20260308_194814.md
+│   ├── seed_ruling_192513.md
+│   ├── seed_sacred_192513.md
+│   ├── seed_sanskrit_192513.md
+│   ├── seed_sanskrit_20260308_194814.md
+│   ├── seed_saptami_20260308_194814.md
+│   ├── seed_sattva_20260308_194814.md
+│   ├── seed_saturn_192513.md
+│   ├── seed_saturn_20260308_194814.md
+│   ├── seed_savitar_20260308_194814.md
+│   ├── seed_schema_192513.md
+│   ├── seed_schools_20260308_194814.md
+│   ├── seed_science_20260308_194814.md
+│   ├── seed_scripts_192513.md
+│   ├── seed_scripts_20260308_194814.md
+│   ├── seed_secondary_192513.md
+│   ├── seed_secondary_20260308_194814.md
+│   ├── seed_seed_unverified_20260308_194814.md
+│   ├── seed_services_20260308_194816.md
+│   ├── seed_services_20260308_194817.md
+│   ├── seed_services_20260308_194818.md
+│   ├── seed_services_20260308_194820.md
+│   ├── seed_sexual_20260308_194814.md
+│   ├── seed_shastra_192513.md
+│   ├── seed_should_192513.md
+│   ├── seed_siddha_192513.md
+│   ├── seed_siddha_20260308_194817.md
+│   ├── seed_silver_20260308_194814.md
+│   ├── seed_software_192513.md
+│   ├── seed_software_20260308_194814.md
+│   ├── seed_source_192513.md
+│   ├── seed_source_20260308_194814.md
+│   ├── seed_source_file_20260308_194814.md
+│   ├── seed_srimad_192513.md
+│   ├── seed_stability_192513.md
+│   ├── seed_stability_20260308_194814.md
+│   ├── seed_stabilize_192513.md
+│   ├── seed_stable_192513.md
+│   ├── seed_status_192513.md
+│   ├── seed_structure_20260308_194814.md
+│   ├── seed_structured_192513.md
+│   ├── seed_summary_192513.md
+│   ├── seed_supreme_192513.md
+│   ├── seed_symbolic_20260308_194814.md
+│   ├── seed_symbolism_20260308_194814.md
+│   ├── seed_system_192513.md
+│   ├── seed_systems_192513.md
+│   ├── seed_target_192513.md
+│   ├── seed_target_20260308_194814.md
+│   ├── seed_tattva_192513.md
+│   ├── seed_taurus_192513.md
+│   ├── seed_teentaal_20260308_194814.md
+│   ├── seed_thesis_192513.md
+│   ├── seed_thesis_20260308_194814.md
+│   ├── seed_tradition_192513.md
+│   ├── seed_tradition_20260308_194814.md
+│   ├── seed_trayodashi_20260308_194814.md
+│   ├── seed_trident_192513.md
+│   ├── seed_tritiya_192513.md
+│   ├── seed_understanding_20260308_194814.md
+│   ├── seed_universe_192513.md
+│   ├── seed_unknown_192513.md
+│   ├── seed_unknown_20260308_194814.md
+│   ├── seed_unverified_192513.md
+│   ├── seed_useful_192513.md
+│   ├── seed_useful_20260308_194814.md
+│   ├── seed_uttara_192513.md
+│   ├── seed_uttara_20260308_194814.md
+│   ├── seed_vahnivasini_192513.md
+│   ├── seed_varuna_20260308_194814.md
+│   ├── seed_vedanta_192513.md
+│   ├── seed_vedic_concepts_20260308_194814.md
+│   ├── seed_vishnu_20260308_194814.md
+│   ├── seed_vishvaa_20260308_194814.md
+│   ├── seed_vishvaa_20260308_194817.md
+│   ├── seed_vishvadevas_20260308_194814.md
+│   ├── seed_vishvakarma_20260308_194814.md
+│   ├── seed_visualization_192513.md
+│   ├── seed_vitality_192513.md
+│   ├── seed_weapon_192513.md
+│   ├── seed_welche_20260308_194814.md
+│   ├── seed_welche_20260308_194817.md
+│   ├── seed_werden_20260308_194814.md
+│   ├── seed_werden_20260308_194817.md
+│   ├── seed_wields_192513.md
+│   ├── seed_yagyam_20260308_194814.md
+│   ├── seed_yagyam_20260308_194817.md
+│   └── seed_zodiac_192513.md
+├── setup.py
+├── software
+│   └── tithi_app
+├── staging
+│   └── promote_auto_preview.csv
+├── store_graph.py
+├── subprocess
+├── tests
+│   └── test_sanity.py
+├── text
+│   └── test.txt
+├── text_index.txt
+├── texts
+│   ├── bhagavad_gita.txt
+│   ├── isha_upanishad.txt
+│   ├── upanishads.txt
+│   └── yoga_sutras.txt
+├── t --left-right --count @{u}...HEAD
+├── tools
+│   ├── atlas_board.py
+│   ├── atlas_doctor.py
+│   ├── atlas_honor.py
+│   ├── atlas-offer
+│   ├── atlas_offer.py
+│   ├── atlas_prepare.py
+│   ├── atlas_ring.py
+│   ├── atlas_tui.py
+│   ├── build_graph.py
+│   ├── extract_seeds.py
+│   ├── generate_edges.py
+│   ├── generate_offerings.py
+│   ├── load_cosmology_offering.py
+│   ├── offering_plate_interpreter.py
+│   ├── peek_graph.py
+│   ├── rebuild_readme_top.py
+│   ├── render_constellation.py
+│   ├── render_mandala.py
+│   ├── render_readme.py
+│   ├── run_cycle.sh
+│   └── seed_explosion.py
+├── transcripts
+├── venv
+│   ├── bin
+│   │   ├── ac
+│   │   ├── activate
+│   │   ├── activate.csh
+│   │   ├── activate.fish
+│   │   ├── Activate.ps1
+│   │   ├── atlas
+│   │   ├── chroma
+│   │   ├── community
+│   │   ├── distro
+│   │   ├── dotenv
+│   │   ├── f2py
+│   │   ├── flask
+│   │   ├── fonttools
+│   │   ├── git-filter-repo
+│   │   ├── hf
+│   │   ├── httpx
+│   │   ├── ipython
+│   │   ├── ipython3
+│   │   ├── isympy
+│   │   ├── jsondiff
+│   │   ├── jsonpatch
+│   │   ├── jsonpointer
+│   │   ├── jsonschema
+│   │   ├── markdown-it
+│   │   ├── normalizer
+│   │   ├── numpy-config
+│   │   ├── onnxruntime_test
+│   │   ├── openai
+│   │   ├── pip
+│   │   ├── pip3
+│   │   ├── pip3.13
+│   │   ├── proton
+│   │   ├── proton-viewer
+│   │   ├── pybase64
+│   │   ├── pyftmerge
+│   │   ├── pyftsubset
+│   │   ├── pygmentize
+│   │   ├── pyproject-build
+│   │   ├── python -> python3
+│   │   ├── python3 -> /bin/python3
+│   │   ├── python3.13 -> python3
+│   │   ├── tiny-agents
+│   │   ├── torchfrtrace
+│   │   ├── torchrun
+│   │   ├── tqdm
+│   │   ├── transformers
+│   │   ├── ttx
+│   │   ├── typer
+│   │   ├── uvicorn
+│   │   ├── watchfiles
+│   │   ├── watchmedo
+│   │   ├── websockets
+│   │   └── wsdump
+│   ├── include
+│   │   └── python3.13
+│   ├── lib
+│   │   └── python3.13
+│   │       └── site-packages
+│   ├── lib64 -> lib
+│   ├── pyvenv.cfg
+│   └── share
+│       └── man
+│           └── man1
+├── visual
+│   └── atlas_constellation.html
+└── wiki
+    ├── craft_ecology.md
+    ├── index.md
+    ├── orientation.md
+    ├── pattern_lattice.md
+    ├── research_clusters.md
+    └── sound_geometry.md
+
+164 directories, 1677 files

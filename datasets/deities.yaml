@@ -1,0 +1,23 @@
+nodes:
+
+  Hanuman:
+    type: avatar
+    quality: devotion_strength
+
+  Vayu:
+    type: deva
+    domain: wind
+
+  Shiva:
+    type: deva
+    domain: transformation
+
+edges:
+
+  - from: Vayu
+    relation: associated_with
+    to: Hanuman
+
+  - from: Shiva
+    relation: wields
+    to: Trident

@@ -1,0 +1,307 @@
+=== ATLAS STATE REPORT ===
+
+ROOT:
+/opt/atlas
+
+=== DIRECTORY SIZES ===
+0	/opt/atlas/altlas_codex
+0	/opt/atlas/engine
+0	/opt/atlas/experiments
+0	/opt/atlas/ledger
+0	/opt/atlas/notes
+0	/opt/atlas/recovery
+0	/opt/atlas/research_archive
+0	/opt/atlas/research_logs
+0	/opt/atlas/research_outputs
+0	/opt/atlas/research_private
+0	/opt/atlas/scripts_dev
+0	/opt/atlas/software
+0	/opt/atlas/transcripts
+4.0K	/opt/atlas/atlas_graph
+4.0K	/opt/atlas/explorer
+4.0K	/opt/atlas/.github
+4.0K	/opt/atlas/import
+4.0K	/opt/atlas/journals
+4.0K	/opt/atlas/offerings
+4.0K	/opt/atlas/panchanga
+4.0K	/opt/atlas/patches
+4.0K	/opt/atlas/projections
+4.0K	/opt/atlas/research_public
+4.0K	/opt/atlas/staging
+4.0K	/opt/atlas/tests
+4.0K	/opt/atlas/text
+8.0K	/opt/atlas/__pycache__
+12K	/opt/atlas/core
+12K	/opt/atlas/ontology
+12K	/opt/atlas/research_queue
+16K	/opt/atlas/atlas_cards
+16K	/opt/atlas/crawl
+16K	/opt/atlas/texts
+20K	/opt/atlas/atlas_ai.egg-info
+20K	/opt/atlas/graph
+20K	/opt/atlas/prompts
+24K	/opt/atlas/manifests
+24K	/opt/atlas/wiki
+28K	/opt/atlas/architecture
+28K	/opt/atlas/atlas_codex
+48K	/opt/atlas/schemas
+52K	/opt/atlas/capsules
+64K	/opt/atlas/logs
+64K	/opt/atlas/visual
+72K	/opt/atlas/data
+100K	/opt/atlas/tools
+112K	/opt/atlas/cards
+196K	/opt/atlas/analysis
+212K	/opt/atlas/atlas
+492K	/opt/atlas/docs
+740K	/opt/atlas/lib
+836K	/opt/atlas/scripts
+2.2M	/opt/atlas/seeds
+4.3M	/opt/atlas/datasets
+12M	/opt/atlas/atlasenv
+22M	/opt/atlas/memory
+108M	/opt/atlas/.git
+267M	/opt/atlas/research
+471M	/opt/atlas/backups
+7.9G	/opt/atlas/venv
+8.9G	/opt/atlas
+
+=== RECENT FILES ===
+2026-03-12 15:48:06.5918666390 /opt/atlas/analysis/atlas_state_report.txt
+2026-03-12 15:44:53.8230348450 /opt/atlas/memory/reports/dashboard.html
+2026-03-12 15:44:53.7535442960 /opt/atlas/memory/graphs/seed_graph.json
+2026-03-12 15:44:53.4794010420 /opt/atlas/backups/snap_20260312_154453.tgz
+2026-03-12 15:14:27.4886458320 /opt/atlas/backups/snap_20260312_151427.tgz
+2026-03-12 14:44:19.5282778400 /opt/atlas/backups/snap_20260312_144419.tgz
+2026-03-12 14:13:47.5327216490 /opt/atlas/backups/snap_20260312_141347.tgz
+2026-03-12 14:10:26.2856430730 /opt/atlas/atlasenv/bin/activate.csh
+2026-03-12 14:10:26.2855558820 /opt/atlas/atlasenv/bin/activate.fish
+2026-03-12 14:10:26.2854008900 /opt/atlas/atlasenv/bin/activate
+2026-03-12 14:10:26.2140515050 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip-25.3.dist-info/RECORD
+2026-03-12 14:10:26.2100515320 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip-25.3.dist-info/REQUESTED
+2026-03-12 14:10:26.2053943970 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip-25.3.dist-info/INSTALLER
+2026-03-12 14:10:26.2051204950 /opt/atlas/atlasenv/bin/pip3.13
+2026-03-12 14:10:26.2050274050 /opt/atlas/atlasenv/bin/pip3
+2026-03-12 14:10:26.2049124290 /opt/atlas/atlasenv/bin/pip
+2026-03-12 14:10:26.2044288110 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/wait.cpython-313.pyc
+2026-03-12 14:10:26.2032520470 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/url.cpython-313.pyc
+2026-03-12 14:10:26.2006307190 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/timeout.cpython-313.pyc
+2026-03-12 14:10:26.1993837130 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/ssltransport.cpython-313.pyc
+2026-03-12 14:10:26.1975016380 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/ssl_match_hostname.cpython-313.pyc
+2026-03-12 14:10:26.1962824520 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/ssl_.cpython-313.pyc
+2026-03-12 14:10:26.1938440860 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/retry.cpython-313.pyc
+2026-03-12 14:10:26.1909332510 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/response.cpython-313.pyc
+2026-03-12 14:10:26.1900516640 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/request.cpython-313.pyc
+2026-03-12 14:10:26.1895112140 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/queue.cpython-313.pyc
+2026-03-12 14:10:26.1891348010 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/proxy.cpython-313.pyc
+2026-03-12 14:10:26.1887500400 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/connection.cpython-313.pyc
+2026-03-12 14:10:26.1879740870 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/util/__pycache__/__init__.cpython-313.pyc
+2026-03-12 14:10:26.1874614990 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/__pycache__/response.cpython-313.pyc
+2026-03-12 14:10:26.1826321520 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/__pycache__/request.cpython-313.pyc
+2026-03-12 14:10:26.1814921180 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/__pycache__/poolmanager.cpython-313.pyc
+2026-03-12 14:10:26.1786154380 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/__pycache__/six.cpython-313.pyc
+2026-03-12 14:10:26.1718463270 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/__pycache__/weakref_finalize.cpython-313.pyc
+2026-03-12 14:10:26.1708301730 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/__pycache__/makefile.cpython-313.pyc
+2026-03-12 14:10:26.1703362940 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/backports/__pycache__/__init__.cpython-313.pyc
+2026-03-12 14:10:26.1701232380 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/packages/__pycache__/__init__.cpython-313.pyc
+2026-03-12 14:10:26.1698439370 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/__pycache__/filepost.cpython-313.pyc
+2026-03-12 14:10:26.1689916530 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/__pycache__/fields.cpython-313.pyc
+2026-03-12 14:10:26.1673966390 /opt/atlas/atlasenv/lib/python3.13/site-packages/pip/_vendor/urllib3/__pycache__/exceptions.cpython-313.pyc
+
+=== GIT STATUS ===
+On branch atlas-archive-pass
+Your branch is ahead of 'origin/atlas-archive-pass' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   memory/reports/dashboard.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	ontology/vedic_knowledge_ontology.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+=== GIT RECENT COMMITS ===
+db3920f atlas snapshot
+0686fd5 Add Codex task: microapp inference engine
+e8e2a73 Add Codex task queue
+d4238ed Add Codex subsystem, graph updates, and CLI tools
+987ebd5 Ignore generated analysis and graph artifacts
+46f8111 Atlas engine updates: explorer tools, crawl pipeline, seed engines
+596b9d5 README gateway: clarify Atlas vision
+1650b16 Satya Seed 0.1 – first Atlas offering snapshot
+33b0f51 Add Sanskrit semantic root layer
+f487d37 atlas: log heredoc snafu and harden constellation renderer
+ac110ef Add Atlas import chamber and preparation/offering scripts
+7c03c65 Initial Atlas bootstrap: seed system, board generator, mandala cycle
+01002f3 Add Atlas Cosmology Registry
+bca138e atlas: new seed + updated constellation
+ec75e40 atlas: seed cycle update + constellation output
+6d5dce1 atlas: cosmology altar installed
+d22dfa4 atlas: thali cycle — seeds → graph → constellation
+fe84206 atlas growth cycle Sun Mar  8 01:25:38 PM EDT 2026
+83e4b4e Atlas prompt harvest → seed generation
+5fc7bdb atlas: harvest cycle — dashboard + README expansion
+
+=== FILE EXTENSION COUNTS ===
+py: 20147
+pyc: 19951
+h: 9809
+noext: 2859
+pyi: 2377
+md: 780
+txt: 369
+so: 362
+tgz: 289
+typed: 158
+json: 153
+pyx: 122
+csv: 119
+pxd: 117
+png: 114
+gz: 112
+mat: 110
+hpp: 109
+cuh: 80
+cpp: 71
+proto: 63
+f90: 61
+afm: 60
+sav: 47
+html: 45
+ttf: 38
+sh: 35
+pxi: 34
+rst: 33
+npy: 32
+pdf: 32
+cmake: 30
+js: 29
+mplstyle: 29
+dat: 28
+build: 26
+npz: 25
+0: 24
+f: 24
+tp: 24
+yaml: 22
+c: 22
+wav: 22
+exe: 20
+svg: 19
+css: 17
+al: 16
+arff: 16
+sql: 16
+log: 16
+sample: 14
+jinja: 14
+3: 12
+pkl: 11
+12: 10
+xsl: 10
+1: 9
+bz2: 9
+9: 8
+tpl: 8
+pyf: 7
+APACHE: 6
+BSD: 6
+a: 5
+bc: 5
+2: 5
+gzip: 5
+lzma: 5
+xz: 5
+gitignore: 4
+tab: 4
+pem: 4
+11: 4
+ini: 4
+13: 4
+cfg: 3
+pth: 3
+z: 3
+nc: 3
+onnx: 3
+jpg: 3
+bak: 2
+pack: 2
+rev: 2
+idx: 2
+8: 2
+g4: 2
+lark: 2
+tmpl: 2
+f2py_f2cmap: 2
+A99: 2
+B99: 2
+mjs: 2
+yml: 2
+4: 2
+17: 2
+ps1: 2
+fish: 2
+csh: 2
+env: 1
+HEAD: 1
+git$#: 1
+fillText('{n}',{x+8},{y+8});: 1
+zi: 1
+10: 1
+lock: 1
+xml: 1
+pc: 1
+fits: 1
+template: 1
+inc: 1
+f95: 1
+ani: 1
+markdown-it: 1
+thrift: 1
+ld: 1
+cu: 1
+bazel: 1
+bzl: 1
+in: 1
+ipynb: 1
+cnf: 1
+APACHE2: 1
+MIT: 1
+keep: 1
+7: 1
+gpl: 1
+mit: 1
+external: 1
+lua: 1
+xrc: 1
+rng: 1
+toml: 1
+index: 1
+db: 1
+jsonl: 1
+
+=== LARGE FILES (>20MB) ===
+995.5 MB  /opt/atlas/venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda.so
+716.9 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cublas/lib/libcublasLt.so.12
+522.0 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cudnn/lib/libcudnn_engines_precompiled.so.9
+431.0 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cusparselt/lib/libcusparseLt.so.0
+427.4 MB  /opt/atlas/venv/lib/python3.13/site-packages/torch/lib/libtorch_cpu.so
+409.7 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/nccl/lib/libnccl.so.2
+396.4 MB  /opt/atlas/venv/lib/python3.13/site-packages/triton/_C/libtriton.so
+370.0 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cusparse/lib/libcusparse.so.12
+272.0 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cudnn/lib/libcudnn_adv.so.9
+266.0 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cufft/lib/libcufft.so.11
+232.0 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cusolver/lib/libcusolver.so.11
+154.0 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cusolver/lib/libcusolverMg.so.11
+152.9 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/nvshmem/lib/libnvshmem_host.so.3
+130.4 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/curand/lib/libcurand.so.10
+122.0 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cudnn/lib/libcudnn_ops.so.9
+121.6 MB  /opt/atlas/venv/lib/python3.13/site-packages/torch/lib/libtorch_cuda_linalg.so
+111.0 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cublas/lib/libcublas.so.12
+100.1 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cuda_nvrtc/lib/libnvrtc.alt.so.12
+99.6 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/cuda_nvrtc/lib/libnvrtc.so.12
+89.7 MB  /opt/atlas/venv/lib/python3.13/site-packages/nvidia/nvjitlink/lib/libnvJitLink.so.12

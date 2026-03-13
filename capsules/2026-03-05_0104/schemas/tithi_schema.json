@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "title": "Tithi Record",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "tithi_name": {
+      "type": "string"
+    },
+    "paksha": {
+      "type": "string"
+    },
+    "nitya_devi": {
+      "type": "string"
+    },
+    "mantra": {
+      "type": "string"
+    },
+    "yantra": {
+      "type": "string"
+    },
+    "element": {
+      "type": "string"
+    },
+    "guna": {
+      "type": "string"
+    }
+  }
+}

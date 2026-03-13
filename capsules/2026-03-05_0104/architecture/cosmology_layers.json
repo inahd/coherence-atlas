@@ -1,0 +1,29 @@
+{
+  "cosmology_layers": [
+    "tithi",
+    "nitya_devi",
+    "nakshatra",
+    "zodiac",
+    "lunar_kala"
+  ],
+  "practice_layers": [
+    "mantra",
+    "yantra",
+    "iconography",
+    "mudra",
+    "breath_pattern",
+    "marma",
+    "ritual_timing"
+  ],
+  "experiential_layers": [
+    "raga",
+    "tala",
+    "element",
+    "psychology"
+  ],
+  "application_layers": [
+    "calendar_planning",
+    "music_generation",
+    "meditation_guidance"
+  ]
+}

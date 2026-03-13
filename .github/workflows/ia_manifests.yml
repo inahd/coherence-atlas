@@ -1,0 +1,38 @@
+name: Update IA wget manifests
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 14 * * *"   # daily 14:00 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  update_manifests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate manifests (direct downloads)
+        run: |
+          mkdir -p manifests
+          python scripts/ia_direct_manifest.py all 20 2
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "coherence-atlas-bot"
+          git config user.email "coherence-atlas-bot@users.noreply.github.com"
+          git add manifests/wget_*.txt scripts/ia_direct_manifest.py manifests/allow_domains.txt || true
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git commit -m "Auto-update IA wget manifests"
+          git push

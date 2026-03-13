@@ -1,0 +1,134 @@
+Ashwini:
+  type: nakshatra
+  deity: Ashwini Kumaras
+  ruler: Ketu
+
+Bharani:
+  type: nakshatra
+  deity: Yama
+  ruler: Venus
+
+Krittika:
+  type: nakshatra
+  deity: Agni
+  ruler: Sun
+
+Rohini:
+  type: nakshatra
+  deity: Brahma
+  ruler: Moon
+
+Mrigashira:
+  type: nakshatra
+  deity: Soma
+  ruler: Mars
+
+Ardra:
+  type: nakshatra
+  deity: Rudra
+  ruler: Rahu
+
+Punarvasu:
+  type: nakshatra
+  deity: Aditi
+  ruler: Jupiter
+
+Pushya:
+  type: nakshatra
+  deity: Brihaspati
+  ruler: Saturn
+
+Ashlesha:
+  type: nakshatra
+  deity: Nagas
+  ruler: Mercury
+
+Magha:
+  type: nakshatra
+  deity: Pitrs
+  ruler: Ketu
+
+PurvaPhalguni:
+  type: nakshatra
+  deity: Bhaga
+  ruler: Venus
+
+UttaraPhalguni:
+  type: nakshatra
+  deity: Aryaman
+  ruler: Sun
+
+Hasta:
+  type: nakshatra
+  deity: Savitar
+  ruler: Moon
+
+Chitra:
+  type: nakshatra
+  deity: Vishvakarma
+  ruler: Mars
+
+Swati:
+  type: nakshatra
+  deity: Vayu
+  ruler: Rahu
+
+Vishakha:
+  type: nakshatra
+  deity: IndraAgni
+  ruler: Jupiter
+
+Anuradha:
+  type: nakshatra
+  deity: Mitra
+  ruler: Saturn
+
+Jyeshtha:
+  type: nakshatra
+  deity: Indra
+  ruler: Mercury
+
+Mula:
+  type: nakshatra
+  deity: Nirriti
+  ruler: Ketu
+
+PurvaAshadha:
+  type: nakshatra
+  deity: Apas
+  ruler: Venus
+
+UttaraAshadha:
+  type: nakshatra
+  deity: Vishvadevas
+  ruler: Sun
+
+Shravana:
+  type: nakshatra
+  deity: Vishnu
+  ruler: Moon
+
+Dhanishta:
+  type: nakshatra
+  deity: Vasus
+  ruler: Mars
+
+Shatabhisha:
+  type: nakshatra
+  deity: Varuna
+  ruler: Rahu
+
+PurvaBhadrapada:
+  type: nakshatra
+  deity: AjaEkapada
+  ruler: Jupiter
+
+UttaraBhadrapada:
+  type: nakshatra
+  deity: AhirBudhnya
+  ruler: Saturn
+
+Revati:
+  type: nakshatra
+  deity: Pushan
+  ruler: Mercury

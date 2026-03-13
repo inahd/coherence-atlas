@@ -1,0 +1,32 @@
+# Auto-generated DIRECT download URLs from Internet Archive
+# Source: advancedsearch + metadata/<identifier>
+# One URL per line.
+
+https://archive.org/download/die-vedischen-nachrichten-von-den-naxatr-t-2/Die_vedischen_Nachrichten_von_den_naxatr%20T%202%20%20.pdf
+https://archive.org/download/die-vedischen-nachrichten-von-den-naxatr-t-2/Die_vedischen_Nachrichten_von_den_naxatr%20T%202%20%20_djvu.txt
+https://archive.org/download/NakshatraSooktamEngV1/Nakshatra-Sooktam-Eng-v1.pdf
+https://archive.org/download/NakshatraSooktamEngV1/Nakshatra-Sooktam-Eng-v1_djvu.txt
+https://archive.org/download/in.ernet.dli.2015.382306/2015.382306.Nakshatra-Vidnyana.pdf
+https://archive.org/download/in.ernet.dli.2015.382306/2015.382306.Nakshatra-Vidnyana_text.pdf
+https://archive.org/download/nakshatra-jyotish/Nakshatra%20Jyotish.pdf
+https://archive.org/download/nakshatra-jyotish/Nakshatra%20Jyotish_text.pdf
+https://archive.org/download/nakshatra-parichaya/nakshatra%20parichaya.pdf
+https://archive.org/download/nakshatra-parichaya/nakshatra%20parichaya_djvu.txt
+https://archive.org/download/NakshatraMalaVyakhyaLalshmiVilasShivramTripathi222GhaAlm2Shlf2DevanagariKavya/Nakshatra%20Mala%20Vyakhya%20Lalshmi%20Vilas%20-%20Shivram%20Tripathi_222_Gha_Alm_2_Shlf_2%20_Devanagari%20-%20Kavya.pdf
+https://archive.org/download/NakshatraMalaVyakhyaLalshmiVilasShivramTripathi222GhaAlm2Shlf2DevanagariKavya/Nakshatra%20Mala%20Vyakhya%20Lalshmi%20Vilas%20-%20Shivram%20Tripathi_222_Gha_Alm_2_Shlf_2%20_Devanagari%20-%20Kavya_djvu.txt
+https://archive.org/download/rmsw_grah-nakshatra-by-shri-triveni-prasad-singh-hindi-astronomy-1955-patna-bihar-rashtrabhasha-pari/Grah%20Nakshatra%20by%20Shri%20Triveni%20Prasad%20Singh%20Hindi%20Astronomy%201955%20Patna%20-%20Bihar%20Rashtrabhasha%20Parishad.pdf
+https://archive.org/download/rmsw_grah-nakshatra-by-shri-triveni-prasad-singh-hindi-astronomy-1955-patna-bihar-rashtrabhasha-pari/Grah%20Nakshatra%20by%20Shri%20Triveni%20Prasad%20Singh%20Hindi%20Astronomy%201955%20Patna%20-%20Bihar%20Rashtrabhasha%20Parishad_djvu.txt
+https://archive.org/download/navagraha-evam-nakshatra-shanti_202503/Navagraha%20Evam%20Nakshatra%20Shanti.pdf
+https://archive.org/download/navagraha-evam-nakshatra-shanti_202503/Navagraha%20Evam%20Nakshatra%20Shanti_text.pdf
+https://archive.org/download/nakshatra_gayatrigalu_-_aravinda_lochana/Nakshatra%20Gayatri%20-%20Aravinda%20Lochana.pdf
+https://archive.org/download/nakshatra_gayatrigalu_-_aravinda_lochana/Nakshatra%20Gayatri%20-%20Aravinda%20Lochana.epub
+https://archive.org/download/in.ernet.dli.2015.487549/2015.487549.Vijnana-Manjusha.pdf
+https://archive.org/download/in.ernet.dli.2015.487549/2015.487549.Vijnana-Manjusha_text.pdf
+https://archive.org/download/the-book-of-nakshatras_202404/THE%20BOOK%20OF%20NAKSHATRAS.pdf
+https://archive.org/download/the-book-of-nakshatras_202404/THE%20BOOK%20OF%20NAKSHATRAS_djvu.txt
+https://archive.org/download/267922883-nakshatra-chintaamani/267922883_%E0%B0%A8%E0%B0%95_%E0%B0%B7%E0%B0%A4_%E0%B0%B0_%E0%B0%9A%E0%B0%BF%E0%B0%82%E0%B0%A4%E0%B0%BE%E0%B0%AE%E0%B0%A3%E0%B0%BF_NakshatraChintaamani.pdf
+https://archive.org/download/267922883-nakshatra-chintaamani/267922883_%E0%B0%A8%E0%B0%95_%E0%B0%B7%E0%B0%A4_%E0%B0%B0_%E0%B0%9A%E0%B0%BF%E0%B0%82%E0%B0%A4%E0%B0%BE%E0%B0%AE%E0%B0%A3%E0%B0%BF_NakshatraChintaamani_djvu.txt
+https://archive.org/download/NakshatraChudamani/NakshatraChudamani.pdf
+https://archive.org/download/NakshatraChudamani/NakshatraChudamani_djvu.txt
+https://archive.org/download/NakshatraMalaVyakhyaLakshmiVilasShivram347GhaAlm2Shlf4DevanagariKavya/Nakshatra%20Mala%20Vyakhya%20Lakshmi%20Vilas%20-%20Shivram_347_Gha_Alm_2_Shlf_4_Devanagari%20-%20Kavya.pdf
+https://archive.org/download/NakshatraMalaVyakhyaLakshmiVilasShivram347GhaAlm2Shlf4DevanagariKavya/Nakshatra%20Mala%20Vyakhya%20Lakshmi%20Vilas%20-%20Shivram_347_Gha_Alm_2_Shlf_4_Devanagari%20-%20Kavya_djvu.txt

@@ -1,0 +1,2034 @@
+commit 596b9d52885fb2563cd94a8b3b6c41b44ca55f6c
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Tue Mar 10 13:31:05 2026 -0400
+
+    README gateway: clarify Atlas vision
+
+ README.md | 85 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 85 insertions(+)
+
+commit 1650b165c0b4ece905d6288fe2c8acd2f292e157
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Tue Mar 10 13:26:24 2026 -0400
+
+    Satya Seed 0.1 – first Atlas offering snapshot
+
+ atlas/data_loader.py                       |     24 +
+ atlas/graph_engine.py                      |     14 +
+ atlas/modes/kala.py                        |      8 +
+ atlas/ui/chart_view.py                     |     51 +-
+ atlas/ui/main_menu.py                      |     30 +
+ atlas_broken_files.tar.gz                  |    Bin 0 -> 3024 bytes
+ atlas_tui.py                               |    121 +
+ curses                                     | 171012 ++++++++++++++++++++++++++
+ data/nodes.csv                             |      4 +
+ data/relations.csv                         |      2 +
+ data/seeds/books_are_the_basis.md          |      7 +
+ data/seeds/purity_is_the_force.md          |      7 +
+ data/seeds/rasa_integrity.md               |      7 +
+ json                                       | 171012 ++++++++++++++++++++++++++
+ memory/reports/dashboard.html              |      2 +-
+ scripts/atlas_env.py                       |     14 +-
+ scripts/guarded_exec.py                    |     94 +-
+ scripts/pulse/svara_monitor.py             |     38 +
+ scripts/system/detect_incomplete_python.py |     32 +
+ subprocess                                 | 171012 ++++++++++++++++++++++++++
+ tools/generate_offerings.py                |     24 +-
+ tools/offering_plate_interpreter.py        |     24 +-
+ tools/rebuild_readme_top.py                |     47 +-
+ 23 files changed, 513424 insertions(+), 162 deletions(-)
+
+commit 33b0f51427f00c3db86b4d0e519a911434f21845
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Tue Mar 10 11:40:02 2026 -0400
+
+    Add Sanskrit semantic root layer
+
+ data/root_relations.csv | 12 ++++++++++++
+ data/sanskrit_roots.csv | 22 ++++++++++++++++++++++
+ 2 files changed, 34 insertions(+)
+
+commit f487d37201e9202db60a62017b2c2af82604ff32
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Tue Mar 10 08:46:48 2026 -0400
+
+    atlas: log heredoc snafu and harden constellation renderer
+
+ README.md                              | 15 ++++++++
+ docs/rituals/GENERATION_SNAFUS.md      | 24 +++++++++++++
+ scripts/system/render_constellation.py | 65 ++++++++++++++++++++++++++++++++++
+ 3 files changed, 104 insertions(+)
+
+commit ac110effde51b7e4955a98c13fb64708bc675a7e
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Mon Mar 9 23:14:09 2026 -0400
+
+    Add Atlas import chamber and preparation/offering scripts
+
+ import/README.md       |   7 ++
+ tools/atlas_offer.py   |  20 ++++++
+ tools/atlas_prepare.py |  20 ++++++
+ tools/atlas_tui.py     | 182 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 229 insertions(+)
+
+commit 7c03c65ebf5803f0fb9cffb56da0aaf7a3116968
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Mon Mar 9 12:55:37 2026 -0400
+
+    Initial Atlas bootstrap: seed system, board generator, mandala cycle
+
+ README.md                                          |    610 +-
+ ac                                                 |      4 +
+ architecture/atlas_cosmology.md                    |     56 +-
+ architecture/atlas_cosmology_schema.md             |     22 +
+ architecture/atlas_node_types.md                   |     15 +
+ architecture/atlas_offering_protocol.md            |     21 +
+ architecture/atlas_relations.md                    |     16 +
+ astro_block.py                                     |    211 +
+ atlas                                              |     70 -
+ atlas-chart                                        |      2 +
+ atlas/__init__.py                                  |      0
+ atlas/astro_to_graph.py                            |    109 +
+ atlas/commands_cosmology.py                        |      6 +
+ atlas/core/__init__.py                             |      0
+ atlas/core/cards.py                                |     17 +
+ atlas/core/graph.py                                |     19 +
+ atlas/core/graph_store.py                          |     59 +
+ atlas/core/legend.py                               |     25 +
+ atlas/core/mandala.py                              |     48 +
+ atlas/core/output.py                               |     29 +
+ atlas/core/prompts.py                              |     25 +
+ atlas/core/schema.py                               |     31 +
+ atlas/core/seeds.py                                |     27 +
+ atlas/cycle_runner.py                              |    323 +
+ atlas/graph_merge.py                               |     33 +
+ atlas/ontology/cosmology.py                        |     75 +
+ atlas/render_constellation.py                      |     45 +
+ atlas/render_from_merged.py                        |     38 +
+ atlas/runtime/cycle.py                             |     12 +
+ atlas/ui/__init__.py                               |      0
+ atlas/ui/atlas_commander.py                        |    217 +
+ atlas/ui/calendar_view.py                          |     20 +
+ atlas/ui/chart_view.py                             |     42 +
+ atlas/ui/commander.py                              |     86 +
+ atlas/ui/graph_view.py                             |     14 +
+ atlas/ui/mandala_view.py                           |     30 +
+ atlas/ui/nakshatra_view.py                         |     29 +
+ atlas/ui/node_view.py                              |     26 +
+ atlas_graph/graph.json                             |     37 +-
+ cards/nakshatra.tar.gz                             |    Bin 0 -> 3556 bytes
+ cards/nakshatra/anuradha.md                        |     51 +
+ cards/nakshatra/ardra.md                           |     51 +
+ cards/nakshatra/ashlesha.md                        |     51 +
+ cards/nakshatra/ashwini.md                         |     51 +
+ cards/nakshatra/bharani.md                         |     51 +
+ cards/nakshatra/chitra.md                          |     51 +
+ cards/nakshatra/dhanishta.md                       |     51 +
+ cards/nakshatra/hasta.md                           |     51 +
+ cards/nakshatra/jyeshtha.md                        |     51 +
+ cards/nakshatra/krittika.md                        |     51 +
+ cards/nakshatra/magha.md                           |     51 +
+ cards/nakshatra/mrigashira.md                      |     51 +
+ cards/nakshatra/mula.md                            |     51 +
+ cards/nakshatra/punarvasu.md                       |     51 +
+ cards/nakshatra/purva_ashadha.md                   |     51 +
+ cards/nakshatra/purva_bhadrapada.md                |     51 +
+ cards/nakshatra/purva_phalguni.md                  |     51 +
+ cards/nakshatra/pushya.md                          |     51 +
+ cards/nakshatra/revati.md                          |     51 +
+ cards/nakshatra/rohini.md                          |     51 +
+ cards/nakshatra/shatabhisha.md                     |     51 +
+ cards/nakshatra/shravana.md                        |     51 +
+ cards/nakshatra/swati.md                           |     51 +
+ cards/nakshatra/uttara_ashadha.md                  |     51 +
+ cards/nakshatra/uttara_bhadrapada.md               |     51 +
+ cards/nakshatra/uttara_phalguni.md                 |     51 +
+ cards/nakshatra/vishakha.md                        |     51 +
+ chart_to_nodes.py                                  |     47 +
+ core/__init__.py                                   |      0
+ core/cycle_types.py                                |     35 +
+ data/cosmology/nakshatra_offering.json             |     25 +
+ data/graph.json                                    |    886 +
+ day_of_brahma_thali.sh                             |    108 +
+ generate_nakshatra_cards.py                        |    112 +
+ map_graph.py                                       |     38 +
+ memory/corpus.db                                   |    Bin 16113664 -> 19865600 bytes
+ memory/cosmology_graph.json                        |   4023 +-
+ memory/graphs/canonical_graph.json                 |   2859 +-
+ memory/reports/dashboard.html                      |      4 +-
+ nano                                               |      9 +
+ patches/auto_proposed_relations.csv                |      1 +
+ pathlib                                            | 171012 ++++++++++++++++++
+ re                                                 | 171012 ++++++++++++++++++
+ scripts/install_cycle_cron.sh                      |     13 +
+ scripts/run_day_of_brahma.sh                       |      5 +
+ ...akshatra_sooktam_eng_v1_djvu_20260308_194819.md |     28 +
+ ...b0a8fbd2ee3729687dfd492616d7_20260308_194819.md |     28 +
+ ...3c6af4a71d4263c32a7f90436154_20260308_194819.md |     28 +
+ ...n_nachrichten_von_den_naxatr_20260308_194819.md |     28 +
+ seeds/seed_ability_20260308_194814.md              |     28 +
+ seeds/seed_achala_20260308_194814.md               |     28 +
+ seeds/seed_action_20260308_194814.md               |     28 +
+ seeds/seed_action_20260308_194820.md               |     28 +
+ seeds/seed_activates_20260308_194814.md            |     28 +
+ seeds/seed_active_192513.md                        |      2 +
+ seeds/seed_active_20260308_194814.md               |     28 +
+ seeds/seed_active_seeds_20260308_194814.md         |     28 +
+ seeds/seed_activity_20260308_194814.md             |     28 +
+ seeds/seed_actual_20260308_194814.md               |     28 +
+ seeds/seed_adventurous_20260308_194814.md          |     28 +
+ ...2852795ba3a4ef2144d29ae6462a_20260308_194819.md |     28 +
+ seeds/seed_affection_20260308_194814.md            |     28 +
+ seeds/seed_aggressive_20260308_194814.md           |     28 +
+ seeds/seed_agni_yantra_20260308_194814.md          |     28 +
+ seeds/seed_agnihotra_20260308_194814.md            |     28 +
+ seeds/seed_ahirbudhnya_20260308_194814.md          |     28 +
+ seeds/seed_airavata_elephant_20260308_194814.md    |     28 +
+ seeds/seed_aja_ekapada_20260308_194814.md          |     28 +
+ seeds/seed_ajaekapada_20260308_194814.md           |     28 +
+ seeds/seed_aliases_20260308_194814.md              |     28 +
+ seeds/seed_alternatives_20260308_194814.md         |     28 +
+ seeds/seed_amavasya_20260308_194814.md             |     28 +
+ seeds/seed_amrita_20260308_194817.md               |     28 +
+ seeds/seed_analysis_20260308_194814.md             |     28 +
+ seeds/seed_ancestral_connection_20260308_194814.md |     28 +
+ seeds/seed_anchored_20260308_194814.md             |     28 +
+ seeds/seed_anchors_20260308_194814.md              |     28 +
+ seeds/seed_antelope_20260308_194814.md             |     28 +
+ seeds/seed_anuradha_20260308_194814.md             |     28 +
+ seeds/seed_appears_in_20260308_194814.md           |     28 +
+ seeds/seed_application_20260308_194814.md          |     28 +
+ seeds/seed_application_layers_20260308_194814.md   |     28 +
+ seeds/seed_apprentice_20260308_194814.md           |     28 +
+ seeds/seed_aquarius_20260308_194814.md             |     28 +
+ seeds/seed_archetypal_192513.md                    |      2 +
+ seeds/seed_archetypal_20260308_194814.md           |     28 +
+ seeds/seed_archetype_20260308_194814.md            |     28 +
+ seeds/seed_architecture_192513.md                  |      2 +
+ seeds/seed_architecture_20260308_194814.md         |     28 +
+ seeds/seed_archive_20260308_194814.md              |     28 +
+ seeds/seed_archive_20260308_194816.md              |     28 +
+ seeds/seed_archive_20260308_194817.md              |     28 +
+ seeds/seed_archive_20260308_194818.md              |     28 +
+ seeds/seed_archive_20260308_194820.md              |     28 +
+ seeds/seed_arjuna_192513.md                        |      2 +
+ seeds/seed_arjuna_20260308_194814.md               |     28 +
+ seeds/seed_artifact_20260308_194814.md             |     28 +
+ seeds/seed_artifact_type_20260308_194814.md        |     28 +
+ seeds/seed_artifacts_20260308_194814.md            |     28 +
+ seeds/seed_aryaman_20260308_194814.md              |     28 +
+ seeds/seed_ascension_20260308_194814.md            |     28 +
+ seeds/seed_ashadha_192513.md                       |      2 +
+ seeds/seed_ashadha_20260308_194814.md              |     28 +
+ seeds/seed_ashlesha_20260308_194814.md             |     28 +
+ seeds/seed_ashoka_20260308_194814.md               |     28 +
+ seeds/seed_ashtami_20260308_194814.md              |     28 +
+ seeds/seed_ashwini_192513.md                       |      2 +
+ seeds/seed_ashwini_20260308_194814.md              |     28 +
+ seeds/seed_associated_192513.md                    |      2 +
+ seeds/seed_associated_deity_20260308_194814.md     |     28 +
+ seeds/seed_associated_with_20260308_194814.md      |     28 +
+ seeds/seed_asterism_20260308_194814.md             |     28 +
+ seeds/seed_astonishes_20260308_194814.md           |     28 +
+ seeds/seed_astringent_20260308_194814.md           |     28 +
+ seeds/seed_astrology_20260308_194814.md            |     28 +
+ seeds/seed_astronomy_20260308_194819.md            |     28 +
+ seeds/seed_attested_192513.md                      |      2 +
+ seeds/seed_attested_secondary_20260308_194814.md   |     28 +
+ seeds/seed_attraction_20260308_194814.md           |     28 +
+ .../seed_auspicious_beginnings_20260308_194814.md  |     28 +
+ seeds/seed_authority_192513.md                     |      2 +
+ seeds/seed_authority_20260308_194814.md            |     28 +
+ seeds/seed_available_20260308_194814.md            |     28 +
+ seeds/seed_avatar_192513.md                        |      2 +
+ seeds/seed_awakened_20260308_194814.md             |     28 +
+ seeds/seed_ayurveda_192513.md                      |      2 +
+ seeds/seed_ayurveda_20260308_194814.md             |     28 +
+ ...cc66255983b549cb11d464d174c8_20260308_194819.md |     28 +
+ ...a19_nakshatra_sooktam_eng_v1_20260308_194819.md |     28 +
+ seeds/seed_balance_20260308_194814.md              |     28 +
+ seeds/seed_banyan_20260308_194814.md               |     28 +
+ seeds/seed_beautiful_20260308_194814.md            |     28 +
+ seeds/seed_beauty_20260308_194814.md               |     28 +
+ seeds/seed_become_20260308_194814.md               |     28 +
+ seeds/seed_becomes_20260308_194814.md              |     28 +
+ seeds/seed_before_192513.md                        |      2 +
+ seeds/seed_bhadrapada_192513.md                    |      2 +
+ seeds/seed_bhadrapada_20260308_194814.md           |     28 +
+ seeds/seed_bhagamalini_192513.md                   |      2 +
+ seeds/seed_bhagamalini_20260308_194814.md          |     28 +
+ seeds/seed_bhagavad_192513.md                      |      2 +
+ seeds/seed_bhagavad_20260308_194814.md             |     28 +
+ seeds/seed_bharani_192513.md                       |      2 +
+ seeds/seed_bharani_20260308_194814.md              |     28 +
+ seeds/seed_bherunda_192513.md                      |      2 +
+ seeds/seed_bherunda_20260308_194814.md             |     28 +
+ seeds/seed_bitter_20260308_194814.md               |     28 +
+ seeds/seed_brahma_20260308_194814.md               |     28 +
+ seeds/seed_brahman_192513.md                       |      2 +
+ seeds/seed_brahmana_20260308_194814.md             |     28 +
+ seeds/seed_branch_20260308_194814.md               |     28 +
+ seeds/seed_breath_pattern_20260308_194814.md       |     28 +
+ seeds/seed_bridge_20260308_194814.md               |     28 +
+ seeds/seed_brihaspati_20260308_194814.md           |     28 +
+ seeds/seed_bronze_20260308_194814.md               |     28 +
+ seeds/seed_buffalo_20260308_194814.md              |     28 +
+ seeds/seed_caitanya_20260308_194814.md             |     28 +
+ seeds/seed_calendar_20260308_194820.md             |     28 +
+ seeds/seed_calendar_planning_20260308_194814.md    |     28 +
+ seeds/seed_cancer_20260308_194814.md               |     28 +
+ seeds/seed_canonical_192513.md                     |      2 +
+ seeds/seed_canonical_20260308_194814.md            |     28 +
+ seeds/seed_canonization_20260308_194814.md         |     28 +
+ seeds/seed_capricorn_20260308_194814.md            |     28 +
+ seeds/seed_categories_192513.md                    |      2 +
+ seeds/seed_category_192513.md                      |      2 +
+ seeds/seed_category_20260308_194814.md             |     28 +
+ seeds/seed_category_20260308_194820.md             |     28 +
+ seeds/seed_caturda_20260308_194814.md              |     28 +
+ ...ghijstuvwxyzcdefghijstuvwxyz_20260308_194817.md |     28 +
+ ...ghijstuvwxyzcdefghijstuvwxyz_20260308_194819.md |     28 +
+ seeds/seed_celestial_192513.md                     |      2 +
+ seeds/seed_center_20260308_194814.md               |     28 +
+ seeds/seed_chains_20260308_194814.md               |     28 +
+ seeds/seed_chakra_20260308_194814.md               |     28 +
+ seeds/seed_chakra_layer_20260308_194814.md         |     28 +
+ seeds/seed_chakra_symbol_20260308_194814.md        |     28 +
+ seeds/seed_chandas_20260308_194814.md              |     28 +
+ seeds/seed_chandra_20260308_194814.md              |     28 +
+ seeds/seed_changes_192513.md                       |      2 +
+ seeds/seed_changes_20260308_194814.md              |     28 +
+ seeds/seed_chapter_20260308_194814.md              |     28 +
+ seeds/seed_chapters_192513.md                      |      2 +
+ seeds/seed_chitra_20260308_194814.md               |     28 +
+ seeds/seed_clarity_20260308_194814.md              |     28 +
+ seeds/seed_cluster_192513.md                       |      2 +
+ seeds/seed_cluster_20260308_194814.md              |     28 +
+ seeds/seed_clusters_192513.md                      |      2 +
+ seeds/seed_clusters_20260308_194814.md             |     28 +
+ seeds/seed_coherence_192513.md                     |      2 +
+ seeds/seed_coherence_20260308_194814.md            |     28 +
+ seeds/seed_coherent_192513.md                      |      2 +
+ seeds/seed_coherent_20260308_194814.md             |     28 +
+ seeds/seed_cohesion_20260308_194814.md             |     28 +
+ seeds/seed_combination_192513.md                   |      2 +
+ seeds/seed_combinations_20260308_194814.md         |     28 +
+ seeds/seed_common_192513.md                        |      2 +
+ seeds/seed_common_20260308_194814.md               |     28 +
+ seeds/seed_community_driven_20260308_194814.md     |     28 +
+ seeds/seed_comparative_20260308_194814.md          |     28 +
+ seeds/seed_completed_20260308_194814.md            |     28 +
+ seeds/seed_composed_192513.md                      |      2 +
+ seeds/seed_composed_20260308_194814.md             |     28 +
+ seeds/seed_concept_192513.md                       |      2 +
+ seeds/seed_concept_20260308_194814.md              |     28 +
+ seeds/seed_concept_20260308_194820.md              |     28 +
+ seeds/seed_confidence_20260308_194814.md           |     28 +
+ seeds/seed_connect_192513.md                       |      2 +
+ seeds/seed_connected_192513.md                     |      2 +
+ seeds/seed_connected_20260308_194814.md            |     28 +
+ seeds/seed_context_192513.md                       |      2 +
+ seeds/seed_contribution_20260308_194814.md         |     28 +
+ seeds/seed_controls_20260308_194814.md             |     28 +
+ seeds/seed_conversation_192513.md                  |      2 +
+ seeds/seed_conversation_20260308_194814.md         |     28 +
+ seeds/seed_cooling_20260308_194814.md              |     28 +
+ seeds/seed_cosmic_192513.md                        |      2 +
+ seeds/seed_cosmic_context_20260308_194814.md       |     28 +
+ seeds/seed_cosmic_cycle_20260308_194814.md         |     28 +
+ seeds/seed_cosmic_illumination_20260308_194814.md  |     28 +
+ seeds/seed_cosmic_layer_20260308_194814.md         |     28 +
+ seeds/seed_cosmic_motion_20260308_194814.md        |     28 +
+ seeds/seed_cosmic_sound_20260308_194814.md         |     28 +
+ seeds/seed_cosmicbody_192513.md                    |      2 +
+ seeds/seed_cosmological_192513.md                  |      2 +
+ seeds/seed_cosmological_20260308_194814.md         |     28 +
+ seeds/seed_cosmology_192513.md                     |      2 +
+ seeds/seed_cosmology_20260308_194814.md            |     28 +
+ seeds/seed_cosmology_core_20260308_194814.md       |     28 +
+ seeds/seed_creative_192513.md                      |      2 +
+ seeds/seed_creative_power_20260308_194814.md       |     28 +
+ seeds/seed_creativity_20260308_194814.md           |     28 +
+ seeds/seed_cultural_192513.md                      |      2 +
+ seeds/seed_cultural_20260308_194814.md             |     28 +
+ seeds/seed_current_192513.md                       |      2 +
+ seeds/seed_current_20260308_194814.md              |     28 +
+ seeds/seed_currently_20260308_194814.md            |     28 +
+ seeds/seed_cycles_192513.md                        |      2 +
+ seeds/seed_dataset_directions_20260308_194814.md   |     28 +
+ seeds/seed_datasets_192513.md                      |      2 +
+ seeds/seed_datasets_20260308_194814.md             |     28 +
+ seeds/seed_deities_20260308_194814.md              |     28 +
+ seeds/seed_deity_of_20260308_194814.md             |     28 +
+ seeds/seed_densityadj_20260308_194814.md           |     28 +
+ seeds/seed_derived_20260308_194814.md              |     28 +
+ seeds/seed_desire_20260308_194814.md               |     28 +
+ seeds/seed_devanagari_20260308_194814.md           |     28 +
+ seeds/seed_devanagari_20260308_194819.md           |     28 +
+ seeds/seed_devi_wields_weapon_20260308_194814.md   |     28 +
+ seeds/seed_devotion_192513.md                      |      2 +
+ seeds/seed_devotion_20260308_194814.md             |     28 +
+ ...aa4168cc3959db87c1848cf40213_20260308_194819.md |     28 +
+ ...n_nachrichten_von_den_naxatr_20260308_194819.md |     28 +
+ seeds/seed_dharmartha_20260308_194817.md           |     28 +
+ seeds/seed_diagrams_192513.md                      |      2 +
+ seeds/seed_diagrams_20260308_194814.md             |     28 +
+ seeds/seed_difference_192513.md                    |      2 +
+ seeds/seed_difference_20260308_194814.md           |     28 +
+ seeds/seed_digitized_20260308_194817.md            |     28 +
+ seeds/seed_direction_20260308_194814.md            |     28 +
+ seeds/seed_directions_192513.md                    |      2 +
+ seeds/seed_directions_20260308_194814.md           |     28 +
+ seeds/seed_documents_192513.md                     |      2 +
+ seeds/seed_documents_20260308_194814.md            |     28 +
+ seeds/seed_domain_192513.md                        |      2 +
+ seeds/seed_domain_20260308_194814.md               |     28 +
+ seeds/seed_domestic_art_20260308_194814.md         |     28 +
+ seeds/seed_dryness_20260308_194814.md              |     28 +
+ seeds/seed_dst_path_20260308_194819.md             |     28 +
+ seeds/seed_dvadashi_192513.md                      |      2 +
+ seeds/seed_dvadashi_20260308_194814.md             |     28 +
+ seeds/seed_dvitiya_192513.md                       |      2 +
+ seeds/seed_dvitiya_20260308_194814.md              |     28 +
+ seeds/seed_earthly_192513.md                       |      2 +
+ seeds/seed_ecology_20260308_194814.md              |     28 +
+ seeds/seed_egangotri_20260308_194817.md            |     28 +
+ seeds/seed_ekadashi_192513.md                      |      2 +
+ seeds/seed_ekadashi_20260308_194814.md             |     28 +
+ seeds/seed_element_192513.md                       |      2 +
+ seeds/seed_element_20260308_194814.md              |     28 +
+ seeds/seed_element_id_20260308_194814.md           |     28 +
+ seeds/seed_elements_20260308_194814.md             |     28 +
+ seeds/seed_elephant_20260308_194814.md             |     28 +
+ seeds/seed_emotion_192513.md                       |      2 +
+ seeds/seed_endobj_20260308_194814.md               |     28 +
+ seeds/seed_endobj_20260308_194815.md               |     28 +
+ seeds/seed_endobj_20260308_194816.md               |     28 +
+ seeds/seed_endobj_20260308_194817.md               |     28 +
+ seeds/seed_endobj_20260308_194818.md               |     28 +
+ seeds/seed_endobj_20260308_194819.md               |     28 +
+ seeds/seed_endstream_20260308_194814.md            |     28 +
+ seeds/seed_endstream_20260308_194815.md            |     28 +
+ seeds/seed_endstream_20260308_194816.md            |     28 +
+ seeds/seed_endstream_20260308_194817.md            |     28 +
+ seeds/seed_endstream_20260308_194818.md            |     28 +
+ seeds/seed_endstream_20260308_194819.md            |     28 +
+ seeds/seed_energetics_20260308_194814.md           |     28 +
+ seeds/seed_energised_20260308_194814.md            |     28 +
+ seeds/seed_energy_192513.md                        |      2 +
+ seeds/seed_entity_192513.md                        |      2 +
+ seeds/seed_entity_20260308_194814.md               |     28 +
+ seeds/seed_evidence_192513.md                      |      2 +
+ seeds/seed_evidence_20260308_194814.md             |     28 +
+ seeds/seed_example_192513.md                       |      2 +
+ seeds/seed_example_20260308_194814.md              |     28 +
+ seeds/seed_excerpt_192513.md                       |      2 +
+ seeds/seed_excerpt_20260308_194814.md              |     28 +
+ seeds/seed_excited_20260308_194814.md              |     28 +
+ seeds/seed_execution_192513.md                     |      2 +
+ seeds/seed_expand_20260308_194814.md               |     28 +
+ seeds/seed_expected_count_20260308_194814.md       |     28 +
+ seeds/seed_female_20260308_194814.md               |     28 +
+ seeds/seed_fertility_20260308_194814.md            |     28 +
+ seeds/seed_fields_192513.md                        |      2 +
+ seeds/seed_fields_20260308_194814.md               |     28 +
+ seeds/seed_fifteen_20260308_194814.md              |     28 +
+ seeds/seed_filter_20260308_194814.md               |     28 +
+ seeds/seed_filter_20260308_194816.md               |     28 +
+ seeds/seed_filter_20260308_194817.md               |     28 +
+ seeds/seed_filter_20260308_194818.md               |     28 +
+ seeds/seed_flowing_20260308_194814.md              |     28 +
+ seeds/seed_fortnight_20260308_194814.md            |     28 +
+ seeds/seed_founder_192513.md                       |      2 +
+ seeds/seed_freedom_20260308_194814.md              |     28 +
+ seeds/seed_from_id_20260308_194814.md              |     28 +
+ seeds/seed_future_20260308_194814.md               |     28 +
+ seeds/seed_gemini_20260308_194814.md               |     28 +
+ seeds/seed_genealogy_layer_20260308_194814.md      |     28 +
+ seeds/seed_generated_192513.md                     |      2 +
+ seeds/seed_generated_20260308_194814.md            |     28 +
+ seeds/seed_generation_192513.md                    |      2 +
+ seeds/seed_generation_20260308_194814.md           |     28 +
+ seeds/seed_geometry_192513.md                      |      2 +
+ seeds/seed_geometry_20260308_194814.md             |     28 +
+ seeds/seed_goddess_192513.md                       |      2 +
+ seeds/seed_goddess_20260308_194814.md              |     28 +
+ seeds/seed_goddess_20260308_194817.md              |     28 +
+ seeds/seed_google_20260308_194816.md               |     28 +
+ seeds/seed_google_20260308_194817.md               |     28 +
+ seeds/seed_google_20260308_194818.md               |     28 +
+ seeds/seed_google_20260308_194820.md               |     28 +
+ seeds/seed_graha_jupiter_20260308_194814.md        |     28 +
+ seeds/seed_graha_ketu_20260308_194814.md           |     28 +
+ seeds/seed_graha_mars_20260308_194814.md           |     28 +
+ seeds/seed_grahas_20260308_194814.md               |     28 +
+ seeds/seed_hanuman_192513.md                       |      2 +
+ seeds/seed_hanuman_20260308_194814.md              |     28 +
+ seeds/seed_havishaa_20260308_194814.md             |     28 +
+ seeds/seed_havishaa_20260308_194817.md             |     28 +
+ seeds/seed_healing_20260308_194814.md              |     28 +
+ seeds/seed_heating_20260308_194814.md              |     28 +
+ seeds/seed_hemanta_20260308_194814.md              |     28 +
+ seeds/seed_historical_layer_20260308_194814.md     |     28 +
+ seeds/seed_identity_192513.md                      |      2 +
+ seeds/seed_impetus_192513.md                       |      2 +
+ seeds/seed_impetus_20260308_194814.md              |     28 +
+ seeds/seed_incoming_20260308_194819.md             |     28 +
+ seeds/seed_indraagni_20260308_194814.md            |     28 +
+ seeds/seed_inference_192513.md                     |      2 +
+ seeds/seed_inference_20260308_194814.md            |     28 +
+ seeds/seed_intellect_20260308_194814.md            |     28 +
+ seeds/seed_intellectual_20260308_194814.md         |     28 +
+ seeds/seed_interpreter_192513.md                   |      2 +
+ seeds/seed_interpreter_20260308_194814.md          |     28 +
+ seeds/seed_introduced_192513.md                    |      2 +
+ seeds/seed_jupiter_192513.md                       |      2 +
+ seeds/seed_jupiter_20260308_194814.md              |     28 +
+ seeds/seed_jyotish_20260308_194814.md              |     28 +
+ seeds/seed_jyotish_20260308_194819.md              |     28 +
+ seeds/seed_jyotish_core_20260308_194814.md         |     28 +
+ seeds/seed_jyotish_text_20260308_194819.md         |     28 +
+ seeds/seed_kameshvari_192513.md                    |      2 +
+ seeds/seed_kashaya_20260308_194814.md              |     28 +
+ seeds/seed_kathina_20260308_194814.md              |     28 +
+ seeds/seed_kavya_djvu_20260308_194819.md           |     28 +
+ seeds/seed_kernel_192513.md                        |      2 +
+ seeds/seed_knowledge_192513.md                     |      2 +
+ seeds/seed_krishna_192513.md                       |      2 +
+ seeds/seed_krishna_20260308_194814.md              |     28 +
+ seeds/seed_krishna_20260308_194820.md              |     28 +
+ seeds/seed_krittika_192513.md                      |      2 +
+ seeds/seed_krittika_20260308_194814.md             |     28 +
+ seeds/seed_kshatriya_20260308_194814.md            |     28 +
+ seeds/seed_kubera_20260308_194814.md               |     28 +
+ seeds/seed_kumaras_20260308_194814.md              |     28 +
+ seeds/seed_lalshmi_20260308_194819.md              |     28 +
+ seeds/seed_layered_192513.md                       |      2 +
+ seeds/seed_layers_192513.md                        |      2 +
+ seeds/seed_length_20260308_194814.md               |     28 +
+ seeds/seed_length_20260308_194815.md               |     28 +
+ seeds/seed_length_20260308_194816.md               |     28 +
+ seeds/seed_length_20260308_194817.md               |     28 +
+ seeds/seed_length_20260308_194818.md               |     28 +
+ seeds/seed_length_20260308_194819.md               |     28 +
+ seeds/seed_literature_192513.md                    |      2 +
+ seeds/seed_literature_20260308_194814.md           |     28 +
+ seeds/seed_locator_192513.md                       |      2 +
+ seeds/seed_luminary_20260308_194814.md             |     28 +
+ seeds/seed_madhura_20260308_194814.md              |     28 +
+ seeds/seed_madhya_20260308_194814.md               |     28 +
+ seeds/seed_mahabhutas_20260308_194814.md           |     28 +
+ seeds/seed_manifests_192513.md                     |      2 +
+ seeds/seed_manushya_20260308_194814.md             |     28 +
+ seeds/seed_maturation_192513.md                    |      2 +
+ seeds/seed_medium_192513.md                        |      2 +
+ seeds/seed_medium_term_20260308_194814.md          |     28 +
+ seeds/seed_mercury_192513.md                       |      2 +
+ seeds/seed_mercury_20260308_194814.md              |     28 +
+ seeds/seed_metabolism_20260308_194814.md           |     28 +
+ seeds/seed_model_layered_20260308_194814.md        |     28 +
+ seeds/seed_muladhara_20260308_194814.md            |     28 +
+ seeds/seed_mythic_192513.md                        |      2 +
+ seeds/seed_mythic_narrative_20260308_194814.md     |     28 +
+ seeds/seed_nakshatra_10_20260308_194814.md         |     28 +
+ seeds/seed_nakshatra_192513.md                     |      2 +
+ seeds/seed_nakshatra_1_20260308_194814.md          |     28 +
+ seeds/seed_nakshatra_20260308_194814.md            |     28 +
+ seeds/seed_nakshatra_20260308_194819.md            |     28 +
+ ...d_nakshatra_associated_deity_20260308_194814.md |     28 +
+ .../seed_nakshatra_sacred_plant_20260308_194814.md |     28 +
+ seeds/seed_nakshatra_vidnyana_20260308_194819.md   |     28 +
+ ...seed_nakshatra_vidnyana_text_20260308_194819.md |     28 +
+ seeds/seed_nakshatras_192513.md                    |      2 +
+ seeds/seed_narrative_192513.md                     |      2 +
+ seeds/seed_navami_20260308_194814.md               |     28 +
+ seeds/seed_naxatra_20260308_194814.md              |     28 +
+ seeds/seed_naxatra_20260308_194817.md              |     28 +
+ seeds/seed_nirriti_20260308_194814.md              |     28 +
+ seeds/seed_nirrti_20260308_194814.md               |     28 +
+ seeds/seed_nityaklinna_192513.md                   |      2 +
+ seeds/seed_northeast_20260308_194814.md            |     28 +
+ seeds/seed_nostril_20260308_194814.md              |     28 +
+ seeds/seed_nourishment_20260308_194814.md          |     28 +
+ seeds/seed_number_192513.md                        |      2 +
+ seeds/seed_offering_192513.md                      |      2 +
+ seeds/seed_offering_20260308_194814.md             |     28 +
+ seeds/seed_offerings_192513.md                     |      2 +
+ seeds/seed_offerings_20260308_194814.md            |     28 +
+ seeds/seed_oneness_192513.md                       |      2 +
+ seeds/seed_oneness_20260308_194814.md              |     28 +
+ seeds/seed_organized_192513.md                     |      2 +
+ seeds/seed_organizes_192513.md                     |      2 +
+ seeds/seed_orientation_20260308_194814.md          |     28 +
+ seeds/seed_outputs_192513.md                       |      2 +
+ seeds/seed_overlay_20260308_194814.md              |     28 +
+ seeds/seed_overlays_192513.md                      |      2 +
+ seeds/seed_paksha_192513.md                        |      2 +
+ seeds/seed_paksha_20260308_194814.md               |     28 +
+ seeds/seed_parent_192513.md                        |      2 +
+ seeds/seed_parichaya_20260308_194819.md            |     28 +
+ seeds/seed_parichaya_djvu_20260308_194819.md       |     28 +
+ seeds/seed_parishad_20260308_194819.md             |     28 +
+ seeds/seed_passage_20260308_194814.md              |     28 +
+ seeds/seed_pathway_20260308_194814.md              |     28 +
+ seeds/seed_pattern_192513.md                       |      2 +
+ seeds/seed_pattern_20260308_194814.md              |     28 +
+ seeds/seed_peacock_20260308_194814.md              |     28 +
+ seeds/seed_performance_20260308_194814.md          |     28 +
+ seeds/seed_phalguni_192513.md                      |      2 +
+ seeds/seed_phalguni_20260308_194814.md             |     28 +
+ seeds/seed_pingala_192513.md                       |      2 +
+ seeds/seed_pingala_20260308_194814.md              |     28 +
+ seeds/seed_planet_20260308_194814.md               |     28 +
+ seeds/seed_population_20260308_194814.md           |     28 +
+ seeds/seed_portion_20260308_194814.md              |     28 +
+ seeds/seed_practice_192513.md                      |      2 +
+ seeds/seed_pratipad_192513.md                      |      2 +
+ seeds/seed_pratipat_192513.md                      |      2 +
+ seeds/seed_preserve_192513.md                      |      2 +
+ seeds/seed_primary_20260308_194814.md              |     28 +
+ seeds/seed_priority_20260308_194814.md             |     28 +
+ seeds/seed_profile_192513.md                       |      2 +
+ seeds/seed_projection_192513.md                    |      2 +
+ seeds/seed_projection_20260308_194814.md           |     28 +
+ seeds/seed_prolific_20260308_194814.md             |     28 +
+ seeds/seed_protocol_192513.md                      |      2 +
+ seeds/seed_pungent_20260308_194814.md              |     28 +
+ seeds/seed_purpose_20260308_194814.md              |     28 +
+ seeds/seed_purvabhadrapada_20260308_194814.md      |     28 +
+ seeds/seed_pushan_20260308_194814.md               |     28 +
+ seeds/seed_qualities_192513.md                     |      2 +
+ seeds/seed_qualities_20260308_194814.md            |     28 +
+ seeds/seed_quality_192513.md                       |      2 +
+ seeds/seed_rakshasa_20260308_194814.md             |     28 +
+ seeds/seed_rashis_20260308_194814.md               |     28 +
+ seeds/seed_rather_192513.md                        |      2 +
+ seeds/seed_readme_192513.md                        |      2 +
+ seeds/seed_readme_20260308_194814.md               |     28 +
+ seeds/seed_relation_192513.md                      |      2 +
+ seeds/seed_relation_20260308_194814.md             |     28 +
+ seeds/seed_relational_192513.md                    |      2 +
+ seeds/seed_relational_20260308_194814.md           |     28 +
+ seeds/seed_relations_192513.md                     |      2 +
+ seeds/seed_relations_20260308_194814.md            |     28 +
+ seeds/seed_report_192513.md                        |      2 +
+ seeds/seed_report_20260308_194814.md               |     28 +
+ seeds/seed_represents_192513.md                    |      2 +
+ seeds/seed_research_192513.md                      |      2 +
+ seeds/seed_research_20260308_194814.md             |     28 +
+ seeds/seed_research_20260308_194819.md             |     28 +
+ seeds/seed_resonance_192513.md                     |      2 +
+ seeds/seed_resonance_20260308_194814.md            |     28 +
+ seeds/seed_ritual_192513.md                        |      2 +
+ seeds/seed_ritual_20260308_194814.md               |     28 +
+ seeds/seed_ritual_20260308_194820.md               |     28 +
+ seeds/seed_ritual_fast_20260308_194814.md          |     28 +
+ seeds/seed_rohini_192513.md                        |      2 +
+ seeds/seed_rohini_20260308_194814.md               |     28 +
+ seeds/seed_ruksha_20260308_194814.md               |     28 +
+ seeds/seed_ruling_192513.md                        |      2 +
+ seeds/seed_sacred_192513.md                        |      2 +
+ seeds/seed_sanskrit_192513.md                      |      2 +
+ seeds/seed_sanskrit_20260308_194814.md             |     28 +
+ seeds/seed_saptami_20260308_194814.md              |     28 +
+ seeds/seed_sattva_20260308_194814.md               |     28 +
+ seeds/seed_saturn_192513.md                        |      2 +
+ seeds/seed_saturn_20260308_194814.md               |     28 +
+ seeds/seed_savitar_20260308_194814.md              |     28 +
+ seeds/seed_schema_192513.md                        |      2 +
+ seeds/seed_schools_20260308_194814.md              |     28 +
+ seeds/seed_science_20260308_194814.md              |     28 +
+ seeds/seed_scripts_192513.md                       |      2 +
+ seeds/seed_scripts_20260308_194814.md              |     28 +
+ seeds/seed_secondary_192513.md                     |      2 +
+ seeds/seed_secondary_20260308_194814.md            |     28 +
+ seeds/seed_seed_unverified_20260308_194814.md      |     28 +
+ seeds/seed_services_20260308_194816.md             |     28 +
+ seeds/seed_services_20260308_194817.md             |     28 +
+ seeds/seed_services_20260308_194818.md             |     28 +
+ seeds/seed_services_20260308_194820.md             |     28 +
+ seeds/seed_sexual_20260308_194814.md               |     28 +
+ seeds/seed_shastra_192513.md                       |      2 +
+ seeds/seed_should_192513.md                        |      2 +
+ seeds/seed_siddha_192513.md                        |      2 +
+ seeds/seed_siddha_20260308_194817.md               |     28 +
+ seeds/seed_silver_20260308_194814.md               |     28 +
+ seeds/seed_software_192513.md                      |      2 +
+ seeds/seed_software_20260308_194814.md             |     28 +
+ seeds/seed_source_192513.md                        |      2 +
+ seeds/seed_source_20260308_194814.md               |     28 +
+ seeds/seed_source_file_20260308_194814.md          |     28 +
+ seeds/seed_srimad_192513.md                        |      2 +
+ seeds/seed_stability_192513.md                     |      2 +
+ seeds/seed_stability_20260308_194814.md            |     28 +
+ seeds/seed_stabilize_192513.md                     |      2 +
+ seeds/seed_stable_192513.md                        |      2 +
+ seeds/seed_status_192513.md                        |      2 +
+ seeds/seed_structure_20260308_194814.md            |     28 +
+ seeds/seed_structured_192513.md                    |      2 +
+ seeds/seed_summary_192513.md                       |      2 +
+ seeds/seed_supreme_192513.md                       |      2 +
+ seeds/seed_symbolic_20260308_194814.md             |     28 +
+ seeds/seed_symbolism_20260308_194814.md            |     28 +
+ seeds/seed_system_192513.md                        |      2 +
+ seeds/seed_systems_192513.md                       |      2 +
+ seeds/seed_target_192513.md                        |      2 +
+ seeds/seed_target_20260308_194814.md               |     28 +
+ seeds/seed_tattva_192513.md                        |      2 +
+ seeds/seed_taurus_192513.md                        |      2 +
+ seeds/seed_teentaal_20260308_194814.md             |     28 +
+ seeds/seed_thesis_192513.md                        |      2 +
+ seeds/seed_thesis_20260308_194814.md               |     28 +
+ seeds/seed_tradition_192513.md                     |      2 +
+ seeds/seed_tradition_20260308_194814.md            |     28 +
+ seeds/seed_trayodashi_20260308_194814.md           |     28 +
+ seeds/seed_trident_192513.md                       |      2 +
+ seeds/seed_tritiya_192513.md                       |      2 +
+ seeds/seed_understanding_20260308_194814.md        |     28 +
+ seeds/seed_universe_192513.md                      |      2 +
+ seeds/seed_unknown_192513.md                       |      2 +
+ seeds/seed_unknown_20260308_194814.md              |     28 +
+ seeds/seed_unverified_192513.md                    |      2 +
+ seeds/seed_useful_192513.md                        |      2 +
+ seeds/seed_useful_20260308_194814.md               |     28 +
+ seeds/seed_uttara_192513.md                        |      2 +
+ seeds/seed_uttara_20260308_194814.md               |     28 +
+ seeds/seed_vahnivasini_192513.md                   |      2 +
+ seeds/seed_varuna_20260308_194814.md               |     28 +
+ seeds/seed_vedanta_192513.md                       |      2 +
+ seeds/seed_vedic_concepts_20260308_194814.md       |     28 +
+ seeds/seed_vishnu_20260308_194814.md               |     28 +
+ seeds/seed_vishvaa_20260308_194814.md              |     28 +
+ seeds/seed_vishvaa_20260308_194817.md              |     28 +
+ seeds/seed_vishvadevas_20260308_194814.md          |     28 +
+ seeds/seed_vishvakarma_20260308_194814.md          |     28 +
+ seeds/seed_visualization_192513.md                 |      2 +
+ seeds/seed_vitality_192513.md                      |      2 +
+ seeds/seed_weapon_192513.md                        |      2 +
+ seeds/seed_welche_20260308_194814.md               |     28 +
+ seeds/seed_welche_20260308_194817.md               |     28 +
+ seeds/seed_werden_20260308_194814.md               |     28 +
+ seeds/seed_werden_20260308_194817.md               |     28 +
+ seeds/seed_wields_192513.md                        |      2 +
+ seeds/seed_yagyam_20260308_194814.md               |     28 +
+ seeds/seed_yagyam_20260308_194817.md               |     28 +
+ seeds/seed_zodiac_192513.md                        |      2 +
+ store_graph.py                                     |     61 +
+ tools/atlas_board.py                               |     76 +
+ tools/atlas_honor.py                               |     39 +
+ tools/build_graph.py                               |     48 +-
+ tools/extract_seeds.py                             |     32 +
+ tools/generate_edges.py                            |     28 +
+ tools/load_cosmology_offering.py                   |     33 +
+ tools/peek_graph.py                                |     29 +
+ tools/render_constellation.py                      |    116 +-
+ tools/render_mandala.py                            |     15 +
+ tools/seed_explosion.py                            |     23 +
+ visual/atlas_constellation.html                    |     73 +-
+ 648 files changed, 363032 insertions(+), 2616 deletions(-)
+
+commit 01002f37b050d3dd794ae41af238d45e4a26cf95
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Mon Mar 9 03:23:23 2026 -0400
+
+    Add Atlas Cosmology Registry
+
+ docs/COSMOLOGY_REGISTRY.md | 117 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 117 insertions(+)
+
+commit bca138e45282f416ad2d88bde377b7423fcc6f96
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 16:21:59 2026 -0400
+
+    atlas: new seed + updated constellation
+
+ seeds/seed_20260308_1619.md     | 13 +++++++++++++
+ visual/atlas_constellation.html | 20 +++++++++++++++++++-
+ 2 files changed, 32 insertions(+), 1 deletion(-)
+
+commit ec75e40ecbe10f4b379c6e36075315736346d44f
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 16:18:25 2026 -0400
+
+    atlas: seed cycle update + constellation output
+
+ README.md                       |  47 ++++++++++++++++++-------------
+ memory/corpus.db                | Bin 14503936 -> 16113664 bytes
+ memory/reports/dashboard.html   |   4 +--
+ tools/atlas_doctor.py           |  40 +++++++++++++++++++++++++++
+ tools/atlas_ring.py             |  18 ++++++++++++
+ tools/render_constellation.py   |  60 +++++++++++++++++++++++++++-------------
+ visual/atlas_constellation.html |   2 +-
+ 7 files changed, 130 insertions(+), 41 deletions(-)
+
+commit 6d5dce1cf7b6e0fd0dc3eccc4699f2e3296b168f
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 15:39:06 2026 -0400
+
+    atlas: cosmology altar installed
+
+ README.md                       | 116 +++++++---------------------------------
+ architecture/atlas_cosmology.md |  34 ++++++++++++
+ 2 files changed, 53 insertions(+), 97 deletions(-)
+
+commit d22dfa477bbd63a19d1612f9fe7ac106f439125e
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 14:59:07 2026 -0400
+
+    atlas: thali cycle — seeds → graph → constellation
+
+ atlas                                              | 125 +++++++++++----------
+ atlas_cards/cards/cards.json                       |  57 ++++++++++
+ atlas_graph/graph.json                             |  33 ++++++
+ ...28);ctx.fill();ctx.fillText('{n}',{x+8},{y+8}); |   0
+ memory/corpus.db                                   | Bin 12898304 -> 14503936 bytes
+ memory/reports/dashboard.html                      |   4 +-
+ tools/build_graph.py                               |  21 ++--
+ tools/render_constellation.py                      |  33 ++++++
+ visual/atlas_constellation.html                    |   1 +
+ 9 files changed, 198 insertions(+), 76 deletions(-)
+
+commit fe842066f17eb81422ef5d698f5e1e876683a658
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 13:25:38 2026 -0400
+
+    atlas growth cycle Sun Mar  8 01:25:38 PM EDT 2026
+
+ memory/corpus.db              | Bin 11292672 -> 12898304 bytes
+ memory/reports/dashboard.html |   4 +--
+ scripts/atlas_growth_cycle.sh |  26 +++++++++++++++++++
+ tools/atlas-offer             |  20 ++++++++++++++
+ tools/build_graph.py          |  42 ++++++++++++++++++++++++++++++
+ tools/render_readme.py        |  59 ++++++++++++++++++++++++++++++++++++++++++
+ 6 files changed, 149 insertions(+), 2 deletions(-)
+
+commit 83e4b4e5a21f84b98c72d75bd50349ff41cb980f
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 13:24:57 2026 -0400
+
+    Atlas prompt harvest → seed generation
+
+ seeds/demo_seed.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 5fc7bdb434faef958499589422eb5b0208c81001
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 12:14:35 2026 -0400
+
+    atlas: harvest cycle — dashboard + README expansion
+
+ memory/reports/dashboard.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 94ce78bd3742610cd44d933ee2ce0211b76db850
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 11:37:27 2026 -0400
+
+    atlas: super seed hierarchy install
+
+ docs/OFFERING_CYCLE.md              |  29 +++++++++++++
+ docs/OFFERING_PLATE_SCHEMA.md       |  12 ++++++
+ docs/SEED_INTERPRETER.md            |  80 ++++++++++++++++++++++++++++++++++++
+ memory/corpus.db                    | Bin 9682944 -> 11292672 bytes
+ memory/reports/dashboard.html       |   4 +-
+ tools/generate_offerings.py         |  41 ++++++++++++++++++
+ tools/offering_plate_interpreter.py |  30 ++++++++++++++
+ tools/rebuild_readme_top.py         |  66 +++++++++++++++++++++++++++++
+ tools/run_cycle.sh                  |  13 ++++++
+ 9 files changed, 273 insertions(+), 2 deletions(-)
+
+commit 7609d79749a8629f2c8f769c38c998144ec0e43f
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 10:16:58 2026 -0400
+
+    atlas: sync README with seed archive
+
+ README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 52a4903e3a865f93c8f88a6c8c983f598ca86e43
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 10:15:57 2026 -0400
+
+    atlas: add README seed generator and generated seed cluster section
+
+ scripts/generate_readme_seeds.py | 44 ++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 44 insertions(+)
+
+commit 8cc3e2a56f8747ff076a34a6d809115acd5fc5bf
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 10:09:02 2026 -0400
+
+    atlas: cosmology expansion
+    
+    - add Devi Protocol section
+    - add Devas / Daemons conceptual layer
+    - add resonance and machine efficiency philosophy
+    - expand README cosmological axis
+    - introduce digital devis concept
+    - seed relational computing model
+
+ memory/corpus.db              | Bin 1634304 -> 9682944 bytes
+ memory/graphs/seed_graph.json |  93 ++++++++++++++++++++++++++++++++++++++++--
+ memory/reports/dashboard.html |   4 +-
+ 3 files changed, 91 insertions(+), 6 deletions(-)
+
+commit 11cc6ec4c67c30dbb2aa6911996b517e77ad1f93
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 09:57:38 2026 -0400
+
+    atlas: introduce universal seed schema and cosmology root seed
+
+ docs/UNIVERSAL_SEED_SCHEMA.md   | 88 +++++++++++++++++++++++++++++++++++++++++
+ docs/UNIVERSAL_SEED_TEMPLATE.md | 25 ++++++++++++
+ 2 files changed, 113 insertions(+)
+
+commit 5c73d0b1e2b88ffb335579e73a1f4d2df5f8d20a
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 09:44:15 2026 -0400
+
+    Atlas README auto-seed expansion
+
+ scripts/update_readme.py | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+
+commit c45ec228d1fbdf2091b053fec17d654052c9a982
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 09:25:37 2026 -0400
+
+    Atlas discovery cycle: clusters + research prompts
+
+ memory/reports/dashboard.html           |  4 +--
+ prompts/generated/discovery_prompts.txt | 50 ++++++++++++++++++++++++++++
+ prompts/seed_prompts.md                 | 22 +++++--------
+ scripts/atlas_discovery.py              | 58 +++++++++++++++++++++++++++++++++
+ 4 files changed, 119 insertions(+), 15 deletions(-)
+
+commit 56dc2786a844b4c48fb7d7a73724774566d98382
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 09:24:31 2026 -0400
+
+    Atlas prompt harvest → seed generation
+
+ scripts/chat_seed_extractor.py | 36 +++++++++++++++++++++++++++
+ scripts/prompts_to_seeds.py    | 55 ++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 91 insertions(+)
+
+commit 39b04ae1def45e856cdc0d03e155d914b473a088
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 09:17:38 2026 -0400
+
+    Atlas cosmic seed cycle
+
+ seeds/cosmic_cycle_20260308_091738.md | 76 +++++++++++++++++++++++++++++++++++
+ 1 file changed, 76 insertions(+)
+
+commit b13c5c599a9eb9a9b3d98c47b96ac540af18ee7b
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 09:05:38 2026 -0400
+
+    Atlas cosmic seed cycle
+
+ seeds/cosmic_seed_cycle_20260308_090538.md | 78 ++++++++++++++++++++++++++++++
+ 1 file changed, 78 insertions(+)
+
+commit fb04cb6032b4513c1a4c315daee7b0c5bda06260
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 09:03:44 2026 -0400
+
+    Atlas offering plate seed cycle
+
+ offerings/cosmic_seeds_1772975024.md | 63 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 63 insertions(+)
+
+commit 05ccba707423cf16cd96f0bbf905f1e8c68bce77
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 08:43:21 2026 -0400
+
+    Add README seeds for cosmology, reconstruction, and speculative layers
+
+ docs/README_SEEDS.md | 200 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 200 insertions(+)
+
+commit 613aef54dbd5490661bca980c48e730bbe9f0a31
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 01:18:30 2026 -0500
+
+    Atlas relation detection + cluster explorer cycle
+
+ atlas_cards/explorer.html         | 175 ++++++++++++++++++++++++
+ atlas_cards/nakshatra_sample.json |   5 +
+ atlas_cards/viewer.html           | 272 ++++++++++++++++++++++++++++++++++++++
+ memory/reports/dashboard.html     |  12 +-
+ scripts/atlas_cluster_cycle.py    | 104 +++++++++++++++
+ 5 files changed, 558 insertions(+), 10 deletions(-)
+
+commit 121d7cc1e48a891ed20d4956b2c954338b140ff5
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 01:15:13 2026 -0500
+
+    Atlas automatic research seed cycle
+
+ scripts/atlas_seed_cycle.py | 57 +++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 57 insertions(+)
+
+commit 7f62c713495a91a162a2172410cc3e3ad242f0a0
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 01:14:38 2026 -0500
+
+    Atlas dataset scan cycle
+
+ scripts/atlas_dataset_scan.py | 30 ++++++++++++++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+
+commit 89f078ca7a10e6317063d9b761eeb5d8ddc97435
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 01:08:59 2026 -0500
+
+    Push supreme seed cycle, turn log, and seed archive forward
+
+ analysis/turn_logs/2026-03-08_010859_turn.md | 17 ++++++++++++
+ docs/SUPREME_SEED_CYCLE.md                   | 39 ++++++++++++++++++++++++++++
+ 2 files changed, 56 insertions(+)
+
+commit 9f2b40e080b4fb79dbacc791b8e93bd923548127
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sun Mar 8 00:43:38 2026 -0500
+
+    SUPERBLOCK: seed wiki front page and core atlas pages
+
+ wiki/craft_ecology.md     | 24 ++++++++++++++++++++++++
+ wiki/index.md             | 27 +++++++++++++++++++++++++++
+ wiki/orientation.md       | 18 ++++++++++++++++++
+ wiki/pattern_lattice.md   | 11 +++++++++++
+ wiki/research_clusters.md | 19 +++++++++++++++++++
+ wiki/sound_geometry.md    | 22 ++++++++++++++++++++++
+ 6 files changed, 121 insertions(+)
+
+commit 9bca7d2f99711d13d4de8a0048227ceea7eaf24c
+Author: inahd <inahd@users.noreply.github.com>
+Date:   Sat Mar 7 23:38:21 2026 -0500
+
+    restore local work after reset
+
+ __pycache__/atlas.cpython-313.pyc | Bin 5258 -> 5258 bytes
+ memory/reports/dashboard.html     |   8 ++++++++
+ 2 files changed, 8 insertions(+)
+
+commit b9e84c35c71a2de88dc608032556f2747206be0f
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 11:40:05 2026 -0500
+
+    Add coherence scoring engine
+
+ docs/atlas_architecture.md         | 27 ++++++++++++++++
+ scripts/atlas_compute_coherence.py | 66 ++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 93 insertions(+)
+
+commit d88ce0ef18eee305b85519895223cb2b75ad2216
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 11:37:50 2026 -0500
+
+    Add one-command Atlas pipeline runner
+
+ docs/atlas_architecture.md    | 31 +++++++++++++++++++++++++++++++
+ scripts/atlas_run_pipeline.py | 31 +++++++++++++++++++++++++++++++
+ 2 files changed, 62 insertions(+)
+
+commit 252b0ab78dbd9d1eadce816074941b75ca1c793b
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 11:35:33 2026 -0500
+
+    Add entity normalization and alias registry
+
+ docs/atlas_architecture.md          | 27 ++++++++++++++++
+ schemas/entity_aliases.json         | 10 ++++++
+ scripts/atlas_normalize_entities.py | 63 +++++++++++++++++++++++++++++++++++++
+ 3 files changed, 100 insertions(+)
+
+commit bd05c818cd262c09fb96f6ace4e6c042f990f118
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 10:07:04 2026 -0500
+
+    Add Cosmic Map Explorer
+
+ docs/atlas_architecture.md     |  29 ++++++++++
+ explorer/atlas_cosmic_map.html | 122 +++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 151 insertions(+)
+
+commit 21f3ff56aacb7e53e17bc8a0f2f073c5195f147d
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 10:04:29 2026 -0500
+
+    Add research executor for automatic task triage
+
+ docs/atlas_architecture.md        | 31 ++++++++++++++++
+ scripts/atlas_execute_research.py | 74 +++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 105 insertions(+)
+
+commit 1a26ce51ab473a89d6ee9d92884af5e7a35061a9
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 10:03:36 2026 -0500
+
+    Add research queue engine
+
+ docs/atlas_architecture.md            | 38 +++++++++++++++
+ scripts/atlas_build_research_queue.py | 91 +++++++++++++++++++++++++++++++++++
+ 2 files changed, 129 insertions(+)
+
+commit 653c77c4c73f0a018312c0bceaeb03cda258b314
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:59:56 2026 -0500
+
+    Add Yantra Harmonizer Engine for structural geometry detection
+
+ docs/atlas_architecture.md  |  43 +++++++++++++++++
+ scripts/atlas_harmonizer.py | 111 ++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 154 insertions(+)
+
+commit 3ea7c6fbb058b5f3ad7342e72d6e2749e8505c08
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:53:46 2026 -0500
+
+    Add relation engine and mapping datasets
+
+ datasets/mappings/graha_rulerships.json | 15 +++++++
+ docs/atlas_architecture.md              | 35 +++++++++++++++
+ scripts/atlas_build_relations.py        | 77 +++++++++++++++++++++++++++++++++
+ 3 files changed, 127 insertions(+)
+
+commit 9ddd287ff5463ce1eecfe400db498e2a9442bbc9
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:53:08 2026 -0500
+
+    Add canonical structure loader and integrity checks
+
+ docs/atlas_architecture.md  |  47 +++++++++++++++++
+ scripts/atlas_load_canon.py | 120 ++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 167 insertions(+)
+
+commit 9d2ebfb6ddd3cfd1baa78801db256a9ebd947f7a
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:52:29 2026 -0500
+
+    Add canonical cosmology backbone datasets
+
+ datasets/canonical/directions.json | 14 ++++++++++++
+ datasets/canonical/grahas.json     | 15 +++++++++++++
+ datasets/canonical/gunas.json      |  9 ++++++++
+ datasets/canonical/mahabhutas.json | 11 ++++++++++
+ datasets/canonical/nakshatras.json | 33 ++++++++++++++++++++++++++++
+ datasets/canonical/rashis.json     | 18 ++++++++++++++++
+ docs/atlas_architecture.md         | 44 ++++++++++++++++++++++++++++++++++++++
+ 7 files changed, 144 insertions(+)
+
+commit 7b01f21aeb443818e9cee1a1d1b439c76c4330c0
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:45:43 2026 -0500
+
+    Add automatic placeholder node generation and gap detector
+
+ docs/atlas_architecture.md    |  57 +++++++++++++++++++++++
+ scripts/atlas_gap_detector.py | 102 ++++++++++++++++++++++++++++--------------
+ 2 files changed, 125 insertions(+), 34 deletions(-)
+
+commit 854d0c555ba87f84218caba8eb9f663574f09208
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:44:40 2026 -0500
+
+    Add convention registry and placeholder node protocol
+
+ data/conventions_registry.json    | 22 ++++++++++++
+ data/placeholder_nodes.json       | 16 +++++++++
+ docs/atlas_architecture.md        | 75 +++++++++++++++++++++++++++++++++++++++
+ schemas/convention_protocol.json  | 26 ++++++++++++++
+ schemas/placeholder_protocol.json | 26 ++++++++++++++
+ 5 files changed, 165 insertions(+)
+
+commit 6ee0e2daa89bb087f6c602e68cdf97640310a5d7
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:42:21 2026 -0500
+
+    Add Atlas ingestion engine
+
+ docs/atlas_architecture.md    |  28 ++++++++++
+ scripts/atlas_ingest.py       | 115 ++++++++++++++++++++++++++++++++++++++++++
+ scripts/node_inspector_api.py |  61 ++++++++++++++++++++++
+ 3 files changed, 204 insertions(+)
+
+commit db78eff997df2859cb11d761583725f6e09aa2aa
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:41:17 2026 -0500
+
+    Add Atlas canonical entity registry
+
+ docs/atlas_architecture.md |  42 +++++++++++++++++
+ schemas/entity_types.json  | 111 +++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 153 insertions(+)
+
+commit e659865a269aa0e1368760e423fbaed2037fe495
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:40:19 2026 -0500
+
+    Append Atlas graph schema and harmonizer integration
+
+ docs/atlas_architecture.md      | 88 +++++++++++++++++++++++++++++++++++++++++
+ docs/atlas_axes.md              | 30 ++++++++++++++
+ schemas/atlas_graph_schema.json | 44 +++++++++++++++++++++
+ 3 files changed, 162 insertions(+)
+
+commit 6498acc4ff5fd1a813596ef9ef95588d45ea514a
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 09:39:17 2026 -0500
+
+    Add Atlas architecture, axes, domains, and harmonizer schema
+
+ docs/atlas_architecture.md     | 130 +++++++++++++++++++++++++++++++++++++++++
+ docs/atlas_axes.md             |  44 ++++++++++++++
+ docs/atlas_domains.md          |  28 +++++++++
+ schemas/harmonizer_schema.json |  32 ++++++++++
+ 4 files changed, 234 insertions(+)
+
+commit 3a4861184a90e8b9b7683350b027306ac453ff28
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 05:18:31 2026 -0500
+
+    atlas pattern engine installed 2026-03-07_05-18-31
+
+ docs/atlas_patterns.md          |   4 ++
+ scripts/atlas_cycle.sh          |   5 ++
+ scripts/atlas_pattern_engine.py | 106 ++++++++++++++++++++--------------------
+ 3 files changed, 61 insertions(+), 54 deletions(-)
+
+commit 9c4d60361679edda2c75033848d63ce8a28dfb47
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 05:16:49 2026 -0500
+
+    atlas stability: graph integrity + canon export 2026-03-07_05-16-49
+
+ docs/ATLAS_FOUNDATION.md          | 319 ++++++++++++++++++++++++++++++++++
+ docs/ATLAS_ONTOLOGY_SCHEMA.md     | 357 ++++++++++++++++++++++++++++++++++++++
+ docs/atlas_canon.md               | 224 ++++++++++++++++++++++++
+ docs/atlas_state.json             | 220 +++++++++++++++++++++++
+ scripts/atlas_cycle.sh            |  13 ++
+ scripts/ensure_graph_integrity.py |  30 ++++
+ scripts/export_atlas_canon.py     |  76 ++++++++
+ 7 files changed, 1239 insertions(+)
+
+commit 65bff4a7198e4aa2d1d07193a93f11b3de2835c7
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 04:54:16 2026 -0500
+
+    atlas cycle: structure expansion, research tasks, metrics, clusters
+
+ datasets/cosmology/nakshatra_extended.csv |  28 ++++
+ datasets/cosmology/vastu_directions.csv   |  10 ++
+ datasets/cosmology/vastu_zones.csv        |  10 ++
+ research_queue/queue.json                 | 268 ++++++++++++++++++++++++++++++
+ research_queue/queue.yaml                 |  78 ++++-----
+ scripts/atlas_cycle.sh                    |  25 +--
+ scripts/atlas_gap_detector.py             |  56 +++++++
+ scripts/atlas_pattern_engine.py           |  79 +++++++++
+ scripts/atlas_research_queue.py           |  64 +++++++
+ scripts/cosmic_multiring_mandala.py       |  76 +++++++++
+ scripts/enable_layout_modes.py            |  63 +++++++
+ scripts/nakshatra_cosmic_mandala.py       |  78 +++++++++
+ scripts/nakshatra_cosmic_wheel.py         |  61 +++++++
+ scripts/rebuild_cosmology_graph.py        |  91 ++++++++++
+ scripts/update_vastu_layout.py            |  41 +++++
+ scripts/upgrade_atlas_explorer.py         |  74 +++++++++
+ 16 files changed, 1037 insertions(+), 65 deletions(-)
+
+commit 613bbed784f5901a0cb5d8d4c03b72cc489e61dc
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 02:36:13 2026 -0500
+
+    add bhava ontology and narrative layer
+
+ datasets/astro/nakshatra_core.csv                  |   28 +
+ datasets/astro/nakshatra_full.csv                  |   28 +
+ datasets/astro/nakshatra_padas.csv                 |  109 +
+ datasets/astro/tithi_core.csv                      |   17 +
+ datasets/ayurveda/dosha.csv                        |    4 +
+ datasets/ayurveda/guna.csv                         |   11 +
+ datasets/ayurveda/rasa.csv                         |    7 +
+ datasets/ayurveda/vipaka.csv                       |    4 +
+ datasets/ayurveda/virya.csv                        |    3 +
+ datasets/mythic_relations.csv                      |    6 +
+ datasets/nakshatra_num_to_name.csv                 |   28 +
+ datasets/ontology/bhava_relations.csv              |   13 +
+ datasets/ontology/bhava_types.csv                  |   13 +
+ datasets/ontology/knowledge_layers.csv             |    7 +
+ datasets/relations/nakshatra_associated_deity.csv  |  116 +
+ datasets/relations_auto/relations_auto.csv         | 4841 ++++++++++++++++++++
+ datasets/relations_inbox.csv                       | 1665 +++++++
+ datasets/relations_nakshatra_deity.csv             |   82 +-
+ datasets/relations_nakshatra_graha.csv             |  126 +-
+ datasets/relations_resolved_canon.csv              |  211 +-
+ datasets/relations_resolved_inference.csv          |  557 ++-
+ datasets/relations_resolved_overlays.csv           | 1223 ++++-
+ datasets/relations_ritual_calendar.csv             |   42 +
+ .../nakshatra_associated_deity.csv                 |   61 +
+ .../relations_strict/nakshatra_ruling_graha.csv    |  102 +
+ datasets/semantics/vedic_arts_semantic_layer.csv   |   33 +
+ datasets/sources/passages.csv                      | 2432 ++++++++++
+ datasets/sources/sources.csv                       |   17 +
+ memory/reports/aggregate.json                      |    6 +-
+ memory/reports/canon_guard.json                    |    4 +-
+ memory/reports/dashboard.html                      |   18 +-
+ memory/reports/gaps.json                           |   32 +-
+ memory/reports/gaps_top.txt                        |    4 +-
+ ontology/relation_templates.yaml                   |   43 +
+ scripts/atlas_cycle.sh                             |   54 +
+ scripts/atlas_env.py                               |    1 +
+ scripts/atlas_grow.py                              |   70 +
+ scripts/atlas_think.py                             |   31 +
+ scripts/auto_no_review.sh                          |    4 +-
+ scripts/auto_no_review.sh.bak                      |  108 +
+ scripts/build_cosmic_mandala.py                    |  183 +
+ scripts/canon_build_strict.py                      |  126 +
+ scripts/control_panel.py                           |    2 +-
+ scripts/detect_clusters.py                         |   59 +
+ scripts/devcycle.py                                |  131 +
+ scripts/devmode.py                                 |   15 +
+ scripts/devset.py                                  |   40 +
+ scripts/devtodo.py                                 |   22 +
+ scripts/evidencefill_passages.py                   |  111 +
+ scripts/evidencefill_v2.py                         |  143 +
+ scripts/expand_structure.py                        |   63 +
+ scripts/export_coherence_metrics.py                |   68 +
+ scripts/extract_nonpdf.py                          |   59 +
+ scripts/fast_run.sh                                |   28 +
+ scripts/fill_toid_fast.py                          |  129 +
+ scripts/find_missing_relations.py                  |   50 +
+ scripts/generate_nakshatra_cards.py                |   32 +
+ scripts/generate_research_tasks.py                 |   31 +
+ scripts/generate_seed_prompts.py                   |  286 +-
+ scripts/grow.sh                                    |    1 +
+ scripts/guarded_exec.py                            |   73 +
+ scripts/ia_direct_manifest.py                      |  155 +-
+ scripts/ia_manifest.py                             |  108 +
+ scripts/ingest_relations_auto.py                   |   56 +
+ scripts/ingest_research.py                         |   66 +
+ scripts/inspect_graph_structure.py                 |   38 +
+ scripts/node_report.py                             |   16 +
+ scripts/ollama_client.py                           |   29 +
+ scripts/ollama_ping.py                             |    5 +
+ scripts/ollama_plan.py                             |   47 +
+ scripts/ollama_plan.py.bak                         |   55 +
+ scripts/pb_cli.sh                                  |    9 +
+ scripts/pb_emit.py                                 |   58 +
+ scripts/pb_state.py                                |   37 +
+ scripts/pdftext_parallel.py                        |   37 +
+ scripts/register_pb.py                             |   11 +
+ scripts/remote_fetch.py                            |   53 +
+ scripts/resolve_clusters.py                        |  200 +
+ scripts/resolve_layers.py                          |    3 +
+ scripts/resolve_layers_simple.py                   |   75 +
+ scripts/sanitize_incoming.py                       |   41 +
+ scripts/sanitize_incoming_pdfs.py                  |   57 +
+ scripts/update_yantra_bridge.py                    |   31 +
+ scripts/wget_cycle.sh                              |    4 +
+ 84 files changed, 14483 insertions(+), 521 deletions(-)
+
+commit 0aba0cd47845ea58d1d84e13c94d473636ef62c0
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 01:19:26 2026 -0500
+
+    atlas research system: initial research queue created
+
+ research_queue/queue.yaml | 49 +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 49 insertions(+)
+
+commit 1bb67b66d32862cb594673320f26faee5bbb5b14
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 01:15:08 2026 -0500
+
+    atlas cosmology expansion: vedic arts, sacred plants, vahana, tithi deities
+
+ datasets/cosmology/deity_vahana_extended.csv | 16 +++++++
+ datasets/cosmology/sacred_plants.csv         | 11 +++++
+ datasets/cosmology/tithi_deities.csv         | 17 ++++++++
+ datasets/cosmology/vedic_arts_64.csv         | 63 ++++++++++++++++++++++++++++
+ 4 files changed, 107 insertions(+)
+
+commit ed85429d81ba31eb573655f4040465fba962c636
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 01:12:15 2026 -0500
+
+    atlas cosmology expansion: graha, nakshatra, bija, geometry
+
+ datasets/cosmology/bija_master.csv         |  9 +++++++++
+ datasets/cosmology/geometry_archetypes.csv |  8 ++++++++
+ datasets/cosmology/graha_master.csv        | 10 ++++++++++
+ datasets/cosmology/nakshatra_core.csv      | 28 ++++++++++++++++++++++++++++
+ 4 files changed, 55 insertions(+)
+
+commit 8eaa9c226934b9750897e9eb1ce519831a4d4fb9
+Author: inahd <inahd@localhost.localdomain>
+Date:   Sat Mar 7 01:10:35 2026 -0500
+
+    atlas: added deity lineage, vahana, and domain cosmology datasets
+
+ datasets/cosmology/deity_domains.csv | 14 ++++++++++++++
+ datasets/cosmology/deity_master.csv  | 28 ++++++++++++++++++++++++++++
+ datasets/cosmology/deity_vahana.csv  | 18 ++++++++++++++++++
+ 3 files changed, 60 insertions(+)
+
+commit cf65e332067ec7edc0307f94ba01f27fe276ac34
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 20:00:01 2026 -0500
+
+    Add nakshatra cosmology layers (deities, syllables, graha bija)
+
+ datasets/cosmology/graha_bija.csv          | 10 ++++++++++
+ datasets/cosmology/nakshatra_deities.csv   | 28 ++++++++++++++++++++++++++++
+ datasets/cosmology/nakshatra_master.csv    | 28 ++++++++++++++++++++++++++++
+ datasets/cosmology/nakshatra_syllables.csv | 21 +++++++++++++++++++++
+ 4 files changed, 87 insertions(+)
+
+commit 7d53634ec498aec4f82c89acef76eb4ec85acf4a
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 19:41:05 2026 -0500
+
+    Add foundational cosmology datasets (elements gunas doshas grahas)
+
+ datasets/cosmology/doshas.csv     |  4 ++++
+ datasets/cosmology/grahas.csv     | 10 ++++++++++
+ datasets/cosmology/gunas.csv      |  4 ++++
+ datasets/cosmology/mahabhutas.csv |  6 ++++++
+ 4 files changed, 24 insertions(+)
+
+commit d9f6bdb4d5145746f54c38bfbf5e728fe0b631dd
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 18:34:54 2026 -0500
+
+    Add literature maturation workflow document
+
+ docs/LITERATURE_MATURATION.md | 57 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 57 insertions(+)
+
+commit 1e3d74e46c71c1c466696ba536075cbd85dba3dc
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 18:34:44 2026 -0500
+
+    Add Atlas philosophy document
+
+ docs/ATLAS_PHILOSOPHY.md | 74 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 74 insertions(+)
+
+commit 8f4b05679b8678ed8cd328e34301674cb6e4b979
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 16:36:21 2026 -0500
+
+    Add concept push and future directions docs
+
+ docs/CONCEPT_PUSH_2026_03_06.md      | 185 +++++++++++++++++++++++++++++++++++
+ docs/FUTURE_DIRECTIONS_2026_03_06.md |  34 +++++++
+ 2 files changed, 219 insertions(+)
+
+commit c3ca9d86ac119c3ac959ddfedc0dc65002eb4d64
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 16:07:12 2026 -0500
+
+    Add Atlas principles and system potential documentation
+
+ ATLAS_PRINCIPLES.md       | 135 ++++++++++------------------------------------
+ docs/system_potentials.md |  90 ++++++++++---------------------
+ 2 files changed, 56 insertions(+), 169 deletions(-)
+
+commit d2fb0c033c728838928f0f788c46720afb7dc84e
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 15:41:40 2026 -0500
+
+    Add Atlas philosophical architecture principles
+
+ ATLAS_PRINCIPLES.md | 124 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 124 insertions(+)
+
+commit c1adaeb523547bf8f0e77525b48d0409eaba0db1
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 14:49:24 2026 -0500
+
+    Add architecture and system potential documentation
+
+ docs/architecture_principles.md | 42 +++++++++++++++++++++++
+ docs/rohini_graph.html          | 63 ++++++++++++++++++++++++++++++++++
+ docs/system_potentials.md       | 75 +++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 180 insertions(+)
+
+commit f38f481916739bb0c2e7770b55bd3556bbd4c801
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 13:22:49 2026 -0500
+
+    Add Rohini demo page generated from Atlas graph
+
+ docs/demo_rohini.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit b347b65e8284e771b206b65f4b79e7a44cd807ff
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 08:55:17 2026 -0500
+
+    Improve North Star demo with local viewing links + add atlas open helper
+
+ docs/north_star_demo.md | 13 +++++++++++++
+ scripts/atlas_open.py   | 25 +++++++++++++++++++++++++
+ 2 files changed, 38 insertions(+)
+
+commit b22543a3a34d6d382c6f551f5d67bd1b60555d6d
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 08:43:12 2026 -0500
+
+    README: subject-first framing for practitioners + scholars
+
+ README.md | 129 +++++++++++++++++++++++++++++++++-----------------------------
+ 1 file changed, 69 insertions(+), 60 deletions(-)
+
+commit 1e7e1d0d54bf9f687478b1e3404cfe63d66734bd
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 08:41:17 2026 -0500
+
+    Polish README (badges + clearer structure + vision links)
+
+ README.md | 232 +++++++++++++++++++++++++-------------------------------------
+ 1 file changed, 94 insertions(+), 138 deletions(-)
+
+commit 5a34bcb671809741fcb14c9101e2472c01d494d6
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 08:38:40 2026 -0500
+
+    Add North Star demo and link from README
+
+ README.md               |  1 +
+ docs/north_star_demo.md | 50 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 51 insertions(+)
+
+commit b426d48182ee0dd876a39bf729211dd7010a7b62
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 08:34:16 2026 -0500
+
+    Add full vision doc and link from README
+
+ docs/vision.md | 146 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 144 insertions(+), 2 deletions(-)
+
+commit 3f8842f322ac4ae12fa8ea7f7af0132a1a990564
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 08:29:39 2026 -0500
+
+    Add vision doc and link from README
+
+ README.md      | 3 +++
+ docs/vision.md | 3 +++
+ 2 files changed, 6 insertions(+)
+
+commit 29f54ad5b0f97f07e021402439d937acbad9e22f
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 07:24:06 2026 -0500
+
+    Fix GitHub Actions workflow for IA manifests
+
+ .github/workflows/ia_manifests.yml | 39 +++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 38 insertions(+), 1 deletion(-)
+
+commit 673e10940856abdd0a4d69da5a962bda38f484f5
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 07:21:00 2026 -0500
+
+    Update seed prompts
+
+ prompts/seed_prompts.md | 179 +++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 178 insertions(+), 1 deletion(-)
+
+commit 6c7ff6b8e554000f02e93c3a50e8f3b5178f5006
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 07:17:54 2026 -0500
+
+    Cycle: ingest + resolve (canon/inference/overlays) + wiki
+
+ manifests/wget_music.txt       | 31 +++++++++++++++++++++++++++++--
+ manifests/wget_nakshatra.txt   | 35 ++++++++++++++++++++++++++++++++---
+ manifests/wget_plants.txt      | 31 +++++++++++++++++++++++++++++--
+ manifests/wget_ritual.txt      | 31 +++++++++++++++++++++++++++++--
+ manifests/wget_tithi_nitya.txt | 31 +++++++++++++++++++++++++++++--
+ 5 files changed, 148 insertions(+), 11 deletions(-)
+
+commit 40a926ced17115c228e4b009137e571ddcd6b2ea
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 07:09:40 2026 -0500
+
+    Add inference layer resolver + generated wiki
+
+ datasets/relations_resolved_canon.csv     |   2 +-
+ datasets/relations_resolved_inference.csv | 162 ++++++++++++++++++++++++
+ datasets/relations_resolved_overlays.csv  | 200 +++++++++++++++---------------
+ docs/wiki/Home.md                         |  13 ++
+ docs/wiki/deity__aditi.md                 |   4 +
+ docs/wiki/deity__agni.md                  |   4 +
+ docs/wiki/deity__ahirbudhnya.md           |   4 +
+ docs/wiki/deity__ajaekapada.md            |   4 +
+ docs/wiki/deity__apas.md                  |   4 +
+ docs/wiki/deity__aryaman.md               |   4 +
+ docs/wiki/deity__ashwini_kumaras.md       |   4 +
+ docs/wiki/deity__bhaga.md                 |   4 +
+ docs/wiki/deity__brahma.md                |   4 +
+ docs/wiki/deity__brihaspati.md            |   4 +
+ docs/wiki/deity__indra.md                 |   4 +
+ docs/wiki/deity__indraagni.md             |   4 +
+ docs/wiki/deity__mitra.md                 |   4 +
+ docs/wiki/deity__nagas.md                 |   4 +
+ docs/wiki/deity__nirriti.md               |   4 +
+ docs/wiki/deity__pitrs.md                 |   4 +
+ docs/wiki/deity__pushan.md                |   4 +
+ docs/wiki/deity__rudra.md                 |   4 +
+ docs/wiki/deity__savitar.md               |   4 +
+ docs/wiki/deity__soma.md                  |   4 +
+ docs/wiki/deity__varuna.md                |   4 +
+ docs/wiki/deity__vasus.md                 |   4 +
+ docs/wiki/deity__vayu.md                  |   4 +
+ docs/wiki/deity__vishnu.md                |   4 +
+ docs/wiki/deity__vishvadevas.md           |   4 +
+ docs/wiki/deity__vishvakarma.md           |   4 +
+ docs/wiki/deity__yama.md                  |   4 +
+ docs/wiki/graha__jupiter.md               |   4 +
+ docs/wiki/graha__ketu.md                  |   4 +
+ docs/wiki/graha__mars.md                  |   4 +
+ docs/wiki/graha__mercury.md               |   4 +
+ docs/wiki/graha__moon.md                  |   4 +
+ docs/wiki/graha__rahu.md                  |   4 +
+ docs/wiki/graha__saturn.md                |   4 +
+ docs/wiki/graha__sun.md                   |   4 +
+ docs/wiki/graha__venus.md                 |   4 +
+ docs/wiki/index_deity.md                  |  29 +++++
+ docs/wiki/index_graha.md                  |  11 ++
+ docs/wiki/index_nakshatra.md              |  29 +++++
+ docs/wiki/index_ritual.md                 |   3 +
+ docs/wiki/index_tithi.md                  |   6 +
+ docs/wiki/nakshatra__1.md                 |  17 +++
+ docs/wiki/nakshatra__10.md                |  17 +++
+ docs/wiki/nakshatra__11.md                |  22 ++++
+ docs/wiki/nakshatra__12.md                |  17 +++
+ docs/wiki/nakshatra__13.md                |  17 +++
+ docs/wiki/nakshatra__14.md                |  17 +++
+ docs/wiki/nakshatra__15.md                |  22 ++++
+ docs/wiki/nakshatra__16.md                |  17 +++
+ docs/wiki/nakshatra__17.md                |  17 +++
+ docs/wiki/nakshatra__18.md                |  17 +++
+ docs/wiki/nakshatra__19.md                |  12 ++
+ docs/wiki/nakshatra__2.md                 |  22 ++++
+ docs/wiki/nakshatra__20.md                |  22 ++++
+ docs/wiki/nakshatra__21.md                |  17 +++
+ docs/wiki/nakshatra__22.md                |  22 ++++
+ docs/wiki/nakshatra__23.md                |  22 ++++
+ docs/wiki/nakshatra__24.md                |  22 ++++
+ docs/wiki/nakshatra__25.md                |  17 +++
+ docs/wiki/nakshatra__26.md                |  22 ++++
+ docs/wiki/nakshatra__27.md                |  17 +++
+ docs/wiki/nakshatra__3.md                 |  22 ++++
+ docs/wiki/nakshatra__4.md                 |  22 ++++
+ docs/wiki/nakshatra__5.md                 |  22 ++++
+ docs/wiki/nakshatra__6.md                 |  22 ++++
+ docs/wiki/nakshatra__7.md                 |  22 ++++
+ docs/wiki/nakshatra__8.md                 |  22 ++++
+ docs/wiki/nakshatra__9.md                 |  22 ++++
+ docs/wiki/ritual__fast.md                 |  19 +++
+ docs/wiki/tithi__Dvadashi.md              |   4 +
+ docs/wiki/tithi__Ekadashi.md              |   4 +
+ docs/wiki/tithi__Navami.md                |   4 +
+ docs/wiki/tithi__Trayodashi.md            |   4 +
+ scripts/resolve_layers.py                 | 199 +++++++++++++++++++++++++++++
+ scripts/wiki_build.py                     | 114 +++++++++++++++++
+ 79 files changed, 1375 insertions(+), 101 deletions(-)
+
+commit a6a0dadfc98d3ee72af39bb14dde53b00f02274b
+Author: inahd <inahd@localhost.localdomain>
+Date:   Fri Mar 6 06:46:00 2026 -0500
+
+    Update resolved proto-canon/canon/overlays
+
+ datasets/relations_resolved_canon.csv       |   1 +
+ datasets/relations_resolved_overlays.csv    | 205 ++++++++++++++++++++++++++++
+ datasets/relations_resolved_proto_canon.csv |   1 +
+ 3 files changed, 207 insertions(+)
+
+commit a875bfb6b023ec8f4dbaefe6630a5baf058d36c1
+Author: inahd <inahd@localhost.localdomain>
+Date:   Thu Mar 5 10:34:31 2026 -0500
+
+    Add scheduled IA direct manifest generation
+
+ .github/workflows/ia_manifests.yml |  1 +
+ manifests/allow_domains.txt        |  2 ++
+ prompts/seed_prompts.md            | 30 +-----------------------------
+ scripts/ia_direct_manifest.py      |  1 +
+ 4 files changed, 5 insertions(+), 29 deletions(-)
+
+commit 866dc1e9ea9a6283e30b4676abe2423d49d7a0b4
+Author: inahd <inahd@localhost.localdomain>
+Date:   Thu Mar 5 10:28:55 2026 -0500
+
+    Add seed prompt pack (test)
+
+ prompts/seed_prompts.md | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+
+commit 8b8b1e11b031b7208622526130dfb31481846485
+Author: inahd <inahd@localhost.localdomain>
+Date:   Thu Mar 5 10:12:00 2026 -0500
+
+    Split research into public (tracked) + private (local-only)
+
+ .gitignore                                         |     9 +
+ ...15_Tithi_Nitya_Dossier_with_Mantra_Metadata.pdf |   353 -
+ ...thi_Nitya_Iconography_Infographic_Canonical.pdf |   385 -
+ research/15_Tithi_Nitya_Infographic_Sheets.pdf     |   347 -
+ research/CoherenceAtlas_LunarConsole_v8.zip        |   Bin 5538 -> 0 bytes
+ research/CoherenceAtlas_ModelSpec_TermVault_v1.pdf |   206 -
+ research/Lunar_Kirtan_Guide_Sukla_Paksha.pdf       |    99 -
+ ...15_Tithi_Nitya_Dossier_with_Mantra_Metadata.txt |   284 -
+ ...thi_Nitya_Iconography_Infographic_Canonical.txt |   518 -
+ .../_text/15_Tithi_Nitya_Infographic_Sheets.txt    |   149 -
+ .../CoherenceAtlas_ModelSpec_TermVault_v1.txt      |   183 -
+ research/_text/Lunar_Kirtan_Guide_Sukla_Paksha.txt |    89 -
+ research/_text/journey-with-the-moon.txt           |  1336 --
+ ...eatise-on-the-27-constellationspdf_compress.txt | 12142 -------------------
+ research/journey-with-the-moon.pdf                 |   Bin 26033927 -> 0 bytes
+ research/lunar_music_atlas.html                    |   505 -
+ research/lunar_test.txt                            |     1 -
+ ...eatise-on-the-27-constellationspdf_compress.pdf |   Bin 11937519 -> 0 bytes
+ research/yantra14_candidates_real_overlays.zip     |   Bin 412141 -> 0 bytes
+ research/yantra_scope2d_v2_accuracy(5).zip         |   Bin 7908 -> 0 bytes
+ research_public/README.md                          |     7 +
+ 21 files changed, 16 insertions(+), 16597 deletions(-)
+
+commit 13cf49ac03ef0a61c44e291469624c0c22f64003
+Author: inahd <inahd@localhost.localdomain>
+Date:   Thu Mar 5 09:23:50 2026 -0500
+
+    Update README
+
+ README.md | 143 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 133 insertions(+), 10 deletions(-)
+
+commit 5ace36c3df8d380d1d2203ad9199109dbd31f78a
+Author: inahd <inahd@localhost.localdomain>
+Date:   Thu Mar 5 09:04:36 2026 -0500
+
+    Coherence Atlas: sync local system state
+
+ "ed -E s#\\.git$#"                           | 324 +++++++++++++++++++++++++++
+ "h -u origin $(git branch --show-current)\"" | 324 +++++++++++++++++++++++++++
+ t --left-right --count @{u}...HEAD           | 117 ++++++++++
+ | head -n 40 || true                         | 324 +++++++++++++++++++++++++++
+ 4 files changed, 1089 insertions(+)
+
+commit 9e450d317509579b26d0c3844ada86da40b60fad
+Author: inahd <inahd@localhost.localdomain>
+Date:   Thu Mar 5 08:14:32 2026 -0500
+
+    Ignore generated artifacts (staging/memory/research outputs)
+
+ .gitignore | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit d79c58653ea2528bc61556b47274d4154b09c5a9
+Author: inahd <inahd@localhost.localdomain>
+Date:   Thu Mar 5 08:14:16 2026 -0500
+
+    Ignore generated artifacts (staging/memory/research outputs)
+
+ .gitignore | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit f3e42add91127033ff65b1339232b42295248d10
+Author: inahd <inahd@localhost.localdomain>
+Date:   Thu Mar 5 08:12:41 2026 -0500
+
+    Ignore generated artifacts (staging/memory/research outputs)
+
+ .gitignore | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit 01281904c31cda10bd8694eefdb6da5982f8b4ff
+Author: inahd <inahd@localhost.localdomain>
+Date:   Thu Mar 5 08:09:47 2026 -0500
+
+    Atlas: autonomous cycles, corpus registry, evidence pipeline, graphs, prompts
+
+ .gitignore                                         |      1 +
+ 26.0.1                                             |      0
+ __pycache__/atlas.cpython-313.pyc                  |    Bin 0 -> 5258 bytes
+ architecture/cosmology_layers.json                 |     29 +
+ architecture/system_architecture.md                |     31 +
+ associated_deity                                   |      0
+ atlas                                              |    124 +-
+ atlas.py                                           |     90 +
+ atlas_ai.egg-info/PKG-INFO                         |      3 +
+ atlas_ai.egg-info/SOURCES.txt                      |      9 +
+ atlas_ai.egg-info/dependency_links.txt             |      1 +
+ atlas_ai.egg-info/entry_points.txt                 |      2 +
+ atlas_ai.egg-info/top_level.txt                    |      1 +
+ atlas_engine.sh                                    |     36 +
+ backups/snap_20260305_064824.tgz                   |    Bin 0 -> 309067 bytes
+ backups/snap_20260305_065314.tgz                   |    Bin 0 -> 775646 bytes
+ backups/snap_20260305_070026.tgz                   |    Bin 0 -> 775655 bytes
+ backups/snap_20260305_072158.tgz                   |    Bin 0 -> 775671 bytes
+ backups/snap_20260305_073029.tgz                   |    Bin 0 -> 775670 bytes
+ backups/snap_20260305_073156.tgz                   |    Bin 0 -> 775682 bytes
+ backups/snap_20260305_074004.tgz                   |    Bin 0 -> 775692 bytes
+ backups/snap_20260305_075619.tgz                   |    Bin 0 -> 775778 bytes
+ capsules/2026-03-05_0104/README.md                 |     18 +
+ .../architecture/cosmology_layers.json             |     29 +
+ .../architecture/system_architecture.md            |     31 +
+ capsules/2026-03-05_0104/conversation_summary.md   |     17 +
+ .../2026-03-05_0104/datasets/nakshatra_list.csv    |     28 +
+ .../datasets/nitya_devi_mapping.csv                |     16 +
+ capsules/2026-03-05_0104/datasets/tithi_list.csv   |     16 +
+ .../2026-03-05_0104/instructions_for_new_chat.md   |     12 +
+ .../ontology/vedic_cosmology_graph.json            |     18 +
+ .../prompts/atlas_super_extractor.md               |     11 +
+ .../2026-03-05_0104/schemas/nakshatra_schema.json  |     21 +
+ capsules/2026-03-05_0104/schemas/tithi_schema.json |     30 +
+ .../schemas/yantra_geometry_schema.json            |     21 +
+ curl                                               |      0
+ data/cosmology.json                                |     28 +
+ datasets/deities.yaml                              |     23 +
+ datasets/entities/concept.csv                      |      3 +
+ datasets/entities/deity.csv                        |      3 +
+ datasets/entities/graha.csv                        |     10 +
+ datasets/entities/jyotish.csv                      |      5 +
+ datasets/entities/nakshatra.csv                    |     28 +
+ datasets/entities/rashi.csv                        |     13 +
+ datasets/entities/text.csv                         |      2 +
+ datasets/graha.yaml                                |     36 +-
+ datasets/nakshatra.yaml                            |     95 +
+ datasets/nakshatra_list.csv                        |     28 +
+ datasets/nitya_devi_mapping.csv                    |     16 +
+ datasets/overlays/relations_layered.csv            |    318 +
+ datasets/relations/nakshatra_associated_deity.csv  |     91 +
+ .../relations_auto/nakshatra_associated_deity.csv  |    617 +
+ datasets/relations_devi_weapon.csv                 |     16 +
+ datasets/relations_nakshatra_deity.csv             |     59 +
+ datasets/relations_nakshatra_graha.csv             |     28 +
+ datasets/relations_nakshatra_plants.csv            |     28 +
+ datasets/relations_raga_ritual.csv                 |      1 +
+ datasets/relations_ritual_calendar.csv             |      1 +
+ datasets/seed/relations_devi_weapon.csv            |     16 +
+ datasets/seed/relations_nakshatra_deity.csv        |     28 +
+ datasets/seed/relations_nakshatra_plants.csv       |     28 +
+ datasets/seed/relations_raga_ritual.csv            |      1 +
+ datasets/seed/relations_ritual_calendar.csv        |      1 +
+ datasets/sources/passages.csv                      |   6744 +
+ datasets/sources/sources.csv                       |      9 +
+ datasets/tithi_list.csv                            |     16 +
+ docs/atlas-overview.md                             |      6 +
+ docs/node-types.md                                 |    200 +
+ docs/relation-types.md                             |     11 +
+ explain                                            |      0
+ graph/graph.yaml                                   |    988 +-
+ if                                                 |      0
+ lib/bindings/utils.js                              |    189 +
+ lib/tom-select/tom-select.complete.min.js          |    356 +
+ lib/tom-select/tom-select.css                      |    334 +
+ lib/vis-9.1.2/vis-network.css                      |      1 +
+ lib/vis-9.1.2/vis-network.min.js                   |     27 +
+ manifests/wget_music.txt                           |      2 +
+ manifests/wget_nakshatra.txt                       |      3 +
+ manifests/wget_plants.txt                          |      2 +
+ manifests/wget_ritual.txt                          |      2 +
+ manifests/wget_tithi_nitya.txt                     |      2 +
+ memory/concepts.json                               |     36 +
+ memory/corpus.db                                   |    Bin 0 -> 1634304 bytes
+ memory/cosmology_graph.json                        |     89 +
+ memory/cycle_plan.json                             |     22 +
+ memory/graph.html                                  |    155 +
+ memory/graph_canonical_1772713919.html             |    170 +
+ memory/graph_canonical_1772715999.html             |    265 +
+ memory/graph_seed_1772698497.html                  |    155 +
+ memory/graph_seed_1772698683.html                  |    155 +
+ memory/graph_seed_1772699534.html                  |    155 +
+ memory/graph_seed_1772711315.html                  |    170 +
+ memory/graph_seed_1772711605.html                  |    170 +
+ memory/graph_seed_1772713918.html                  |    170 +
+ memory/graph_seed_1772715752.html                  |    170 +
+ memory/graphs/canonical_graph.json                 |   3351 +
+ memory/graphs/layered_graph.json                   |   3351 +
+ memory/graphs/seed_graph.json                      |    775 +
+ memory/project_index.txt                           |   2255 +
+ memory/reports/aggregate.json                      |     99 +
+ memory/reports/canon_guard.json                    |     10 +
+ memory/reports/dashboard.html                      |    171 +
+ memory/reports/gaps.json                           |    103 +
+ memory/reports/gaps_top.txt                        |      6 +
+ memory/reports/next_domain.txt                     |      1 +
+ memory/vector.index                                |    Bin 0 -> 135213 bytes
+ memory/vector_texts.txt                            |   3361 +
+ memory/vedic_cosmology_graph.json                  |    426 +
+ nodes[name]=data                                   |      0
+ ontology/vedic_cosmology_graph.json                |     18 +
+ prompts/atlas_super_extractor.md                   |     11 +
+ python:                                            |      0
+ requests                                           | 171012 ++++++++++++++++++
+ ...15_Tithi_Nitya_Dossier_with_Mantra_Metadata.pdf |    353 +
+ ...thi_Nitya_Iconography_Infographic_Canonical.pdf |    385 +
+ research/15_Tithi_Nitya_Infographic_Sheets.pdf     |    347 +
+ research/CoherenceAtlas_LunarConsole_v8.zip        |    Bin 0 -> 5538 bytes
+ research/CoherenceAtlas_ModelSpec_TermVault_v1.pdf |    206 +
+ research/Lunar_Kirtan_Guide_Sukla_Paksha.pdf       |     99 +
+ ...15_Tithi_Nitya_Dossier_with_Mantra_Metadata.txt |    284 +
+ ...thi_Nitya_Iconography_Infographic_Canonical.txt |    518 +
+ .../_text/15_Tithi_Nitya_Infographic_Sheets.txt    |    149 +
+ .../CoherenceAtlas_ModelSpec_TermVault_v1.txt      |    183 +
+ research/_text/Lunar_Kirtan_Guide_Sukla_Paksha.txt |     89 +
+ research/_text/journey-with-the-moon.txt           |   1336 +
+ ...eatise-on-the-27-constellationspdf_compress.txt |  12142 ++
+ research/journey-with-the-moon.pdf                 |    Bin 0 -> 26033927 bytes
+ research/lunar_music_atlas.html                    |    505 +
+ research/lunar_test.txt                            |      1 +
+ ...eatise-on-the-27-constellationspdf_compress.pdf |    Bin 0 -> 11937519 bytes
+ research/yantra14_candidates_real_overlays.zip     |    Bin 0 -> 412141 bytes
+ research/yantra_scope2d_v2_accuracy(5).zip         |    Bin 0 -> 7908 bytes
+ run_panel.sh                                       |      3 +
+ schemas/atlas_projection.json                      |     76 +
+ schemas/nakshatra_schema.json                      |     21 +
+ schemas/ontology.json                              |     19 +
+ schemas/tithi_schema.json                          |     30 +
+ schemas/traditions.json                            |      8 +
+ schemas/yantra_geometry_schema.json                |     21 +
+ scripts/__pycache__/openai_client.cpython-313.pyc  |    Bin 0 -> 843 bytes
+ scripts/__pycache__/vector_memory.cpython-313.pyc  |    Bin 0 -> 3400 bytes
+ scripts/add_deity_layer.py                         |     54 +
+ scripts/add_nakshatra_qualities.py                 |     57 +
+ scripts/add_tithi_layer.py                         |     55 +
+ scripts/adopt_staged.py                            |     92 +
+ scripts/aggregate_report.py                        |     40 +
+ scripts/ai_patch.py                                |     69 +
+ scripts/ai_router.py                               |     40 +
+ scripts/atlas_api.py                               |     65 +
+ scripts/atlas_doctor.py                            |     70 +
+ scripts/atlas_meaning_today.py                     |     53 +
+ scripts/atlas_review.sh                            |     29 +
+ scripts/atlas_run.sh                               |     44 +
+ scripts/atlas_update.py                            |     34 +
+ scripts/auto_no_review.sh                          |    108 +
+ scripts/auto_populate.py                           |    121 +
+ scripts/auto_watch.py                              |     36 +
+ scripts/autolink.py                                |    136 +
+ scripts/automation_cycle.py                        |     91 +
+ scripts/build_canonical_graph_ideal.py             |     59 +
+ scripts/build_capsule_graph.py                     |     57 +
+ scripts/build_cosmology_graph.py                   |     47 +
+ scripts/build_seed_graph.py                        |     59 +
+ scripts/build_universe.py                          |     72 +
+ scripts/concept_extract.py                         |    123 +
+ scripts/control_panel.py                           |     91 +
+ scripts/corpus_db.py                               |     59 +
+ scripts/corpus_extract_pdftext.py                  |     50 +
+ scripts/corpus_harvest_passages.py                 |     92 +
+ scripts/corpus_scan.py                             |     55 +
+ scripts/cycle.sh                                   |     24 +
+ scripts/cycle_scheduled.sh                         |     95 +
+ scripts/dashboard.py                               |    142 +
+ scripts/dev_agent.py                               |     69 +
+ scripts/dev_ai_shell.py                            |     74 +
+ scripts/doctor.py                                  |     43 +
+ scripts/evidencefill.py                            |     93 +
+ scripts/extract_text_knowledge.py                  |     49 +
+ scripts/factcheck_relations.py                     |     47 +
+ scripts/fill_toid_from_nakshatra_yaml.py           |    110 +
+ scripts/find_lowtext_pdfs.py                       |     26 +
+ scripts/gap_score.py                               |    108 +
+ scripts/generate_docs.py                           |     48 +
+ scripts/generate_jyotish.py                        |     58 +
+ scripts/generate_seed_prompts.py                   |    152 +
+ scripts/graph_utils.py                             |      8 +
+ scripts/graph_viewer.py                            |    267 +
+ scripts/guard_canon.py                             |     94 +
+ scripts/harvest_pdf.py                             |    180 +
+ scripts/harvest_text_passages.py                   |    118 +
+ scripts/index_project.py                           |     28 +
+ scripts/ingest_all.py                              |    243 +
+ scripts/ingest_dataset.py                          |     47 +
+ scripts/layered_graph_open.sh                      |      6 +
+ scripts/layered_relations_build.py                 |    184 +
+ scripts/links_cycle.py                             |    343 +
+ scripts/nightly.py                                 |     21 +
+ scripts/normalize_to_ideal.py                      |    142 +
+ scripts/ocr_lowtext.sh                             |     51 +
+ scripts/open_dashboard.sh                          |     10 +
+ scripts/openai_client.py                           |     13 +
+ scripts/pdftext_all.py                             |     41 +
+ scripts/pick_manifest.py                           |     47 +
+ scripts/pipeline.py                                |     18 +
+ scripts/project_ai.py                              |     58 +
+ scripts/promote_incoming.py                        |     46 +
+ scripts/prompts_cli.sh                             |      4 +
+ scripts/prompts_commit.sh                          |      9 +
+ scripts/prompts_write.sh                           |      4 +
+ scripts/propose_evidence.py                        |    135 +
+ scripts/query.py                                   |     59 +
+ scripts/query_graph.py                             |      5 +-
+ scripts/refresh.py                                 |     17 +
+ scripts/research_ingest.py                         |     59 +
+ scripts/research_search.py                         |     20 +
+ scripts/ritual_calendar.py                         |     43 +
+ scripts/rollback.py                                |     33 +
+ scripts/rollback.sh                                |      9 +
+ scripts/run.py                                     |     10 +
+ scripts/run_tests.sh                               |      3 +
+ scripts/safeupdate.sh                              |     32 +
+ scripts/seed_relations.py                          |    102 +
+ scripts/snapshot.sh                                |     10 +
+ scripts/stage_candidates.py                        |     76 +
+ scripts/status.py                                  |    206 +
+ scripts/validate_projection.py                     |     69 +
+ scripts/vector_memory.py                           |     69 +
+ scripts/wget_cycle.sh                              |     40 +
+ scripts/wget_guarded.sh                            |     55 +
+ setup.py                                           |     12 +
+ staging/promote_auto_preview.csv                   |      1 +
+ tests/test_sanity.py                               |     38 +
+ text/test.txt                                      |      4 +
+ 234 files changed, 220693 insertions(+), 109 deletions(-)
+
+commit f486b145f5c1fc4d7fd71b2fd065f4bd85a92e41
+Author: inahd <inahd@localhost.localdomain>
+Date:   Wed Mar 4 20:24:01 2026 -0500
+
+    coherence atlas prototype
+
+ EOF                                |   0
+ PY                                 |   0
+ README.md                          |  14 +++++
+ atlas                              |  69 +++++++++++++++++++++
+ atlas-rebuild                      |  59 ++++++++++++++++++
+ bootstrap.py                       |  54 ++++++++++++++++
+ datasets/graha.yaml                |  35 +++++++++++
+ datasets/jyotish/graha.yaml        |  19 ++++++
+ datasets/jyotish/nakshatra.yaml    |  15 +++++
+ datasets/jyotish/rashi.yaml        |  13 ++++
+ datasets/jyotish_core.yaml         |  59 ++++++++++++++++++
+ datasets/nakshatra.yaml            |  39 ++++++++++++
+ datasets/plants/sacred_plants.yaml |  13 ++++
+ datasets/rashi.yaml                |  47 ++++++++++++++
+ datasets/ritual/rituals.yaml       |  13 ++++
+ datasets/texts.yaml                |  14 +++++
+ datasets/vedic_concepts.yaml       |  39 ++++++++++++
+ deity                              |   0
+ echo                               |   0
+ graph/graph.yaml                   |  43 +++++++++++++
+ install_cosmic_layer.sh            | 108 ++++++++++++++++++++++++++++++++
+ install_nakshatra_layer.sh         | 124 +++++++++++++++++++++++++++++++++++++
+ journals/2026-03-05.md             |   2 +
+ panchanga/2026-03-05.yaml          |   5 ++
+ ruled_by                           |   0
+ scripts/generate_baseline.sh       |  70 +++++++++++++++++++++
+ scripts/panchanga.py               |  41 ++++++++++++
+ scripts/query_graph.py             |  22 +++++++
+ text_index.txt                     |   4 ++
+ texts/bhagavad_gita.txt            |   1 +
+ texts/isha_upanishad.txt           |   1 +
+ texts/upanishads.txt               |   1 +
+ texts/yoga_sutras.txt              |   1 +
+ 33 files changed, 925 insertions(+)

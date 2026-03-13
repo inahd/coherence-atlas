@@ -1,0 +1,47 @@
+Aries:
+  element: fire
+  ruler: Mars
+
+Taurus:
+  element: earth
+  ruler: Venus
+
+Gemini:
+  element: air
+  ruler: Mercury
+
+Cancer:
+  element: water
+  ruler: Moon
+
+Leo:
+  element: fire
+  ruler: Sun
+
+Virgo:
+  element: earth
+  ruler: Mercury
+
+Libra:
+  element: air
+  ruler: Venus
+
+Scorpio:
+  element: water
+  ruler: Mars
+
+Sagittarius:
+  element: fire
+  ruler: Jupiter
+
+Capricorn:
+  element: earth
+  ruler: Saturn
+
+Aquarius:
+  element: air
+  ruler: Saturn
+
+Pisces:
+  element: water
+  ruler: Jupiter

@@ -1,0 +1,26 @@
+{
+  "node_status_values": [
+    "placeholder",
+    "active",
+    "complete",
+    "deprecated"
+  ],
+  "gap_state_values": [
+    "unpopulated",
+    "partial",
+    "needs_review",
+    "needs_source",
+    "needs_relation",
+    "needs_authority",
+    "needs_promotion",
+    "complete"
+  ],
+  "required_placeholder_fields": [
+    "id",
+    "name",
+    "type",
+    "status",
+    "gap_state",
+    "required_fields"
+  ]
+}
