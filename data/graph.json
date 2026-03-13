@@ -1,0 +1,886 @@
+{
+  "nodes": [
+    {
+      "type": "Lagna",
+      "name": "Libra"
+    },
+    {
+      "type": "Planet",
+      "name": "Sun"
+    },
+    {
+      "type": "Planet",
+      "name": "Moon"
+    },
+    {
+      "type": "Planet",
+      "name": "Mars"
+    },
+    {
+      "type": "Planet",
+      "name": "Mercury"
+    },
+    {
+      "type": "Planet",
+      "name": "Jupiter"
+    },
+    {
+      "type": "Planet",
+      "name": "Venus"
+    },
+    {
+      "type": "Planet",
+      "name": "Saturn"
+    },
+    {
+      "type": "Planet",
+      "name": "Rahu"
+    },
+    {
+      "type": "Planet",
+      "name": "Ketu"
+    },
+    {
+      "type": "Lagna",
+      "name": "Libra"
+    },
+    {
+      "type": "Planet",
+      "name": "Sun"
+    },
+    {
+      "type": "Planet",
+      "name": "Moon"
+    },
+    {
+      "type": "Planet",
+      "name": "Mars"
+    },
+    {
+      "type": "Planet",
+      "name": "Mercury"
+    },
+    {
+      "type": "Planet",
+      "name": "Jupiter"
+    },
+    {
+      "type": "Planet",
+      "name": "Venus"
+    },
+    {
+      "type": "Planet",
+      "name": "Saturn"
+    },
+    {
+      "type": "Planet",
+      "name": "Rahu"
+    },
+    {
+      "type": "Planet",
+      "name": "Ketu"
+    },
+    {
+      "type": "Lagna",
+      "name": "Libra"
+    },
+    {
+      "type": "Planet",
+      "name": "Sun"
+    },
+    {
+      "type": "Planet",
+      "name": "Moon"
+    },
+    {
+      "type": "Planet",
+      "name": "Mars"
+    },
+    {
+      "type": "Planet",
+      "name": "Mercury"
+    },
+    {
+      "type": "Planet",
+      "name": "Jupiter"
+    },
+    {
+      "type": "Planet",
+      "name": "Venus"
+    },
+    {
+      "type": "Planet",
+      "name": "Saturn"
+    },
+    {
+      "type": "Planet",
+      "name": "Rahu"
+    },
+    {
+      "type": "Planet",
+      "name": "Ketu"
+    },
+    {
+      "type": "Lagna",
+      "name": "Libra"
+    },
+    {
+      "type": "Planet",
+      "name": "Sun"
+    },
+    {
+      "type": "Planet",
+      "name": "Moon"
+    },
+    {
+      "type": "Planet",
+      "name": "Mars"
+    },
+    {
+      "type": "Planet",
+      "name": "Mercury"
+    },
+    {
+      "type": "Planet",
+      "name": "Jupiter"
+    },
+    {
+      "type": "Planet",
+      "name": "Venus"
+    },
+    {
+      "type": "Planet",
+      "name": "Saturn"
+    },
+    {
+      "type": "Planet",
+      "name": "Rahu"
+    },
+    {
+      "type": "Planet",
+      "name": "Ketu"
+    }
+  ],
+  "edges": [
+    {
+      "from": "Sun",
+      "relation": "rashi",
+      "to": "Pisces"
+    },
+    {
+      "from": "Sun",
+      "relation": "nakshatra",
+      "to": "Revati"
+    },
+    {
+      "from": "Sun",
+      "relation": "house",
+      "to": "6"
+    },
+    {
+      "from": "Moon",
+      "relation": "rashi",
+      "to": "Libra"
+    },
+    {
+      "from": "Moon",
+      "relation": "nakshatra",
+      "to": "Chitra"
+    },
+    {
+      "from": "Moon",
+      "relation": "house",
+      "to": "12"
+    },
+    {
+      "from": "Mars",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Mars",
+      "relation": "nakshatra",
+      "to": "Dhanishta"
+    },
+    {
+      "from": "Mars",
+      "relation": "house",
+      "to": "4"
+    },
+    {
+      "from": "Mercury",
+      "relation": "rashi",
+      "to": "Pisces"
+    },
+    {
+      "from": "Mercury",
+      "relation": "nakshatra",
+      "to": "Uttara"
+    },
+    {
+      "from": "Mercury",
+      "relation": "house",
+      "to": "6"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "rashi",
+      "to": "Cancer"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "nakshatra",
+      "to": "Punarvasu"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "house",
+      "to": "9"
+    },
+    {
+      "from": "Venus",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Venus",
+      "relation": "nakshatra",
+      "to": "Shatabhisha"
+    },
+    {
+      "from": "Venus",
+      "relation": "house",
+      "to": "5"
+    },
+    {
+      "from": "Saturn",
+      "relation": "rashi",
+      "to": "Capricorn"
+    },
+    {
+      "from": "Saturn",
+      "relation": "nakshatra",
+      "to": "Shravana"
+    },
+    {
+      "from": "Saturn",
+      "relation": "house",
+      "to": "4"
+    },
+    {
+      "from": "Rahu",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Rahu",
+      "relation": "nakshatra",
+      "to": "Shatabhisha"
+    },
+    {
+      "from": "Rahu",
+      "relation": "house",
+      "to": "5"
+    },
+    {
+      "from": "Ketu",
+      "relation": "rashi",
+      "to": "Leo"
+    },
+    {
+      "from": "Ketu",
+      "relation": "nakshatra",
+      "to": "Purva"
+    },
+    {
+      "from": "Ketu",
+      "relation": "house",
+      "to": "11"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Mars"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Rahu"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Jupiter"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Saturn"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Mercury"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Ketu"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Venus"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Sun"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Moon"
+    },
+    {
+      "from": "Sun",
+      "relation": "rashi",
+      "to": "Pisces"
+    },
+    {
+      "from": "Sun",
+      "relation": "nakshatra",
+      "to": "Revati"
+    },
+    {
+      "from": "Sun",
+      "relation": "house",
+      "to": "6"
+    },
+    {
+      "from": "Moon",
+      "relation": "rashi",
+      "to": "Libra"
+    },
+    {
+      "from": "Moon",
+      "relation": "nakshatra",
+      "to": "Chitra"
+    },
+    {
+      "from": "Moon",
+      "relation": "house",
+      "to": "12"
+    },
+    {
+      "from": "Mars",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Mars",
+      "relation": "nakshatra",
+      "to": "Dhanishta"
+    },
+    {
+      "from": "Mars",
+      "relation": "house",
+      "to": "4"
+    },
+    {
+      "from": "Mercury",
+      "relation": "rashi",
+      "to": "Pisces"
+    },
+    {
+      "from": "Mercury",
+      "relation": "nakshatra",
+      "to": "Uttara"
+    },
+    {
+      "from": "Mercury",
+      "relation": "house",
+      "to": "6"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "rashi",
+      "to": "Cancer"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "nakshatra",
+      "to": "Punarvasu"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "house",
+      "to": "9"
+    },
+    {
+      "from": "Venus",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Venus",
+      "relation": "nakshatra",
+      "to": "Shatabhisha"
+    },
+    {
+      "from": "Venus",
+      "relation": "house",
+      "to": "5"
+    },
+    {
+      "from": "Saturn",
+      "relation": "rashi",
+      "to": "Capricorn"
+    },
+    {
+      "from": "Saturn",
+      "relation": "nakshatra",
+      "to": "Shravana"
+    },
+    {
+      "from": "Saturn",
+      "relation": "house",
+      "to": "4"
+    },
+    {
+      "from": "Rahu",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Rahu",
+      "relation": "nakshatra",
+      "to": "Shatabhisha"
+    },
+    {
+      "from": "Rahu",
+      "relation": "house",
+      "to": "5"
+    },
+    {
+      "from": "Ketu",
+      "relation": "rashi",
+      "to": "Leo"
+    },
+    {
+      "from": "Ketu",
+      "relation": "nakshatra",
+      "to": "Purva"
+    },
+    {
+      "from": "Ketu",
+      "relation": "house",
+      "to": "11"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Mars"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Rahu"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Jupiter"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Saturn"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Mercury"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Ketu"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Venus"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Sun"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Moon"
+    },
+    {
+      "from": "Sun",
+      "relation": "rashi",
+      "to": "Pisces"
+    },
+    {
+      "from": "Sun",
+      "relation": "nakshatra",
+      "to": "Revati"
+    },
+    {
+      "from": "Sun",
+      "relation": "house",
+      "to": "6"
+    },
+    {
+      "from": "Moon",
+      "relation": "rashi",
+      "to": "Libra"
+    },
+    {
+      "from": "Moon",
+      "relation": "nakshatra",
+      "to": "Chitra"
+    },
+    {
+      "from": "Moon",
+      "relation": "house",
+      "to": "12"
+    },
+    {
+      "from": "Mars",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Mars",
+      "relation": "nakshatra",
+      "to": "Dhanishta"
+    },
+    {
+      "from": "Mars",
+      "relation": "house",
+      "to": "4"
+    },
+    {
+      "from": "Mercury",
+      "relation": "rashi",
+      "to": "Pisces"
+    },
+    {
+      "from": "Mercury",
+      "relation": "nakshatra",
+      "to": "Uttara"
+    },
+    {
+      "from": "Mercury",
+      "relation": "house",
+      "to": "6"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "rashi",
+      "to": "Cancer"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "nakshatra",
+      "to": "Punarvasu"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "house",
+      "to": "9"
+    },
+    {
+      "from": "Venus",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Venus",
+      "relation": "nakshatra",
+      "to": "Shatabhisha"
+    },
+    {
+      "from": "Venus",
+      "relation": "house",
+      "to": "5"
+    },
+    {
+      "from": "Saturn",
+      "relation": "rashi",
+      "to": "Capricorn"
+    },
+    {
+      "from": "Saturn",
+      "relation": "nakshatra",
+      "to": "Shravana"
+    },
+    {
+      "from": "Saturn",
+      "relation": "house",
+      "to": "4"
+    },
+    {
+      "from": "Rahu",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Rahu",
+      "relation": "nakshatra",
+      "to": "Shatabhisha"
+    },
+    {
+      "from": "Rahu",
+      "relation": "house",
+      "to": "5"
+    },
+    {
+      "from": "Ketu",
+      "relation": "rashi",
+      "to": "Leo"
+    },
+    {
+      "from": "Ketu",
+      "relation": "nakshatra",
+      "to": "Purva"
+    },
+    {
+      "from": "Ketu",
+      "relation": "house",
+      "to": "11"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Mars"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Rahu"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Jupiter"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Saturn"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Mercury"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Ketu"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Venus"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Sun"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Moon"
+    },
+    {
+      "from": "Sun",
+      "relation": "rashi",
+      "to": "Pisces"
+    },
+    {
+      "from": "Sun",
+      "relation": "nakshatra",
+      "to": "Revati"
+    },
+    {
+      "from": "Sun",
+      "relation": "house",
+      "to": "6"
+    },
+    {
+      "from": "Moon",
+      "relation": "rashi",
+      "to": "Libra"
+    },
+    {
+      "from": "Moon",
+      "relation": "nakshatra",
+      "to": "Chitra"
+    },
+    {
+      "from": "Moon",
+      "relation": "house",
+      "to": "12"
+    },
+    {
+      "from": "Mars",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Mars",
+      "relation": "nakshatra",
+      "to": "Dhanishta"
+    },
+    {
+      "from": "Mars",
+      "relation": "house",
+      "to": "4"
+    },
+    {
+      "from": "Mercury",
+      "relation": "rashi",
+      "to": "Pisces"
+    },
+    {
+      "from": "Mercury",
+      "relation": "nakshatra",
+      "to": "Uttara"
+    },
+    {
+      "from": "Mercury",
+      "relation": "house",
+      "to": "6"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "rashi",
+      "to": "Cancer"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "nakshatra",
+      "to": "Punarvasu"
+    },
+    {
+      "from": "Jupiter",
+      "relation": "house",
+      "to": "9"
+    },
+    {
+      "from": "Venus",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Venus",
+      "relation": "nakshatra",
+      "to": "Shatabhisha"
+    },
+    {
+      "from": "Venus",
+      "relation": "house",
+      "to": "5"
+    },
+    {
+      "from": "Saturn",
+      "relation": "rashi",
+      "to": "Capricorn"
+    },
+    {
+      "from": "Saturn",
+      "relation": "nakshatra",
+      "to": "Shravana"
+    },
+    {
+      "from": "Saturn",
+      "relation": "house",
+      "to": "4"
+    },
+    {
+      "from": "Rahu",
+      "relation": "rashi",
+      "to": "Aquarius"
+    },
+    {
+      "from": "Rahu",
+      "relation": "nakshatra",
+      "to": "Shatabhisha"
+    },
+    {
+      "from": "Rahu",
+      "relation": "house",
+      "to": "5"
+    },
+    {
+      "from": "Ketu",
+      "relation": "rashi",
+      "to": "Leo"
+    },
+    {
+      "from": "Ketu",
+      "relation": "nakshatra",
+      "to": "Purva"
+    },
+    {
+      "from": "Ketu",
+      "relation": "house",
+      "to": "11"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Mars"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Rahu"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Jupiter"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Saturn"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Mercury"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Ketu"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Venus"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Sun"
+    },
+    {
+      "from": "Moon",
+      "relation": "dasha",
+      "to": "Moon"
+    }
+  ]
+}

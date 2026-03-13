@@ -1,0 +1,55 @@
+import json, os, sys, textwrap
+from ollama_client import generate, ping
+
+MODEL=os.environ.get('OLLAMA_MODEL','llama3')
+
+SYSTEM = '''You are the planner for a local knowledge-graph builder.
+You MUST output ONLY valid JSON.
+Your job: propose a SAFE plan of shell commands to improve dataset growth.
+Rules:
+- Only use commands from the allowed list:
+  - python3 /opt/atlas/scripts/<name>.py
+  - bash /opt/atlas/scripts/<name>.sh
+  - atlas <command>
+  - ls/head/tail/wc/du/find/grep/sed/awk on /opt/atlas only
+- Never delete files.
+- Prefer minimal changes.
+- Include a brief reason per step.
+JSON format:
+{
+  "goal": "...",
+  "steps": [
+    {"cmd": "...", "why": "..."},
+    ...
+  ],
+  "success_checks": ["..."]
+}
+'''
+
+def main():
+    if not ping():
+        print(json.dumps({"error":"ollama_not_running"}))
+        return
+
+    context=sys.stdin.read().strip()
+    prompt = SYSTEM + "
+
+Context:
+" + context + "
+
+Return JSON only."
+    out = generate(prompt, model=MODEL, timeout_s=180)
+
+    # Try to extract JSON
+    s=out.strip()
+    # Remove any leading text before first { and after last }
+    if '{' in s and '}' in s:
+        s=s[s.find('{'):s.rfind('}')+1]
+    try:
+        j=json.loads(s)
+    except Exception:
+        j={"error":"invalid_json","raw":out[:2000]}
+    print(json.dumps(j, indent=2))
+
+if __name__=='__main__':
+    main()

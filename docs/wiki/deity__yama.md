@@ -1,0 +1,4 @@
+# Deity: Yama
+
+**id:** 
+

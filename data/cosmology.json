@@ -1,0 +1,28 @@
+{
+  "tithis": [
+    {
+      "name": "Pratipada",
+      "associated_devi": "Shailaputri",
+      "weapons": ["Trident"],
+      "nakshatra_associations": [],
+      "music_associations": [],
+      "sources": []
+    },
+    {
+      "name": "Dwitiya",
+      "associated_devi": "Brahmacharini",
+      "weapons": ["Rosary", "Water Pot"],
+      "nakshatra_associations": [],
+      "music_associations": [],
+      "sources": []
+    },
+    {
+      "name": "Tritiya",
+      "associated_devi": "Chandraghanta",
+      "weapons": ["Sword", "Trident"],
+      "nakshatra_associations": [],
+      "music_associations": [],
+      "sources": []
+    }
+  ]
+}

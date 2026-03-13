@@ -1,0 +1,4 @@
+# Deity: Ajaekapada
+
+**id:** 
+

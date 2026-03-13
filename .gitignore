@@ -1,0 +1,12 @@
+venv/
+memory/
+visual/
+exports/
+__pycache__/
+*.html
+*.tar.gz
+*.log
+*.pdf
+*.png
+*.zip
+research/

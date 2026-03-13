@@ -1,0 +1,4 @@
+# Deity: Mitra
+
+**id:** 
+
