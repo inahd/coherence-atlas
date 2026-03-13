@@ -1,0 +1,50 @@
+[
+  {
+    "id": "001",
+    "slug": "transparency_layer",
+    "title": "Atlas Transparency Layer",
+    "status": "active",
+    "entrypoint": "atlas_codex/offerings/001_transparency_layer.md",
+    "tags": ["status", "dashboard", "coordination"]
+  },
+  {
+    "id": "002",
+    "slug": "agent_router",
+    "title": "Atlas Agent Router",
+    "status": "active",
+    "entrypoint": "atlas_codex/offerings/002_agent_router.md",
+    "tags": ["agent", "routing", "automation"]
+  },
+  {
+    "id": "003",
+    "slug": "seed_prompt_autoparser",
+    "title": "Seed Prompt Autoparser",
+    "status": "active",
+    "entrypoint": "atlas_codex/offerings/003_seed_prompt_autoparser.md",
+    "tags": ["seeds", "patches", "canon"]
+  },
+  {
+    "id": "004",
+    "slug": "graph_health_scanner",
+    "title": "Graph Health Scanner",
+    "status": "active",
+    "entrypoint": "atlas_codex/offerings/004_graph_health_scanner.md",
+    "tags": ["graph", "health", "audit"]
+  },
+  {
+    "id": "005",
+    "slug": "growth_engine",
+    "title": "Graph Growth Engine",
+    "status": "active",
+    "entrypoint": "atlas_codex/offerings/005_growth_engine.md",
+    "tags": ["inference", "growth", "proposals"]
+  },
+  {
+    "id": "006",
+    "slug": "constellation_engine",
+    "title": "Constellation Engine",
+    "status": "active",
+    "entrypoint": "atlas_codex/offerings/006_constellation_engine.md",
+    "tags": ["visualization", "clusters", "cosmology"]
+  }
+]
